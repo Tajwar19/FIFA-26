@@ -713,6 +713,173 @@
             border: 1px dashed var(--card-border);
             border-radius: 16px;
         }
+
+        /* ==================== COUNTRY FLAGS ==================== */
+        .team-flag {
+            width: 18px;
+            height: 12px;
+            object-fit: cover;
+            border-radius: 2px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+
+        .match-flag {
+            width: 28px;
+            height: 18px;
+            object-fit: cover;
+            border-radius: 3px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+
+        /* Override existing empty flag elements to keep size consistency */
+        div.team-flag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        div.match-flag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* ==================== PREDICTION MODE ==================== */
+        
+        /* Prediction Mode Switch Pill */
+        .mode-toggle-container {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            padding: 0.25rem;
+            border-radius: 30px;
+            position: relative;
+        }
+        
+        .mode-toggle-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 0.4rem 1.2rem;
+            font-size: 0.85rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 2;
+        }
+        
+        .mode-toggle-btn.active {
+            color: #ffffff;
+        }
+        
+        .mode-toggle-bg {
+            position: absolute;
+            top: 0.25rem;
+            left: 0.25rem;
+            width: calc(50% - 0.25rem);
+            height: calc(100% - 0.5rem);
+            background: var(--primary);
+            border-radius: 20px;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+        }
+        
+        /* Prediction Mode State Glows */
+        body.predict-mode-active {
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(139, 92, 246, 0.12) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(219, 39, 119, 0.08) 0px, transparent 50%);
+        }
+        
+        body.predict-mode-active header {
+            border-bottom-color: rgba(139, 92, 246, 0.2);
+            box-shadow: 0 10px 30px -15px rgba(139, 92, 246, 0.15);
+        }
+        
+        body.predict-mode-active .mode-toggle-bg {
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            box-shadow: 0 2px 10px rgba(139, 92, 246, 0.5);
+            transform: translateX(100%);
+        }
+        
+        /* Dropdowns for group prediction */
+        .group-predict-select {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #f3f4f6;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 140px;
+            outline: none;
+            transition: var(--transition);
+        }
+        
+        .group-predict-select:hover, .group-predict-select:focus {
+            border-color: #8b5cf6;
+            background: rgba(139, 92, 246, 0.1);
+            box-shadow: 0 0 8px rgba(139, 92, 246, 0.2);
+        }
+        
+        /* Clickable team rows in bracket */
+        body.predict-mode-active .bracket-team-row.predictable {
+            cursor: pointer;
+            transition: var(--transition);
+            border-radius: 6px;
+            padding: 2px 6px;
+        }
+        
+        body.predict-mode-active .bracket-team-row.predictable:hover {
+            background: rgba(139, 92, 246, 0.15);
+            color: #ffffff;
+        }
+        
+        /* Predicted Winner styling */
+        body.predict-mode-active .bracket-team-row.predicted-winner {
+            background: linear-gradient(90deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.1));
+            border: 1px solid rgba(139, 92, 246, 0.5);
+            border-radius: 6px;
+            padding: 2px 6px;
+            font-weight: 700;
+            color: #ffffff !important;
+            opacity: 1 !important;
+        }
+        
+        body.predict-mode-active .bracket-team-row.predicted-winner span.bracket-score::after {
+            content: " ★";
+            color: #fbbf24;
+            font-size: 0.8rem;
+        }
+        
+        body.predict-mode-active .bracket-team-row.predicted-loser {
+            opacity: 0.4;
+        }
+        
+        /* Badge for predicted modes */
+        .prediction-badge {
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.6rem;
+            border-radius: 12px;
+            margin-left: 0.75rem;
+            box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+            display: inline-block;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -729,6 +896,14 @@
                 <div class="timestamp">
                     Last Updated: <span id="update-time">Loading...</span>
                 </div>
+                
+                <!-- Mode Toggle -->
+                <div class="mode-toggle-container">
+                    <div class="mode-toggle-bg" id="toggle-bg"></div>
+                    <button class="mode-toggle-btn active" id="btn-mode-real" onclick="setDashboardMode('real')">Real</button>
+                    <button class="mode-toggle-btn" id="btn-mode-predict" onclick="setDashboardMode('predict')">Predict</button>
+                </div>
+
                 <button class="btn-update" id="scrape-btn" onclick="triggerScrape()">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"></path>
@@ -836,6 +1011,401 @@
     <script>
         // Global variables holding the page state
         let dashboardData = null;
+        let predictions = {
+            mode: 'real',
+            groups: {},
+            knockout: {}
+        };
+
+        const TEAM_FLAG_MAP = {
+            "Mexico": "mx", "KOR": "kr", "Korea Republic": "kr", "CZE": "cz", "Czechia": "cz",
+            "South Africa": "za", "RSA": "za", "Switzerland": "ch", "SUI": "ch",
+            "Canada": "ca", "CAN": "ca", "Qatar": "qa", "QAT": "qa",
+            "Bosnia and Herzegovina": "ba", "BIH": "ba", "Scotland": "gb-sct", "SCO": "gb-sct",
+            "Morocco": "ma", "MAR": "ma", "Brazil": "br", "BRA": "br", "Haiti": "ht", "HAI": "ht",
+            "USA": "us", "Australia": "au", "AUS": "au", "Türkiye": "tr", "TUR": "tr",
+            "Paraguay": "py", "PAR": "py", "Germany": "de", "GER": "de",
+            "Côte d'Ivoire": "ci", "CIV": "ci", "Ecuador": "ec", "ECU": "ec",
+            "Curaçao": "cw", "CUW": "cw", "Sweden": "se", "SWE": "se", "Japan": "jp", "JPN": "jp",
+            "Netherlands": "nl", "NED": "nl", "Tunisia": "tn", "TUN": "tn",
+            "Belgium": "be", "BEL": "be", "Egypt": "eg", "EGY": "eg", "IR Iran": "ir", "IRN": "ir",
+            "New Zealand": "nz", "NZL": "nz", "Spain": "es", "ESP": "es",
+            "Cabo Verde": "cv", "CPV": "cv", "Saudi Arabia": "sa", "KSA": "sa",
+            "Uruguay": "uy", "URU": "uy", "France": "fr", "FRA": "fr", "Senegal": "sn", "SEN": "sn",
+            "Iraq": "iq", "IRQ": "iq", "Norway": "no", "NOR": "no", "Argentina": "ar", "ARG": "ar",
+            "Algeria": "dz", "ALG": "dz", "Austria": "at", "AUT": "at", "Jordan": "jo", "JOR": "jo",
+            "Portugal": "pt", "POR": "pt", "Congo DR": "cd", "COD": "cd",
+            "Uzbekistan": "uz", "UZB": "uz", "Colombia": "co", "COL": "co",
+            "England": "gb-eng", "ENG": "gb-eng", "Croatia": "hr", "CRO": "hr",
+            "Ghana": "gh", "GHA": "gh", "Panama": "pa", "PAN": "pa"
+        };
+
+        function cleanTeamName(name) {
+            if (!name) return "";
+            let clean = name.trim();
+            if (clean.includes(":")) {
+                clean = clean.split(":").slice(1).join(":").trim();
+            }
+            return clean;
+        }
+
+        function getTeamFlagHtml(teamName, teamCode, type = 'bracket') {
+            const cleanName = cleanTeamName(teamName);
+            let iso = "";
+            
+            if (teamCode && TEAM_FLAG_MAP[teamCode]) {
+                iso = TEAM_FLAG_MAP[teamCode];
+            } else if (TEAM_FLAG_MAP[cleanName]) {
+                iso = TEAM_FLAG_MAP[cleanName];
+            }
+            
+            const isBracket = type === 'bracket';
+            const className = isBracket ? 'team-flag' : 'match-flag';
+            
+            if (iso) {
+                return `<img src="https://flagcdn.com/w40/${iso}.png" class="${className}" alt="${cleanName}">`;
+            }
+            
+            return `<div class="${className}"></div>`;
+        }
+
+        function loadPredictions() {
+            const stored = localStorage.getItem('worldcup_predictions_2026');
+            if (stored) {
+                try {
+                    predictions = JSON.parse(stored);
+                    if (!predictions.groups) predictions.groups = {};
+                    if (!predictions.knockout) predictions.knockout = {};
+                    if (!predictions.mode) predictions.mode = 'real';
+                } catch (e) {
+                    console.error("Error loading predictions:", e);
+                }
+            }
+        }
+
+        function savePredictions() {
+            localStorage.setItem('worldcup_predictions_2026', JSON.stringify(predictions));
+        }
+
+        function setDashboardMode(mode) {
+            predictions.mode = mode;
+            savePredictions();
+            refreshViews();
+        }
+
+        function predictGroupOrder(groupName, posIdx, selectedTeam) {
+            let currentOrder = predictions.groups[groupName];
+            if (!currentOrder) {
+                currentOrder = dashboardData.standings[groupName].map(t => t.Team);
+            }
+            
+            const oldIdx = currentOrder.indexOf(selectedTeam);
+            if (oldIdx !== -1) {
+                const temp = currentOrder[posIdx];
+                currentOrder[posIdx] = selectedTeam;
+                currentOrder[oldIdx] = temp;
+            }
+            
+            predictions.groups[groupName] = currentOrder;
+            savePredictions();
+            refreshViews();
+        }
+
+        function handleTeamPredictClick(matchId, teamName) {
+            predictions.knockout[matchId] = teamName;
+            savePredictions();
+            refreshViews();
+        }
+
+        function getPredictedGroups() {
+            let predictedGroups = {};
+            for (const [groupName, teamsList] of Object.entries(dashboardData.standings)) {
+                if (predictions.groups[groupName]) {
+                    const order = predictions.groups[groupName];
+                    const reordered = [];
+                    const teamMap = {};
+                    teamsList.forEach(t => { teamMap[t.Team] = t; });
+                    
+                    order.forEach((teamName, idx) => {
+                        if (teamMap[teamName]) {
+                            const cloned = { ...teamMap[teamName] };
+                            cloned.Pos = idx + 1;
+                            reordered.push(cloned);
+                        }
+                    });
+                    
+                    teamsList.forEach(t => {
+                        if (!reordered.some(r => r.Team === t.Team)) {
+                            reordered.push({ ...t, Pos: reordered.length + 1 });
+                        }
+                    });
+                    
+                    predictedGroups[groupName] = reordered;
+                } else {
+                    predictedGroups[groupName] = teamsList.map(t => ({ ...t }));
+                }
+            }
+            return predictedGroups;
+        }
+
+        function getThirdPlacedStandings(predictedGroups) {
+            let thirdPlaces = [];
+            for (const [groupName, teams] of Object.entries(predictedGroups)) {
+                if (teams.length >= 3) {
+                    const t = teams[2];
+                    const groupLetter = groupName.split(' ').pop();
+                    thirdPlaces.push({
+                        Team: t.Team,
+                        Code: t.Code,
+                        Group: groupLetter,
+                        Played: t.Played || 0,
+                        Won: t.Won || 0,
+                        Drawn: t.Drawn || 0,
+                        Lost: t.Lost || 0,
+                        GF: t.GF || 0,
+                        GA: t.GA || 0,
+                        GD: t.GD || 0,
+                        Points: t.Points || 0
+                    });
+                }
+            }
+            thirdPlaces.sort((a, b) => {
+                if (b.Points !== a.Points) return b.Points - a.Points;
+                if (b.GD !== a.GD) return b.GD - a.GD;
+                if (b.GF !== a.GF) return b.GF - a.GF;
+                return b.Won - a.Won;
+            });
+            thirdPlaces.forEach((t, idx) => {
+                t.Pos = idx + 1;
+            });
+            return thirdPlaces;
+        }
+
+        function find3rdPlaceAssignment(qualifiedGroups) {
+            const slots = [
+                { name: "3ABCDF", allowed: new Set(['A', 'B', 'C', 'D', 'F']) },
+                { name: "3CDFGH", allowed: new Set(['C', 'D', 'F', 'G', 'H']) },
+                { name: "3BEFIJ", allowed: new Set(['B', 'E', 'F', 'I', 'J']) },
+                { name: "3AEHIJ", allowed: new Set(['A', 'E', 'H', 'I', 'J']) },
+                { name: "3EFGIJ", allowed: new Set(['E', 'F', 'G', 'I', 'J']) },
+                { name: "3DEIJL", allowed: new Set(['D', 'E', 'I', 'J', 'L']) },
+                { name: "3CEFHI", allowed: new Set(['C', 'E', 'F', 'H', 'I']) },
+                { name: "3EHIJK", allowed: new Set(['E', 'H', 'I', 'J', 'K']) }
+            ];
+            
+            let assignment = {};
+            let usedSlots = new Set();
+            
+            function backtrack(groupIdx) {
+                if (groupIdx === qualifiedGroups.length) {
+                    return true;
+                }
+                const group = qualifiedGroups[groupIdx];
+                for (let i = 0; i < slots.length; i++) {
+                    const slot = slots[i];
+                    if (!usedSlots.has(i) && slot.allowed.has(group)) {
+                        usedSlots.add(i);
+                        assignment[slot.name] = group;
+                        if (backtrack(groupIdx + 1)) {
+                            return true;
+                        }
+                        usedSlots.delete(i);
+                        delete assignment[slot.name];
+                    }
+                }
+                return false;
+            }
+            
+            if (backtrack(0)) {
+                return assignment;
+            }
+            
+            let fallbackAssignment = {};
+            const assignedSlots = new Set();
+            for (const group of qualifiedGroups) {
+                for (const slot of slots) {
+                    if (!assignedSlots.has(slot.name) && slot.allowed.has(group)) {
+                        fallbackAssignment[slot.name] = group;
+                        assignedSlots.add(slot.name);
+                        break;
+                    }
+                }
+            }
+            return fallbackAssignment;
+        }
+
+        function getPredictedBracket(predictedGroups, predictedThirdPlaces) {
+            let resolved = {};
+            
+            for (const [groupName, teams] of Object.entries(predictedGroups)) {
+                const groupLetter = groupName.split(' ').pop();
+                if (teams.length >= 1) resolved[`1${groupLetter}`] = teams[0].Team;
+                if (teams.length >= 2) resolved[`2${groupLetter}`] = teams[1].Team;
+            }
+            
+            const best8Third = predictedThirdPlaces.filter(t => t.Pos <= 8);
+            const best8Groups = best8Third.map(t => t.Group);
+            const assignment = find3rdPlaceAssignment(best8Groups);
+            
+            let groupToThirdTeam = {};
+            best8Third.forEach(t => {
+                groupToThirdTeam[t.Group] = t.Team;
+            });
+            
+            for (const [slotName, groupLetter] of Object.entries(assignment)) {
+                resolved[slotName] = groupToThirdTeam[groupLetter] || "";
+            }
+            
+            let predictedBracket = {};
+            let matchesMap = {};
+            
+            function getRawPlaceholder(teamName, rawVal) {
+                if (rawVal) return rawVal;
+                if (!teamName) return "";
+                if (teamName.includes(":")) {
+                    return teamName.split(":")[0].trim();
+                }
+                const clean = teamName.trim();
+                if (/^[1-3][A-L]$/.test(clean) || /^3[A-L]{2,12}$/.test(clean) || /^W\d+$/.test(clean) || /^RU\d+$/.test(clean)) {
+                    return clean;
+                }
+                return "";
+            }
+            
+            for (const [roundName, matches] of Object.entries(dashboardData.bracket)) {
+                predictedBracket[roundName] = matches.map(m => {
+                    const mCloned = { ...m };
+                    mCloned.Team1_raw = getRawPlaceholder(m.Team1, m.Team1_raw);
+                    mCloned.Team2_raw = getRawPlaceholder(m.Team2, m.Team2_raw);
+                    matchesMap[m.Match] = mCloned;
+                    return mCloned;
+                });
+            }
+            
+            for (let step = 0; step < 5; step++) {
+                for (const [matchId, m] of Object.entries(matchesMap)) {
+                    const rawT1 = m.Team1_raw;
+                    const rawT2 = m.Team2_raw;
+                    
+                    const resT1 = resolved[rawT1] || rawT1;
+                    const resT2 = resolved[rawT2] || rawT2;
+                    
+                    m.Team1_resolved = resT1;
+                    m.Team2_resolved = resT2;
+                    
+                    m.Team1 = (rawT1 && resT1 !== rawT1) ? `${rawT1}: ${resT1}` : resT1;
+                    m.Team2 = (rawT2 && resT2 !== rawT2) ? `${rawT2}: ${resT2}` : resT2;
+                    
+                    let winner = "";
+                    let runnerUp = "";
+                    
+                    const predictedWinner = predictions.knockout[matchId];
+                    if (predictedWinner) {
+                        if (predictedWinner === resT1) {
+                            winner = resT1;
+                            runnerUp = resT2;
+                        } else if (predictedWinner === resT2) {
+                            winner = resT2;
+                            runnerUp = resT1;
+                        }
+                    }
+                    
+                    if (!winner) {
+                        const isRealFinished = m.Status === 'FT' || m.Status === 'AET' || m.Status === 'PEN';
+                        if (isRealFinished) {
+                            const score1 = parseInt(m.Score1) || 0;
+                            const score2 = parseInt(m.Score2) || 0;
+                            if (score1 > score2) {
+                                winner = resT1;
+                                runnerUp = resT2;
+                            } else if (score2 > score1) {
+                                winner = resT2;
+                                runnerUp = resT1;
+                            } else {
+                                winner = resT1;
+                                runnerUp = resT2;
+                            }
+                        }
+                    }
+                    
+                    const matchNum = matchId.replace("M", "");
+                    if (winner) {
+                        resolved[`W${matchNum}`] = winner;
+                        resolved[`RU${matchNum}`] = runnerUp;
+                        m.Winner_resolved = winner;
+                    } else {
+                        m.Winner_resolved = "";
+                    }
+                }
+            }
+            
+            return predictedBracket;
+        }
+
+        function getPredictedMatchesList(predictedGroups, predictedBracket) {
+            let groupMatches = dashboardData.matches.group_stage.map(m => ({ ...m }));
+            let knockoutMatches = [];
+            
+            let bracketFlatMap = {};
+            Object.values(predictedBracket).flat().forEach(m => {
+                bracketFlatMap[m.Match] = m;
+            });
+            
+            for (const [stageName, stageMatches] of Object.entries(dashboardData.matches.knockout_stage)) {
+                stageMatches.forEach(m => {
+                    const mCloned = { ...m };
+                    const bracketMatch = bracketFlatMap[m.Match];
+                    if (bracketMatch) {
+                        mCloned.Team1 = bracketMatch.Team1;
+                        mCloned.Team2 = bracketMatch.Team2;
+                        
+                        const isRealFinished = m.Status === 'FT' || m.Status === 'AET' || m.Status === 'PEN';
+                        if (!isRealFinished) {
+                            mCloned.Score1 = "";
+                            mCloned.Score2 = "";
+                            mCloned.Status = "";
+                        }
+                    }
+                    knockoutMatches.push(mCloned);
+                });
+            }
+            
+            return groupMatches.concat(knockoutMatches);
+        }
+
+        function refreshViews() {
+            if (!dashboardData) return;
+            
+            const isPredict = predictions.mode === 'predict';
+            
+            if (isPredict) {
+                document.body.classList.add('predict-mode-active');
+                document.getElementById('btn-mode-predict').classList.add('active');
+                document.getElementById('btn-mode-real').classList.remove('active');
+                
+                const predictedGroups = getPredictedGroups();
+                const predictedThirdPlaces = getThirdPlacedStandings(predictedGroups);
+                const predictedBracket = getPredictedBracket(predictedGroups, predictedThirdPlaces);
+                
+                renderBracket(predictedBracket);
+                renderStandings(predictedGroups, predictedThirdPlaces);
+                
+                const predictedMatchesList = getPredictedMatchesList(predictedGroups, predictedBracket);
+                renderMatches(predictedMatchesList);
+            } else {
+                document.body.classList.remove('predict-mode-active');
+                document.getElementById('btn-mode-real').classList.add('active');
+                document.getElementById('btn-mode-predict').classList.remove('active');
+                
+                renderBracket(dashboardData.bracket);
+                renderStandings(dashboardData.standings, dashboardData.third_places);
+                
+                const realMatchesList = dashboardData.matches.group_stage.concat(
+                    Object.values(dashboardData.matches.knockout_stage).flat()
+                );
+                renderMatches(realMatchesList);
+            }
+        }
 
         // Fetch data from Flask API
         async function fetchDashboardData() {
@@ -846,12 +1416,8 @@
                 // Update timestamp UI
                 document.getElementById('update-time').innerText = dashboardData.last_updated;
                 
-                // Render the UI components
-                renderBracket(dashboardData.bracket);
-                renderStandings(dashboardData.standings);
-                renderMatches(dashboardData.matches.group_stage.concat(
-                    Object.values(dashboardData.matches.knockout_stage).flat()
-                ));
+                loadPredictions();
+                refreshViews();
             } catch (err) {
                 console.error("Failed to load dashboard data:", err);
                 document.getElementById('update-time').innerText = "Error Loading";
@@ -903,17 +1469,6 @@
             svg.style.zIndex = '1';
             root.appendChild(svg);
 
-            // Columns will be rendered symmetrically:
-            // 0: Round of 32 (Left)
-            // 1: Round of 16 (Left)
-            // 2: Quarter-final (Left)
-            // 3: Semi-final (Left)
-            // 4: CENTER Column (Final + 3rd Place Match)
-            // 5: Semi-final (Right)
-            // 6: Quarter-final (Right)
-            // 7: Round of 16 (Right)
-            // 8: Round of 32 (Right)
-            
             const columns_keys = [
                 "Round of 32 (Left)",
                 "Round of 16 (Left)",
@@ -932,14 +1487,12 @@
                 if (colKey === "CENTER") {
                     columnDiv.className = 'bracket-column finals-center';
                     
-                    // Final Match (M104)
                     const finalGroup = bracketData["Final"] || [];
                     if (finalGroup.length > 0) {
                         const m = finalGroup[0];
                         columnDiv.appendChild(createFinalsHeaderCard("Grand Final", m));
                     }
                     
-                    // 3rd Place match (M103)
                     const thirdPlaceGroup = bracketData["Play-off for third place"] || [];
                     if (thirdPlaceGroup.length > 0) {
                         const m = thirdPlaceGroup[0];
@@ -979,6 +1532,7 @@
             card.className = 'bracket-card';
             card.id = `match-${m.Match}`;
             
+            const isPredict = predictions.mode === 'predict';
             const isFinished = m.Status === 'FT' || m.Status === 'AET' || m.Status === 'PEN';
             const s1 = parseInt(m.Score1) || 0;
             const s2 = parseInt(m.Score2) || 0;
@@ -988,34 +1542,76 @@
             
             let t1WinnerClass = '';
             let t2WinnerClass = '';
-            if (isFinished) {
-                if (s1 > s2) { t1WinnerClass = 'winner'; t2WinnerClass = 'loser'; }
-                else if (s2 > s1) { t2WinnerClass = 'winner'; t1WinnerClass = 'loser'; }
+            
+            if (isPredict) {
+                const t1Res = m.Team1_resolved || "";
+                const t2Res = m.Team2_resolved || "";
+                
+                const t1Predictable = t1Res && !isRawPlaceholder(t1Res);
+                const t2Predictable = t2Res && !isRawPlaceholder(t2Res);
+                
+                const isT1Winner = m.Winner_resolved && m.Winner_resolved === t1Res;
+                const isT2Winner = m.Winner_resolved && m.Winner_resolved === t2Res;
+                
+                if (t1Predictable) t1WinnerClass += ' predictable';
+                if (t2Predictable) t2WinnerClass += ' predictable';
+                
+                if (m.Winner_resolved) {
+                    if (isT1Winner) t1WinnerClass += ' predicted-winner';
+                    else t2WinnerClass += ' predicted-winner';
+                    
+                    if (isT1Winner) t2WinnerClass += ' predicted-loser';
+                    else t1WinnerClass += ' predicted-loser';
+                }
+            } else {
+                if (isFinished) {
+                    if (s1 > s2) { t1WinnerClass = 'winner'; t2WinnerClass = 'loser'; }
+                    else if (s2 > s1) { t2WinnerClass = 'winner'; t1WinnerClass = 'loser'; }
+                }
             }
             
-            // Format time and clean date
             const rawTime = m.Time ? m.Time : m.Date;
             const timeFormatted = formatTime12h(rawTime);
             const dateClean = cleanDateStr(m.Date);
             
-            const score1Str = m.Score1 !== null && m.Score1 !== undefined ? m.Score1 : '';
-            const score2Str = m.Score2 !== null && m.Score2 !== undefined ? m.Score2 : '';
+            let score1Str = m.Score1 !== null && m.Score1 !== undefined ? m.Score1 : '';
+            let score2Str = m.Score2 !== null && m.Score2 !== undefined ? m.Score2 : '';
+            if (isPredict && m.Winner_resolved) {
+                const realWinner = isFinished ? (s1 > s2 ? m.Team1_resolved : m.Team2_resolved) : null;
+                if (realWinner && m.Winner_resolved !== realWinner) {
+                    score1Str = '';
+                    score2Str = '';
+                }
+            }
+            
+            let t1ClickHtml = '';
+            let t2ClickHtml = '';
+            if (isPredict) {
+                const t1Res = m.Team1_resolved || "";
+                const t2Res = m.Team2_resolved || "";
+                if (t1Res && !isRawPlaceholder(t1Res)) {
+                    t1ClickHtml = `onclick="handleTeamPredictClick('${m.Match}', '${t1Res.replace(/'/g, "\\'")}')"`;
+                }
+                if (t2Res && !isRawPlaceholder(t2Res)) {
+                    t2ClickHtml = `onclick="handleTeamPredictClick('${m.Match}', '${t2Res.replace(/'/g, "\\'")}')"`;
+                }
+            }
             
             card.innerHTML = `
                 <div class="bracket-card-header">
                     <span class="match-id">${m.Match}</span>
                     <span>${dateClean} ${timeFormatted}</span>
                 </div>
-                <div class="bracket-team-row ${t1WinnerClass}">
+                <div class="bracket-team-row ${t1WinnerClass.trim()}" ${t1ClickHtml}>
                     <div class="bracket-team-info">
-                        <div class="bracket-flag-placeholder"></div>
+                        ${getTeamFlagHtml(m.Team1, null, 'bracket')}
                         <span class="${t1Class}">${m.Team1}</span>
                     </div>
                     <span class="bracket-score">${score1Str}</span>
                 </div>
-                <div class="bracket-team-row ${t2WinnerClass}">
+                <div class="bracket-team-row ${t2WinnerClass.trim()}" ${t2ClickHtml}>
                     <div class="bracket-team-info">
-                        <div class="bracket-flag-placeholder"></div>
+                        ${getTeamFlagHtml(m.Team2, null, 'bracket')}
                         <span class="${t2Class}">${m.Team2}</span>
                     </div>
                     <span class="bracket-score">${score2Str}</span>
@@ -1035,7 +1631,7 @@
         }
 
         // Render Group Standings Tables
-        function renderStandings(standingsData) {
+        function renderStandings(standingsData, thirdPlacesData) {
             const root = document.getElementById('standings-root');
             root.innerHTML = '';
             
@@ -1043,6 +1639,8 @@
                 root.innerHTML = '<div class="empty-state">No standings data. Click Data Snapshot (Local Only).</div>';
                 return;
             }
+            
+            const isPredict = predictions.mode === 'predict';
 
             Object.entries(standingsData).forEach(([groupName, teamsList]) => {
                 const card = document.createElement('div');
@@ -1050,21 +1648,37 @@
                 
                 let tableRows = '';
                 teamsList.forEach((t, i) => {
-                    // Position highlights: top 2 qualify directly (Green), next best in group might qualify (Gold)
                     let rowClass = '';
                     if (i < 2) rowClass = 'qualify-direct';
                     else if (i === 2) rowClass = 'qualify-playoff';
                     
+                    let teamNameHtml = '';
+                    if (isPredict) {
+                        teamNameHtml = `
+                            <div class="team-name-cell">
+                                ${getTeamFlagHtml(t.Team, t.Code, 'bracket')}
+                                <select class="group-predict-select" onchange="predictGroupOrder('${groupName}', ${i}, this.value)">
+                                    ${teamsList.map(opt => {
+                                        const selected = opt.Team === t.Team ? 'selected' : '';
+                                        return `<option value="${opt.Team.replace(/"/g, '&quot;')}" ${selected}>${opt.Team}</option>`;
+                                    }).join('')}
+                                </select>
+                            </div>
+                        `;
+                    } else {
+                        teamNameHtml = `
+                            <div class="team-name-cell">
+                                ${getTeamFlagHtml(t.Team, t.Code, 'bracket')}
+                                <span>${t.Team}</span>
+                                <span class="team-code-muted">${t.Code}</span>
+                            </div>
+                        `;
+                    }
+                    
                     tableRows += `
                         <tr class="${rowClass}">
                             <td class="num-bold">${t.Pos}</td>
-                            <td>
-                                <div class="team-name-cell">
-                                    <div class="bracket-flag-placeholder"></div>
-                                    <span>${t.Team}</span>
-                                    <span class="team-code-muted">${t.Code}</span>
-                                </div>
-                            </td>
+                            <td>${teamNameHtml}</td>
                             <td class="num-bold">${t.Played}</td>
                             <td>${t.Won}</td>
                             <td>${t.Drawn}</td>
@@ -1077,7 +1691,7 @@
                 card.innerHTML = `
                     <div class="group-header">
                         ${groupName}
-                        <span>FIFA 2026</span>
+                        ${isPredict ? '<span class="prediction-badge">Predicting</span>' : '<span>FIFA 2026</span>'}
                     </div>
                     <table class="standings-table">
                         <thead>
@@ -1099,8 +1713,7 @@
                 root.appendChild(card);
             });
 
-            // Render the 3rd places comparison standings table
-            renderThirdPlaces(dashboardData.third_places);
+            renderThirdPlaces(thirdPlacesData);
         }
 
         // Render Third-Placed Teams Standings Table
@@ -1115,7 +1728,6 @@
             }
             
             thirdPlacesList.forEach((t) => {
-                // Top 8 qualify (Green), bottom 4 eliminated (Subtle red or gray)
                 let rowClass = '';
                 let opacityStyle = '';
                 if (t.Pos <= 8) {
@@ -1131,7 +1743,7 @@
                         <td class="num-bold" style="text-align: center;">${t.Pos}</td>
                         <td>
                             <div class="team-name-cell">
-                                <div class="bracket-flag-placeholder"></div>
+                                ${getTeamFlagHtml(t.Team, t.Code, 'bracket')}
                                 <span>${t.Team}</span>
                                 <span class="team-code-muted">${t.Code} (Group ${groupLetter})</span>
                             </div>
@@ -1173,7 +1785,6 @@
                     scoreText = `${score1} - ${score2}`;
                 }
                 
-                // Normalize status badge: strip score prefix from "2FT0" -> "FT"
                 const rawStatus = m.Status || '';
                 let badgeStatus = 'TBD';
                 let statusClass = '';
@@ -1192,23 +1803,17 @@
                     statusClass = 'ft';
                     isPlayed = true;
                 } else if (/^\d{2}:\d{2}$/.test(rawStatus)) {
-                    // Status IS the time for upcoming matches
                     badgeStatus = 'Upcoming';
                 } else if (rawStatus) {
                     badgeStatus = rawStatus;
                 }
                 
-                // Determine the time to display:
-                // 1. Use Time field if available
-                // 2. Fallback to Status if it looks like a time (upcoming matches)
-                // 3. For played matches, show nothing (time not available)
                 let timeDisplay = '';
                 let timeClass = '';
                 if (m.Time && /^\d{2}:\d{2}$/.test(m.Time.trim())) {
                     timeDisplay = formatTime12h(m.Time.trim());
                     timeClass = isPlayed ? 'played' : '';
                 } else if (!isPlayed && /^\d{2}:\d{2}$/.test(rawStatus)) {
-                    // Upcoming match: status IS the time
                     timeDisplay = formatTime12h(rawStatus);
                 }
                 
@@ -1227,14 +1832,14 @@
                     <div class="match-teams-area">
                         <div class="match-team team-home">
                             <span>${m.Team1}</span>
-                            <div class="match-flag"></div>
+                            ${getTeamFlagHtml(m.Team1, null, 'match')}
                         </div>
                         <div class="match-score-center">
                             <div class="match-score-nums">${scoreText}</div>
                             <div class="match-status-badge ${statusClass}">${badgeStatus}</div>
                         </div>
                         <div class="match-team team-away">
-                            <div class="match-flag"></div>
+                            ${getTeamFlagHtml(m.Team2, null, 'match')}
                             <span>${m.Team2}</span>
                         </div>
                     </div>
@@ -1247,7 +1852,6 @@
                 root.appendChild(row);
             });
             
-            // Re-apply filters if inputs contain values
             filterMatchesList();
         }
 
@@ -1277,7 +1881,6 @@
         function cleanDateStr(dateStr) {
             if (!dateStr) return '';
             let clean = dateStr.trim();
-            // e.g. "06/30/202602:30" -> we only want first 10 characters "06/30/2026"
             if (/^\d{2}\/\d{2}\/\d{4}\d{2}:\d{2}$/.test(clean)) {
                 return clean.substring(0, 10);
             }
@@ -1289,7 +1892,6 @@
             if (!timeStr || timeStr === 'TBD' || timeStr === 'N/A') return 'TBD';
             
             let cleanTime = timeStr.trim();
-            // Extract last 5 characters if it contains a date prefix (e.g., "06/30/202602:30")
             if (cleanTime.length > 5 && cleanTime.includes(':')) {
                 cleanTime = cleanTime.slice(-5);
             }
@@ -1328,7 +1930,6 @@
                 let targetMatchId = m.NextMatch;
                 if (!targetMatchId) return;
                 
-                // Parse out first Match ID if it's a split (e.g. "M104 (winner) / M103 (loser)")
                 if (targetMatchId.includes(' ')) {
                     const matchObj = targetMatchId.match(/M\d+/);
                     targetMatchId = matchObj ? matchObj[0] : '';
@@ -1345,13 +1946,11 @@
                 const isLeftSide = m.Side === 'LEFT';
                 
                 if (isLeftSide) {
-                    // Left to Right: right center of source -> left center of target
                     x1 = rectSource.right - containerRect.left;
                     y1 = rectSource.top + rectSource.height / 2 - containerRect.top;
                     x2 = rectTarget.left - containerRect.left;
                     y2 = rectTarget.top + rectTarget.height / 2 - containerRect.top;
                 } else if (m.Side === 'RIGHT') {
-                    // Right to Left: left center of source -> right center of target
                     x1 = rectSource.left - containerRect.left;
                     y1 = rectSource.top + rectSource.height / 2 - containerRect.top;
                     x2 = rectTarget.right - containerRect.left;
@@ -1360,10 +1959,8 @@
                     return;
                 }
                 
-                // Midpoint x
                 const midX = x1 + (x2 - x1) / 2;
                 
-                // Create SVG path
                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                 const d = `M ${x1} ${y1} H ${midX} V ${y2} H ${x2}`;
                 path.setAttribute('d', d);
@@ -1384,6 +1981,6 @@
         window.addEventListener('DOMContentLoaded', () => {
             fetchDashboardData();
         });
-    </script>
+</script>
 </body>
 </html>

@@ -334,6 +334,9 @@ def get_data():
             t1_orig = m_copy.get("Team1", "")
             t2_orig = m_copy.get("Team2", "")
             
+            m_copy["Team1_raw"] = t1_orig
+            m_copy["Team2_raw"] = t2_orig
+            
             resolved_t1 = resolved_placeholders.get(t1_orig, t1_orig)
             resolved_t2 = resolved_placeholders.get(t2_orig, t2_orig)
             
@@ -361,6 +364,9 @@ def get_data():
             m_copy = m.copy()
             t1_orig = m_copy.get("Team1", "")
             t2_orig = m_copy.get("Team2", "")
+            
+            m_copy["Team1_raw"] = t1_orig
+            m_copy["Team2_raw"] = t2_orig
             
             resolved_t1 = resolved_placeholders.get(t1_orig, t1_orig)
             resolved_t2 = resolved_placeholders.get(t2_orig, t2_orig)
