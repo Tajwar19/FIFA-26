@@ -9,10 +9,11 @@ venv/
 env/
 .venv/
 
-# JSON data files (scraped live data - not needed in repo)
+# JSON data files (raw scraped data - not needed in repo)
 all_standings.json
 all_matches.json
 bracket_tree.json
+# data.json is committed for GitHub Pages static deployment
 
 # Playwright browser cache
 .playwright/

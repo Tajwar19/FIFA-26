@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA World Cup 2026 Dashboard</title>
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #030a16;
+            --card-bg: rgba(10, 22, 44, 0.45);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-color: #f3f4f6;
+            --text-muted: #9ca3af;
+            
+            --primary: #3b82f6; /* Blue */
+            --primary-glow: rgba(59, 130, 246, 0.15);
+            --accent-cyan: #06b6d4; /* Cyan */
+            --accent-gold: #fbbf24; /* Gold */
+            --accent-green: #10b981; /* Green */
+            
+            --hover-bg: rgba(59, 130, 246, 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(6, 182, 212, 0.05) 0px, transparent 50%);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow-y: scroll;
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-color);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        /* Header section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--card-border);
+            margin-bottom: 2rem;
+        }
+
+        .title-area h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            background: linear-gradient(to right, #ffffff, var(--primary), var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .title-area p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .action-area {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .timestamp {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid var(--card-border);
+        }
+
+        .btn-update {
+            background: linear-gradient(135deg, var(--primary), var(--accent-cyan));
+            color: #ffffff;
+            border: none;
+            padding: 0.65rem 1.4rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-update:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+        }
+
+        .btn-update:active {
+            transform: translateY(0);
+        }
+
+        /* Tabs Menu */
+        .tabs-menu {
+            display: flex;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 0.35rem;
+            border-radius: 12px;
+            border: 1px solid var(--card-border);
+            margin-bottom: 2rem;
+            width: fit-content;
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 0.6rem 1.4rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn:hover {
+            color: var(--text-color);
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .tab-btn.active {
+            color: #ffffff;
+            background: var(--primary);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+        }
+
+        /* Tab Content panels */
+        .tab-panel {
+            display: none;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ==================== BRACKET VIEW ==================== */
+        .bracket-scroll-wrapper {
+            overflow-x: auto;
+            padding: 1.5rem 0;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid var(--card-border);
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .bracket-container {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem 1.5rem;
+            width: max-content;
+            align-items: center;
+        }
+
+        .bracket-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 950px;
+            width: 280px;
+            gap: 1rem;
+        }
+
+        /* Bracket Match Card */
+        .bracket-card {
+            background: linear-gradient(135deg, rgba(10, 22, 44, 0.75), rgba(5, 12, 28, 0.85));
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 0.75rem 1rem;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+            transition: var(--transition);
+            position: relative;
+            z-index: 2;
+        }
+
+        .bracket-card:hover {
+            transform: translateY(-2px) scale(1.02);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.15);
+        }
+
+        .bracket-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 0.35rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bracket-card-header .match-id {
+            font-weight: 700;
+            color: var(--accent-cyan);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .bracket-team-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.25rem 0;
+            font-size: 0.9rem;
+        }
+
+        .bracket-team-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            max-width: 210px;
+        }
+
+        .bracket-team-info span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            flex: 1;
+            min-width: 0;
+            line-height: 1.4;
+            padding: 2px 0;
+        }
+
+        .bracket-flag-placeholder {
+            width: 18px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Style for placeholder teams (like 1A, 2B, W74) */
+        .team-placeholder {
+            color: var(--text-muted);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .team-actual {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .bracket-score {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            width: 20px;
+            text-align: right;
+        }
+
+        .winner {
+            color: var(--accent-gold);
+        }
+        .loser {
+            color: var(--text-muted);
+            opacity: 0.6;
+        }
+
+        /* Center Column Finals specific styles */
+        .bracket-column.finals-center {
+            justify-content: center;
+            gap: 4rem;
+            width: 320px;
+        }
+
+        .bracket-column.finals-center .bracket-card {
+            border-color: rgba(251, 191, 36, 0.3);
+            background: rgba(251, 191, 36, 0.03);
+        }
+        
+        .bracket-column.finals-center .bracket-card:hover {
+            border-color: var(--accent-gold);
+            box-shadow: 0 8px 30px rgba(251, 191, 36, 0.15);
+        }
+
+        .finals-label {
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-gold);
+            margin-bottom: 0.25rem;
+        }
+
+        /* ==================== STANDINGS VIEW ==================== */
+        .standings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .group-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.25rem;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+            transition: var(--transition);
+        }
+
+        .group-card:hover {
+            border-color: rgba(59, 130, 246, 0.2);
+            box-shadow: 0 8px 35px rgba(59, 130, 246, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .group-header {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 0.5rem;
+        }
+
+        .group-header span {
+            color: var(--accent-cyan);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .standings-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        .standings-table th {
+            color: var(--text-muted);
+            font-weight: 600;
+            padding: 0.5rem 0.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .standings-table td {
+            padding: 0.6rem 0.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+            vertical-align: middle;
+        }
+
+        .standings-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Promotion highlights */
+        .standings-table tr.qualify-direct {
+            background: rgba(16, 185, 129, 0.04);
+        }
+        .standings-table tr.qualify-direct td:first-child {
+            color: var(--accent-green);
+            font-weight: 700;
+        }
+
+        .standings-table tr.qualify-playoff {
+            background: rgba(251, 191, 36, 0.02);
+        }
+        .standings-table tr.qualify-playoff td:first-child {
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+
+        .team-name-cell {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-weight: 500;
+        }
+
+        .team-code-muted {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-left: 0.2rem;
+        }
+
+        .num-bold {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+        }
+
+        .points-highlight {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        /* ==================== MATCHES VIEW ==================== */
+        .filter-bar {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .filter-group label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .search-input {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            width: 260px;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+        }
+
+        .select-filter {
+            background: #0d1b32;
+            border: 1px solid var(--card-border);
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            width: 200px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .select-filter:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .matches-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .match-row {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+        }
+
+        .match-row:hover {
+            border-color: rgba(59, 130, 246, 0.25);
+            transform: scale(1.005);
+        }
+
+        .match-meta {
+            flex-basis: 220px;
+        }
+
+        .match-date {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .match-time {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-top: 0.1rem;
+        }
+
+        .match-time.played {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .match-stage {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            margin-top: 0.15rem;
+        }
+
+        .match-group-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            width: fit-content;
+            margin-top: 0.35rem;
+        }
+
+        .match-teams-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-grow: 1;
+        }
+
+        .match-team {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            flex-basis: 40%;
+        }
+
+        .match-team.team-home {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .match-team.team-away {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        .match-flag {
+            width: 28px;
+            height: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .match-score-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+            min-width: 100px;
+        }
+
+        .match-score-nums {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.2rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .match-status-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-gold);
+        }
+        
+        .match-status-badge.ft {
+            color: var(--text-muted);
+        }
+
+        .match-venue {
+            flex-basis: 260px;
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .match-venue span {
+            display: block;
+        }
+
+        .match-stadium {
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        /* ==================== LOADING OVERLAY ==================== */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(3, 10, 22, 0.85);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1.5rem;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(59, 130, 246, 0.1);
+            border-top: 5px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .loading-subtext {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-align: center;
+            max-width: 320px;
+            line-height: 1.4;
+        }
+
+        /* Muted empty state */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+            background: var(--card-bg);
+            border: 1px dashed var(--card-border);
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Dashboard Header -->
+        <header>
+            <div class="title-area">
+                <h1>FIFA World Cup 2026 Dashboard</h1>
+                <p>Group standings, match scores &amp; knockout bracket &mdash; Snapshot: June 15, 2026</p>
+            </div>
+            
+            <div class="action-area">
+                <div class="timestamp">
+                    Last Updated: <span id="update-time">Loading...</span>
+                </div>
+                <button class="btn-update" id="scrape-btn" onclick="triggerScrape()">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"></path>
+                    </svg>
+                    Data Snapshot (Local Only)
+                </button>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs-menu">
+            <button class="tab-btn active" onclick="switchTab('bracket')">Knockout Bracket</button>
+            <button class="tab-btn" onclick="switchTab('standings')">Group Standings</button>
+            <button class="tab-btn" onclick="switchTab('matches')">All Matches</button>
+        </div>
+
+        <!-- LOADING SCREEN OVERLAY -->
+        <div class="loading-overlay" id="loading-screen">
+            <div class="spinner"></div>
+            <div class="loading-text" id="loading-main-text">Scraping FIFA Website...</div>
+            <div class="loading-subtext">Playwright is launching a headless browser to pull live standings and match scores. Please wait about 15 seconds.</div>
+        </div>
+
+        <!-- ==================== TABS CONTENT PANELS ==================== -->
+
+        <!-- Tab 1: Knockout Bracket -->
+        <div class="tab-panel active" id="panel-bracket">
+            <div class="bracket-scroll-wrapper">
+                <div class="bracket-container" id="bracket-root" style="position: relative;">
+                    <!-- SVG overlay for connector lines -->
+                    <svg id="bracket-connectors" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"></svg>
+                    <!-- Dynamic rendering in JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Group Standings -->
+        <div class="tab-panel" id="panel-standings">
+            <div class="standings-grid" id="standings-root">
+                <!-- Dynamic rendering in JS -->
+            </div>
+            
+            <!-- Third-Placed Teams Standings Comparison Table -->
+            <div class="third-places-section" style="margin-top: 3rem; margin-bottom: 2rem;">
+                <div class="group-card" style="max-width: 800px; margin: 0 auto; background: rgba(10, 22, 44, 0.6); border-color: rgba(251, 191, 36, 0.2);">
+                    <div class="group-header">
+                        Third-Placed Teams Rankings
+                        <span style="color: var(--accent-gold);">Top 8 Advance to R32</span>
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table class="standings-table" style="min-width: 600px;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 60px; text-align: center;">Rank</th>
+                                    <th>Team</th>
+                                    <th style="width: 50px; text-align: center;">PL</th>
+                                    <th style="width: 50px; text-align: center;">W</th>
+                                    <th style="width: 50px; text-align: center;">D</th>
+                                    <th style="width: 50px; text-align: center;">L</th>
+                                    <th style="width: 60px; text-align: center;">GD</th>
+                                    <th style="width: 60px; text-align: center;">GF</th>
+                                    <th style="width: 80px; text-align: center;">PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody id="third-places-root">
+                                <!-- Dynamic rendering in JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 3: All Matches Playlist -->
+        <div class="tab-panel" id="panel-matches">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="search-teams">Search Teams</label>
+                    <input type="text" id="search-teams" class="search-input" placeholder="e.g. Germany, USA..." oninput="filterMatchesList()">
+                </div>
+                <div class="filter-group">
+                    <label for="filter-stage">Stage</label>
+                    <select id="filter-stage" class="select-filter" onchange="filterMatchesList()">
+                        <option value="ALL">All Stages</option>
+                        <option value="First Stage">First Stage (Groups)</option>
+                        <option value="Round of 32">Round of 32</option>
+                        <option value="Round of 16">Round of 16</option>
+                        <option value="Quarter-final">Quarter-finals</option>
+                        <option value="Semi-final">Semi-finals</option>
+                        <option value="Play-off for third place">3rd Place Match</option>
+                        <option value="Final">Final</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Match list rows -->
+            <div class="matches-list" id="matches-root">
+                <!-- Dynamic rendering in JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript logic -->
+    <script>
+        // Global variables holding the page state
+        let dashboardData = null;
+
+        // Fetch data from Flask API
+        async function fetchDashboardData() {
+            try {
+                const response = await fetch('./data.json');
+                dashboardData = await response.json();
+                
+                // Update timestamp UI
+                document.getElementById('update-time').innerText = dashboardData.last_updated;
+                
+                // Render the UI components
+                renderBracket(dashboardData.bracket);
+                renderStandings(dashboardData.standings);
+                renderMatches(dashboardData.matches.group_stage.concat(
+                    Object.values(dashboardData.matches.knockout_stage).flat()
+                ));
+            } catch (err) {
+                console.error("Failed to load dashboard data:", err);
+                document.getElementById('update-time').innerText = "Error Loading";
+            }
+        }
+
+        // Static mode: Live scraping not available on GitHub Pages
+        async function triggerScrape() {
+            alert('Live scraping is only available when running locally with Flask.\n\nThis GitHub Pages version shows a data snapshot.');
+        }
+
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            // Update Tab button classes
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Show corresponding panel
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(p => p.classList.remove('active'));
+            document.getElementById(`panel-${tabId}`).classList.add('active');
+            
+            // Draw connector lines if switching to the bracket tab
+            if (tabId === 'bracket') {
+                setTimeout(drawConnectors, 50);
+            }
+        }
+
+        // Render Knockout Bracket Tree view
+        function renderBracket(bracketData) {
+            const root = document.getElementById('bracket-root');
+            root.innerHTML = '';
+            
+            if (!bracketData || Object.keys(bracketData).length === 0) {
+                root.innerHTML = '<div class="empty-state">No bracket data. Run an update first!</div>';
+                return;
+            }
+
+            // Re-create SVG element for connector lines
+            const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            svg.id = 'bracket-connectors';
+            svg.style.position = 'absolute';
+            svg.style.top = '0';
+            svg.style.left = '0';
+            svg.style.width = '100%';
+            svg.style.height = '100%';
+            svg.style.pointerEvents = 'none';
+            svg.style.zIndex = '1';
+            root.appendChild(svg);
+
+            // Columns will be rendered symmetrically:
+            // 0: Round of 32 (Left)
+            // 1: Round of 16 (Left)
+            // 2: Quarter-final (Left)
+            // 3: Semi-final (Left)
+            // 4: CENTER Column (Final + 3rd Place Match)
+            // 5: Semi-final (Right)
+            // 6: Quarter-final (Right)
+            // 7: Round of 16 (Right)
+            // 8: Round of 32 (Right)
+            
+            const columns_keys = [
+                "Round of 32 (Left)",
+                "Round of 16 (Left)",
+                "Quarter-final (Left)",
+                "Semi-final (Left)",
+                "CENTER", // Custom mapping for Finals column
+                "Semi-final (Right)",
+                "Quarter-final (Right)",
+                "Round of 16 (Right)",
+                "Round of 32 (Right)"
+            ];
+
+            columns_keys.forEach(colKey => {
+                const columnDiv = document.createElement('div');
+                
+                if (colKey === "CENTER") {
+                    columnDiv.className = 'bracket-column finals-center';
+                    
+                    // Final Match (M104)
+                    const finalGroup = bracketData["Final"] || [];
+                    if (finalGroup.length > 0) {
+                        const m = finalGroup[0];
+                        columnDiv.appendChild(createFinalsHeaderCard("Grand Final", m));
+                    }
+                    
+                    // 3rd Place match (M103)
+                    const thirdPlaceGroup = bracketData["Play-off for third place"] || [];
+                    if (thirdPlaceGroup.length > 0) {
+                        const m = thirdPlaceGroup[0];
+                        columnDiv.appendChild(createFinalsHeaderCard("3rd Place Match", m));
+                    }
+                } else {
+                    columnDiv.className = 'bracket-column';
+                    const matches = bracketData[colKey] || [];
+                    
+                    matches.forEach(m => {
+                        const card = createMatchCard(m);
+                        columnDiv.appendChild(card);
+                    });
+                }
+                
+                root.appendChild(columnDiv);
+            });
+            
+            // Draw bracket connectors
+            setTimeout(drawConnectors, 100);
+        }
+
+        // Helper to check if a string is a raw unresolved placeholder
+        const isRawPlaceholder = (txt) => {
+            if (!txt) return false;
+            return /^[1-3][A-L]$/.test(txt) || 
+                   /^3[A-L]{2,12}$/.test(txt) || 
+                   /^W\d+$/.test(txt) || 
+                   /^RU\d+$/.test(txt) || 
+                   txt === 'TBD' || 
+                   txt === 'N/A';
+        };
+
+        // Helper: Create standard Match Card
+        function createMatchCard(m) {
+            const card = document.createElement('div');
+            card.className = 'bracket-card';
+            card.id = `match-${m.Match}`;
+            
+            const isFinished = m.Status === 'FT' || m.Status === 'AET' || m.Status === 'PEN';
+            const s1 = parseInt(m.Score1) || 0;
+            const s2 = parseInt(m.Score2) || 0;
+            
+            let t1Class = isRawPlaceholder(m.Team1) ? 'team-placeholder' : 'team-actual';
+            let t2Class = isRawPlaceholder(m.Team2) ? 'team-placeholder' : 'team-actual';
+            
+            let t1WinnerClass = '';
+            let t2WinnerClass = '';
+            if (isFinished) {
+                if (s1 > s2) { t1WinnerClass = 'winner'; t2WinnerClass = 'loser'; }
+                else if (s2 > s1) { t2WinnerClass = 'winner'; t1WinnerClass = 'loser'; }
+            }
+            
+            // Format time and clean date
+            const rawTime = m.Time ? m.Time : m.Date;
+            const timeFormatted = formatTime12h(rawTime);
+            const dateClean = cleanDateStr(m.Date);
+            
+            const score1Str = m.Score1 !== null && m.Score1 !== undefined ? m.Score1 : '';
+            const score2Str = m.Score2 !== null && m.Score2 !== undefined ? m.Score2 : '';
+            
+            card.innerHTML = `
+                <div class="bracket-card-header">
+                    <span class="match-id">${m.Match}</span>
+                    <span>${dateClean} ${timeFormatted}</span>
+                </div>
+                <div class="bracket-team-row ${t1WinnerClass}">
+                    <div class="bracket-team-info">
+                        <div class="bracket-flag-placeholder"></div>
+                        <span class="${t1Class}">${m.Team1}</span>
+                    </div>
+                    <span class="bracket-score">${score1Str}</span>
+                </div>
+                <div class="bracket-team-row ${t2WinnerClass}">
+                    <div class="bracket-team-info">
+                        <div class="bracket-flag-placeholder"></div>
+                        <span class="${t2Class}">${m.Team2}</span>
+                    </div>
+                    <span class="bracket-score">${score2Str}</span>
+                </div>
+            `;
+            return card;
+        }
+
+        // Helper: Create Center Finals card (vertical header)
+        function createFinalsHeaderCard(headerLabel, m) {
+            const wrapper = document.createElement('div');
+            wrapper.style.display = 'flex';
+            wrapper.style.flexDirection = 'column';
+            wrapper.innerHTML = `<div class="finals-label">${headerLabel}</div>`;
+            wrapper.appendChild(createMatchCard(m));
+            return wrapper;
+        }
+
+        // Render Group Standings Tables
+        function renderStandings(standingsData) {
+            const root = document.getElementById('standings-root');
+            root.innerHTML = '';
+            
+            if (!standingsData || Object.keys(standingsData).length === 0) {
+                root.innerHTML = '<div class="empty-state">No standings data. Click Data Snapshot (Local Only).</div>';
+                return;
+            }
+
+            Object.entries(standingsData).forEach(([groupName, teamsList]) => {
+                const card = document.createElement('div');
+                card.className = 'group-card';
+                
+                let tableRows = '';
+                teamsList.forEach((t, i) => {
+                    // Position highlights: top 2 qualify directly (Green), next best in group might qualify (Gold)
+                    let rowClass = '';
+                    if (i < 2) rowClass = 'qualify-direct';
+                    else if (i === 2) rowClass = 'qualify-playoff';
+                    
+                    tableRows += `
+                        <tr class="${rowClass}">
+                            <td class="num-bold">${t.Pos}</td>
+                            <td>
+                                <div class="team-name-cell">
+                                    <div class="bracket-flag-placeholder"></div>
+                                    <span>${t.Team}</span>
+                                    <span class="team-code-muted">${t.Code}</span>
+                                </div>
+                            </td>
+                            <td class="num-bold">${t.Played}</td>
+                            <td>${t.Won}</td>
+                            <td>${t.Drawn}</td>
+                            <td>${t.Lost}</td>
+                            <td class="points-highlight">${t.Points}</td>
+                        </tr>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="group-header">
+                        ${groupName}
+                        <span>FIFA 2026</span>
+                    </div>
+                    <table class="standings-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 25px;">#</th>
+                                <th>Team</th>
+                                <th>PL</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>PTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${tableRows}
+                        </tbody>
+                    </table>
+                `;
+                root.appendChild(card);
+            });
+
+            // Render the 3rd places comparison standings table
+            renderThirdPlaces(dashboardData.third_places);
+        }
+
+        // Render Third-Placed Teams Standings Table
+        function renderThirdPlaces(thirdPlacesList) {
+            const root = document.getElementById('third-places-root');
+            if (!root) return;
+            root.innerHTML = '';
+            
+            if (!thirdPlacesList || thirdPlacesList.length === 0) {
+                root.innerHTML = '<tr><td colspan="9" class="empty-state" style="border:none;">No third-placed standings data. Run an update first!</td></tr>';
+                return;
+            }
+            
+            thirdPlacesList.forEach((t) => {
+                // Top 8 qualify (Green), bottom 4 eliminated (Subtle red or gray)
+                let rowClass = '';
+                let opacityStyle = '';
+                if (t.Pos <= 8) {
+                    rowClass = 'qualify-direct';
+                } else {
+                    opacityStyle = 'style="opacity: 0.55;"';
+                }
+                
+                const groupLetter = t.Group.replace('Group', '').trim();
+                
+                root.innerHTML += `
+                    <tr class="${rowClass}" ${opacityStyle}>
+                        <td class="num-bold" style="text-align: center;">${t.Pos}</td>
+                        <td>
+                            <div class="team-name-cell">
+                                <div class="bracket-flag-placeholder"></div>
+                                <span>${t.Team}</span>
+                                <span class="team-code-muted">${t.Code} (Group ${groupLetter})</span>
+                            </div>
+                        </td>
+                        <td class="num-bold" style="text-align: center;">${t.Played}</td>
+                        <td style="text-align: center;">${t.Won}</td>
+                        <td style="text-align: center;">${t.Drawn}</td>
+                        <td style="text-align: center;">${t.Lost}</td>
+                        <td class="num-bold" style="text-align: center;">${t.GD > 0 ? '+' + t.GD : t.GD}</td>
+                        <td style="text-align: center;">${t.GF}</td>
+                        <td class="points-highlight" style="text-align: center;">${t.Points}</td>
+                    </tr>
+                `;
+            });
+        }
+
+        // Render Matches Playlist rows
+        function renderMatches(matchesList) {
+            const root = document.getElementById('matches-root');
+            root.innerHTML = '';
+            
+            if (!matchesList || matchesList.length === 0) {
+                root.innerHTML = '<div class="empty-state">No matches found.</div>';
+                return;
+            }
+
+            matchesList.forEach(m => {
+                const row = document.createElement('div');
+                row.className = 'match-row';
+                row.setAttribute('data-team1', m.Team1.toLowerCase());
+                row.setAttribute('data-team2', m.Team2.toLowerCase());
+                row.setAttribute('data-stage', m.Stage);
+                
+                const score1 = m.Score1 !== null && m.Score1 !== undefined ? m.Score1 : '';
+                const score2 = m.Score2 !== null && m.Score2 !== undefined ? m.Score2 : '';
+                
+                let scoreText = 'vs';
+                if (score1 !== '' || score2 !== '') {
+                    scoreText = `${score1} - ${score2}`;
+                }
+                
+                // Normalize status badge: strip score prefix from "2FT0" -> "FT"
+                const rawStatus = m.Status || '';
+                let badgeStatus = 'TBD';
+                let statusClass = '';
+                let isPlayed = false;
+                
+                if (/^\d+FT\d+$/.test(rawStatus) || rawStatus === 'FT') {
+                    badgeStatus = 'FT';
+                    statusClass = 'ft';
+                    isPlayed = true;
+                } else if (/^\d+AET\d+$/.test(rawStatus) || rawStatus === 'AET') {
+                    badgeStatus = 'AET';
+                    statusClass = 'ft';
+                    isPlayed = true;
+                } else if (/^\d+PEN\d+$/.test(rawStatus) || rawStatus === 'PEN') {
+                    badgeStatus = 'PEN';
+                    statusClass = 'ft';
+                    isPlayed = true;
+                } else if (/^\d{2}:\d{2}$/.test(rawStatus)) {
+                    // Status IS the time for upcoming matches
+                    badgeStatus = 'Upcoming';
+                } else if (rawStatus) {
+                    badgeStatus = rawStatus;
+                }
+                
+                // Determine the time to display:
+                // 1. Use Time field if available
+                // 2. Fallback to Status if it looks like a time (upcoming matches)
+                // 3. For played matches, show nothing (time not available)
+                let timeDisplay = '';
+                let timeClass = '';
+                if (m.Time && /^\d{2}:\d{2}$/.test(m.Time.trim())) {
+                    timeDisplay = formatTime12h(m.Time.trim());
+                    timeClass = isPlayed ? 'played' : '';
+                } else if (!isPlayed && /^\d{2}:\d{2}$/.test(rawStatus)) {
+                    // Upcoming match: status IS the time
+                    timeDisplay = formatTime12h(rawStatus);
+                }
+                
+                const timeHtml = timeDisplay
+                    ? `<div class="match-time ${timeClass}">${timeDisplay} BST</div>`
+                    : `<div class="match-time played">Time N/A</div>`;
+
+                row.innerHTML = `
+                    <div class="match-meta">
+                        <div class="match-date">${m.Date}</div>
+                        ${timeHtml}
+                        <div class="match-stage">${m.Stage}</div>
+                        ${m.Group_or_Match ? `<div class="match-group-label">${m.Group_or_Match}</div>` : `<div class="match-group-label">${m.Match || ''}</div>`}
+                    </div>
+                    
+                    <div class="match-teams-area">
+                        <div class="match-team team-home">
+                            <span>${m.Team1}</span>
+                            <div class="match-flag"></div>
+                        </div>
+                        <div class="match-score-center">
+                            <div class="match-score-nums">${scoreText}</div>
+                            <div class="match-status-badge ${statusClass}">${badgeStatus}</div>
+                        </div>
+                        <div class="match-team team-away">
+                            <div class="match-flag"></div>
+                            <span>${m.Team2}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-venue">
+                        <span class="match-stadium">${m.Stadium}</span>
+                        <span>${m.City}</span>
+                    </div>
+                `;
+                root.appendChild(row);
+            });
+            
+            // Re-apply filters if inputs contain values
+            filterMatchesList();
+        }
+
+        // Filter Matches dynamically
+        function filterMatchesList() {
+            const query = document.getElementById('search-teams').value.toLowerCase().trim();
+            const stage = document.getElementById('filter-stage').value;
+            const rows = document.querySelectorAll('.match-row');
+            
+            rows.forEach(row => {
+                const t1 = row.getAttribute('data-team1');
+                const t2 = row.getAttribute('data-team2');
+                const rStage = row.getAttribute('data-stage');
+                
+                const matchQuery = query === '' || t1.includes(query) || t2.includes(query);
+                const matchStage = stage === 'ALL' || rStage === stage || (stage === 'First Stage' && rStage.toLowerCase().includes('first stage'));
+                
+                if (matchQuery && matchStage) {
+                    row.style.display = 'flex';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // Clean date string from squished time formats
+        function cleanDateStr(dateStr) {
+            if (!dateStr) return '';
+            let clean = dateStr.trim();
+            // e.g. "06/30/202602:30" -> we only want first 10 characters "06/30/2026"
+            if (/^\d{2}\/\d{2}\/\d{4}\d{2}:\d{2}$/.test(clean)) {
+                return clean.substring(0, 10);
+            }
+            return clean;
+        }
+
+        // Convert 24h time to 12h AM/PM (e.g. 14:00 -> 02:00 PM)
+        function formatTime12h(timeStr) {
+            if (!timeStr || timeStr === 'TBD' || timeStr === 'N/A') return 'TBD';
+            
+            let cleanTime = timeStr.trim();
+            // Extract last 5 characters if it contains a date prefix (e.g., "06/30/202602:30")
+            if (cleanTime.length > 5 && cleanTime.includes(':')) {
+                cleanTime = cleanTime.slice(-5);
+            }
+            
+            const parts = cleanTime.split(':');
+            if (parts.length < 2) return cleanTime;
+            
+            let hours = parseInt(parts[0]);
+            const minutes = parts[1];
+            if (isNaN(hours)) return cleanTime;
+            
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            
+            const hoursStr = hours < 10 ? '0' + hours : hours;
+            return `${hoursStr}:${minutes} ${ampm}`;
+        }
+
+        // Render SVG lines connecting the bracket matches
+        function drawConnectors() {
+            const svg = document.getElementById('bracket-connectors');
+            if (!svg) return;
+            svg.innerHTML = '';
+            
+            const container = document.getElementById('bracket-root');
+            const containerRect = container.getBoundingClientRect();
+            
+            if (!dashboardData || !dashboardData.bracket) return;
+            
+            Object.values(dashboardData.bracket).flat().forEach(m => {
+                const sourceId = `match-${m.Match}`;
+                const sourceEl = document.getElementById(sourceId);
+                if (!sourceEl) return;
+                
+                let targetMatchId = m.NextMatch;
+                if (!targetMatchId) return;
+                
+                // Parse out first Match ID if it's a split (e.g. "M104 (winner) / M103 (loser)")
+                if (targetMatchId.includes(' ')) {
+                    const matchObj = targetMatchId.match(/M\d+/);
+                    targetMatchId = matchObj ? matchObj[0] : '';
+                }
+                
+                const targetId = `match-${targetMatchId}`;
+                const targetEl = document.getElementById(targetId);
+                if (!targetEl) return;
+                
+                const rectSource = sourceEl.getBoundingClientRect();
+                const rectTarget = targetEl.getBoundingClientRect();
+                
+                let x1, y1, x2, y2;
+                const isLeftSide = m.Side === 'LEFT';
+                
+                if (isLeftSide) {
+                    // Left to Right: right center of source -> left center of target
+                    x1 = rectSource.right - containerRect.left;
+                    y1 = rectSource.top + rectSource.height / 2 - containerRect.top;
+                    x2 = rectTarget.left - containerRect.left;
+                    y2 = rectTarget.top + rectTarget.height / 2 - containerRect.top;
+                } else if (m.Side === 'RIGHT') {
+                    // Right to Left: left center of source -> right center of target
+                    x1 = rectSource.left - containerRect.left;
+                    y1 = rectSource.top + rectSource.height / 2 - containerRect.top;
+                    x2 = rectTarget.right - containerRect.left;
+                    y2 = rectTarget.top + rectTarget.height / 2 - containerRect.top;
+                } else {
+                    return;
+                }
+                
+                // Midpoint x
+                const midX = x1 + (x2 - x1) / 2;
+                
+                // Create SVG path
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                const d = `M ${x1} ${y1} H ${midX} V ${y2} H ${x2}`;
+                path.setAttribute('d', d);
+                path.setAttribute('stroke', 'rgba(255, 255, 255, 0.18)');
+                path.setAttribute('stroke-width', '2');
+                path.setAttribute('fill', 'none');
+                
+                svg.appendChild(path);
+            });
+        }
+
+        // Redraw connectors on window resize
+        window.addEventListener('resize', () => {
+            drawConnectors();
+        });
+
+        // On Page Load
+        window.addEventListener('DOMContentLoaded', () => {
+            fetchDashboardData();
+        });
+    </script>
+</body>
+</html>
