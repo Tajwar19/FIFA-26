@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# JSON data files (scraped live data - not needed in repo)
+all_standings.json
+all_matches.json
+bracket_tree.json
+
+# Playwright browser cache
+.playwright/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
