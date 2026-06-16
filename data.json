@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 02:59:23 AM",
+    "last_updated": "2026-06-17 02:59:59 AM",
     "matches": {
         "group_stage": [
             {
@@ -751,10 +751,10 @@
                 "Date": "Wednesday 17 June 2026",
                 "Group_or_Match": "Group I",
                 "Score1": "2",
-                "Score2": "0",
+                "Score2": "1",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "290'+5'0",
+                "Status": "290'+5'1",
                 "Team1": "France",
                 "Team2": "Senegal",
                 "Time": ""
