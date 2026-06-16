@@ -450,13 +450,13 @@
             "Team": "Norway",
             "Code": "NOR",
             "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
+            "Won": 1,
+            "Drawn": 0,
             "Lost": 0,
-            "GF": 1,
+            "GF": 2,
             "GA": 1,
-            "GD": 0,
-            "Points": 1
+            "GD": 1,
+            "Points": 3
         },
         {
             "Pos": 3,
@@ -464,12 +464,12 @@
             "Code": "IRQ",
             "Played": 1,
             "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
+            "Drawn": 0,
+            "Lost": 1,
             "GF": 1,
-            "GA": 1,
-            "GD": 0,
-            "Points": 1
+            "GA": 2,
+            "GD": -1,
+            "Points": 0
         },
         {
             "Pos": 4,
