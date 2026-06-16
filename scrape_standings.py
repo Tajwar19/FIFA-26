@@ -23,39 +23,56 @@ def clean_dataframe(df):
     Cleans the raw parsed DataFrame. Maps index-based columns to structured columns,
     splits team name and code, and cleans data types.
     """
-    if df.shape[1] >= 11:
-        cleaned_df = pd.DataFrame()
-        
-        # Position (Index 1)
-        cleaned_df['Pos'] = pd.to_numeric(df.iloc[:, 1], errors='coerce').fillna(0).astype(int)
-        
-        # Team & Code (Index 2)
-        team_strings = df.iloc[:, 2].astype(str)
-        teams = []
-        codes = []
-        for s in team_strings:
-            s = s.strip()
-            # Country code is usually a 3-letter uppercase abbreviation at the end (e.g. MexicoMEX -> Mexico, MEX)
-            if len(s) > 3 and s[-3:].isupper() and s[-3:].isalpha():
-                teams.append(s[:-3].strip())
-                codes.append(s[-3:])
-            else:
-                teams.append(s)
-                codes.append("")
-        
-        cleaned_df['Team'] = teams
-        cleaned_df['Code'] = codes
-        cleaned_df['Played'] = pd.to_numeric(df.iloc[:, 3], errors='coerce').fillna(0).astype(int)
-        cleaned_df['Won'] = pd.to_numeric(df.iloc[:, 4], errors='coerce').fillna(0).astype(int)
-        cleaned_df['Drawn'] = pd.to_numeric(df.iloc[:, 5], errors='coerce').fillna(0).astype(int)
-        cleaned_df['Lost'] = pd.to_numeric(df.iloc[:, 6], errors='coerce').fillna(0).astype(int)
-        cleaned_df['GF'] = pd.to_numeric(df.iloc[:, 7], errors='coerce').fillna(0).astype(int)
-        cleaned_df['GA'] = pd.to_numeric(df.iloc[:, 8], errors='coerce').fillna(0).astype(int)
-        cleaned_df['GD'] = pd.to_numeric(df.iloc[:, 9], errors='coerce').fillna(0).astype(int)
-        cleaned_df['Points'] = pd.to_numeric(df.iloc[:, 10], errors='coerce').fillna(0).astype(int)
-        
-        return cleaned_df
-    return df
+    num_cols = df.shape[1]
+    if num_cols < 9:
+        return df
+
+    # Find the column representing Position.
+    # Usually it is index 0 or index 1 depending on whether a Flag column (index 0) exists.
+    # We look at the first non-header row's values.
+    pos_idx = 0
+    try:
+        val_0 = pd.to_numeric(df.iloc[0, 0], errors='coerce')
+        val_1 = pd.to_numeric(df.iloc[0, 1], errors='coerce')
+        # If val_1 is 1 or 2, and val_0 is NaN or not 1, then the Position is at index 1
+        if pd.notna(val_1) and (val_1 == 1 or val_1 == 2) and (pd.isna(val_0) or val_0 != 1):
+            pos_idx = 1
+    except Exception:
+        pass
+
+    cleaned_df = pd.DataFrame()
+    
+    # Position
+    cleaned_df['Pos'] = pd.to_numeric(df.iloc[:, pos_idx], errors='coerce').fillna(0).astype(int)
+    
+    # Team & Code
+    team_idx = pos_idx + 1
+    team_strings = df.iloc[:, team_idx].astype(str)
+    teams = []
+    codes = []
+    for s in team_strings:
+        s = s.strip()
+        # Country code is usually a 3-letter uppercase abbreviation at the end (e.g. MexicoMEX -> Mexico, MEX)
+        if len(s) > 3 and s[-3:].isupper() and s[-3:].isalpha():
+            teams.append(s[:-3].strip())
+            codes.append(s[-3:])
+        else:
+            teams.append(s)
+            codes.append("")
+    
+    cleaned_df['Team'] = teams
+    cleaned_df['Code'] = codes
+    
+    # Statistics mapping: Played, Won, Drawn, Lost, GF, GA, GD, Points
+    stat_cols = ['Played', 'Won', 'Drawn', 'Lost', 'GF', 'GA', 'GD', 'Points']
+    for offset, col_name in enumerate(stat_cols):
+        col_idx = team_idx + 1 + offset
+        if col_idx < num_cols:
+            cleaned_df[col_name] = pd.to_numeric(df.iloc[:, col_idx], errors='coerce').fillna(0).astype(int)
+        else:
+            cleaned_df[col_name] = 0
+            
+    return cleaned_df
 
 def scrape_standings():
     print(f"Navigating to {URL}...")
@@ -121,28 +138,20 @@ def scrape_standings():
             print("Failed to parse tables using Pandas. Attempting manual parsing...")
             # Manual table parsing
             for i, table in enumerate(tables):
-                headers = [th.text_content().strip() for th in table.query_selector_all("thead th, tr th")]
-                if not headers:
-                    # Try to get first row of table as header if thead isn't used
-                    first_row = table.query_selector("tr")
-                    if first_row:
-                        headers = [td.text_content().strip() for td in first_row.query_selector_all("td, th")]
-                
                 rows = []
                 for tr in table.query_selector_all("tbody tr, tr"):
+                    # Skip header rows: rows in thead or rows without td elements
+                    if tr.evaluate("el => el.closest('thead') !== null"):
+                        continue
+                    if len(tr.query_selector_all("td")) == 0:
+                        continue
+                        
                     cells = [td.text_content().strip() for td in tr.query_selector_all("td, th")]
-                    if cells:
-                        # Skip if it is the header row itself
-                        if len(cells) == len(headers) and all(c == h for c, h in zip(cells, headers)):
-                            continue
-                        if len(cells) > len(headers):
-                            cells = cells[:len(headers)]
-                        elif len(cells) < len(headers):
-                            cells = cells + [""] * (len(headers) - len(cells))
+                    if len(cells) >= 8:
                         rows.append(cells)
                 
-                if headers and rows:
-                    df = pd.DataFrame(rows, columns=headers)
+                if rows:
+                    df = pd.DataFrame(rows)
                     dfs.append(df)
         
         # Let's look for headings/group names above each table
