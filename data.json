@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 01:03:39 AM",
+    "last_updated": "2026-06-17 01:04:14 AM",
     "matches": {
         "group_stage": [
             {
@@ -750,14 +750,14 @@
                 "Code2": "SEN",
                 "Date": "Wednesday 17 June 2026",
                 "Group_or_Match": "Group I",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "01:00",
+                "Status": "00'0",
                 "Team1": "France",
                 "Team2": "Senegal",
-                "Time": "01:00"
+                "Time": ""
             },
             {
                 "City": "Boston",
