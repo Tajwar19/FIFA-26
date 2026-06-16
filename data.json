@@ -386,7 +386,7 @@
                 "Status": "07:00",
                 "Team1": "1A: Mexico",
                 "Team1_raw": "1A",
-                "Team2": "3CEFHI: Iraq",
+                "Team2": "3CEFHI: Norway",
                 "Team2_raw": "3CEFHI",
                 "Time": "07:00"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 01:08:28 AM",
+    "last_updated": "2026-06-17 01:09:04 AM",
     "matches": {
         "group_stage": [
             {
@@ -754,7 +754,7 @@
                 "Score2": "0",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "05'0",
+                "Status": "06'0",
                 "Team1": "France",
                 "Team2": "Senegal",
                 "Time": ""
@@ -1948,7 +1948,7 @@
                     "Status": "07:00",
                     "Team1": "1A: Mexico",
                     "Team1_raw": "1A",
-                    "Team2": "3CEFHI: Iraq",
+                    "Team2": "3CEFHI: Norway",
                     "Team2_raw": "3CEFHI",
                     "Time": "07:00"
                 },
@@ -2580,41 +2580,28 @@
         "Group I": [
             {
                 "Code": "FRA",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 0,
                 "GF": 0,
                 "Lost": 0,
-                "Played": 0,
-                "Points": 0,
+                "Played": 1,
+                "Points": 1,
                 "Pos": 1,
                 "Team": "France",
                 "Won": 0
             },
             {
                 "Code": "SEN",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 0,
                 "GF": 0,
                 "Lost": 0,
-                "Played": 0,
-                "Points": 0,
-                "Pos": 1,
+                "Played": 1,
+                "Points": 1,
+                "Pos": 2,
                 "Team": "Senegal",
-                "Won": 0
-            },
-            {
-                "Code": "IRQ",
-                "Drawn": 0,
-                "GA": 0,
-                "GD": 0,
-                "GF": 0,
-                "Lost": 0,
-                "Played": 0,
-                "Points": 0,
-                "Pos": 1,
-                "Team": "Iraq",
                 "Won": 0
             },
             {
@@ -2626,8 +2613,21 @@
                 "Lost": 0,
                 "Played": 0,
                 "Points": 0,
-                "Pos": 1,
+                "Pos": 3,
                 "Team": "Norway",
+                "Won": 0
+            },
+            {
+                "Code": "IRQ",
+                "Drawn": 0,
+                "GA": 0,
+                "GD": 0,
+                "GF": 0,
+                "Lost": 0,
+                "Played": 0,
+                "Points": 0,
+                "Pos": 4,
+                "Team": "Iraq",
                 "Won": 0
             }
         ],
@@ -2866,7 +2866,7 @@
             "Won": 0
         },
         {
-            "Code": "IRQ",
+            "Code": "NOR",
             "Drawn": 0,
             "GA": 0,
             "GD": 0,
@@ -2876,7 +2876,7 @@
             "Played": 0,
             "Points": 0,
             "Pos": 6,
-            "Team": "Iraq",
+            "Team": "Norway",
             "Won": 0
         },
         {
