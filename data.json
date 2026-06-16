@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 03:59:36 AM",
+    "last_updated": "2026-06-17 04:13:26 AM",
     "matches": {
         "group_stage": [
             {
@@ -765,14 +765,14 @@
                 "Code2": "NOR",
                 "Date": "Wednesday 17 June 2026",
                 "Group_or_Match": "Group I",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "Boston Stadium",
                 "Stage": "First Stage",
-                "Status": "04:00",
+                "Status": "012'0",
                 "Team1": "Iraq",
                 "Team2": "Norway",
-                "Time": "04:00"
+                "Time": ""
             },
             {
                 "City": "Kansas City",
@@ -2593,26 +2593,26 @@
             },
             {
                 "Code": "NOR",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 0,
                 "GF": 0,
                 "Lost": 0,
-                "Played": 0,
-                "Points": 0,
+                "Played": 1,
+                "Points": 1,
                 "Pos": 2,
                 "Team": "Norway",
                 "Won": 0
             },
             {
                 "Code": "IRQ",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 0,
                 "GF": 0,
                 "Lost": 0,
-                "Played": 0,
-                "Points": 0,
+                "Played": 1,
+                "Points": 1,
                 "Pos": 3,
                 "Team": "Iraq",
                 "Won": 0
@@ -2867,14 +2867,14 @@
         },
         {
             "Code": "IRQ",
-            "Drawn": 0,
+            "Drawn": 1,
             "GA": 0,
             "GD": 0,
             "GF": 0,
             "Group": "I",
             "Lost": 0,
-            "Played": 0,
-            "Points": 0,
+            "Played": 1,
+            "Points": 1,
             "Pos": 6,
             "Team": "Iraq",
             "Won": 0

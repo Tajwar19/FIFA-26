@@ -449,27 +449,27 @@
             "Pos": 2,
             "Team": "Norway",
             "Code": "NOR",
-            "Played": 0,
+            "Played": 1,
             "Won": 0,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 0,
             "GF": 0,
             "GA": 0,
             "GD": 0,
-            "Points": 0
+            "Points": 1
         },
         {
             "Pos": 3,
             "Team": "Iraq",
             "Code": "IRQ",
-            "Played": 0,
+            "Played": 1,
             "Won": 0,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 0,
             "GF": 0,
             "GA": 0,
             "GD": 0,
-            "Points": 0
+            "Points": 1
         },
         {
             "Pos": 4,
