@@ -1410,7 +1410,7 @@
         // Fetch data from Flask API
         async function fetchDashboardData() {
             try {
-                const response = await fetch('./data.json');
+                const response = await fetch('./data.json?t=' + new Date().getTime());
                 dashboardData = await response.json();
                 
                 // Update timestamp UI

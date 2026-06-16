@@ -8,10 +8,10 @@ that loads data from data.json instead of the Flask /api/data endpoint.
 with open("templates/index.html", "r", encoding="utf-8") as f:
     content = f.read()
 
-# 1. Change API endpoint to static data.json
+# 1. Change API endpoint to static data.json with cache buster
 content = content.replace(
     "const response = await fetch('/api/data');",
-    "const response = await fetch('./data.json');"
+    "const response = await fetch('./data.json?t=' + new Date().getTime());"
 )
 
 # 2. Replace triggerScrape with static-mode version
