@@ -1,3 +1,5 @@
 flask
 playwright
 pandas
+lxml
+html5lib
