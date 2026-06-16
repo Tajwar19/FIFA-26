@@ -451,7 +451,7 @@ def trigger_scrape():
             
             if has_changes:
                 print("[API] Changes detected. Committing and pushing to GitHub...")
-                subprocess.run(["git", "add"] + files_to_push, check=True)
+                subprocess.run(["git", "add", "-f"] + files_to_push, check=True)
                 commit_msg = f"Auto-update live data: {last_updated}"
                 subprocess.run(["git", "-c", "core.autocrlf=true", "commit", "-m", commit_msg], check=True)
                 subprocess.run(["git", "push", "origin", "main"], check=True)
