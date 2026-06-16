@@ -915,9 +915,9 @@
 
         <!-- Navigation Tabs -->
         <div class="tabs-menu">
-            <button class="tab-btn active" onclick="switchTab('bracket')">Knockout Bracket</button>
+            <button class="tab-btn active" onclick="switchTab('matches')">All Matches</button>
             <button class="tab-btn" onclick="switchTab('standings')">Group Standings</button>
-            <button class="tab-btn" onclick="switchTab('matches')">All Matches</button>
+            <button class="tab-btn" onclick="switchTab('bracket')">Knockout Bracket</button>
         </div>
 
         <!-- LOADING SCREEN OVERLAY -->
@@ -930,7 +930,7 @@
         <!-- ==================== TABS CONTENT PANELS ==================== -->
 
         <!-- Tab 1: Knockout Bracket -->
-        <div class="tab-panel active" id="panel-bracket">
+        <div class="tab-panel" id="panel-bracket">
             <div class="bracket-scroll-wrapper">
                 <div class="bracket-container" id="bracket-root" style="position: relative;">
                     <!-- SVG overlay for connector lines -->
@@ -978,7 +978,7 @@
         </div>
 
         <!-- Tab 3: All Matches Playlist -->
-        <div class="tab-panel" id="panel-matches">
+        <div class="tab-panel active" id="panel-matches">
             <!-- Filter Bar -->
             <div class="filter-bar">
                 <div class="filter-group">
