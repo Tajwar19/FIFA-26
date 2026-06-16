@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 05:43:58 AM",
+    "last_updated": "2026-06-17 05:44:35 AM",
     "matches": {
         "group_stage": [
             {
@@ -769,7 +769,7 @@
                 "Score2": "3",
                 "Stadium": "Boston Stadium",
                 "Stage": "First Stage",
-                "Status": "180'3",
+                "Status": "181'3",
                 "Team1": "Iraq",
                 "Team2": "Norway",
                 "Time": ""
@@ -2595,14 +2595,27 @@
                 "Code": "NOR",
                 "Drawn": 0,
                 "GA": 1,
-                "GD": 1,
-                "GF": 2,
+                "GD": 2,
+                "GF": 3,
                 "Lost": 0,
                 "Played": 1,
                 "Points": 3,
                 "Pos": 2,
                 "Team": "Norway",
                 "Won": 1
+            },
+            {
+                "Code": "SEN",
+                "Drawn": 0,
+                "GA": 3,
+                "GD": -2,
+                "GF": 1,
+                "Lost": 1,
+                "Played": 1,
+                "Points": 0,
+                "Pos": 3,
+                "Team": "Senegal",
+                "Won": 0
             },
             {
                 "Code": "IRQ",
@@ -2615,19 +2628,6 @@
                 "Points": 0,
                 "Pos": 4,
                 "Team": "Iraq",
-                "Won": 0
-            },
-            {
-                "Code": "SEN",
-                "Drawn": 0,
-                "GA": 3,
-                "GD": -2,
-                "GF": 1,
-                "Lost": 1,
-                "Played": 1,
-                "Points": 0,
-                "Pos": 4,
-                "Team": "Senegal",
                 "Won": 0
             }
         ],
@@ -2936,7 +2936,7 @@
             "Won": 0
         },
         {
-            "Code": "IRQ",
+            "Code": "SEN",
             "Drawn": 0,
             "GA": 3,
             "GD": -2,
@@ -2946,7 +2946,7 @@
             "Played": 1,
             "Points": 0,
             "Pos": 11,
-            "Team": "Iraq",
+            "Team": "Senegal",
             "Won": 0
         },
         {
