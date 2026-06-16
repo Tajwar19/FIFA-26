@@ -459,7 +459,7 @@
             "Points": 3
         },
         {
-            "Pos": 3,
+            "Pos": 4,
             "Team": "Iraq",
             "Code": "IRQ",
             "Played": 1,
@@ -467,8 +467,8 @@
             "Drawn": 0,
             "Lost": 1,
             "GF": 1,
-            "GA": 2,
-            "GD": -1,
+            "GA": 3,
+            "GD": -2,
             "Points": 0
         },
         {

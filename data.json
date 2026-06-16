@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 05:43:23 AM",
+    "last_updated": "2026-06-17 05:43:58 AM",
     "matches": {
         "group_stage": [
             {
@@ -2607,13 +2607,13 @@
             {
                 "Code": "IRQ",
                 "Drawn": 0,
-                "GA": 2,
-                "GD": -1,
+                "GA": 3,
+                "GD": -2,
                 "GF": 1,
                 "Lost": 1,
                 "Played": 1,
                 "Points": 0,
-                "Pos": 3,
+                "Pos": 4,
                 "Team": "Iraq",
                 "Won": 0
             },
@@ -2922,20 +2922,6 @@
             "Won": 0
         },
         {
-            "Code": "IRQ",
-            "Drawn": 0,
-            "GA": 2,
-            "GD": -1,
-            "GF": 1,
-            "Group": "I",
-            "Lost": 1,
-            "Played": 1,
-            "Points": 0,
-            "Pos": 10,
-            "Team": "Iraq",
-            "Won": 0
-        },
-        {
             "Code": "ECU",
             "Drawn": 0,
             "GA": 1,
@@ -2945,8 +2931,22 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 11,
+            "Pos": 10,
             "Team": "Ecuador",
+            "Won": 0
+        },
+        {
+            "Code": "IRQ",
+            "Drawn": 0,
+            "GA": 3,
+            "GD": -2,
+            "GF": 1,
+            "Group": "I",
+            "Lost": 1,
+            "Played": 1,
+            "Points": 0,
+            "Pos": 11,
+            "Team": "Iraq",
             "Won": 0
         },
         {
