@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 02:50:58 AM",
+    "last_updated": "2026-06-17 02:51:34 AM",
     "matches": {
         "group_stage": [
             {
@@ -754,7 +754,7 @@
                 "Score2": "0",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "286'0",
+                "Status": "287'0",
                 "Team1": "France",
                 "Team2": "Senegal",
                 "Time": ""
@@ -2582,8 +2582,8 @@
                 "Code": "FRA",
                 "Drawn": 0,
                 "GA": 0,
-                "GD": 1,
-                "GF": 1,
+                "GD": 2,
+                "GF": 2,
                 "Lost": 0,
                 "Played": 1,
                 "Points": 3,
@@ -2620,8 +2620,8 @@
             {
                 "Code": "SEN",
                 "Drawn": 0,
-                "GA": 1,
-                "GD": -1,
+                "GA": 2,
+                "GD": -2,
                 "GF": 0,
                 "Lost": 1,
                 "Played": 1,
