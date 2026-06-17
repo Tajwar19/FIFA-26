@@ -309,7 +309,7 @@
                 "Status": "01:00",
                 "Team1": "1H: Uruguay",
                 "Team1_raw": "1H",
-                "Team2": "2J: Austria",
+                "Team2": "2J: Algeria",
                 "Team2_raw": "2J",
                 "Time": "01:00"
             },
@@ -339,7 +339,7 @@
                 "Status": "02:00",
                 "Team1": "1G: New Zealand",
                 "Team1_raw": "1G",
-                "Team2": "3AEHIJ: Jordan",
+                "Team2": "3AEHIJ: Austria",
                 "Team2_raw": "3AEHIJ",
                 "Time": "02:00"
             }
@@ -414,7 +414,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "04:00",
-                "Team1": "1J: Algeria",
+                "Team1": "1J: Argentina",
                 "Team1_raw": "1J",
                 "Team2": "2H: Saudi Arabia",
                 "Team2_raw": "2H",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 07:16:33 AM",
+    "last_updated": "2026-06-17 07:17:10 AM",
     "matches": {
         "group_stage": [
             {
@@ -784,7 +784,7 @@
                 "Score2": "0",
                 "Stadium": "Kansas City Stadium",
                 "Stage": "First Stage",
-                "Status": "013'0",
+                "Status": "014'0",
                 "Team1": "Argentina",
                 "Team2": "Algeria",
                 "Time": ""
@@ -1982,7 +1982,7 @@
                     "Status": "02:00",
                     "Team1": "1G: New Zealand",
                     "Team1_raw": "1G",
-                    "Team2": "3AEHIJ: Jordan",
+                    "Team2": "3AEHIJ: Austria",
                     "Team2_raw": "3AEHIJ",
                     "Time": "02:00"
                 },
@@ -2016,7 +2016,7 @@
                     "Status": "01:00",
                     "Team1": "1H: Uruguay",
                     "Team1_raw": "1H",
-                    "Team2": "2J: Austria",
+                    "Team2": "2J: Algeria",
                     "Team2_raw": "2J",
                     "Time": "01:00"
                 },
@@ -2082,7 +2082,7 @@
                     "Stadium": "Miami Stadium",
                     "Stage": "Round of 32",
                     "Status": "04:00",
-                    "Team1": "1J: Algeria",
+                    "Team1": "1J: Argentina",
                     "Team1_raw": "1J",
                     "Team2": "2H: Saudi Arabia",
                     "Team2_raw": "2H",
@@ -2633,17 +2633,30 @@
         ],
         "Group J": [
             {
-                "Code": "ALG",
-                "Drawn": 0,
+                "Code": "ARG",
+                "Drawn": 1,
                 "GA": 0,
-                "GD": 1,
-                "GF": 1,
+                "GD": 0,
+                "GF": 0,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 1,
                 "Pos": 1,
+                "Team": "Argentina",
+                "Won": 0
+            },
+            {
+                "Code": "ALG",
+                "Drawn": 1,
+                "GA": 0,
+                "GD": 0,
+                "GF": 0,
+                "Lost": 0,
+                "Played": 1,
+                "Points": 1,
+                "Pos": 2,
                 "Team": "Algeria",
-                "Won": 1
+                "Won": 0
             },
             {
                 "Code": "AUT",
@@ -2654,7 +2667,7 @@
                 "Lost": 0,
                 "Played": 0,
                 "Points": 0,
-                "Pos": 2,
+                "Pos": 3,
                 "Team": "Austria",
                 "Won": 0
             },
@@ -2667,21 +2680,8 @@
                 "Lost": 0,
                 "Played": 0,
                 "Points": 0,
-                "Pos": 3,
-                "Team": "Jordan",
-                "Won": 0
-            },
-            {
-                "Code": "ARG",
-                "Drawn": 0,
-                "GA": 1,
-                "GD": -1,
-                "GF": 0,
-                "Lost": 1,
-                "Played": 1,
-                "Points": 0,
                 "Pos": 4,
-                "Team": "Argentina",
+                "Team": "Jordan",
                 "Won": 0
             }
         ],
@@ -2866,7 +2866,7 @@
             "Won": 0
         },
         {
-            "Code": "JOR",
+            "Code": "AUT",
             "Drawn": 0,
             "GA": 0,
             "GD": 0,
@@ -2876,7 +2876,7 @@
             "Played": 0,
             "Points": 0,
             "Pos": 6,
-            "Team": "Jordan",
+            "Team": "Austria",
             "Won": 0
         },
         {

@@ -488,19 +488,32 @@
     "Group J": [
         {
             "Pos": 1,
-            "Team": "Algeria",
-            "Code": "ALG",
+            "Team": "Argentina",
+            "Code": "ARG",
             "Played": 1,
-            "Won": 1,
-            "Drawn": 0,
+            "Won": 0,
+            "Drawn": 1,
             "Lost": 0,
-            "GF": 1,
+            "GF": 0,
             "GA": 0,
-            "GD": 1,
-            "Points": 3
+            "GD": 0,
+            "Points": 1
         },
         {
             "Pos": 2,
+            "Team": "Algeria",
+            "Code": "ALG",
+            "Played": 1,
+            "Won": 0,
+            "Drawn": 1,
+            "Lost": 0,
+            "GF": 0,
+            "GA": 0,
+            "GD": 0,
+            "Points": 1
+        },
+        {
+            "Pos": 3,
             "Team": "Austria",
             "Code": "AUT",
             "Played": 0,
@@ -513,7 +526,7 @@
             "Points": 0
         },
         {
-            "Pos": 3,
+            "Pos": 4,
             "Team": "Jordan",
             "Code": "JOR",
             "Played": 0,
@@ -523,19 +536,6 @@
             "GF": 0,
             "GA": 0,
             "GD": 0,
-            "Points": 0
-        },
-        {
-            "Pos": 4,
-            "Team": "Argentina",
-            "Code": "ARG",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 0,
-            "Lost": 1,
-            "GF": 0,
-            "GA": 1,
-            "GD": -1,
             "Points": 0
         }
     ],
