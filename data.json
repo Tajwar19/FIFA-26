@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 11:01:53 PM",
+    "last_updated": "2026-06-17 11:02:30 PM",
     "matches": {
         "group_stage": [
             {
@@ -810,14 +810,14 @@
                 "Code2": "COD",
                 "Date": "Wednesday 17 June 2026",
                 "Group_or_Match": "Group K",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "Houston Stadium",
                 "Stage": "First Stage",
-                "Status": "23:00",
+                "Status": "01'0",
                 "Team1": "Portugal",
                 "Team2": "Congo DR",
-                "Time": "23:00"
+                "Time": ""
             },
             {
                 "City": "Dallas",
