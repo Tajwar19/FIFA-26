@@ -294,7 +294,7 @@
                 "Status": "05:00",
                 "Team1": "2K: Portugal",
                 "Team1_raw": "2K",
-                "Team2": "2L: Ghana",
+                "Team2": "2L: Croatia",
                 "Team2_raw": "2L",
                 "Time": "05:00"
             },
@@ -461,7 +461,7 @@
                 "Status": "07:30",
                 "Team1": "1K: Congo DR",
                 "Team1_raw": "1K",
-                "Team2": "3DEIJL: Croatia",
+                "Team2": "3DEIJL: Panama",
                 "Team2_raw": "3DEIJL",
                 "Time": "07:30"
             }
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 02:02:50 AM",
+    "last_updated": "2026-06-18 02:03:25 AM",
     "matches": {
         "group_stage": [
             {
@@ -829,7 +829,7 @@
                 "Score2": "0",
                 "Stadium": "Dallas Stadium",
                 "Stage": "First Stage",
-                "Status": "02'0",
+                "Status": "03'0",
                 "Team1": "England",
                 "Team2": "Croatia",
                 "Time": ""
@@ -2033,7 +2033,7 @@
                     "Status": "05:00",
                     "Team1": "2K: Portugal",
                     "Team1_raw": "2K",
-                    "Team2": "2L: Ghana",
+                    "Team2": "2L: Croatia",
                     "Team2_raw": "2L",
                     "Time": "05:00"
                 },
@@ -2101,7 +2101,7 @@
                     "Status": "07:30",
                     "Team1": "1K: Congo DR",
                     "Team1_raw": "1K",
-                    "Team2": "3DEIJL: Croatia",
+                    "Team2": "3DEIJL: Panama",
                     "Team2_raw": "3DEIJL",
                     "Time": "07:30"
                 }
@@ -2754,19 +2754,6 @@
                 "Won": 0
             },
             {
-                "Code": "GHA",
-                "Drawn": 0,
-                "GA": 0,
-                "GD": 0,
-                "GF": 0,
-                "Lost": 0,
-                "Played": 0,
-                "Points": 0,
-                "Pos": 1,
-                "Team": "Ghana",
-                "Won": 0
-            },
-            {
                 "Code": "CRO",
                 "Drawn": 1,
                 "GA": 0,
@@ -2790,6 +2777,19 @@
                 "Points": 0,
                 "Pos": 3,
                 "Team": "Panama",
+                "Won": 0
+            },
+            {
+                "Code": "GHA",
+                "Drawn": 0,
+                "GA": 0,
+                "GD": 0,
+                "GF": 0,
+                "Lost": 0,
+                "Played": 0,
+                "Points": 0,
+                "Pos": 4,
+                "Team": "Ghana",
                 "Won": 0
             }
         ]
@@ -2866,20 +2866,6 @@
             "Won": 0
         },
         {
-            "Code": "CRO",
-            "Drawn": 1,
-            "GA": 0,
-            "GD": 0,
-            "GF": 0,
-            "Group": "L",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 6,
-            "Team": "Croatia",
-            "Won": 0
-        },
-        {
             "Code": "COL",
             "Drawn": 0,
             "GA": 0,
@@ -2889,8 +2875,22 @@
             "Lost": 0,
             "Played": 0,
             "Points": 0,
-            "Pos": 7,
+            "Pos": 6,
             "Team": "Colombia",
+            "Won": 0
+        },
+        {
+            "Code": "PAN",
+            "Drawn": 0,
+            "GA": 0,
+            "GD": 0,
+            "GF": 0,
+            "Group": "L",
+            "Lost": 0,
+            "Played": 0,
+            "Points": 0,
+            "Pos": 7,
+            "Team": "Panama",
             "Won": 0
         },
         {

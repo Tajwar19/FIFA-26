@@ -608,19 +608,6 @@
             "Points": 1
         },
         {
-            "Pos": 1,
-            "Team": "Ghana",
-            "Code": "GHA",
-            "Played": 0,
-            "Won": 0,
-            "Drawn": 0,
-            "Lost": 0,
-            "GF": 0,
-            "GA": 0,
-            "GD": 0,
-            "Points": 0
-        },
-        {
             "Pos": 2,
             "Team": "Croatia",
             "Code": "CRO",
@@ -637,6 +624,19 @@
             "Pos": 3,
             "Team": "Panama",
             "Code": "PAN",
+            "Played": 0,
+            "Won": 0,
+            "Drawn": 0,
+            "Lost": 0,
+            "GF": 0,
+            "GA": 0,
+            "GD": 0,
+            "Points": 0
+        },
+        {
+            "Pos": 4,
+            "Team": "Ghana",
+            "Code": "GHA",
             "Played": 0,
             "Won": 0,
             "Drawn": 0,
