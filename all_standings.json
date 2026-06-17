@@ -433,22 +433,22 @@
     ],
     "Group I": [
         {
-            "Pos": 2,
-            "Team": "France",
-            "Code": "FRA",
+            "Pos": 1,
+            "Team": "Norway",
+            "Code": "NOR",
             "Played": 1,
             "Won": 1,
             "Drawn": 0,
             "Lost": 0,
-            "GF": 3,
+            "GF": 4,
             "GA": 1,
-            "GD": 2,
+            "GD": 3,
             "Points": 3
         },
         {
             "Pos": 2,
-            "Team": "Norway",
-            "Code": "NOR",
+            "Team": "France",
+            "Code": "FRA",
             "Played": 1,
             "Won": 1,
             "Drawn": 0,
@@ -480,8 +480,8 @@
             "Drawn": 0,
             "Lost": 1,
             "GF": 1,
-            "GA": 3,
-            "GD": -2,
+            "GA": 4,
+            "GD": -3,
             "Points": 0
         }
     ],

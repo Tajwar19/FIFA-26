@@ -247,7 +247,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "03:00",
-                "Team1": "1I: France",
+                "Team1": "1I: Norway",
                 "Team1_raw": "1I",
                 "Team2": "3CDFGH: Brazil",
                 "Team2_raw": "3CDFGH",
@@ -371,7 +371,7 @@
                 "Status": "23:00",
                 "Team1": "2E: Côte d'Ivoire",
                 "Team1_raw": "2E",
-                "Team2": "2I: Norway",
+                "Team2": "2I: France",
                 "Team2_raw": "2I",
                 "Time": "23:00"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 06:05:29 AM",
+    "last_updated": "2026-06-17 06:06:04 AM",
     "matches": {
         "group_stage": [
             {
@@ -1914,7 +1914,7 @@
                     "Status": "23:00",
                     "Team1": "2E: Côte d'Ivoire",
                     "Team1_raw": "2E",
-                    "Team2": "2I: Norway",
+                    "Team2": "2I: France",
                     "Team2_raw": "2I",
                     "Time": "23:00"
                 },
@@ -1929,7 +1929,7 @@
                     "Stadium": "New York/New Jersey Stadium",
                     "Stage": "Round of 32",
                     "Status": "03:00",
-                    "Team1": "1I: France",
+                    "Team1": "1I: Norway",
                     "Team1_raw": "1I",
                     "Team2": "3CDFGH: Brazil",
                     "Team2_raw": "3CDFGH",
@@ -2579,6 +2579,19 @@
         ],
         "Group I": [
             {
+                "Code": "NOR",
+                "Drawn": 0,
+                "GA": 1,
+                "GD": 3,
+                "GF": 4,
+                "Lost": 0,
+                "Played": 1,
+                "Points": 3,
+                "Pos": 1,
+                "Team": "Norway",
+                "Won": 1
+            },
+            {
                 "Code": "FRA",
                 "Drawn": 0,
                 "GA": 1,
@@ -2589,19 +2602,6 @@
                 "Points": 3,
                 "Pos": 2,
                 "Team": "France",
-                "Won": 1
-            },
-            {
-                "Code": "NOR",
-                "Drawn": 0,
-                "GA": 1,
-                "GD": 2,
-                "GF": 3,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 3,
-                "Pos": 2,
-                "Team": "Norway",
                 "Won": 1
             },
             {
@@ -2620,8 +2620,8 @@
             {
                 "Code": "IRQ",
                 "Drawn": 0,
-                "GA": 3,
-                "GD": -2,
+                "GA": 4,
+                "GD": -3,
                 "GF": 1,
                 "Lost": 1,
                 "Played": 1,
