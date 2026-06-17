@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 03:50:23 AM",
+    "last_updated": "2026-06-18 03:50:58 AM",
     "matches": {
         "group_stage": [
             {
@@ -2744,8 +2744,8 @@
                 "Code": "ENG",
                 "Drawn": 0,
                 "GA": 2,
-                "GD": 1,
-                "GF": 3,
+                "GD": 2,
+                "GF": 4,
                 "Lost": 0,
                 "Played": 1,
                 "Points": 3,
@@ -2782,8 +2782,8 @@
             {
                 "Code": "CRO",
                 "Drawn": 0,
-                "GA": 3,
-                "GD": -1,
+                "GA": 4,
+                "GD": -2,
                 "GF": 2,
                 "Lost": 1,
                 "Played": 1,
