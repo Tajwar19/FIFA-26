@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 08:44:21 AM",
+    "last_updated": "2026-06-17 08:44:59 AM",
     "matches": {
         "group_stage": [
             {
@@ -784,7 +784,7 @@
                 "Score2": "0",
                 "Stadium": "Kansas City Stadium",
                 "Stage": "First Stage",
-                "Status": "380'0",
+                "Status": "381'0",
                 "Team1": "Argentina",
                 "Team2": "Algeria",
                 "Time": ""
@@ -2636,8 +2636,8 @@
                 "Code": "ARG",
                 "Drawn": 0,
                 "GA": 0,
-                "GD": 2,
-                "GF": 2,
+                "GD": 3,
+                "GF": 3,
                 "Lost": 0,
                 "Played": 1,
                 "Points": 3,
