@@ -292,7 +292,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "05:00",
-                "Team1": "2K: Congo DR",
+                "Team1": "2K: Colombia",
                 "Team1_raw": "2K",
                 "Team2": "2L: Croatia",
                 "Team2_raw": "2L",
@@ -401,7 +401,7 @@
                 "Status": "22:00",
                 "Team1": "1L: England",
                 "Team1_raw": "1L",
-                "Team2": "3EHIJK: Colombia",
+                "Team2": "3EHIJK: Uzbekistan",
                 "Team2_raw": "3EHIJK",
                 "Time": "22:00"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 11:09:44 PM",
+    "last_updated": "2026-06-17 11:10:20 PM",
     "matches": {
         "group_stage": [
             {
@@ -1965,7 +1965,7 @@
                     "Status": "22:00",
                     "Team1": "1L: England",
                     "Team1_raw": "1L",
-                    "Team2": "3EHIJK: Colombia",
+                    "Team2": "3EHIJK: Uzbekistan",
                     "Team2_raw": "3EHIJK",
                     "Time": "22:00"
                 },
@@ -2031,7 +2031,7 @@
                     "Stadium": "Toronto Stadium",
                     "Stage": "Round of 32",
                     "Status": "05:00",
-                    "Team1": "2K: Congo DR",
+                    "Team1": "2K: Colombia",
                     "Team1_raw": "2K",
                     "Team2": "2L: Croatia",
                     "Team2_raw": "2L",
@@ -2688,29 +2688,16 @@
         "Group K": [
             {
                 "Code": "POR",
-                "Drawn": 1,
+                "Drawn": 0,
                 "GA": 0,
-                "GD": 0,
-                "GF": 0,
+                "GD": 1,
+                "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": 3,
                 "Pos": 1,
                 "Team": "Portugal",
-                "Won": 0
-            },
-            {
-                "Code": "COD",
-                "Drawn": 1,
-                "GA": 0,
-                "GD": 0,
-                "GF": 0,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 1,
-                "Pos": 2,
-                "Team": "Congo DR",
-                "Won": 0
+                "Won": 1
             },
             {
                 "Code": "COL",
@@ -2721,7 +2708,7 @@
                 "Lost": 0,
                 "Played": 0,
                 "Points": 0,
-                "Pos": 3,
+                "Pos": 2,
                 "Team": "Colombia",
                 "Won": 0
             },
@@ -2734,8 +2721,21 @@
                 "Lost": 0,
                 "Played": 0,
                 "Points": 0,
-                "Pos": 4,
+                "Pos": 3,
                 "Team": "Uzbekistan",
+                "Won": 0
+            },
+            {
+                "Code": "COD",
+                "Drawn": 0,
+                "GA": 1,
+                "GD": -1,
+                "GF": 0,
+                "Lost": 1,
+                "Played": 1,
+                "Points": 0,
+                "Pos": 4,
+                "Team": "Congo DR",
                 "Won": 0
             }
         ],
@@ -2866,7 +2866,7 @@
             "Won": 0
         },
         {
-            "Code": "COL",
+            "Code": "UZB",
             "Drawn": 0,
             "GA": 0,
             "GD": 0,
@@ -2876,7 +2876,7 @@
             "Played": 0,
             "Points": 0,
             "Pos": 6,
-            "Team": "Colombia",
+            "Team": "Uzbekistan",
             "Won": 0
         },
         {
