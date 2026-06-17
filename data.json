@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 07:02:59 AM",
+    "last_updated": "2026-06-17 07:03:35 AM",
     "matches": {
         "group_stage": [
             {
@@ -780,14 +780,14 @@
                 "Code2": "ALG",
                 "Date": "Wednesday 17 June 2026",
                 "Group_or_Match": "Group J",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "Kansas City Stadium",
                 "Stage": "First Stage",
-                "Status": "07:00",
+                "Status": "00'0",
                 "Team1": "Argentina",
                 "Team2": "Algeria",
-                "Time": "07:00"
+                "Time": ""
             },
             {
                 "City": "San Francisco Bay Area",
