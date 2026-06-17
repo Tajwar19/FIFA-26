@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 02:14:11 AM",
+    "last_updated": "2026-06-18 02:14:46 AM",
     "matches": {
         "group_stage": [
             {
@@ -829,7 +829,7 @@
                 "Score2": "0",
                 "Stadium": "Dallas Stadium",
                 "Stage": "First Stage",
-                "Status": "113'0",
+                "Status": "114'0",
                 "Team1": "England",
                 "Team2": "Croatia",
                 "Time": ""
@@ -2742,16 +2742,16 @@
         "Group L": [
             {
                 "Code": "ENG",
-                "Drawn": 1,
+                "Drawn": 0,
                 "GA": 0,
-                "GD": 0,
-                "GF": 0,
+                "GD": 1,
+                "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": 3,
                 "Pos": 1,
                 "Team": "England",
-                "Won": 0
+                "Won": 1
             },
             {
                 "Code": "PAN",
