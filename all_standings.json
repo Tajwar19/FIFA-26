@@ -542,8 +542,8 @@
     "Group K": [
         {
             "Pos": 1,
-            "Team": "Portugal",
-            "Code": "POR",
+            "Team": "Congo DR",
+            "Code": "COD",
             "Played": 1,
             "Won": 0,
             "Drawn": 1,
@@ -555,8 +555,8 @@
         },
         {
             "Pos": 2,
-            "Team": "Congo DR",
-            "Code": "COD",
+            "Team": "Portugal",
+            "Code": "POR",
             "Played": 1,
             "Won": 0,
             "Drawn": 1,
@@ -598,6 +598,19 @@
             "Pos": 1,
             "Team": "England",
             "Code": "ENG",
+            "Played": 1,
+            "Won": 1,
+            "Drawn": 0,
+            "Lost": 0,
+            "GF": 4,
+            "GA": 2,
+            "GD": 2,
+            "Points": 3
+        },
+        {
+            "Pos": 2,
+            "Team": "Panama",
+            "Code": "PAN",
             "Played": 0,
             "Won": 0,
             "Drawn": 0,
@@ -608,20 +621,7 @@
             "Points": 0
         },
         {
-            "Pos": 1,
-            "Team": "Croatia",
-            "Code": "CRO",
-            "Played": 0,
-            "Won": 0,
-            "Drawn": 0,
-            "Lost": 0,
-            "GF": 0,
-            "GA": 0,
-            "GD": 0,
-            "Points": 0
-        },
-        {
-            "Pos": 1,
+            "Pos": 3,
             "Team": "Ghana",
             "Code": "GHA",
             "Played": 0,
@@ -634,16 +634,16 @@
             "Points": 0
         },
         {
-            "Pos": 1,
-            "Team": "Panama",
-            "Code": "PAN",
-            "Played": 0,
+            "Pos": 4,
+            "Team": "Croatia",
+            "Code": "CRO",
+            "Played": 1,
             "Won": 0,
             "Drawn": 0,
-            "Lost": 0,
-            "GF": 0,
-            "GA": 0,
-            "GD": 0,
+            "Lost": 1,
+            "GF": 2,
+            "GA": 4,
+            "GD": -2,
             "Points": 0
         }
     ]
