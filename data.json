@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 11:42:00 AM",
+    "last_updated": "2026-06-17 11:42:38 AM",
     "matches": {
         "group_stage": [
             {
@@ -799,7 +799,7 @@
                 "Score2": "1",
                 "Stadium": "San Francisco Bay Area Stadium",
                 "Stage": "First Stage",
-                "Status": "276'1",
+                "Status": "277'1",
                 "Team1": "Austria",
                 "Team2": "Jordan",
                 "Time": ""
@@ -2647,16 +2647,16 @@
             },
             {
                 "Code": "AUT",
-                "Drawn": 1,
+                "Drawn": 0,
                 "GA": 1,
-                "GD": 0,
-                "GF": 1,
+                "GD": 1,
+                "GF": 2,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": 3,
                 "Pos": 2,
                 "Team": "Austria",
-                "Won": 0
+                "Won": 1
             },
             {
                 "Code": "JOR",
