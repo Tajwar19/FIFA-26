@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 07:06:35 AM",
+    "last_updated": "2026-06-17 07:07:11 AM",
     "matches": {
         "group_stage": [
             {
@@ -2634,27 +2634,27 @@
         "Group J": [
             {
                 "Code": "ARG",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 0,
                 "GF": 0,
                 "Lost": 0,
-                "Played": 0,
-                "Points": 0,
+                "Played": 1,
+                "Points": 1,
                 "Pos": 1,
                 "Team": "Argentina",
                 "Won": 0
             },
             {
                 "Code": "ALG",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 0,
                 "GF": 0,
                 "Lost": 0,
-                "Played": 0,
-                "Points": 0,
-                "Pos": 1,
+                "Played": 1,
+                "Points": 1,
+                "Pos": 2,
                 "Team": "Algeria",
                 "Won": 0
             },
@@ -2667,7 +2667,7 @@
                 "Lost": 0,
                 "Played": 0,
                 "Points": 0,
-                "Pos": 1,
+                "Pos": 3,
                 "Team": "Austria",
                 "Won": 0
             },
@@ -2680,7 +2680,7 @@
                 "Lost": 0,
                 "Played": 0,
                 "Points": 0,
-                "Pos": 1,
+                "Pos": 4,
                 "Team": "Jordan",
                 "Won": 0
             }
