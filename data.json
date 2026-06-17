@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 02:00:33 AM",
+    "last_updated": "2026-06-18 02:01:08 AM",
     "matches": {
         "group_stage": [
             {
@@ -825,14 +825,14 @@
                 "Code2": "CRO",
                 "Date": "Thursday 18 June 2026",
                 "Group_or_Match": "Group L",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "Dallas Stadium",
                 "Stage": "First Stage",
-                "Status": "02:00",
+                "Status": "00'0",
                 "Team1": "England",
                 "Team2": "Croatia",
-                "Time": "02:00"
+                "Time": ""
             },
             {
                 "City": "Toronto",
