@@ -339,7 +339,7 @@
                 "Status": "02:00",
                 "Team1": "1G: New Zealand",
                 "Team1_raw": "1G",
-                "Team2": "3AEHIJ: Czechia",
+                "Team2": "3AEHIJ: Jordan",
                 "Team2_raw": "3AEHIJ",
                 "Time": "02:00"
             }
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-17 11:16:39 AM",
+    "last_updated": "2026-06-17 11:17:15 AM",
     "matches": {
         "group_stage": [
             {
@@ -799,7 +799,7 @@
                 "Score2": "1",
                 "Stadium": "San Francisco Bay Area Stadium",
                 "Stage": "First Stage",
-                "Status": "150'1",
+                "Status": "151'1",
                 "Team1": "Austria",
                 "Team2": "Jordan",
                 "Time": ""
@@ -1982,7 +1982,7 @@
                     "Status": "02:00",
                     "Team1": "1G: New Zealand",
                     "Team1_raw": "1G",
-                    "Team2": "3AEHIJ: Czechia",
+                    "Team2": "3AEHIJ: Jordan",
                     "Team2_raw": "3AEHIJ",
                     "Time": "02:00"
                 },
@@ -2647,26 +2647,26 @@
             },
             {
                 "Code": "AUT",
-                "Drawn": 0,
-                "GA": 0,
-                "GD": 1,
+                "Drawn": 1,
+                "GA": 1,
+                "GD": 0,
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 1,
                 "Pos": 2,
                 "Team": "Austria",
-                "Won": 1
+                "Won": 0
             },
             {
                 "Code": "JOR",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 1,
-                "GD": -1,
-                "GF": 0,
-                "Lost": 1,
+                "GD": 0,
+                "GF": 1,
+                "Lost": 0,
                 "Played": 1,
-                "Points": 0,
+                "Points": 1,
                 "Pos": 3,
                 "Team": "Jordan",
                 "Won": 0
@@ -2852,6 +2852,20 @@
             "Won": 0
         },
         {
+            "Code": "JOR",
+            "Drawn": 1,
+            "GA": 1,
+            "GD": 0,
+            "GF": 1,
+            "Group": "J",
+            "Lost": 0,
+            "Played": 1,
+            "Points": 1,
+            "Pos": 5,
+            "Team": "Jordan",
+            "Won": 0
+        },
+        {
             "Code": "ESP",
             "Drawn": 1,
             "GA": 0,
@@ -2861,7 +2875,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": 1,
-            "Pos": 5,
+            "Pos": 6,
             "Team": "Spain",
             "Won": 0
         },
@@ -2875,7 +2889,7 @@
             "Lost": 0,
             "Played": 0,
             "Points": 0,
-            "Pos": 6,
+            "Pos": 7,
             "Team": "Uzbekistan",
             "Won": 0
         },
@@ -2889,7 +2903,7 @@
             "Lost": 0,
             "Played": 0,
             "Points": 0,
-            "Pos": 7,
+            "Pos": 8,
             "Team": "Ghana",
             "Won": 0
         },
@@ -2903,7 +2917,7 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 8,
+            "Pos": 9,
             "Team": "Czechia",
             "Won": 0
         },
@@ -2917,22 +2931,8 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 9,
-            "Team": "Ecuador",
-            "Won": 0
-        },
-        {
-            "Code": "JOR",
-            "Drawn": 0,
-            "GA": 1,
-            "GD": -1,
-            "GF": 0,
-            "Group": "J",
-            "Lost": 1,
-            "Played": 1,
-            "Points": 0,
             "Pos": 10,
-            "Team": "Jordan",
+            "Team": "Ecuador",
             "Won": 0
         },
         {
