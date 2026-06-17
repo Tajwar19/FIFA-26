@@ -542,8 +542,8 @@
     "Group K": [
         {
             "Pos": 1,
-            "Team": "Portugal",
-            "Code": "POR",
+            "Team": "Congo DR",
+            "Code": "COD",
             "Played": 1,
             "Won": 0,
             "Drawn": 1,
@@ -555,8 +555,8 @@
         },
         {
             "Pos": 2,
-            "Team": "Congo DR",
-            "Code": "COD",
+            "Team": "Portugal",
+            "Code": "POR",
             "Played": 1,
             "Won": 0,
             "Drawn": 1,
