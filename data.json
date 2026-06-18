@@ -234,7 +234,7 @@
                 "Status": "2:30 AM BST",
                 "Team1": "1E: Germany",
                 "Team1_raw": "1E",
-                "Team2": "3ABCDF: Qatar",
+                "Team2": "3ABCDF: Czechia",
                 "Team2_raw": "3ABCDF",
                 "Time": "2:30 AM BST"
             },
@@ -339,7 +339,7 @@
                 "Status": "2 AM BST",
                 "Team1": "1G: New Zealand",
                 "Team1_raw": "1G",
-                "Team2": "3AEHIJ: Czechia",
+                "Team2": "3AEHIJ: Jordan",
                 "Team2_raw": "3AEHIJ",
                 "Time": "2 AM BST"
             }
@@ -446,7 +446,7 @@
                 "Status": "9 AM BST",
                 "Team1": "1B: Switzerland",
                 "Team1_raw": "1B",
-                "Team2": "3EFGIJ: Jordan",
+                "Team2": "3EFGIJ: Belgium",
                 "Team2_raw": "3EFGIJ",
                 "Time": "9 AM BST"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 06:35:23 PM",
+    "last_updated": "2026-06-18 10:32:54 PM",
     "matches": {
         "group_stage": [
             {
@@ -1482,23 +1482,50 @@
                 "Time": "10 PM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "70026",
                 "City": "Los Angeles",
                 "Code1": "SUI",
                 "Code2": "BIH",
                 "Date": "Friday 19 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Minute": "74'",
+                        "Player": "Johan MANZAMBI",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "84'",
+                        "Player": "VARGAS",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "90'",
+                        "Player": "Johan MANZAMBI",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "90'+7'",
+                        "Player": "XHAKA",
+                        "Type": 1
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Minute": "90'+3'",
+                        "Player": "Ermin MAHMIC",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group B",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M26",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "João Pedro Silva Pinheiro",
+                "Score1": "4",
+                "Score2": "1",
                 "Stadium": "Los Angeles Stadium",
                 "Stage": "First Stage",
-                "Status": "1 AM BST",
+                "Status": "4FT1",
                 "Team1": "Switzerland",
                 "Team2": "Bosnia and Herzegovina",
                 "Time": "1 AM BST"
@@ -1509,18 +1536,29 @@
                 "Code1": "CAN",
                 "Code2": "QAT",
                 "Date": "Friday 19 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "16'",
+                        "Player": "Cyle LARIN",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "29'",
+                        "Player": "Jonathan DAVID",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group B",
-                "HT": "",
+                "HT": "2 - 0",
                 "Match": "M27",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Cristián Marcelo Garay Reyes",
+                "Score1": "2",
+                "Score2": "0",
                 "Stadium": "BC Place Vancouver",
                 "Stage": "First Stage",
-                "Status": "4 AM BST",
+                "Status": "2FT0",
                 "Team1": "Canada",
                 "Team2": "Qatar",
                 "Time": "4 AM BST"
@@ -2906,7 +2944,7 @@
                     "Status": "2:30 AM BST",
                     "Team1": "1E: Germany",
                     "Team1_raw": "1E",
-                    "Team2": "3ABCDF: Qatar",
+                    "Team2": "3ABCDF: Czechia",
                     "Team2_raw": "3ABCDF",
                     "Time": "2:30 AM BST"
                 },
@@ -3098,7 +3136,7 @@
                     "Status": "2 AM BST",
                     "Team1": "1G: New Zealand",
                     "Team1_raw": "1G",
-                    "Team2": "3AEHIJ: Czechia",
+                    "Team2": "3AEHIJ: Jordan",
                     "Team2_raw": "3AEHIJ",
                     "Time": "2 AM BST"
                 },
@@ -3170,7 +3208,7 @@
                     "Status": "9 AM BST",
                     "Team1": "1B: Switzerland",
                     "Team1_raw": "1B",
-                    "Team2": "3EFGIJ: Jordan",
+                    "Team2": "3EFGIJ: Belgium",
                     "Team2_raw": "3EFGIJ",
                     "Time": "9 AM BST"
                 },
@@ -3358,37 +3396,37 @@
             {
                 "Code": "SUI",
                 "Drawn": 1,
-                "GA": 1,
-                "GD": 0,
-                "GF": 1,
+                "GA": 2,
+                "GD": 3,
+                "GF": 5,
                 "Lost": 0,
-                "Played": 1,
-                "Points": -1,
+                "Played": 2,
+                "Points": -2,
                 "Pos": 1,
                 "Team": "Switzerland",
-                "Won": 0
+                "Won": 1
             },
             {
                 "Code": "CAN",
                 "Drawn": 1,
                 "GA": 1,
-                "GD": 0,
-                "GF": 1,
+                "GD": 2,
+                "GF": 3,
                 "Lost": 0,
-                "Played": 1,
-                "Points": -2,
+                "Played": 2,
+                "Points": -3,
                 "Pos": 2,
                 "Team": "Canada",
-                "Won": 0
+                "Won": 1
             },
             {
                 "Code": "QAT",
                 "Drawn": 1,
-                "GA": 1,
-                "GD": 0,
+                "GA": 3,
+                "GD": -2,
                 "GF": 1,
-                "Lost": 0,
-                "Played": 1,
+                "Lost": 1,
+                "Played": 2,
                 "Points": -2,
                 "Pos": 3,
                 "Team": "Qatar",
@@ -3397,12 +3435,12 @@
             {
                 "Code": "BIH",
                 "Drawn": 1,
-                "GA": 1,
-                "GD": 0,
-                "GF": 1,
-                "Lost": 0,
-                "Played": 1,
-                "Points": -3,
+                "GA": 5,
+                "GD": -3,
+                "GF": 2,
+                "Lost": 1,
+                "Played": 2,
+                "Points": -9,
                 "Pos": 4,
                 "Team": "Bosnia and Herzegovina",
                 "Won": 0
@@ -4035,20 +4073,6 @@
             "Won": 0
         },
         {
-            "Code": "QAT",
-            "Drawn": 1,
-            "GA": 1,
-            "GD": 0,
-            "GF": 1,
-            "Group": "B",
-            "Lost": 0,
-            "Played": 1,
-            "Points": -2,
-            "Pos": 7,
-            "Team": "Qatar",
-            "Won": 0
-        },
-        {
             "Code": "BRA",
             "Drawn": 1,
             "GA": 1,
@@ -4058,7 +4082,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": -2,
-            "Pos": 8,
+            "Pos": 7,
             "Team": "Brazil",
             "Won": 0
         },
@@ -4072,7 +4096,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": -2,
-            "Pos": 9,
+            "Pos": 8,
             "Team": "Belgium",
             "Won": 0
         },
@@ -4086,8 +4110,22 @@
             "Lost": 1,
             "Played": 1,
             "Points": -2,
-            "Pos": 10,
+            "Pos": 9,
             "Team": "Panama",
+            "Won": 0
+        },
+        {
+            "Code": "QAT",
+            "Drawn": 1,
+            "GA": 3,
+            "GD": -2,
+            "GF": 1,
+            "Group": "B",
+            "Lost": 1,
+            "Played": 2,
+            "Points": -2,
+            "Pos": 10,
+            "Team": "Qatar",
             "Won": 0
         },
         {

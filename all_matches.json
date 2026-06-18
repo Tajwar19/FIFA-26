@@ -984,20 +984,47 @@
             "Time": "1 AM BST",
             "Team1": "Switzerland",
             "Code1": "SUI",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "4",
+            "Score2": "1",
             "Team2": "Bosnia and Herzegovina",
             "Code2": "BIH",
-            "Status": "1 AM BST",
+            "Status": "4FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group B",
             "Stadium": "Los Angeles Stadium",
             "City": "Los Angeles",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Johan MANZAMBI",
+                    "Minute": "74'",
+                    "Type": 2
+                },
+                {
+                    "Player": "VARGAS",
+                    "Minute": "84'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Johan MANZAMBI",
+                    "Minute": "90'",
+                    "Type": 2
+                },
+                {
+                    "Player": "XHAKA",
+                    "Minute": "90'+7'",
+                    "Type": 1
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Ermin MAHMIC",
+                    "Minute": "90'+3'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "João Pedro Silva Pinheiro",
+            "Attendance": "70026",
+            "HT": "0 - 0"
         },
         {
             "Match": "M27",
@@ -1006,20 +1033,31 @@
             "Time": "4 AM BST",
             "Team1": "Canada",
             "Code1": "CAN",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "2",
+            "Score2": "0",
             "Team2": "Qatar",
             "Code2": "QAT",
-            "Status": "4 AM BST",
+            "Status": "2FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group B",
             "Stadium": "BC Place Vancouver",
             "City": "Vancouver",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Cyle LARIN",
+                    "Minute": "16'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Jonathan DAVID",
+                    "Minute": "29'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
+            "Referee": "Cristián Marcelo Garay Reyes",
             "Attendance": 0,
-            "HT": ""
+            "HT": "2 - 0"
         },
         {
             "Match": "M28",
