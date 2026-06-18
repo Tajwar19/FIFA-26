@@ -11,7 +11,7 @@
             "GF": 2,
             "GA": 0,
             "GD": 2,
-            "Points": 3
+            "Points": -5
         },
         {
             "Pos": 2,
@@ -24,7 +24,7 @@
             "GF": 2,
             "GA": 1,
             "GD": 1,
-            "Points": 3
+            "Points": -1
         },
         {
             "Pos": 3,
@@ -50,7 +50,7 @@
             "GF": 0,
             "GA": 2,
             "GD": -2,
-            "Points": 0
+            "Points": -10
         }
     ],
     "Group B": [
@@ -65,7 +65,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -1
         },
         {
             "Pos": 2,
@@ -78,7 +78,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -2
         },
         {
             "Pos": 3,
@@ -91,7 +91,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -2
         },
         {
             "Pos": 4,
@@ -104,7 +104,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -3
         }
     ],
     "Group C": [
@@ -119,7 +119,7 @@
             "GF": 1,
             "GA": 0,
             "GD": 1,
-            "Points": 3
+            "Points": -3
         },
         {
             "Pos": 2,
@@ -132,7 +132,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": 0
         },
         {
             "Pos": 3,
@@ -145,7 +145,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -2
         },
         {
             "Pos": 4,
@@ -158,7 +158,7 @@
             "GF": 0,
             "GA": 1,
             "GD": -1,
-            "Points": 0
+            "Points": -1
         }
     ],
     "Group D": [
@@ -173,7 +173,7 @@
             "GF": 4,
             "GA": 1,
             "GD": 3,
-            "Points": 3
+            "Points": -1
         },
         {
             "Pos": 2,
@@ -186,7 +186,7 @@
             "GF": 2,
             "GA": 0,
             "GD": 2,
-            "Points": 3
+            "Points": 0
         },
         {
             "Pos": 3,
@@ -199,7 +199,7 @@
             "GF": 0,
             "GA": 2,
             "GD": -2,
-            "Points": 0
+            "Points": -1
         },
         {
             "Pos": 4,
@@ -212,7 +212,7 @@
             "GF": 1,
             "GA": 4,
             "GD": -3,
-            "Points": 0
+            "Points": -5
         }
     ],
     "Group E": [
@@ -227,7 +227,7 @@
             "GF": 7,
             "GA": 1,
             "GD": 6,
-            "Points": 3
+            "Points": 0
         },
         {
             "Pos": 2,
@@ -240,7 +240,7 @@
             "GF": 1,
             "GA": 0,
             "GD": 1,
-            "Points": 3
+            "Points": -3
         },
         {
             "Pos": 3,
@@ -253,7 +253,7 @@
             "GF": 0,
             "GA": 1,
             "GD": -1,
-            "Points": 0
+            "Points": -1
         },
         {
             "Pos": 4,
@@ -281,7 +281,7 @@
             "GF": 5,
             "GA": 1,
             "GD": 4,
-            "Points": 3
+            "Points": 0
         },
         {
             "Pos": 2,
@@ -294,7 +294,7 @@
             "GF": 2,
             "GA": 2,
             "GD": 0,
-            "Points": 1
+            "Points": 0
         },
         {
             "Pos": 3,
@@ -307,7 +307,7 @@
             "GF": 2,
             "GA": 2,
             "GD": 0,
-            "Points": 1
+            "Points": -3
         },
         {
             "Pos": 4,
@@ -320,7 +320,7 @@
             "GF": 1,
             "GA": 5,
             "GD": -4,
-            "Points": 0
+            "Points": -1
         }
     ],
     "Group G": [
@@ -335,7 +335,7 @@
             "GF": 2,
             "GA": 2,
             "GD": 0,
-            "Points": 1
+            "Points": 0
         },
         {
             "Pos": 2,
@@ -348,7 +348,7 @@
             "GF": 2,
             "GA": 2,
             "GD": 0,
-            "Points": 1
+            "Points": -1
         },
         {
             "Pos": 3,
@@ -361,7 +361,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -2
         },
         {
             "Pos": 4,
@@ -374,7 +374,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -2
         }
     ],
     "Group H": [
@@ -389,7 +389,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": 0
         },
         {
             "Pos": 2,
@@ -402,7 +402,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -1
         },
         {
             "Pos": 3,
@@ -415,7 +415,7 @@
             "GF": 0,
             "GA": 0,
             "GD": 0,
-            "Points": 1
+            "Points": -1
         },
         {
             "Pos": 4,
@@ -428,7 +428,7 @@
             "GF": 0,
             "GA": 0,
             "GD": 0,
-            "Points": 1
+            "Points": -1
         }
     ],
     "Group I": [
@@ -443,7 +443,7 @@
             "GF": 4,
             "GA": 1,
             "GD": 3,
-            "Points": 3
+            "Points": 0
         },
         {
             "Pos": 2,
@@ -456,7 +456,7 @@
             "GF": 3,
             "GA": 1,
             "GD": 2,
-            "Points": 3
+            "Points": 0
         },
         {
             "Pos": 3,
@@ -482,7 +482,7 @@
             "GF": 1,
             "GA": 4,
             "GD": -3,
-            "Points": 0
+            "Points": -1
         }
     ],
     "Group J": [
@@ -497,7 +497,7 @@
             "GF": 3,
             "GA": 0,
             "GD": 3,
-            "Points": 3
+            "Points": 0
         },
         {
             "Pos": 2,
@@ -510,7 +510,7 @@
             "GF": 3,
             "GA": 1,
             "GD": 2,
-            "Points": 3
+            "Points": -1
         },
         {
             "Pos": 3,
@@ -551,7 +551,7 @@
             "GF": 3,
             "GA": 1,
             "GD": 2,
-            "Points": 3
+            "Points": -1
         },
         {
             "Pos": 2,
@@ -564,7 +564,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -1
         },
         {
             "Pos": 3,
@@ -577,7 +577,7 @@
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 1
+            "Points": -3
         },
         {
             "Pos": 4,
@@ -590,7 +590,7 @@
             "GF": 1,
             "GA": 3,
             "GD": -2,
-            "Points": 0
+            "Points": -1
         }
     ],
     "Group L": [
@@ -605,7 +605,7 @@
             "GF": 4,
             "GA": 2,
             "GD": 2,
-            "Points": 3
+            "Points": 0
         },
         {
             "Pos": 2,
@@ -618,7 +618,7 @@
             "GF": 1,
             "GA": 0,
             "GD": 1,
-            "Points": 3
+            "Points": -1
         },
         {
             "Pos": 3,
@@ -631,7 +631,7 @@
             "GF": 0,
             "GA": 1,
             "GD": -1,
-            "Points": 0
+            "Points": -2
         },
         {
             "Pos": 4,

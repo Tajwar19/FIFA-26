@@ -234,7 +234,7 @@
                 "Status": "2:30 AM BST",
                 "Team1": "1E: Germany",
                 "Team1_raw": "1E",
-                "Team2": "3ABCDF: Netherlands",
+                "Team2": "3ABCDF: Czechia",
                 "Team2_raw": "3ABCDF",
                 "Time": "2:30 AM BST"
             },
@@ -249,7 +249,7 @@
                 "Status": "3 AM BST",
                 "Team1": "1I: Norway",
                 "Team1_raw": "1I",
-                "Team2": "3CDFGH: Brazil",
+                "Team2": "3CDFGH: Spain",
                 "Team2_raw": "3CDFGH",
                 "Time": "3 AM BST"
             },
@@ -339,7 +339,7 @@
                 "Status": "2 AM BST",
                 "Team1": "1G: New Zealand",
                 "Team1_raw": "1G",
-                "Team2": "3AEHIJ: Czechia",
+                "Team2": "3AEHIJ: Senegal",
                 "Team2_raw": "3AEHIJ",
                 "Time": "2 AM BST"
             }
@@ -386,7 +386,7 @@
                 "Status": "7 AM BST",
                 "Team1": "1A: Mexico",
                 "Team1_raw": "1A",
-                "Team2": "3CEFHI: Spain",
+                "Team2": "3CEFHI: Brazil",
                 "Team2_raw": "3CEFHI",
                 "Time": "7 AM BST"
             },
@@ -401,7 +401,7 @@
                 "Status": "10 PM BST",
                 "Team1": "1L: England",
                 "Team1_raw": "1L",
-                "Team2": "3EHIJK: Portugal",
+                "Team2": "3EHIJK: Ecuador",
                 "Team2_raw": "3EHIJK",
                 "Time": "10 PM BST"
             },
@@ -446,7 +446,7 @@
                 "Status": "9 AM BST",
                 "Team1": "1B: Switzerland",
                 "Team1_raw": "1B",
-                "Team2": "3EFGIJ: Belgium",
+                "Team2": "3EFGIJ: Jordan",
                 "Team2_raw": "3EFGIJ",
                 "Time": "9 AM BST"
             },
@@ -461,7 +461,7 @@
                 "Status": "7:30 AM BST",
                 "Team1": "1K: Colombia",
                 "Team1_raw": "1K",
-                "Team2": "3DEIJL: Ecuador",
+                "Team2": "3DEIJL: Türkiye",
                 "Team2_raw": "3DEIJL",
                 "Time": "7:30 AM BST"
             }
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 05:52:02 PM",
+    "last_updated": "2026-06-18 03:52:10 PM",
     "matches": {
         "group_stage": [
             {
@@ -2894,7 +2894,7 @@
                     "Status": "2:30 AM BST",
                     "Team1": "1E: Germany",
                     "Team1_raw": "1E",
-                    "Team2": "3ABCDF: Netherlands",
+                    "Team2": "3ABCDF: Czechia",
                     "Team2_raw": "3ABCDF",
                     "Time": "2:30 AM BST"
                 },
@@ -2966,7 +2966,7 @@
                     "Status": "3 AM BST",
                     "Team1": "1I: Norway",
                     "Team1_raw": "1I",
-                    "Team2": "3CDFGH: Brazil",
+                    "Team2": "3CDFGH: Spain",
                     "Team2_raw": "3CDFGH",
                     "Time": "3 AM BST"
                 },
@@ -3014,7 +3014,7 @@
                     "Status": "7 AM BST",
                     "Team1": "1A: Mexico",
                     "Team1_raw": "1A",
-                    "Team2": "3CEFHI: Spain",
+                    "Team2": "3CEFHI: Brazil",
                     "Team2_raw": "3CEFHI",
                     "Time": "7 AM BST"
                 },
@@ -3038,7 +3038,7 @@
                     "Status": "10 PM BST",
                     "Team1": "1L: England",
                     "Team1_raw": "1L",
-                    "Team2": "3EHIJK: Portugal",
+                    "Team2": "3EHIJK: Ecuador",
                     "Team2_raw": "3EHIJK",
                     "Time": "10 PM BST"
                 },
@@ -3086,7 +3086,7 @@
                     "Status": "2 AM BST",
                     "Team1": "1G: New Zealand",
                     "Team1_raw": "1G",
-                    "Team2": "3AEHIJ: Czechia",
+                    "Team2": "3AEHIJ: Senegal",
                     "Team2_raw": "3AEHIJ",
                     "Time": "2 AM BST"
                 },
@@ -3158,7 +3158,7 @@
                     "Status": "9 AM BST",
                     "Team1": "1B: Switzerland",
                     "Team1_raw": "1B",
-                    "Team2": "3EFGIJ: Belgium",
+                    "Team2": "3EFGIJ: Jordan",
                     "Team2_raw": "3EFGIJ",
                     "Time": "9 AM BST"
                 },
@@ -3206,7 +3206,7 @@
                     "Status": "7:30 AM BST",
                     "Team1": "1K: Colombia",
                     "Team1_raw": "1K",
-                    "Team2": "3DEIJL: Ecuador",
+                    "Team2": "3DEIJL: Türkiye",
                     "Team2_raw": "3DEIJL",
                     "Time": "7:30 AM BST"
                 },
@@ -3297,7 +3297,7 @@
                 "GF": 2,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": -5,
                 "Pos": 1,
                 "Team": "Mexico",
                 "Won": 1
@@ -3310,7 +3310,7 @@
                 "GF": 2,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": -1,
                 "Pos": 2,
                 "Team": "Korea Republic",
                 "Won": 1
@@ -3336,7 +3336,7 @@
                 "GF": 0,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -10,
                 "Pos": 4,
                 "Team": "South Africa",
                 "Won": 0
@@ -3351,7 +3351,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -1,
                 "Pos": 1,
                 "Team": "Switzerland",
                 "Won": 0
@@ -3364,7 +3364,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -2,
                 "Pos": 2,
                 "Team": "Canada",
                 "Won": 0
@@ -3377,7 +3377,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -2,
                 "Pos": 3,
                 "Team": "Qatar",
                 "Won": 0
@@ -3390,7 +3390,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -3,
                 "Pos": 4,
                 "Team": "Bosnia and Herzegovina",
                 "Won": 0
@@ -3405,7 +3405,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": -3,
                 "Pos": 1,
                 "Team": "Scotland",
                 "Won": 1
@@ -3418,7 +3418,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": 0,
                 "Pos": 2,
                 "Team": "Morocco",
                 "Won": 0
@@ -3431,7 +3431,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -2,
                 "Pos": 3,
                 "Team": "Brazil",
                 "Won": 0
@@ -3444,7 +3444,7 @@
                 "GF": 0,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -1,
                 "Pos": 4,
                 "Team": "Haiti",
                 "Won": 0
@@ -3459,7 +3459,7 @@
                 "GF": 4,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": -1,
                 "Pos": 1,
                 "Team": "USA",
                 "Won": 1
@@ -3472,7 +3472,7 @@
                 "GF": 2,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 0,
                 "Pos": 2,
                 "Team": "Australia",
                 "Won": 1
@@ -3485,7 +3485,7 @@
                 "GF": 0,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -1,
                 "Pos": 3,
                 "Team": "Türkiye",
                 "Won": 0
@@ -3498,7 +3498,7 @@
                 "GF": 1,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -5,
                 "Pos": 4,
                 "Team": "Paraguay",
                 "Won": 0
@@ -3513,7 +3513,7 @@
                 "GF": 7,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 0,
                 "Pos": 1,
                 "Team": "Germany",
                 "Won": 1
@@ -3526,7 +3526,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": -3,
                 "Pos": 2,
                 "Team": "Côte d'Ivoire",
                 "Won": 1
@@ -3539,7 +3539,7 @@
                 "GF": 0,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -1,
                 "Pos": 3,
                 "Team": "Ecuador",
                 "Won": 0
@@ -3567,7 +3567,7 @@
                 "GF": 5,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 0,
                 "Pos": 1,
                 "Team": "Sweden",
                 "Won": 1
@@ -3580,7 +3580,7 @@
                 "GF": 2,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": 0,
                 "Pos": 2,
                 "Team": "Japan",
                 "Won": 0
@@ -3593,7 +3593,7 @@
                 "GF": 2,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -3,
                 "Pos": 3,
                 "Team": "Netherlands",
                 "Won": 0
@@ -3606,7 +3606,7 @@
                 "GF": 1,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -1,
                 "Pos": 4,
                 "Team": "Tunisia",
                 "Won": 0
@@ -3621,7 +3621,7 @@
                 "GF": 2,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": 0,
                 "Pos": 1,
                 "Team": "New Zealand",
                 "Won": 0
@@ -3634,7 +3634,7 @@
                 "GF": 2,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -1,
                 "Pos": 2,
                 "Team": "IR Iran",
                 "Won": 0
@@ -3647,7 +3647,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -2,
                 "Pos": 3,
                 "Team": "Belgium",
                 "Won": 0
@@ -3660,7 +3660,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -2,
                 "Pos": 4,
                 "Team": "Egypt",
                 "Won": 0
@@ -3675,7 +3675,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": 0,
                 "Pos": 1,
                 "Team": "Uruguay",
                 "Won": 0
@@ -3688,7 +3688,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -1,
                 "Pos": 2,
                 "Team": "Saudi Arabia",
                 "Won": 0
@@ -3701,7 +3701,7 @@
                 "GF": 0,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -1,
                 "Pos": 3,
                 "Team": "Spain",
                 "Won": 0
@@ -3714,7 +3714,7 @@
                 "GF": 0,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -1,
                 "Pos": 4,
                 "Team": "Cabo Verde",
                 "Won": 0
@@ -3729,7 +3729,7 @@
                 "GF": 4,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 0,
                 "Pos": 1,
                 "Team": "Norway",
                 "Won": 1
@@ -3742,7 +3742,7 @@
                 "GF": 3,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 0,
                 "Pos": 2,
                 "Team": "France",
                 "Won": 1
@@ -3768,7 +3768,7 @@
                 "GF": 1,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -1,
                 "Pos": 4,
                 "Team": "Iraq",
                 "Won": 0
@@ -3783,7 +3783,7 @@
                 "GF": 3,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 0,
                 "Pos": 1,
                 "Team": "Argentina",
                 "Won": 1
@@ -3796,7 +3796,7 @@
                 "GF": 3,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": -1,
                 "Pos": 2,
                 "Team": "Austria",
                 "Won": 1
@@ -3837,7 +3837,7 @@
                 "GF": 3,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": -1,
                 "Pos": 1,
                 "Team": "Colombia",
                 "Won": 1
@@ -3850,7 +3850,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -1,
                 "Pos": 2,
                 "Team": "Congo DR",
                 "Won": 0
@@ -3863,7 +3863,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 1,
+                "Points": -3,
                 "Pos": 3,
                 "Team": "Portugal",
                 "Won": 0
@@ -3876,7 +3876,7 @@
                 "GF": 1,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -1,
                 "Pos": 4,
                 "Team": "Uzbekistan",
                 "Won": 0
@@ -3891,7 +3891,7 @@
                 "GF": 4,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 0,
                 "Pos": 1,
                 "Team": "England",
                 "Won": 1
@@ -3904,7 +3904,7 @@
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": -1,
                 "Pos": 2,
                 "Team": "Ghana",
                 "Won": 1
@@ -3917,7 +3917,7 @@
                 "GF": 0,
                 "Lost": 1,
                 "Played": 1,
-                "Points": 0,
+                "Points": -2,
                 "Pos": 3,
                 "Team": "Panama",
                 "Won": 0
@@ -3939,90 +3939,6 @@
     },
     "third_places": [
         {
-            "Code": "NED",
-            "Drawn": 1,
-            "GA": 2,
-            "GD": 0,
-            "GF": 2,
-            "Group": "F",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 1,
-            "Team": "Netherlands",
-            "Won": 0
-        },
-        {
-            "Code": "QAT",
-            "Drawn": 1,
-            "GA": 1,
-            "GD": 0,
-            "GF": 1,
-            "Group": "B",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 2,
-            "Team": "Qatar",
-            "Won": 0
-        },
-        {
-            "Code": "BRA",
-            "Drawn": 1,
-            "GA": 1,
-            "GD": 0,
-            "GF": 1,
-            "Group": "C",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 3,
-            "Team": "Brazil",
-            "Won": 0
-        },
-        {
-            "Code": "BEL",
-            "Drawn": 1,
-            "GA": 1,
-            "GD": 0,
-            "GF": 1,
-            "Group": "G",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 4,
-            "Team": "Belgium",
-            "Won": 0
-        },
-        {
-            "Code": "POR",
-            "Drawn": 1,
-            "GA": 1,
-            "GD": 0,
-            "GF": 1,
-            "Group": "K",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 5,
-            "Team": "Portugal",
-            "Won": 0
-        },
-        {
-            "Code": "ESP",
-            "Drawn": 1,
-            "GA": 0,
-            "GD": 0,
-            "GF": 0,
-            "Group": "H",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 6,
-            "Team": "Spain",
-            "Won": 0
-        },
-        {
             "Code": "CZE",
             "Drawn": 0,
             "GA": 2,
@@ -4032,36 +3948,8 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 7,
+            "Pos": 1,
             "Team": "Czechia",
-            "Won": 0
-        },
-        {
-            "Code": "ECU",
-            "Drawn": 0,
-            "GA": 1,
-            "GD": -1,
-            "GF": 0,
-            "Group": "E",
-            "Lost": 1,
-            "Played": 1,
-            "Points": 0,
-            "Pos": 8,
-            "Team": "Ecuador",
-            "Won": 0
-        },
-        {
-            "Code": "PAN",
-            "Drawn": 0,
-            "GA": 1,
-            "GD": -1,
-            "GF": 0,
-            "Group": "L",
-            "Lost": 1,
-            "Played": 1,
-            "Points": 0,
-            "Pos": 9,
-            "Team": "Panama",
             "Won": 0
         },
         {
@@ -4074,7 +3962,7 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 10,
+            "Pos": 2,
             "Team": "Senegal",
             "Won": 0
         },
@@ -4088,8 +3976,36 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 11,
+            "Pos": 3,
             "Team": "Jordan",
+            "Won": 0
+        },
+        {
+            "Code": "ESP",
+            "Drawn": 1,
+            "GA": 0,
+            "GD": 0,
+            "GF": 0,
+            "Group": "H",
+            "Lost": 0,
+            "Played": 1,
+            "Points": -1,
+            "Pos": 4,
+            "Team": "Spain",
+            "Won": 0
+        },
+        {
+            "Code": "ECU",
+            "Drawn": 0,
+            "GA": 1,
+            "GD": -1,
+            "GF": 0,
+            "Group": "E",
+            "Lost": 1,
+            "Played": 1,
+            "Points": -1,
+            "Pos": 5,
+            "Team": "Ecuador",
             "Won": 0
         },
         {
@@ -4101,9 +4017,93 @@
             "Group": "D",
             "Lost": 1,
             "Played": 1,
-            "Points": 0,
-            "Pos": 12,
+            "Points": -1,
+            "Pos": 6,
             "Team": "Türkiye",
+            "Won": 0
+        },
+        {
+            "Code": "QAT",
+            "Drawn": 1,
+            "GA": 1,
+            "GD": 0,
+            "GF": 1,
+            "Group": "B",
+            "Lost": 0,
+            "Played": 1,
+            "Points": -2,
+            "Pos": 7,
+            "Team": "Qatar",
+            "Won": 0
+        },
+        {
+            "Code": "BRA",
+            "Drawn": 1,
+            "GA": 1,
+            "GD": 0,
+            "GF": 1,
+            "Group": "C",
+            "Lost": 0,
+            "Played": 1,
+            "Points": -2,
+            "Pos": 8,
+            "Team": "Brazil",
+            "Won": 0
+        },
+        {
+            "Code": "BEL",
+            "Drawn": 1,
+            "GA": 1,
+            "GD": 0,
+            "GF": 1,
+            "Group": "G",
+            "Lost": 0,
+            "Played": 1,
+            "Points": -2,
+            "Pos": 9,
+            "Team": "Belgium",
+            "Won": 0
+        },
+        {
+            "Code": "PAN",
+            "Drawn": 0,
+            "GA": 1,
+            "GD": -1,
+            "GF": 0,
+            "Group": "L",
+            "Lost": 1,
+            "Played": 1,
+            "Points": -2,
+            "Pos": 10,
+            "Team": "Panama",
+            "Won": 0
+        },
+        {
+            "Code": "NED",
+            "Drawn": 1,
+            "GA": 2,
+            "GD": 0,
+            "GF": 2,
+            "Group": "F",
+            "Lost": 0,
+            "Played": 1,
+            "Points": -3,
+            "Pos": 11,
+            "Team": "Netherlands",
+            "Won": 0
+        },
+        {
+            "Code": "POR",
+            "Drawn": 1,
+            "GA": 1,
+            "GD": 0,
+            "GF": 1,
+            "Group": "K",
+            "Lost": 0,
+            "Played": 1,
+            "Points": -3,
+            "Pos": 12,
+            "Team": "Portugal",
             "Won": 0
         }
     ]
