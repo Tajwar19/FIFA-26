@@ -1,119 +1,233 @@
 import os
 import json
-import csv
-from playwright.sync_api import sync_playwright
-import pandas as pd
-
-URL = "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
+import datetime
+import urllib.request
+import time
 
 def scrape_bracket():
-    print(f"Navigating to {URL}...")
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            viewport={"width": 1920, "height": 1080},
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
-        page.goto(URL, wait_until="domcontentloaded", timeout=60000)
-        
-        # Wait for matches list to render
-        try:
-            print("Waiting for matches content to load...")
-            page.wait_for_selector("[class*='matchRowContainer']", timeout=25000)
-        except Exception as e:
-            print(f"Timed out waiting for match rows: {e}")
-            
-        page.wait_for_timeout(3000)
-        
-        # Dismiss cookies banner
-        page.evaluate('() => document.getElementById("onetrust-accept-btn-handler")?.click()')
-        page.wait_for_timeout(2000)
-        
-        print("Extracting elements from the DOM...")
-        
-        # Query date headers and match containers in DOM order
-        elements = page.query_selector_all("[class*='matches-container_title'], [class*='matchRowContainer']")
-        print(f"Found {len(elements)} relevant DOM elements.")
-        
-        current_date = "Unknown Date"
-        all_matches = []
-        
-        for el in elements:
-            class_name = el.get_attribute("class") or ""
-            
-            # If it's a date header
-            if "matches-container_title" in class_name:
-                date_txt = el.text_content().strip()
-                # Clean up any trailing link text in headers
-                current_date = date_txt.replace("View groups", "").replace("View brackets", "").strip()
-            
-            # If it's a match card
-            elif "matchRowContainer" in class_name:
-                try:
-                    # Teams and abbreviations
-                    teams = el.query_selector_all(".d-none.d-md-block")
-                    team1 = teams[0].text_content().strip() if len(teams) > 0 else ""
-                    team2 = teams[1].text_content().strip() if len(teams) > 1 else ""
-                    
-                    codes = el.query_selector_all("[class*='team-abbreviations_container'] span")
-                    code1 = codes[0].text_content().strip() if len(codes) > 0 else ""
-                    code2 = codes[1].text_content().strip() if len(codes) > 1 else ""
-                    
-                    # Scores
-                    scores = el.query_selector_all("[class*='match-row_score']")
-                    score1 = scores[0].text_content().strip() if len(scores) > 0 else ""
-                    score2 = scores[1].text_content().strip() if len(scores) > 1 else ""
-                    
-                    # Match status
-                    status_el = el.query_selector("[class*='matchRowStatus'], [class*='match-row_statusLabel'], [class*='match-row_status']")
-                    status = status_el.text_content().strip() if status_el else ""
-                    
-                    time_el = el.query_selector("[class*='matchTime']")
-                    time = time_el.text_content().strip() if time_el else ""
-                    
-                    # Details (Stage, Group/Match #, Stadium, City)
-                    stage_el = el.query_selector("[class*='match-row_bottomLabelWrapper'] > span")
-                    stage = stage_el.text_content().strip() if stage_el else ""
-                    
-                    group_el = el.query_selector("[class*='statiumCityWrapper'] > span[class*='match-row_bottomLabel']")
-                    group_info = group_el.text_content().strip() if group_el else ""
-                    
-                    stadium_el = el.query_selector("[class*='match-row_stadiumCityLabels'] span:nth-child(1)")
-                    city_el = el.query_selector("[class*='match-row_stadiumCityLabels'] span:nth-child(2)")
-                    stadium = stadium_el.text_content().strip() if stadium_el else ""
-                    city = city_el.text_content().strip().replace("(", "").replace(")", "") if city_el else ""
-                    
-                    # Fill placeholder team names for knockouts if name is empty
-                    if not team1 and code1:
-                        team1 = code1
-                    if not team2 and code2:
-                        team2 = code2
-                        
-                    match_data = {
-                        "Date": current_date,
-                        "Time": time,
-                        "Team1": team1,
-                        "Code1": code1,
-                        "Score1": score1,
-                        "Score2": score2,
-                        "Team2": team2,
-                        "Code2": code2,
-                        "Status": status,
-                        "Stage": stage,
-                        "Group_or_Match": group_info,
-                        "Stadium": stadium,
-                        "City": city
-                    }
-                    all_matches.append(match_data)
-                except Exception as e:
-                    print(f"Error parsing match row: {e}")
-                    
-        browser.close()
-        
-    total_scraped = len(all_matches)
-    print(f"\nScraping complete. Total matches collected: {total_scraped}")
+    print("Fetching matches from FIFA API...")
     
+    # 1. Load details cache
+    cache_file = "match_details_cache.json"
+    cache = {}
+    if os.path.exists(cache_file):
+        try:
+            with open(cache_file, "r", encoding="utf-8") as f:
+                cache = json.load(f)
+            print(f"Loaded {len(cache)} cached match details.")
+        except Exception as e:
+            print("Failed to load details cache:", e)
+
+    # 2. Fetch the calendar matches API
+    calendar_url = "https://api.fifa.com/api/v3/calendar/matches?language=en&count=500&idSeason=285023"
+    try:
+        req = urllib.request.Request(calendar_url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=20) as res:
+            calendar_data = json.loads(res.read().decode('utf-8'))
+    except Exception as e:
+        print(f"Failed to fetch calendar API: {e}")
+        return
+
+    results = calendar_data.get("Results", [])
+    if not results:
+        print("No matches returned from calendar API.")
+        return
+
+    # Sort matches by MatchNumber to maintain consistency
+    results.sort(key=lambda x: x.get("MatchNumber", 999))
+
+    all_matches = []
+    updated_cache = False
+
+    for idx, m in enumerate(results):
+        idCompetition = m.get("IdCompetition", "17")
+        idSeason = m.get("IdSeason", "285023")
+        idStage = m.get("IdStage")
+        idMatch = m.get("IdMatch")
+        match_num = m.get("MatchNumber")
+
+        # Parse Date and Time (BDT, UTC+6)
+        dt_str = m.get("Date")
+        try:
+            dt = datetime.datetime.strptime(dt_str, "%Y-%m-%dT%H:%M:%SZ")
+            bdt = dt + datetime.timedelta(hours=6)
+            date_str = bdt.strftime("%A %d %B %Y")
+            
+            # Format time
+            minutes = bdt.minute
+            if minutes == 0:
+                time_str = bdt.strftime("%I %p").lstrip("0") + " BST"
+            else:
+                time_str = bdt.strftime("%I:%M %p").lstrip("0") + " BST"
+        except Exception as e:
+            print(f"Error parsing date/time for match {match_num}: {e}")
+            date_str = "Unknown Date"
+            time_str = ""
+
+        # Teams names and codes
+        home_team = ""
+        home_code = ""
+        away_team = ""
+        away_code = ""
+
+        if m.get("Home"):
+            home_team = m.get("Home", {}).get("TeamName", [{}])[0].get("Description")
+            home_code = m.get("Home", {}).get("Abbreviation")
+        else:
+            home_team = m.get("PlaceHolderA") or ""
+            home_code = m.get("PlaceHolderA") or ""
+
+        if m.get("Away"):
+            away_team = m.get("Away", {}).get("TeamName", [{}])[0].get("Description")
+            away_code = m.get("Away", {}).get("Abbreviation")
+        else:
+            away_team = m.get("PlaceHolderB") or ""
+            away_code = m.get("PlaceHolderB") or ""
+
+        # Scores
+        score1 = m.get("HomeTeamScore")
+        score2 = m.get("AwayTeamScore")
+        score1_str = str(score1) if score1 is not None else ""
+        score2_str = str(score2) if score2 is not None else ""
+
+        # Stage and Group
+        stage_name = m.get("StageName", [{}])[0].get("Description") if m.get("StageName") else ""
+        group_name = m.get("GroupName", [{}])[0].get("Description") if m.get("GroupName") else ""
+
+        # Stadium and City
+        stadium_info = m.get("Stadium", {})
+        stadium_name = stadium_info.get("Name", [{}])[0].get("Description") if stadium_info.get("Name") else ""
+        city_name = stadium_info.get("CityName", [{}])[0].get("Description") if stadium_info.get("CityName") else ""
+
+        # Status formatting
+        status_str = time_str if score1 is None else ""
+        
+        # Details (referee, goals, etc.)
+        referee = ""
+        attendance = 0
+        goals1 = []
+        goals2 = []
+        ht_score = ""
+
+        is_completed = score1 is not None and score2 is not None
+
+        if is_completed:
+            match_id_str = str(idMatch)
+            if match_id_str in cache:
+                cached_data = cache[match_id_str]
+                referee = cached_data.get("Referee", "")
+                attendance = cached_data.get("Attendance", 0)
+                goals1 = cached_data.get("Goals1", [])
+                goals2 = cached_data.get("Goals2", [])
+                ht_score = cached_data.get("HT", "")
+                status_str = cached_data.get("Status", f"{score1}FT{score2}")
+            else:
+                # Fetch details from Live API
+                detail_url = f"https://api.fifa.com/api/v3/live/football/{idCompetition}/{idSeason}/{idStage}/{idMatch}?language=en"
+                print(f"Fetching details for completed match {match_num} ({home_team} vs {away_team})...")
+                try:
+                    req_detail = urllib.request.Request(detail_url, headers={'User-Agent': 'Mozilla/5.0'})
+                    with urllib.request.urlopen(req_detail, timeout=15) as res_detail:
+                        detail_data = json.loads(res_detail.read().decode('utf-8'))
+                        
+                        # Referee
+                        for off in detail_data.get("Officials", []):
+                            if off.get("OfficialType") == 1:
+                                referee = off.get("Name", [{}])[0].get("Description") or ""
+                                break
+                        
+                        # Attendance
+                        attendance = detail_data.get("Attendance") or 0
+                        
+                        # Build players mapping
+                        players_map = {}
+                        for team_key in ["HomeTeam", "AwayTeam"]:
+                            team_info = detail_data.get(team_key, {})
+                            for p in team_info.get("Players", []):
+                                p_id = p.get("IdPlayer")
+                                name = p.get("PlayerName", [{}])[0].get("Description") or ""
+                                short_name = p.get("ShortName", [{}])[0].get("Description") or ""
+                                players_map[p_id] = short_name or name
+
+                        # Goals
+                        for team_key, goals_list in [("HomeTeam", goals1), ("AwayTeam", goals2)]:
+                            team_info = detail_data.get(team_key, {})
+                            for g in team_info.get("Goals", []):
+                                p_id = g.get("IdPlayer")
+                                p_name = players_map.get(p_id, "Unknown Scorer")
+                                minute = g.get("Minute") or ""
+                                g_type = g.get("Type")
+                                goals_list.append({
+                                    "Player": p_name,
+                                    "Minute": minute,
+                                    "Type": g_type
+                                })
+
+                        # Half-time score (Period == 3 is 1st half)
+                        ht_home = sum(1 for g in detail_data.get("HomeTeam", {}).get("Goals", []) if g.get("Period") == 3)
+                        ht_away = sum(1 for g in detail_data.get("AwayTeam", {}).get("Goals", []) if g.get("Period") == 3)
+                        ht_score = f"{ht_home} - {ht_away}"
+
+                        # Status string
+                        pen_home = detail_data.get("HomeTeamPenaltyScore")
+                        pen_away = detail_data.get("AwayTeamPenaltyScore")
+                        if pen_home is not None or pen_away is not None:
+                            status_str = f"{score1}PEN{score2}"
+                        else:
+                            res_type = detail_data.get("ResultType")
+                            if res_type == 2:  # typically 2 is AET
+                                status_str = f"{score1}AET{score2}"
+                            else:
+                                status_str = f"{score1}FT{score2}"
+
+                        # Save to cache
+                        cache[match_id_str] = {
+                            "Referee": referee,
+                            "Attendance": attendance,
+                            "Goals1": goals1,
+                            "Goals2": goals2,
+                            "HT": ht_score,
+                            "Status": status_str
+                        }
+                        updated_cache = True
+                except Exception as ex:
+                    print(f"Error fetching match details for Match {match_num}: {ex}")
+                    status_str = f"{score1}FT{score2}"
+                time.sleep(0.3)
+
+        match_data = {
+            "Match": f"M{match_num}",
+            "MatchDay": m.get("MatchDay"),
+            "Date": date_str,
+            "Time": time_str,
+            "Team1": home_team,
+            "Code1": home_code,
+            "Score1": score1_str,
+            "Score2": score2_str,
+            "Team2": away_team,
+            "Code2": away_code,
+            "Status": status_str,
+            "Stage": stage_name,
+            "Group_or_Match": group_name if "first stage" in stage_name.lower() else f"Match {match_num}",
+            "Stadium": stadium_name,
+            "City": city_name,
+            "Goals1": goals1,
+            "Goals2": goals2,
+            "Referee": referee,
+            "Attendance": attendance,
+            "HT": ht_score
+        }
+        all_matches.append(match_data)
+
+    # Save cache if updated
+    if updated_cache:
+        try:
+            with open(cache_file, "w", encoding="utf-8") as f:
+                json.dump(cache, f, indent=4, ensure_ascii=False)
+            print("Saved updated details cache to match_details_cache.json")
+        except Exception as e:
+            print("Failed to save details cache:", e)
+
     # Categorize matches into Group Stage and Knockout Stage
     group_stage_matches = []
     knockout_stage_matches = []
@@ -135,29 +249,15 @@ def scrape_bracket():
             knockout_by_stage[stage_name] = []
         knockout_by_stage[stage_name].append(m)
         
-    # Print Knockout Bracket matches
-    print("\n========================================================")
-    print("               FIFA WORLD CUP 2026 BRACKET              ")
-    print("========================================================")
-    for stage_name, matches in knockout_by_stage.items():
-        print(f"\n--- {stage_name} ---")
-        for m in matches:
-            score_line = f"{m['Score1']} - {m['Score2']}" if m['Score1'] or m['Score2'] else " vs "
-            status_line = f" ({m['Status']})" if m['Status'] else ""
-            print(f"  {m['Date']}: {m['Team1']} ({m['Code1']}){score_line}{m['Team2']} ({m['Code2']}){status_line}")
-            print(f"     Venue: {m['Stadium']}, {m['City']}")
-            
-    # Save files
-    # 1. Combined JSON structure
+    # Consolidated structure matching the existing front-end needs
     consolidated_json = {
         "group_stage": group_stage_matches,
         "knockout_stage": knockout_by_stage
     }
+    
     with open("all_matches.json", "w", encoding="utf-8") as f:
         json.dump(consolidated_json, f, indent=4, ensure_ascii=False)
-    print("\nSaved combined data to all_matches.json")
-    
-    pass
+    print("Saved combined matches data to all_matches.json")
 
 if __name__ == "__main__":
     scrape_bracket()

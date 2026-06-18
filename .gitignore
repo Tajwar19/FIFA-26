@@ -28,3 +28,10 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Debug and temporary files
+api_response_*.json
+page_source_debug.html
+scores_fixtures_page.html
+
+

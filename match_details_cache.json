@@ -1,0 +1,609 @@
+{
+    "400021443": {
+        "Referee": "Wilton SAMPAIO",
+        "Attendance": "80824",
+        "Goals1": [
+            {
+                "Player": "Julian QUINONES",
+                "Minute": "9'",
+                "Type": 2
+            },
+            {
+                "Player": "RAÚL",
+                "Minute": "67'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "1 - 0",
+        "Status": "2FT0"
+    },
+    "400021441": {
+        "Referee": "Amin Mohamed Omar",
+        "Attendance": "44985",
+        "Goals1": [
+            {
+                "Player": "HWANG Inbeom",
+                "Minute": "67'",
+                "Type": 2
+            },
+            {
+                "Player": "H G OH",
+                "Minute": "80'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Ladislav KREJCI",
+                "Minute": "59'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 0",
+        "Status": "2FT1"
+    },
+    "400021449": {
+        "Referee": "Facundo TELLO",
+        "Attendance": "43002",
+        "Goals1": [
+            {
+                "Player": "Cyle LARIN",
+                "Minute": "78'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Jovo LUKIC",
+                "Minute": "21'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "1FT1"
+    },
+    "400021458": {
+        "Referee": "Danny Desmond Makkelie",
+        "Attendance": "70492",
+        "Goals1": [
+            {
+                "Player": "Damian BOBADILLA",
+                "Minute": "7'",
+                "Type": 3
+            },
+            {
+                "Player": "Folarin BALOGUN",
+                "Minute": "31'",
+                "Type": 2
+            },
+            {
+                "Player": "Folarin BALOGUN",
+                "Minute": "45'+5'",
+                "Type": 2
+            },
+            {
+                "Player": "REYNA",
+                "Minute": "90'+8'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "MAURICIO",
+                "Minute": "73'",
+                "Type": 2
+            }
+        ],
+        "HT": "3 - 0",
+        "Status": "4FT1"
+    },
+    "400021453": {
+        "Referee": "Mustapha Ghorbal",
+        "Attendance": "64146",
+        "Goals1": [],
+        "Goals2": [
+            {
+                "Player": "John McGINN",
+                "Minute": "28'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "0FT1"
+    },
+    "400021463": {
+        "Referee": "Jesús Valenzuela Sáez",
+        "Attendance": "52497",
+        "Goals1": [
+            {
+                "Player": "Nestory IRANKUNDA",
+                "Minute": "27'",
+                "Type": 2
+            },
+            {
+                "Player": "Connor METCALFE",
+                "Minute": "75'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "1 - 0",
+        "Status": "2FT0"
+    },
+    "400021456": {
+        "Referee": "Slavko VINCIC",
+        "Attendance": "80663",
+        "Goals1": [
+            {
+                "Player": "VINI JR.",
+                "Minute": "32'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "SAIBARI",
+                "Minute": "21'",
+                "Type": 2
+            }
+        ],
+        "HT": "1 - 1",
+        "Status": "1FT1"
+    },
+    "400021447": {
+        "Referee": "Said MARTINEZ",
+        "Attendance": "67966",
+        "Goals1": [
+            {
+                "Player": "Miro MUHEIM",
+                "Minute": "90'+4'",
+                "Type": 3
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "EMBOLO",
+                "Minute": "17'",
+                "Type": 1
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "1FT1"
+    },
+    "400021467": {
+        "Referee": "François Letexier",
+        "Attendance": "68274",
+        "Goals1": [
+            {
+                "Player": "Amad DIALLO",
+                "Minute": "90'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "0 - 0",
+        "Status": "1FT0"
+    },
+    "400021464": {
+        "Referee": "Jalal Jayed",
+        "Attendance": "68021",
+        "Goals1": [
+            {
+                "Player": "NMECHA",
+                "Minute": "6'",
+                "Type": 2
+            },
+            {
+                "Player": "SCHLOTTERBECK",
+                "Minute": "38'",
+                "Type": 2
+            },
+            {
+                "Player": "HAVERTZ",
+                "Minute": "45'+5'",
+                "Type": 1
+            },
+            {
+                "Player": "MUSIALA",
+                "Minute": "47'",
+                "Type": 2
+            },
+            {
+                "Player": "Nathaniel BROWN",
+                "Minute": "68'",
+                "Type": 2
+            },
+            {
+                "Player": "Deniz UNDAV",
+                "Minute": "78'",
+                "Type": 2
+            },
+            {
+                "Player": "HAVERTZ",
+                "Minute": "88'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Livano COMENENCIA",
+                "Minute": "21'",
+                "Type": 2
+            }
+        ],
+        "HT": "3 - 1",
+        "Status": "7FT1"
+    },
+    "400021470": {
+        "Referee": "Ismail Elfath",
+        "Attendance": "69285",
+        "Goals1": [
+            {
+                "Player": "Virgil VAN DIJK",
+                "Minute": "50'",
+                "Type": 2
+            },
+            {
+                "Player": "Crysencio SUMMERVILLE",
+                "Minute": "64'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "NAKAMURA",
+                "Minute": "57'",
+                "Type": 2
+            },
+            {
+                "Player": "KAMADA",
+                "Minute": "88'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 0",
+        "Status": "2FT2"
+    },
+    "400021474": {
+        "Referee": "Yael Falcón Pérez",
+        "Attendance": "50987",
+        "Goals1": [
+            {
+                "Player": "Yasin AYARI",
+                "Minute": "7'",
+                "Type": 2
+            },
+            {
+                "Player": "Alexander ISAK",
+                "Minute": "30'",
+                "Type": 2
+            },
+            {
+                "Player": "Viktor GYOKERES",
+                "Minute": "59'",
+                "Type": 2
+            },
+            {
+                "Player": "Mattias SVANBERG",
+                "Minute": "84'",
+                "Type": 2
+            },
+            {
+                "Player": "Yasin AYARI",
+                "Minute": "90'+6'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Omar REKIK",
+                "Minute": "43'",
+                "Type": 2
+            }
+        ],
+        "HT": "2 - 1",
+        "Status": "5FT1"
+    },
+    "400021486": {
+        "Referee": "Maurizio Mariani",
+        "Attendance": "62764",
+        "Goals1": [
+            {
+                "Player": "ALAMRI",
+                "Minute": "41'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Maxi ARAUJO",
+                "Minute": "80'",
+                "Type": 2
+            }
+        ],
+        "HT": "1 - 0",
+        "Status": "1FT1"
+    },
+    "400021482": {
+        "Referee": "Adham Mohammad Tumah Makhadmeh",
+        "Attendance": "67640",
+        "Goals1": [],
+        "Goals2": [],
+        "HT": "0 - 0",
+        "Status": "0FT0"
+    },
+    "400021476": {
+        "Referee": "César Arturo Ramos Palazuelos",
+        "Attendance": "70108",
+        "Goals1": [
+            {
+                "Player": "RAMIN",
+                "Minute": "32'",
+                "Type": 2
+            },
+            {
+                "Player": "M.MOHEBBI",
+                "Minute": "64'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "JUST",
+                "Minute": "7'",
+                "Type": 2
+            },
+            {
+                "Player": "JUST",
+                "Minute": "54'",
+                "Type": 2
+            }
+        ],
+        "HT": "1 - 1",
+        "Status": "2FT2"
+    },
+    "400021478": {
+        "Referee": "Ramon ABATTI",
+        "Attendance": "66775",
+        "Goals1": [
+            {
+                "Player": "M.HANY",
+                "Minute": "66'",
+                "Type": 3
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "E.ASHOUR",
+                "Minute": "19'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "1FT1"
+    },
+    "400021490": {
+        "Referee": "Alireza FAGHANI",
+        "Attendance": "80545",
+        "Goals1": [
+            {
+                "Player": "MBAPPÉ",
+                "Minute": "66'",
+                "Type": 2
+            },
+            {
+                "Player": "BARCOLA",
+                "Minute": "82'",
+                "Type": 2
+            },
+            {
+                "Player": "MBAPPÉ",
+                "Minute": "90'+6'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "MBAYE",
+                "Minute": "90'+5'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 0",
+        "Status": "3FT1"
+    },
+    "400021488": {
+        "Referee": "Pierre Ghislain Atcho",
+        "Attendance": "63106",
+        "Goals1": [
+            {
+                "Player": "HUSSEIN",
+                "Minute": "39'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "HAALAND",
+                "Minute": "29'",
+                "Type": 2
+            },
+            {
+                "Player": "HAALAND",
+                "Minute": "43'",
+                "Type": 2
+            },
+            {
+                "Player": "Leo OSTIGARD",
+                "Minute": "76'",
+                "Type": 2
+            },
+            {
+                "Player": "HUSSEIN",
+                "Minute": "90'+6'",
+                "Type": 3
+            }
+        ],
+        "HT": "1 - 2",
+        "Status": "1FT4"
+    },
+    "400021496": {
+        "Referee": "Szymon MARCINIAK",
+        "Attendance": "69045",
+        "Goals1": [
+            {
+                "Player": "MESSI",
+                "Minute": "17'",
+                "Type": 2
+            },
+            {
+                "Player": "MESSI",
+                "Minute": "60'",
+                "Type": 2
+            },
+            {
+                "Player": "MESSI",
+                "Minute": "76'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "1 - 0",
+        "Status": "3FT0"
+    },
+    "400021498": {
+        "Referee": "Dahane BEIDA",
+        "Attendance": "68527",
+        "Goals1": [
+            {
+                "Player": "Romano SCHMID",
+                "Minute": "20'",
+                "Type": 2
+            },
+            {
+                "Player": "YAZAN ALARAB",
+                "Minute": "76'",
+                "Type": 3
+            },
+            {
+                "Player": "ARNAUTOVIC",
+                "Minute": "90'+12'",
+                "Type": 1
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "ALI OLWAN",
+                "Minute": "50'",
+                "Type": 2
+            }
+        ],
+        "HT": "1 - 0",
+        "Status": "3FT1"
+    },
+    "400021510": {
+        "Referee": "Glenn Nyberg",
+        "Attendance": "42942",
+        "Goals1": [
+            {
+                "Player": "Caleb YIRENKYI",
+                "Minute": "90'+5'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "0 - 0",
+        "Status": "1FT0"
+    },
+    "400021507": {
+        "Referee": "Clément Turpin",
+        "Attendance": "70389",
+        "Goals1": [
+            {
+                "Player": "KANE",
+                "Minute": "12'",
+                "Type": 1
+            },
+            {
+                "Player": "KANE",
+                "Minute": "42'",
+                "Type": 2
+            },
+            {
+                "Player": "BELLINGHAM",
+                "Minute": "47'",
+                "Type": 2
+            },
+            {
+                "Player": "RASHFORD",
+                "Minute": "85'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Martin BATURINA",
+                "Minute": "36'",
+                "Type": 2
+            },
+            {
+                "Player": "Petar MUSA",
+                "Minute": "45'+5'",
+                "Type": 2
+            }
+        ],
+        "HT": "2 - 2",
+        "Status": "4FT2"
+    },
+    "400021502": {
+        "Referee": "Abdulrahman AL JASSIM",
+        "Attendance": "68777",
+        "Goals1": [
+            {
+                "Player": "JOÃO NEVES",
+                "Minute": "6'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Yoane WISSA",
+                "Minute": "45'+5'",
+                "Type": 2
+            }
+        ],
+        "HT": "1 - 1",
+        "Status": "1FT1"
+    },
+    "400021504": {
+        "Referee": "Anthony Taylor",
+        "Attendance": "80824",
+        "Goals1": [
+            {
+                "Player": "Abbosbek FAYZULLAEV",
+                "Minute": "60'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Daniel MUNOZ",
+                "Minute": "40'",
+                "Type": 2
+            },
+            {
+                "Player": "Luis DIAZ",
+                "Minute": "65'",
+                "Type": 2
+            },
+            {
+                "Player": "Jaminton CAMPAZ",
+                "Minute": "90'+9'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "1FT3"
+    }
+}

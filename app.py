@@ -437,32 +437,8 @@ def trigger_scrape():
             print(f"[API] Error running build_static.py: {e}")
             
         # 6. Git commit & push
-        print("[API] Checking for git changes to commit and push...")
-        try:
-            import subprocess
-            status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, check=True)
-            files_to_push = ["all_standings.json", "all_matches.json", "bracket_tree.json", "data.json", "index.html"]
-            has_changes = False
-            for line in status.stdout.splitlines():
-                for f in files_to_push:
-                    if f in line:
-                        has_changes = True
-                        break
-            
-            if has_changes:
-                print("[API] Changes detected. Committing and pushing to GitHub...")
-                subprocess.run(["git", "add", "-f"] + files_to_push, check=True)
-                commit_msg = f"Auto-update live data: {last_updated}"
-                subprocess.run(["git", "-c", "core.autocrlf=true", "commit", "-m", commit_msg], check=True)
-                subprocess.run(["git", "push", "origin", "main"], check=True)
-                print("[API] Git push completed successfully!")
-                git_status = "Git push completed successfully!"
-            else:
-                print("[API] No changes detected in scraped files. Skipping push.")
-                git_status = "No changes detected. Git push skipped."
-        except Exception as git_err:
-            print(f"[API] Error pushing to git: {git_err}")
-            git_status = f"Git error: {str(git_err)}"
+        print("[API] Git push is disabled during matches overhaul.")
+        git_status = "Git push disabled"
             
         return jsonify({
             "status": "success",

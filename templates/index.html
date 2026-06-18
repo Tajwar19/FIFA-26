@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&family=Oswald:wght@500;600;700&display=swap"
         rel="stylesheet">
 
     <style>
@@ -76,30 +76,75 @@
             padding: 1.5rem;
         }
 
+        /* Sticky Navigation Wrapper */
+        .sticky-nav-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 110;
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(at 10% 20%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(6, 182, 212, 0.05) 0px, transparent 50%);
+            padding-top: 1.5rem;
+            margin-top: -1.5rem;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+        }
+
         /* Header section */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--card-border);
-            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 1rem;
         }
 
-        .title-area h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 2.2rem;
+        /* Brand Heading Style */
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .brand-ball {
+            font-size: 38px;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+            animation: spin 8s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .brand-text h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 26px;
             font-weight: 700;
-            letter-spacing: -0.03em;
-            background: linear-gradient(to right, #ffffff, var(--primary), var(--accent-cyan));
+            letter-spacing: 1px;
+            line-height: 1;
+            margin: 0;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .brand-text h1 .accent-title {
+            background: linear-gradient(90deg, #00e676, #fbbf24);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .title-area p {
-            font-size: 0.95rem;
+        .brand-text p {
+            font-size: 12px;
             color: var(--text-muted);
-            margin-top: 0.25rem;
+            margin-top: 5px;
+            letter-spacing: 0.5px;
         }
 
         .action-area {
@@ -179,7 +224,7 @@
             padding: 0.35rem;
             border-radius: 12px;
             border: 1px solid var(--card-border);
-            margin-bottom: 2rem;
+            margin-bottom: 0.25rem;
             width: fit-content;
         }
 
@@ -234,14 +279,23 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(10, 22, 44, 0.4);
+            background: var(--bg-color);
+            background-image:
+                radial-gradient(at 10% 20%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(6, 182, 212, 0.05) 0px, transparent 50%);
             border: 1px solid var(--card-border);
-            border-radius: 12px;
+            border-top: none;
+            border-radius: 0 0 12px 12px;
             padding: 0.65rem 1rem;
             margin-bottom: 1rem;
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(15px);
             gap: 1.5rem;
             flex-wrap: wrap;
+            position: sticky;
+            top: var(--nav-height, 130px);
+            z-index: 100;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: top 0.2s ease;
         }
 
         .zoom-controls {
@@ -1195,58 +1249,506 @@
                 height: 14px;
             }
         }
+        /* Overhauled Matches Tab Layout & Styling */
+        .matches-grouped-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .matches-day-section {
+            margin-bottom: 2rem;
+            background: rgba(10, 22, 44, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 20px;
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .matches-day-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: #ffffff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 0.75rem;
+        }
+
+        .matches-day-title svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary);
+        }
+
+        .matches-day-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            .matches-day-grid {
+                grid-template-columns: 1fr;
+            }
+            .matches-day-section {
+                padding: 1rem;
+            }
+        }
+
+        /* Matches Filter Row (Search + Group Pills + Calendar) */
+        .matches-filter-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            background: var(--bg-color);
+            background-image:
+                radial-gradient(at 10% 20%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(6, 182, 212, 0.05) 0px, transparent 50%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: none;
+            border-radius: 0 0 16px 16px;
+            padding: 0.75rem 1.25rem;
+            position: sticky;
+            top: var(--nav-height, 130px);
+            z-index: 100;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: top 0.2s ease;
+        }
+
+        .search-wrapper {
+            position: relative;
+            width: 240px;
+            flex-shrink: 0;
+        }
+
+        .search-wrapper .search-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 0.55rem 1rem 0.55rem 2.2rem;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .search-wrapper .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .search-wrapper .search-icon {
+            position: absolute;
+            left: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            fill: var(--text-muted);
+            pointer-events: none;
+        }
+
+        .pills-scroll-wrapper {
+            flex-grow: 1;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .pills-scroll-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pills-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .pill-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 50px;
+            padding: 0.45rem 1.1rem;
+            color: var(--text-muted);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .pill-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .pill-btn.active {
+            background: #10b981;
+            color: #030a16;
+            border-color: #10b981;
+            font-weight: 600;
+        }
+
+        .calendar-wrapper {
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .calendar-pill-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .calendar-pill-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+        }
+
+        .calendar-pill-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        .calendar-pill-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .calendar-dropdown-menu {
+            position: absolute;
+            right: 0;
+            top: 45px;
+            background: rgba(10, 22, 44, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 220px;
+            max-height: 280px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .calendar-dropdown-menu.show {
+            display: block;
+        }
+
+        .calendar-dropdown-menu .dropdown-item {
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .calendar-dropdown-menu .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .calendar-dropdown-menu .dropdown-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: #ffffff;
+        }
+
+        .calendar-dropdown-menu .dropdown-item.active {
+            background: var(--primary-glow);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .matches-filter-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-wrapper {
+                width: 100%;
+            }
+        }
+
+        /* Match Card Base */
+        .match-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.85rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Dynamic Card Border Colors */
+        .match-card.border-grey { border: 1px solid rgba(255, 255, 255, 0.08); }
+        .match-card.border-gold { border: 1px solid rgba(251, 191, 36, 0.22); }
+        .match-card.border-gold:hover { border-color: rgba(251, 191, 36, 0.45); box-shadow: 0 8px 30px rgba(251, 191, 36, 0.1); }
+        .match-card.border-green { border: 1px solid rgba(16, 185, 129, 0.22); }
+        .match-card.border-green:hover { border-color: rgba(16, 185, 129, 0.45); box-shadow: 0 8px 30px rgba(16, 185, 129, 0.1); }
+        .match-card.border-cyan { border: 1px solid rgba(6, 182, 212, 0.25); }
+        .match-card.border-cyan:hover { border-color: rgba(6, 182, 212, 0.5); box-shadow: 0 8px 30px rgba(6, 182, 212, 0.15); }
+        .match-card.border-knockout { border: 1px solid rgba(168, 85, 247, 0.3); }
+        .match-card.border-knockout:hover { border-color: rgba(168, 85, 247, 0.6); box-shadow: 0 8px 30px rgba(168, 85, 247, 0.2); }
+
+        .match-card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Match Card Header */
+        .match-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 0.5rem;
+        }
+
+        .match-card-stage {
+            color: var(--accent-cyan);
+        }
+
+        .match-card-time {
+            color: var(--accent-gold);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Match Card Teams Horizontal Layout */
+        .match-card-teams-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.4rem;
+        }
+
+        .match-card-team-info {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1.15rem;
+            font-weight: 600;
+            width: 42%;
+        }
+
+        .match-card-team-info.home {
+            justify-content: flex-start;
+        }
+
+        .match-card-team-info.away {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .match-card-team-info span.winner {
+            color: #10b981;
+        }
+
+        .match-card-score-nums {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: #ffffff;
+            width: 16%;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .match-card-score-nums.vs {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        /* Scorers Horizontal Container */
+        .match-card-scorers-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: -0.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .match-card-scorers {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            width: 45%;
+        }
+
+        .match-card-scorers.home {
+            align-items: flex-start;
+        }
+
+        .match-card-scorers.away {
+            align-items: flex-end;
+        }
+
+        .scorer-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        .scorer-icon {
+            font-size: 0.72rem;
+            opacity: 0.85;
+        }
+
+        /* Venue and Bottom labels */
+        .match-card-venue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            border-top: 1px dashed rgba(255, 255, 255, 0.1);
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+            padding: 0.6rem 0;
+            margin: 0.25rem 0;
+        }
+
+        /* Bottom Row Stats (HT Referee Attendance) */
+        .match-card-bottom-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.74rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .bottom-item {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .match-card-bottom-row .separator {
+            color: rgba(255, 255, 255, 0.15);
+            font-weight: 700;
+        }
+
+        .info-icon {
+            width: 14px;
+            height: 14px;
+        }
+        .icon-ht { stroke: #f43f5e; fill: none; }
+        .icon-ref { stroke: #eab308; fill: none; }
+        .icon-att { stroke: #a855f7; fill: none; }
+
+        /* Today highlight animation */
+        @keyframes todayGlow {
+            0% {
+                box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+                border-color: rgba(255, 255, 255, 0.04);
+            }
+            50% {
+                box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+                border-color: rgba(59, 130, 246, 0.4);
+            }
+            100% {
+                box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+                border-color: rgba(255, 255, 255, 0.04);
+            }
+        }
+
+        .matches-day-section.today-highlight {
+            animation: todayGlow 2s ease-in-out;
+        }
     </style>
+
 </head>
 
 <body>
 
     <div class="container">
-        <!-- Dashboard Header -->
-        <header>
-            <div class="title-area">
-                <h1>FIFA World Cup 2026 Dashboard</h1>
-                <p>Real-time group standings, match scores, and knockout stages</p>
-            </div>
-
-            <div class="action-area">
-                <div class="timestamp">
-                    Last Updated: <span id="update-time">Loading...</span>
+        <!-- Sticky Navigation Wrapper -->
+        <div class="sticky-nav-wrapper">
+            <!-- Dashboard Header -->
+            <header>
+                <div class="brand">
+                    <span class="brand-ball">⚽</span>
+                    <div class="brand-text">
+                        <h1>FIFA WORLD CUP <span class="accent-title">2K26</span></h1>
+                        <p>Real-time group standings, match scores, and knockout stages</p>
+                    </div>
                 </div>
 
-                <!-- Mode Toggle -->
-                <div class="mode-toggle-container">
-                    <div class="mode-toggle-bg" id="toggle-bg"></div>
-                    <button class="mode-toggle-btn active" id="btn-mode-real"
-                        onclick="setDashboardMode('real')">Real</button>
-                    <button class="mode-toggle-btn" id="btn-mode-predict"
-                        onclick="setDashboardMode('predict')">Predict</button>
+                <div class="action-area">
+                    <div class="timestamp">
+                        Last Updated: <span id="update-time">Loading...</span>
+                    </div>
+
+                    <!-- Mode Toggle -->
+                    <div class="mode-toggle-container">
+                        <div class="mode-toggle-bg" id="toggle-bg"></div>
+                        <button class="mode-toggle-btn active" id="btn-mode-real"
+                            onclick="setDashboardMode('real')">Real</button>
+                        <button class="mode-toggle-btn" id="btn-mode-predict"
+                            onclick="setDashboardMode('predict')">Predict</button>
+                    </div>
+
+                    <!-- Reset Predictions button (Only visible in predict mode) -->
+                    <button class="btn-reset-predictions" id="btn-reset-pred" onclick="resetPredictions()" style="display: none;">
+                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                        Reset Picks
+                    </button>
+
+                    <button class="btn-update" id="scrape-btn" onclick="triggerScrape()">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99">
+                            </path>
+                        </svg>
+                        Update Live Data
+                    </button>
                 </div>
+            </header>
 
-                <!-- Reset Predictions button (Only visible in predict mode) -->
-                <button class="btn-reset-predictions" id="btn-reset-pred" onclick="resetPredictions()" style="display: none;">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                    </svg>
-                    Reset Picks
-                </button>
-
-                <button class="btn-update" id="scrape-btn" onclick="triggerScrape()">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99">
-                        </path>
-                    </svg>
-                    Update Live Data
-                </button>
+            <!-- Navigation Tabs -->
+            <div class="tabs-menu">
+                <button class="tab-btn active" onclick="switchTab('matches')">All Matches</button>
+                <button class="tab-btn" onclick="switchTab('standings')">Group Standings</button>
+                <button class="tab-btn" onclick="switchTab('bracket')">Knockout Bracket</button>
             </div>
-        </header>
-
-        <!-- Navigation Tabs -->
-        <div class="tabs-menu">
-            <button class="tab-btn active" onclick="switchTab('matches')">All Matches</button>
-            <button class="tab-btn" onclick="switchTab('standings')">Group Standings</button>
-            <button class="tab-btn" onclick="switchTab('bracket')">Knockout Bracket</button>
         </div>
 
         <!-- LOADING SCREEN OVERLAY -->
@@ -1340,24 +1842,48 @@
         <!-- Tab 3: All Matches Playlist -->
         <div class="tab-panel active" id="panel-matches">
             <!-- Filter Bar -->
-            <div class="filter-bar">
-                <div class="filter-group">
-                    <label for="search-teams">Search Teams</label>
-                    <input type="text" id="search-teams" class="search-input" placeholder="e.g. Germany, USA..."
-                        oninput="filterMatchesList()">
+            <!-- Filter Bar Overhaul -->
+            <div class="matches-filter-row">
+                <!-- Search bar -->
+                <div class="search-wrapper">
+                    <input type="text" id="search-teams" class="search-input" placeholder="Search teams..." oninput="filterMatchesList()">
+                    <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
                 </div>
-                <div class="filter-group">
-                    <label for="filter-stage">Stage</label>
-                    <select id="filter-stage" class="select-filter" onchange="filterMatchesList()">
-                        <option value="ALL">All Stages</option>
-                        <option value="First Stage">First Stage (Groups)</option>
-                        <option value="Round of 32">Round of 32</option>
-                        <option value="Round of 16">Round of 16</option>
-                        <option value="Quarter-final">Quarter-finals</option>
-                        <option value="Semi-final">Semi-finals</option>
-                        <option value="Play-off for third place">3rd Place Match</option>
-                        <option value="Final">Final</option>
-                    </select>
+                
+                <!-- Pills container -->
+                <div class="pills-scroll-wrapper">
+                    <div class="pills-container" id="pills-root">
+                        <button class="pill-btn active" onclick="selectGroupFilter('ALL', this)">All</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group A', this)">Grp A</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group B', this)">Grp B</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group C', this)">Grp C</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group D', this)">Grp D</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group E', this)">Grp E</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group F', this)">Grp F</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group G', this)">Grp G</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group H', this)">Grp H</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group I', this)">Grp I</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group J', this)">Grp J</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group K', this)">Grp K</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Group L', this)">Grp L</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Round of 32', this)">R32</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Round of 16', this)">R16</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Quarter-final', this)">QF</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Semi-final', this)">SF</button>
+                        <button class="pill-btn" onclick="selectGroupFilter('Final', this)">Final</button>
+                    </div>
+                </div>
+
+                <!-- Calendar filter wrapper -->
+                <div class="calendar-wrapper">
+                    <button id="btn-calendar-filter" class="calendar-pill-btn" onclick="toggleCalendarDropdown(event)">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                        </svg>
+                    </button>
+                    <div id="calendar-dropdown" class="calendar-dropdown-menu">
+                        <!-- Populated dynamically -->
+                    </div>
                 </div>
             </div>
 
@@ -1794,6 +2320,9 @@
                     }
                 }, 50);
             }
+
+            // Recalculate sticky nav height after views are refreshed
+            updateNavHeight();
         }
 
         // Fetch data from Flask API
@@ -1855,6 +2384,9 @@
                 targetPanel.classList.add('active');
             }
 
+            // Recalculate sticky nav height
+            updateNavHeight();
+
             // Draw connector lines if switching to the bracket tab
             if (tabId === 'bracket') {
                 lastCompletedStageIdx = -1;
@@ -1867,6 +2399,68 @@
                         zoomToFit();
                     }
                 }, 50);
+            }
+
+            // Scroll to today if switching to the matches tab
+            if (tabId === 'matches') {
+                setTimeout(() => {
+                    scrollToToday();
+                }, 50);
+            }
+        }
+
+        // Scroll to today's date section in BDT (UTC+6) or closest upcoming match day
+        function scrollToToday() {
+            const bdtOffset = 6 * 60 * 60 * 1000;
+            const bdtDate = new Date(Date.now() + bdtOffset);
+            
+            const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            
+            const bdtDayName = daysOfWeek[bdtDate.getUTCDay()];
+            const bdtDayNum = bdtDate.getUTCDate();
+            const bdtMonthName = months[bdtDate.getUTCMonth()];
+            const bdtYear = bdtDate.getUTCFullYear();
+            
+            const todayStr = `${bdtDayName} ${bdtDayNum} ${bdtMonthName} ${bdtYear}`;
+            
+            const sections = document.querySelectorAll('.matches-day-section');
+            let targetSection = null;
+            
+            // Try to find exact match
+            sections.forEach(sec => {
+                if (sec.getAttribute('data-date') === todayStr) {
+                    targetSection = sec;
+                }
+            });
+            
+            // If not found, find the closest upcoming match day
+            if (!targetSection) {
+                let closestDiff = Infinity;
+                sections.forEach(sec => {
+                    const secDateStr = sec.getAttribute('data-date');
+                    const secDate = parseDateStr(secDateStr);
+                    if (secDate) {
+                        const diff = secDate - bdtDate;
+                        if (diff >= 0 && diff < closestDiff) {
+                            closestDiff = diff;
+                            targetSection = sec;
+                        }
+                    }
+                });
+            }
+            
+            // If still not found, just default to first section
+            if (!targetSection && sections.length > 0) {
+                targetSection = sections[0];
+            }
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                targetSection.classList.add('today-highlight');
+                setTimeout(() => {
+                    targetSection.classList.remove('today-highlight');
+                }, 2000);
             }
         }
 
@@ -2183,7 +2777,114 @@
             });
         }
 
-        // Render Matches Playlist rows
+        // Matches Panel Filter State
+        let activeGroupFilter = 'ALL';
+        let activeDateFilter = 'ALL';
+
+        function selectGroupFilter(groupVal, btn) {
+            activeGroupFilter = groupVal;
+            const buttons = document.querySelectorAll('.pill-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterMatchesList();
+        }
+
+        function toggleCalendarDropdown(event) {
+            event.stopPropagation();
+            const dropdown = document.getElementById('calendar-dropdown');
+            if (dropdown) {
+                dropdown.classList.toggle('show');
+            }
+        }
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', () => {
+            const dropdown = document.getElementById('calendar-dropdown');
+            if (dropdown) {
+                dropdown.classList.remove('show');
+            }
+        });
+
+        function selectDateFilter(dateVal) {
+            activeDateFilter = dateVal;
+            const btn = document.getElementById('btn-calendar-filter');
+            if (btn) {
+                if (dateVal === 'ALL') {
+                    btn.classList.remove('active');
+                } else {
+                    btn.classList.add('active');
+                }
+            }
+            filterMatchesList();
+        }
+
+        // Parse date strings like "Friday 12 June 2026" to Date objects for comparisons
+        function parseDateStr(dateStr) {
+            if (!dateStr) return null;
+            const parts = dateStr.split(' ');
+            if (parts.length < 4) return null;
+            const day = parseInt(parts[1]);
+            const monthName = parts[2];
+            const year = parseInt(parts[3]);
+            
+            const months = {
+                "January": 0, "February": 1, "March": 2, "April": 3, "May": 4, "June": 5,
+                "July": 6, "August": 7, "September": 8, "October": 9, "November": 10, "December": 11
+            };
+            const month = months[monthName];
+            if (isNaN(day) || month === undefined || isNaN(year)) return null;
+            return new Date(Date.UTC(year, month, day));
+        }
+
+        // Dynamically populate the Date filter dropdown menu list
+        function populateDateFilter(matchesList) {
+            const dropdown = document.getElementById('calendar-dropdown');
+            if (!dropdown) return;
+            
+            // Get unique dates
+            const uniqueDates = [];
+            matchesList.forEach(m => {
+                if (m.Date && !uniqueDates.includes(m.Date)) {
+                    uniqueDates.push(m.Date);
+                }
+            });
+            
+            // Sort unique dates chronologically
+            uniqueDates.sort((a, b) => {
+                const da = parseDateStr(a);
+                const db = parseDateStr(b);
+                if (!da) return 1;
+                if (!db) return -1;
+                return da - db;
+            });
+            
+            dropdown.innerHTML = '';
+            
+            // All Dates option
+            const allOpt = document.createElement('div');
+            allOpt.className = 'dropdown-item' + (activeDateFilter === 'ALL' ? ' active' : '');
+            allOpt.textContent = 'All Dates';
+            allOpt.onclick = (e) => {
+                e.stopPropagation();
+                selectDateFilter('ALL');
+                dropdown.classList.remove('show');
+            };
+            dropdown.appendChild(allOpt);
+            
+            uniqueDates.forEach(d => {
+                const opt = document.createElement('div');
+                opt.className = 'dropdown-item' + (activeDateFilter === d ? ' active' : '');
+                opt.textContent = d;
+                opt.onclick = (e) => {
+                    e.stopPropagation();
+                    selectDateFilter(d);
+                    dropdown.classList.remove('show');
+                };
+                dropdown.appendChild(opt);
+            });
+        }
+
+        // Render matches grouped by day with premium card styling and layouts
         function renderMatches(matchesList) {
             const root = document.getElementById('matches-root');
             root.innerHTML = '';
@@ -2193,86 +2894,205 @@
                 return;
             }
 
+            // Populate/update the Date filter
+            populateDateFilter(matchesList);
+
+            // Group matches by Date
+            const grouped = {};
             matchesList.forEach(m => {
-                const row = document.createElement('div');
-                row.className = 'match-row';
-                row.setAttribute('data-team1', m.Team1.toLowerCase());
-                row.setAttribute('data-team2', m.Team2.toLowerCase());
-                row.setAttribute('data-stage', m.Stage);
-
-                const score1 = m.Score1 !== null && m.Score1 !== undefined ? m.Score1 : '';
-                const score2 = m.Score2 !== null && m.Score2 !== undefined ? m.Score2 : '';
-
-                let scoreText = 'vs';
-                if (score1 !== '' || score2 !== '') {
-                    scoreText = `${score1} - ${score2}`;
+                if (!grouped[m.Date]) {
+                    grouped[m.Date] = [];
                 }
+                grouped[m.Date].push(m);
+            });
 
-                const rawStatus = m.Status || '';
-                let badgeStatus = 'TBD';
-                let statusClass = '';
-                let isPlayed = false;
+            // Re-order the dates chronologically
+            const sortedDates = Object.keys(grouped).sort((a, b) => {
+                const da = parseDateStr(a);
+                const db = parseDateStr(b);
+                if (!da) return 1;
+                if (!db) return -1;
+                return da - db;
+            });
 
-                if (/^\d+FT\d+$/.test(rawStatus) || rawStatus === 'FT') {
-                    badgeStatus = 'FT';
-                    statusClass = 'ft';
-                    isPlayed = true;
-                } else if (/^\d+AET\d+$/.test(rawStatus) || rawStatus === 'AET') {
-                    badgeStatus = 'AET';
-                    statusClass = 'ft';
-                    isPlayed = true;
-                } else if (/^\d+PEN\d+$/.test(rawStatus) || rawStatus === 'PEN') {
-                    badgeStatus = 'PEN';
-                    statusClass = 'ft';
-                    isPlayed = true;
-                } else if (/^\d{2}:\d{2}$/.test(rawStatus)) {
-                    badgeStatus = 'Upcoming';
-                } else if (rawStatus) {
-                    badgeStatus = rawStatus;
-                }
+            root.className = 'matches-grouped-container';
 
-                let timeDisplay = '';
-                let timeClass = '';
-                if (m.Time && /^\d{2}:\d{2}$/.test(m.Time.trim())) {
-                    timeDisplay = formatTime12h(m.Time.trim());
-                    timeClass = isPlayed ? 'played' : '';
-                } else if (!isPlayed && /^\d{2}:\d{2}$/.test(rawStatus)) {
-                    timeDisplay = formatTime12h(rawStatus);
-                }
+            sortedDates.forEach(dateStr => {
+                const matches = grouped[dateStr];
+                
+                const daySection = document.createElement('div');
+                daySection.className = 'matches-day-section';
+                daySection.setAttribute('data-date', dateStr);
 
-                const timeHtml = timeDisplay
-                    ? `<div class="match-time ${timeClass}">${timeDisplay} BST</div>`
-                    : `<div class="match-time played">Time N/A</div>`;
-
-                row.innerHTML = `
-                    <div class="match-meta">
-                        <div class="match-date">${m.Date}</div>
-                        ${timeHtml}
-                        <div class="match-stage">${m.Stage}</div>
-                        ${m.Group_or_Match ? `<div class="match-group-label">${m.Group_or_Match}</div>` : `<div class="match-group-label">${m.Match || ''}</div>`}
-                    </div>
-                    
-                    <div class="match-teams-area">
-                        <div class="match-team team-home">
-                            <span>${m.Team1}</span>
-                            ${getTeamFlagHtml(m.Team1, null, 'match')}
-                        </div>
-                        <div class="match-score-center">
-                            <div class="match-score-nums">${scoreText}</div>
-                            <div class="match-status-badge ${statusClass}">${badgeStatus}</div>
-                        </div>
-                        <div class="match-team team-away">
-                            ${getTeamFlagHtml(m.Team2, null, 'match')}
-                            <span>${m.Team2}</span>
-                        </div>
-                    </div>
-                    
-                    <div class="match-venue">
-                        <span class="match-stadium">${m.Stadium}</span>
-                        <span>${m.City}</span>
-                    </div>
+                // Section title
+                const dayTitle = document.createElement('div');
+                dayTitle.className = 'matches-day-title';
+                dayTitle.innerHTML = `
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 3h5v5h-5z"/>
+                    </svg>
+                    <span>${dateStr}</span>
                 `;
-                root.appendChild(row);
+                daySection.appendChild(dayTitle);
+
+                // Grid of match cards
+                const dayGrid = document.createElement('div');
+                dayGrid.className = 'matches-day-grid';
+
+                matches.forEach(m => {
+                    const card = document.createElement('div');
+                    
+                    // Determine card border color class based on Group/Stage
+                    let groupBorderClass = 'border-grey';
+                    if (m.Stage.toLowerCase().includes('first stage')) {
+                        const grp = m.Group_or_Match || '';
+                        if (grp.includes('Group A') || grp.includes('Group B') || grp.includes('Group C')) {
+                            groupBorderClass = 'border-grey';
+                        } else if (grp.includes('Group d') || grp.includes('Group D') || grp.includes('Group E') || grp.includes('Group F')) {
+                            groupBorderClass = 'border-gold';
+                        } else if (grp.includes('Group G') || grp.includes('Group H') || grp.includes('Group I')) {
+                            groupBorderClass = 'border-green';
+                        } else if (grp.includes('Group J') || grp.includes('Group K') || grp.includes('Group L')) {
+                            groupBorderClass = 'border-cyan';
+                        }
+                    } else {
+                        groupBorderClass = 'border-knockout';
+                    }
+
+                    card.className = `match-card ${groupBorderClass}`;
+                    card.setAttribute('data-team1', m.Team1.toLowerCase());
+                    card.setAttribute('data-team2', m.Team2.toLowerCase());
+                    card.setAttribute('data-stage', m.Stage);
+                    card.setAttribute('data-date', m.Date);
+                    card.setAttribute('data-group', m.Group_or_Match || '');
+
+                    const score1 = m.Score1 !== null && m.Score1 !== undefined ? m.Score1 : '';
+                    const score2 = m.Score2 !== null && m.Score2 !== undefined ? m.Score2 : '';
+
+                    const isPlayed = score1 !== '' && score2 !== '';
+                    const scoreText = isPlayed ? `${score1} - ${score2}` : 'vs';
+                    const scoreClass = isPlayed ? '' : 'vs';
+
+                    // Format Stage Label to e.g. Grp L · MD1
+                    let stageLabel = m.Stage;
+                    if (m.Stage.toLowerCase().includes('first stage')) {
+                        const grpLetter = m.Group_or_Match ? m.Group_or_Match.replace('Group ', '') : '';
+                        stageLabel = `Grp ${grpLetter} · MD${m.MatchDay || 1}`;
+                    }
+
+                    // Time display
+                    const timeDisplay = m.Time || 'TBD';
+
+                    // Highlight winning team name
+                    let t1WinnerClass = '';
+                    let t2WinnerClass = '';
+                    if (isPlayed) {
+                        const s1 = parseInt(score1) || 0;
+                        const s2 = parseInt(score2) || 0;
+                        if (s1 > s2) {
+                            t1WinnerClass = 'winner';
+                        } else if (s2 > s1) {
+                            t2WinnerClass = 'winner';
+                        }
+                    }
+
+                    // Symmetrical Goal Scorers
+                    let scorersHtml1 = '';
+                    let scorersHtml2 = '';
+                    
+                    if (m.Goals1 && m.Goals1.length > 0) {
+                        scorersHtml1 = m.Goals1.map(g => {
+                            let suffix = '';
+                            if (g.Type === 1) suffix = ' (P)';
+                            else if (g.Type === 3) suffix = ' (OG)';
+                            return `<div class="scorer-item">
+                                <span class="scorer-icon">⚽</span>
+                                <span>${g.Player} ${g.Minute}${suffix}</span>
+                            </div>`;
+                        }).join('');
+                    }
+                    if (m.Goals2 && m.Goals2.length > 0) {
+                        scorersHtml2 = m.Goals2.map(g => {
+                            let suffix = '';
+                            if (g.Type === 1) suffix = ' (P)';
+                            else if (g.Type === 3) suffix = ' (OG)';
+                            return `<div class="scorer-item">
+                                <span>${g.Player} ${g.Minute}${suffix}</span>
+                                <span class="scorer-icon">⚽</span>
+                            </div>`;
+                        }).join('');
+                    }
+
+                    // Bottom info stats row
+                    let bottomHtml = '';
+                    if (isPlayed) {
+                        const htText = m.HT ? `HT ${m.HT}` : 'HT N/A';
+                        const refText = m.Referee ? m.Referee : 'Unknown Referee';
+                        const attText = m.Attendance ? `${parseInt(m.Attendance).toLocaleString()}` : 'N/A';
+                        bottomHtml = `
+                            <div class="match-card-bottom-row">
+                                <div class="bottom-item">
+                                    <svg class="info-icon icon-ht" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                    <span>${htText}</span>
+                                </div>
+                                <span class="separator">·</span>
+                                <div class="bottom-item">
+                                    <svg class="info-icon icon-ref" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <span>${refText}</span>
+                                </div>
+                                <span class="separator">·</span>
+                                <div class="bottom-item">
+                                    <svg class="info-icon icon-att" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                    <span>${attText}</span>
+                                </div>
+                            </div>
+                        `;
+                    }
+
+                    card.innerHTML = `
+                        <div class="match-card-header">
+                            <span class="match-card-stage">${stageLabel}</span>
+                            <span class="match-card-time">${timeDisplay}</span>
+                        </div>
+                        
+                        <div class="match-card-teams-area">
+                            <div class="match-card-team-info home">
+                                ${getTeamFlagHtml(m.Team1, m.Code1, 'match')}
+                                <span class="${t1WinnerClass}">${m.Team1}</span>
+                            </div>
+                            <span class="match-card-score-nums ${scoreClass}">${scoreText}</span>
+                            <div class="match-card-team-info away">
+                                <span class="${t2WinnerClass}">${m.Team2}</span>
+                                ${getTeamFlagHtml(m.Team2, m.Code2, 'match')}
+                            </div>
+                        </div>
+
+                        <div class="match-card-scorers-container">
+                            <div class="match-card-scorers home">
+                                ${scorersHtml1}
+                            </div>
+                            <div class="match-card-scorers away">
+                                ${scorersHtml2}
+                            </div>
+                        </div>
+                        
+                        <div class="match-card-venue">
+                            <span>📍 ${m.Stadium} · ${m.City}</span>
+                        </div>
+                        
+                        ${bottomHtml}
+                    `;
+                    dayGrid.appendChild(card);
+                });
+
+                daySection.appendChild(dayGrid);
+                root.appendChild(daySection);
             });
 
             filterMatchesList();
@@ -2281,24 +3101,52 @@
         // Filter Matches dynamically
         function filterMatchesList() {
             const query = document.getElementById('search-teams').value.toLowerCase().trim();
-            const stage = document.getElementById('filter-stage').value;
-            const rows = document.querySelectorAll('.match-row');
+            const stage = activeGroupFilter;
+            const selectedDate = activeDateFilter;
+            
+            const cards = document.querySelectorAll('.match-card');
 
-            rows.forEach(row => {
-                const t1 = row.getAttribute('data-team1');
-                const t2 = row.getAttribute('data-team2');
-                const rStage = row.getAttribute('data-stage');
+            cards.forEach(card => {
+                const t1 = card.getAttribute('data-team1');
+                const t2 = card.getAttribute('data-team2');
+                const rStage = card.getAttribute('data-stage');
+                const rDate = card.getAttribute('data-date');
+                const rGroup = card.getAttribute('data-group');
 
                 const matchQuery = query === '' || t1.includes(query) || t2.includes(query);
-                const matchStage = stage === 'ALL' || rStage === stage || (stage === 'First Stage' && rStage.toLowerCase().includes('first stage'));
-
-                if (matchQuery && matchStage) {
-                    row.style.display = 'flex';
+                
+                // stage/group pill filter logic
+                let matchStage = false;
+                if (stage === 'ALL') {
+                    matchStage = true;
+                } else if (stage.startsWith('Group')) {
+                    matchStage = rGroup === stage;
                 } else {
-                    row.style.display = 'none';
+                    // Knockouts (Round of 32, etc.)
+                    matchStage = rStage === stage || (stage === 'First Stage' && rStage.toLowerCase().includes('first stage'));
+                }
+
+                const matchDate = selectedDate === 'ALL' || rDate === selectedDate;
+
+                if (matchQuery && matchStage && matchDate) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide day sections based on whether they contain visible cards
+            const sections = document.querySelectorAll('.matches-day-section');
+            sections.forEach(sec => {
+                const visibleCards = sec.querySelectorAll('.match-card:not([style*="display: none"])');
+                if (visibleCards.length > 0) {
+                    sec.style.display = 'block';
+                } else {
+                    sec.style.display = 'none';
                 }
             });
         }
+
 
         // Clean date string from squished time formats
         function cleanDateStr(dateStr) {
@@ -2688,14 +3536,24 @@
             }
         }
 
-        // Redraw connectors on window resize
+        // Dynamic Nav Wrapper height calculation
+        function updateNavHeight() {
+            const wrapper = document.querySelector('.sticky-nav-wrapper');
+            if (wrapper) {
+                const height = wrapper.offsetHeight;
+                document.documentElement.style.setProperty('--nav-height', `${height}px`);
+            }
+        }
         window.addEventListener('resize', () => {
+            updateNavHeight();
             drawConnectors();
         });
+        window.addEventListener('load', updateNavHeight);
 
         // On Page Load
         window.addEventListener('DOMContentLoaded', () => {
             fetchDashboardData();
+            updateNavHeight();
         });
     </script>
 </body>
