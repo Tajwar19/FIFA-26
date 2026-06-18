@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 08:02:44 AM",
+    "last_updated": "2026-06-18 08:03:22 AM",
     "matches": {
         "group_stage": [
             {
@@ -859,7 +859,7 @@
                 "Score2": "0",
                 "Stadium": "Mexico City Stadium",
                 "Stage": "First Stage",
-                "Status": "02'0",
+                "Status": "03'0",
                 "Team1": "Uzbekistan",
                 "Team2": "Colombia",
                 "Time": ""
@@ -2714,26 +2714,26 @@
             },
             {
                 "Code": "COL",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 0,
                 "GF": 0,
                 "Lost": 0,
-                "Played": 0,
-                "Points": 0,
+                "Played": 1,
+                "Points": 1,
                 "Pos": 3,
                 "Team": "Colombia",
                 "Won": 0
             },
             {
                 "Code": "UZB",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 0,
                 "GF": 0,
                 "Lost": 0,
-                "Played": 0,
-                "Points": 0,
+                "Played": 1,
+                "Points": 1,
                 "Pos": 4,
                 "Team": "Uzbekistan",
                 "Won": 0
@@ -2867,14 +2867,14 @@
         },
         {
             "Code": "COL",
-            "Drawn": 0,
+            "Drawn": 1,
             "GA": 0,
             "GD": 0,
             "GF": 0,
             "Group": "K",
             "Lost": 0,
-            "Played": 0,
-            "Points": 0,
+            "Played": 1,
+            "Points": 1,
             "Pos": 6,
             "Team": "Colombia",
             "Won": 0
