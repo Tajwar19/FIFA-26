@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 10:00:12 AM",
+    "last_updated": "2026-06-18 10:00:54 AM",
     "matches": {
         "group_stage": [
             {
@@ -2690,8 +2690,8 @@
                 "Code": "COL",
                 "Drawn": 0,
                 "GA": 1,
-                "GD": 1,
-                "GF": 2,
+                "GD": 2,
+                "GF": 3,
                 "Lost": 0,
                 "Played": 1,
                 "Points": 3,
@@ -2728,8 +2728,8 @@
             {
                 "Code": "UZB",
                 "Drawn": 0,
-                "GA": 2,
-                "GD": -1,
+                "GA": 3,
+                "GD": -2,
                 "GF": 1,
                 "Lost": 1,
                 "Played": 1,
