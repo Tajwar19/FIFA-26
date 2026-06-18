@@ -401,7 +401,7 @@
                 "Status": "22:00",
                 "Team1": "1L: England",
                 "Team1_raw": "1L",
-                "Team2": "3EHIJK: Portugal",
+                "Team2": "3EHIJK: Uzbekistan",
                 "Team2_raw": "3EHIJK",
                 "Time": "22:00"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 09:21:58 AM",
+    "last_updated": "2026-06-18 09:22:38 AM",
     "matches": {
         "group_stage": [
             {
@@ -1965,7 +1965,7 @@
                     "Status": "22:00",
                     "Team1": "1L: England",
                     "Team1_raw": "1L",
-                    "Team2": "3EHIJK: Portugal",
+                    "Team2": "3EHIJK: Uzbekistan",
                     "Team2_raw": "3EHIJK",
                     "Time": "22:00"
                 },
@@ -2688,16 +2688,16 @@
         "Group K": [
             {
                 "Code": "COL",
-                "Drawn": 0,
-                "GA": 0,
-                "GD": 1,
+                "Drawn": 1,
+                "GA": 1,
+                "GD": 0,
                 "GF": 1,
                 "Lost": 0,
                 "Played": 1,
-                "Points": 3,
+                "Points": 1,
                 "Pos": 1,
                 "Team": "Colombia",
-                "Won": 1
+                "Won": 0
             },
             {
                 "Code": "COD",
@@ -2713,7 +2713,7 @@
                 "Won": 0
             },
             {
-                "Code": "POR",
+                "Code": "UZB",
                 "Drawn": 1,
                 "GA": 1,
                 "GD": 0,
@@ -2722,20 +2722,20 @@
                 "Played": 1,
                 "Points": 1,
                 "Pos": 3,
-                "Team": "Portugal",
+                "Team": "Uzbekistan",
                 "Won": 0
             },
             {
-                "Code": "UZB",
-                "Drawn": 0,
+                "Code": "POR",
+                "Drawn": 1,
                 "GA": 1,
-                "GD": -1,
-                "GF": 0,
-                "Lost": 1,
+                "GD": 0,
+                "GF": 1,
+                "Lost": 0,
                 "Played": 1,
-                "Points": 0,
+                "Points": 1,
                 "Pos": 4,
-                "Team": "Uzbekistan",
+                "Team": "Portugal",
                 "Won": 0
             }
         ],
@@ -2852,7 +2852,7 @@
             "Won": 0
         },
         {
-            "Code": "POR",
+            "Code": "UZB",
             "Drawn": 1,
             "GA": 1,
             "GD": 0,
@@ -2862,7 +2862,7 @@
             "Played": 1,
             "Points": 1,
             "Pos": 5,
-            "Team": "Portugal",
+            "Team": "Uzbekistan",
             "Won": 0
         },
         {
