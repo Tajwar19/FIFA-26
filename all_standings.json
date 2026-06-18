@@ -567,9 +567,9 @@
             "Points": 1
         },
         {
-            "Pos": 4,
-            "Team": "Colombia",
-            "Code": "COL",
+            "Pos": 3,
+            "Team": "Uzbekistan",
+            "Code": "UZB",
             "Played": 1,
             "Won": 0,
             "Drawn": 1,
@@ -581,8 +581,8 @@
         },
         {
             "Pos": 4,
-            "Team": "Uzbekistan",
-            "Code": "UZB",
+            "Team": "Colombia",
+            "Code": "COL",
             "Played": 1,
             "Won": 0,
             "Drawn": 1,
