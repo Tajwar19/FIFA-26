@@ -542,6 +542,19 @@
     "Group K": [
         {
             "Pos": 1,
+            "Team": "Colombia",
+            "Code": "COL",
+            "Played": 1,
+            "Won": 1,
+            "Drawn": 0,
+            "Lost": 0,
+            "GF": 1,
+            "GA": 0,
+            "GD": 1,
+            "Points": 3
+        },
+        {
+            "Pos": 2,
             "Team": "Congo DR",
             "Code": "COD",
             "Played": 1,
@@ -554,7 +567,7 @@
             "Points": 1
         },
         {
-            "Pos": 2,
+            "Pos": 3,
             "Team": "Portugal",
             "Code": "POR",
             "Played": 1,
@@ -567,30 +580,17 @@
             "Points": 1
         },
         {
-            "Pos": 3,
-            "Team": "Colombia",
-            "Code": "COL",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 0,
-            "GA": 0,
-            "GD": 0,
-            "Points": 1
-        },
-        {
             "Pos": 4,
             "Team": "Uzbekistan",
             "Code": "UZB",
             "Played": 1,
             "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
+            "Drawn": 0,
+            "Lost": 1,
             "GF": 0,
-            "GA": 0,
-            "GD": 0,
-            "Points": 1
+            "GA": 1,
+            "GD": -1,
+            "Points": 0
         }
     ],
     "Group L": [
