@@ -20,8 +20,8 @@ A real-time interactive web dashboard for FIFA World Cup 2026, built with Python
 ### 1. Install Dependencies
 
 ```bash
-pip install flask playwright pandas
-playwright install chromium
+pip install -r requirements.txt
+playwright install
 ```
 
 ### 2. Run the App
@@ -31,6 +31,12 @@ python app.py
 ```
 
 Open `http://127.0.0.1:5000` in your browser.
+
+### 3. Run the Scheduler (Optional)
+If you want to run the automatic background scraping scheduler:
+```bash
+python local_scheduler.py
+```
 
 ### 3. Update Live Data
 
