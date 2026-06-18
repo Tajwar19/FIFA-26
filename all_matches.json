@@ -950,20 +950,32 @@
             "Time": "10 PM BST",
             "Team1": "Czechia",
             "Code1": "CZE",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "1",
             "Team2": "South Africa",
             "Code2": "RSA",
-            "Status": "10 PM BST",
+            "Status": "1FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group A",
             "Stadium": "Atlanta Stadium",
             "City": "Atlanta",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Michal SADILEK",
+                    "Minute": "6'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "MOKOENA",
+                    "Minute": "83'",
+                    "Type": 1
+                }
+            ],
+            "Referee": "Tori Penso",
+            "Attendance": "67442",
+            "HT": "1 - 0"
         },
         {
             "Match": "M26",

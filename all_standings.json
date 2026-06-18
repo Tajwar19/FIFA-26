@@ -30,27 +30,27 @@
             "Pos": 3,
             "Team": "Czechia",
             "Code": "CZE",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 1,
-            "GF": 1,
-            "GA": 2,
+            "GF": 2,
+            "GA": 3,
             "GD": -1,
-            "Points": 0
+            "Points": -1
         },
         {
             "Pos": 4,
             "Team": "South Africa",
             "Code": "RSA",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 1,
-            "GF": 0,
-            "GA": 2,
+            "GF": 1,
+            "GA": 3,
             "GD": -2,
-            "Points": -10
+            "Points": -12
         }
     ],
     "Group B": [
