@@ -279,7 +279,7 @@
                 "Status": "7 AM BST",
                 "Team1": "1F: Sweden",
                 "Team1_raw": "1F",
-                "Team2": "2C: Morocco",
+                "Team2": "2C: Scotland",
                 "Team2_raw": "2C",
                 "Time": "7 AM BST"
             },
@@ -354,7 +354,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "11 PM BST",
-                "Team1": "1C: Scotland",
+                "Team1": "1C: Morocco",
                 "Team1_raw": "1C",
                 "Team2": "2F: Japan",
                 "Team2_raw": "2F",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-19 09:15:39 PM",
+    "last_updated": "2026-06-19 11:06:05 PM",
     "matches": {
         "group_stage": [
             {
@@ -1640,17 +1640,23 @@
                 "Code2": "MAR",
                 "Date": "Saturday 20 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "2'",
+                        "Player": "Ismael SAIBARI",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group C",
-                "HT": "",
+                "HT": "0 - 1",
                 "Match": "M30",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Ilgiz Tantashev",
+                "Score1": "0",
+                "Score2": "1",
                 "Stadium": "Boston Stadium",
                 "Stage": "First Stage",
-                "Status": "4 AM BST",
+                "Status": "0FT1",
                 "Team1": "Scotland",
                 "Team2": "Morocco",
                 "Time": "4 AM BST"
@@ -3005,7 +3011,7 @@
                     "Status": "7 AM BST",
                     "Team1": "1F: Sweden",
                     "Team1_raw": "1F",
-                    "Team2": "2C: Morocco",
+                    "Team2": "2C: Scotland",
                     "Team2_raw": "2C",
                     "Time": "7 AM BST"
                 },
@@ -3027,7 +3033,7 @@
                     "Stadium": "Houston Stadium",
                     "Stage": "Round of 32",
                     "Status": "11 PM BST",
-                    "Team1": "1C: Scotland",
+                    "Team1": "1C: Morocco",
                     "Team1_raw": "1C",
                     "Team2": "2F: Japan",
                     "Team2_raw": "2F",
@@ -3485,30 +3491,30 @@
         ],
         "Group C": [
             {
-                "Code": "SCO",
-                "Drawn": 0,
-                "GA": 0,
-                "GD": 1,
-                "GF": 1,
-                "Lost": 0,
-                "Played": 1,
-                "Points": -3,
-                "Pos": 1,
-                "Team": "Scotland",
-                "Won": 1
-            },
-            {
                 "Code": "MAR",
                 "Drawn": 1,
                 "GA": 1,
+                "GD": 1,
+                "GF": 2,
+                "Lost": 0,
+                "Played": 2,
+                "Points": -1,
+                "Pos": 1,
+                "Team": "Morocco",
+                "Won": 1
+            },
+            {
+                "Code": "SCO",
+                "Drawn": 0,
+                "GA": 1,
                 "GD": 0,
                 "GF": 1,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 0,
+                "Lost": 1,
+                "Played": 2,
+                "Points": -3,
                 "Pos": 2,
-                "Team": "Morocco",
-                "Won": 0
+                "Team": "Scotland",
+                "Won": 1
             },
             {
                 "Code": "BRA",

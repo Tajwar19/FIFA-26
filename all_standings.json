@@ -110,29 +110,29 @@
     "Group C": [
         {
             "Pos": 1,
-            "Team": "Scotland",
-            "Code": "SCO",
-            "Played": 1,
+            "Team": "Morocco",
+            "Code": "MAR",
+            "Played": 2,
             "Won": 1,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 0,
-            "GF": 1,
-            "GA": 0,
+            "GF": 2,
+            "GA": 1,
             "GD": 1,
-            "Points": -3
+            "Points": -1
         },
         {
             "Pos": 2,
-            "Team": "Morocco",
-            "Code": "MAR",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
+            "Team": "Scotland",
+            "Code": "SCO",
+            "Played": 2,
+            "Won": 1,
+            "Drawn": 0,
+            "Lost": 1,
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 0
+            "Points": -3
         },
         {
             "Pos": 3,
