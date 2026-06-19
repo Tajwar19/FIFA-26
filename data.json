@@ -264,7 +264,7 @@
                 "Status": "1 AM BST",
                 "Team1": "2A: Korea Republic",
                 "Team1_raw": "2A",
-                "Team2": "2B: Canada",
+                "Team2": "2B: Switzerland",
                 "Team2_raw": "2B",
                 "Time": "1 AM BST"
             },
@@ -376,19 +376,19 @@
                 "Time": "11 PM BST"
             },
             {
-                "Date": "Wednesday 01 July 2026",
+                "Date": "07/01/202601:00",
                 "Match": "M79",
                 "NextMatch": "M92",
                 "Round": "Round of 32 (Right)",
                 "Score1": "",
                 "Score2": "",
                 "Side": "RIGHT",
-                "Status": "7 AM BST",
-                "Team1": "1A: Mexico",
-                "Team1_raw": "1A",
+                "Status": "",
+                "Team1": "MEX",
+                "Team1_raw": "MEX",
                 "Team2": "3CEFHI: Brazil",
                 "Team2_raw": "3CEFHI",
-                "Time": "7 AM BST"
+                "Time": "01:00"
             },
             {
                 "Date": "Wednesday 01 July 2026",
@@ -444,7 +444,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "9 AM BST",
-                "Team1": "1B: Switzerland",
+                "Team1": "1B: Canada",
                 "Team1_raw": "1B",
                 "Team2": "3EFGIJ: Belgium",
                 "Team2_raw": "3EFGIJ",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-18 10:32:54 PM",
+    "last_updated": "2026-06-19 05:05:04 AM",
     "matches": {
         "group_stage": [
             {
@@ -1531,7 +1531,7 @@
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "52497",
                 "City": "Vancouver",
                 "Code1": "CAN",
                 "Code2": "QAT",
@@ -1546,41 +1546,67 @@
                         "Minute": "29'",
                         "Player": "Jonathan DAVID",
                         "Type": 2
+                    },
+                    {
+                        "Minute": "45'+3'",
+                        "Player": "Jonathan DAVID",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "64'",
+                        "Player": "Nathan SALIBA",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "75'",
+                        "Player": "MOHAMED MANAI",
+                        "Type": 3
+                    },
+                    {
+                        "Minute": "90'+2'",
+                        "Player": "Jonathan DAVID",
+                        "Type": 2
                     }
                 ],
                 "Goals2": [],
                 "Group_or_Match": "Group B",
-                "HT": "2 - 0",
+                "HT": "3 - 0",
                 "Match": "M27",
                 "MatchDay": null,
                 "Referee": "Cristián Marcelo Garay Reyes",
-                "Score1": "2",
+                "Score1": "6",
                 "Score2": "0",
                 "Stadium": "BC Place Vancouver",
                 "Stage": "First Stage",
-                "Status": "2FT0",
+                "Status": "6FT0",
                 "Team1": "Canada",
                 "Team2": "Qatar",
                 "Time": "4 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "45522",
                 "City": "Guadalajara",
                 "Code1": "MEX",
                 "Code2": "KOR",
                 "Date": "Friday 19 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "50'",
+                        "Player": "Luis ROMO",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group A",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M28",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Gustavo Tejera",
+                "Score1": "1",
+                "Score2": "0",
                 "Stadium": "Guadalajara Stadium",
                 "Stage": "First Stage",
-                "Status": "7 AM BST",
+                "Status": "1FT0",
                 "Team1": "Mexico",
                 "Team2": "Korea Republic",
                 "Time": "7 AM BST"
@@ -2920,7 +2946,7 @@
                     "Status": "1 AM BST",
                     "Team1": "2A: Korea Republic",
                     "Team1_raw": "2A",
-                    "Team2": "2B: Canada",
+                    "Team2": "2B: Switzerland",
                     "Team2_raw": "2B",
                     "Time": "1 AM BST"
                 },
@@ -3047,7 +3073,7 @@
                 {
                     "Attendance": 0,
                     "City": "Mexico City",
-                    "Code1": "1A",
+                    "Code1": "MEX",
                     "Code2": "3CEFHI",
                     "Date": "Wednesday 01 July 2026",
                     "Goals1": [],
@@ -3062,8 +3088,8 @@
                     "Stadium": "Mexico City Stadium",
                     "Stage": "Round of 32",
                     "Status": "7 AM BST",
-                    "Team1": "1A: Mexico",
-                    "Team1_raw": "1A",
+                    "Team1": "Mexico",
+                    "Team1_raw": "Mexico",
                     "Team2": "3CEFHI: Brazil",
                     "Team2_raw": "3CEFHI",
                     "Time": "7 AM BST"
@@ -3206,7 +3232,7 @@
                     "Stadium": "BC Place Vancouver",
                     "Stage": "Round of 32",
                     "Status": "9 AM BST",
-                    "Team1": "1B: Switzerland",
+                    "Team1": "1B: Canada",
                     "Team1_raw": "1B",
                     "Team2": "3EFGIJ: Belgium",
                     "Team2_raw": "3EFGIJ",
@@ -3343,24 +3369,24 @@
                 "Code": "MEX",
                 "Drawn": 0,
                 "GA": 0,
-                "GD": 2,
-                "GF": 2,
+                "GD": 3,
+                "GF": 3,
                 "Lost": 0,
-                "Played": 1,
+                "Played": 2,
                 "Points": -5,
                 "Pos": 1,
                 "Team": "Mexico",
-                "Won": 1
+                "Won": 2
             },
             {
                 "Code": "KOR",
                 "Drawn": 0,
-                "GA": 1,
-                "GD": 1,
+                "GA": 2,
+                "GD": 0,
                 "GF": 2,
-                "Lost": 0,
-                "Played": 1,
-                "Points": -1,
+                "Lost": 1,
+                "Played": 2,
+                "Points": -3,
                 "Pos": 2,
                 "Team": "Korea Republic",
                 "Won": 1
@@ -3394,6 +3420,19 @@
         ],
         "Group B": [
             {
+                "Code": "CAN",
+                "Drawn": 1,
+                "GA": 1,
+                "GD": 6,
+                "GF": 7,
+                "Lost": 0,
+                "Played": 2,
+                "Points": -3,
+                "Pos": 1,
+                "Team": "Canada",
+                "Won": 1
+            },
+            {
                 "Code": "SUI",
                 "Drawn": 1,
                 "GA": 2,
@@ -3402,35 +3441,9 @@
                 "Lost": 0,
                 "Played": 2,
                 "Points": -2,
-                "Pos": 1,
+                "Pos": 2,
                 "Team": "Switzerland",
                 "Won": 1
-            },
-            {
-                "Code": "CAN",
-                "Drawn": 1,
-                "GA": 1,
-                "GD": 2,
-                "GF": 3,
-                "Lost": 0,
-                "Played": 2,
-                "Points": -3,
-                "Pos": 2,
-                "Team": "Canada",
-                "Won": 1
-            },
-            {
-                "Code": "QAT",
-                "Drawn": 1,
-                "GA": 3,
-                "GD": -2,
-                "GF": 1,
-                "Lost": 1,
-                "Played": 2,
-                "Points": -2,
-                "Pos": 3,
-                "Team": "Qatar",
-                "Won": 0
             },
             {
                 "Code": "BIH",
@@ -3441,8 +3454,21 @@
                 "Lost": 1,
                 "Played": 2,
                 "Points": -9,
-                "Pos": 4,
+                "Pos": 3,
                 "Team": "Bosnia and Herzegovina",
+                "Won": 0
+            },
+            {
+                "Code": "QAT",
+                "Drawn": 1,
+                "GA": 7,
+                "GD": -6,
+                "GF": 1,
+                "Lost": 1,
+                "Played": 2,
+                "Points": -11,
+                "Pos": 4,
+                "Team": "Qatar",
                 "Won": 0
             }
         ],
@@ -4115,20 +4141,6 @@
             "Won": 0
         },
         {
-            "Code": "QAT",
-            "Drawn": 1,
-            "GA": 3,
-            "GD": -2,
-            "GF": 1,
-            "Group": "B",
-            "Lost": 1,
-            "Played": 2,
-            "Points": -2,
-            "Pos": 10,
-            "Team": "Qatar",
-            "Won": 0
-        },
-        {
             "Code": "NED",
             "Drawn": 1,
             "GA": 2,
@@ -4138,7 +4150,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": -3,
-            "Pos": 11,
+            "Pos": 10,
             "Team": "Netherlands",
             "Won": 0
         },
@@ -4152,8 +4164,22 @@
             "Lost": 0,
             "Played": 1,
             "Points": -3,
-            "Pos": 12,
+            "Pos": 11,
             "Team": "Portugal",
+            "Won": 0
+        },
+        {
+            "Code": "BIH",
+            "Drawn": 1,
+            "GA": 5,
+            "GD": -3,
+            "GF": 2,
+            "Group": "B",
+            "Lost": 1,
+            "Played": 2,
+            "Points": -9,
+            "Pos": 12,
+            "Team": "Bosnia and Herzegovina",
             "Won": 0
         }
     ]

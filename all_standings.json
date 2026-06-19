@@ -4,27 +4,27 @@
             "Pos": 1,
             "Team": "Mexico",
             "Code": "MEX",
-            "Played": 1,
-            "Won": 1,
+            "Played": 2,
+            "Won": 2,
             "Drawn": 0,
             "Lost": 0,
-            "GF": 2,
+            "GF": 3,
             "GA": 0,
-            "GD": 2,
+            "GD": 3,
             "Points": -5
         },
         {
             "Pos": 2,
             "Team": "Korea Republic",
             "Code": "KOR",
-            "Played": 1,
+            "Played": 2,
             "Won": 1,
             "Drawn": 0,
-            "Lost": 0,
+            "Lost": 1,
             "GF": 2,
-            "GA": 1,
-            "GD": 1,
-            "Points": -1
+            "GA": 2,
+            "GD": 0,
+            "Points": -3
         },
         {
             "Pos": 3,
@@ -56,6 +56,19 @@
     "Group B": [
         {
             "Pos": 1,
+            "Team": "Canada",
+            "Code": "CAN",
+            "Played": 2,
+            "Won": 1,
+            "Drawn": 1,
+            "Lost": 0,
+            "GF": 7,
+            "GA": 1,
+            "GD": 6,
+            "Points": -3
+        },
+        {
+            "Pos": 2,
             "Team": "Switzerland",
             "Code": "SUI",
             "Played": 2,
@@ -68,33 +81,7 @@
             "Points": -2
         },
         {
-            "Pos": 2,
-            "Team": "Canada",
-            "Code": "CAN",
-            "Played": 2,
-            "Won": 1,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 3,
-            "GA": 1,
-            "GD": 2,
-            "Points": -3
-        },
-        {
             "Pos": 3,
-            "Team": "Qatar",
-            "Code": "QAT",
-            "Played": 2,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 1,
-            "GF": 1,
-            "GA": 3,
-            "GD": -2,
-            "Points": -2
-        },
-        {
-            "Pos": 4,
             "Team": "Bosnia and Herzegovina",
             "Code": "BIH",
             "Played": 2,
@@ -105,6 +92,19 @@
             "GA": 5,
             "GD": -3,
             "Points": -9
+        },
+        {
+            "Pos": 4,
+            "Team": "Qatar",
+            "Code": "QAT",
+            "Played": 2,
+            "Won": 0,
+            "Drawn": 1,
+            "Lost": 1,
+            "GF": 1,
+            "GA": 7,
+            "GD": -6,
+            "Points": -11
         }
     ],
     "Group C": [
