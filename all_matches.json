@@ -1180,20 +1180,31 @@
             "Time": "1 AM BST",
             "Team1": "USA",
             "Code1": "USA",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "2",
+            "Score2": "0",
             "Team2": "Australia",
             "Code2": "AUS",
-            "Status": "1 AM BST",
+            "Status": "2FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group D",
             "Stadium": "Seattle Stadium",
             "City": "Seattle",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Cameron BURGESS",
+                    "Minute": "11'",
+                    "Type": 3
+                },
+                {
+                    "Player": "Alex FREEMAN",
+                    "Minute": "43'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Felix Zwayer",
+            "Attendance": "66925",
+            "HT": "2 - 0"
         },
         {
             "Match": "M33",

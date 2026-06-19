@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-19 06:05:02 PM",
+    "last_updated": "2026-06-19 09:15:39 PM",
     "matches": {
         "group_stage": [
             {
@@ -1678,23 +1678,34 @@
                 "Time": "9 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "66925",
                 "City": "Seattle",
                 "Code1": "USA",
                 "Code2": "AUS",
                 "Date": "Saturday 20 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "11'",
+                        "Player": "Cameron BURGESS",
+                        "Type": 3
+                    },
+                    {
+                        "Minute": "43'",
+                        "Player": "Alex FREEMAN",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group D",
-                "HT": "",
+                "HT": "2 - 0",
                 "Match": "M32",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Felix Zwayer",
+                "Score1": "2",
+                "Score2": "0",
                 "Stadium": "Seattle Stadium",
                 "Stage": "First Stage",
-                "Status": "1 AM BST",
+                "Status": "2FT0",
                 "Team1": "USA",
                 "Team2": "Australia",
                 "Time": "1 AM BST"
@@ -3531,24 +3542,24 @@
                 "Code": "USA",
                 "Drawn": 0,
                 "GA": 1,
-                "GD": 3,
-                "GF": 4,
+                "GD": 5,
+                "GF": 6,
                 "Lost": 0,
-                "Played": 1,
-                "Points": -1,
+                "Played": 2,
+                "Points": -4,
                 "Pos": 1,
                 "Team": "USA",
-                "Won": 1
+                "Won": 2
             },
             {
                 "Code": "AUS",
                 "Drawn": 0,
-                "GA": 0,
-                "GD": 2,
+                "GA": 2,
+                "GD": 0,
                 "GF": 2,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 0,
+                "Lost": 1,
+                "Played": 2,
+                "Points": -4,
                 "Pos": 2,
                 "Team": "Australia",
                 "Won": 1
