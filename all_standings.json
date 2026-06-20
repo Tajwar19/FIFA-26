@@ -218,28 +218,28 @@
     "Group E": [
         {
             "Pos": 1,
-            "Team": "Germany",
-            "Code": "GER",
-            "Played": 1,
-            "Won": 1,
+            "Team": "Côte d'Ivoire",
+            "Code": "CIV",
+            "Played": 2,
+            "Won": 2,
             "Drawn": 0,
             "Lost": 0,
-            "GF": 7,
-            "GA": 1,
-            "GD": 6,
-            "Points": 3
+            "GF": 2,
+            "GA": 0,
+            "GD": 2,
+            "Points": 6
         },
         {
             "Pos": 2,
-            "Team": "Côte d'Ivoire",
-            "Code": "CIV",
-            "Played": 1,
+            "Team": "Germany",
+            "Code": "GER",
+            "Played": 2,
             "Won": 1,
             "Drawn": 0,
-            "Lost": 0,
-            "GF": 1,
-            "GA": 0,
-            "GD": 1,
+            "Lost": 1,
+            "GF": 7,
+            "GA": 2,
+            "GD": 5,
             "Points": 3
         },
         {

@@ -1241,20 +1241,26 @@
             "Time": "2 AM BST",
             "Team1": "Germany",
             "Code1": "GER",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "1",
             "Team2": "Côte d'Ivoire",
             "Code2": "CIV",
-            "Status": "2 AM BST",
+            "Status": "0FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group E",
             "Stadium": "Toronto Stadium",
             "City": "Toronto",
             "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals2": [
+                {
+                    "Player": "Franck KESSIE",
+                    "Minute": "30'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Juan Gabriel Benítez",
+            "Attendance": "43036",
+            "HT": "0 - 1"
         },
         {
             "Match": "M34",

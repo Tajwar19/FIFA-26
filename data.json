@@ -232,7 +232,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "2:30 AM BST",
-                "Team1": "1E: Germany",
+                "Team1": "1E: Côte d'Ivoire",
                 "Team1_raw": "1E",
                 "Team2": "3ABCDF: Scotland",
                 "Team2_raw": "3ABCDF",
@@ -369,7 +369,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "11 PM BST",
-                "Team1": "2E: Côte d'Ivoire",
+                "Team1": "2E: Germany",
                 "Team1_raw": "2E",
                 "Team2": "2I: France",
                 "Team2_raw": "2I",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-20 07:47:14 PM",
+    "last_updated": "2026-06-20 09:24:36 PM",
     "matches": {
         "group_stage": [
             {
@@ -1739,23 +1739,29 @@
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "43036",
                 "City": "Toronto",
                 "Code1": "GER",
                 "Code2": "CIV",
                 "Date": "Sunday 21 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "30'",
+                        "Player": "Franck KESSIE",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group E",
-                "HT": "",
+                "HT": "0 - 1",
                 "Match": "M33",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Juan Gabriel Benítez",
+                "Score1": "0",
+                "Score2": "1",
                 "Stadium": "Toronto Stadium",
                 "Stage": "First Stage",
-                "Status": "2 AM BST",
+                "Status": "0FT1",
                 "Team1": "Germany",
                 "Team2": "Côte d'Ivoire",
                 "Time": "2 AM BST"
@@ -3039,7 +3045,7 @@
                     "Stadium": "Boston Stadium",
                     "Stage": "Round of 32",
                     "Status": "2:30 AM BST",
-                    "Team1": "1E: Germany",
+                    "Team1": "1E: Côte d'Ivoire",
                     "Team1_raw": "1E",
                     "Team2": "3ABCDF: Scotland",
                     "Team2_raw": "3ABCDF",
@@ -3135,7 +3141,7 @@
                     "Stadium": "Dallas Stadium",
                     "Stage": "Round of 32",
                     "Status": "11 PM BST",
-                    "Team1": "2E: Côte d'Ivoire",
+                    "Team1": "2E: Germany",
                     "Team1_raw": "2E",
                     "Team2": "2I: France",
                     "Team2_raw": "2I",
@@ -3653,29 +3659,29 @@
         ],
         "Group E": [
             {
-                "Code": "GER",
-                "Drawn": 0,
-                "GA": 1,
-                "GD": 6,
-                "GF": 7,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 3,
-                "Pos": 1,
-                "Team": "Germany",
-                "Won": 1
-            },
-            {
                 "Code": "CIV",
                 "Drawn": 0,
                 "GA": 0,
-                "GD": 1,
-                "GF": 1,
+                "GD": 2,
+                "GF": 2,
                 "Lost": 0,
-                "Played": 1,
+                "Played": 2,
+                "Points": 6,
+                "Pos": 1,
+                "Team": "Côte d'Ivoire",
+                "Won": 2
+            },
+            {
+                "Code": "GER",
+                "Drawn": 0,
+                "GA": 2,
+                "GD": 5,
+                "GF": 7,
+                "Lost": 1,
+                "Played": 2,
                 "Points": 3,
                 "Pos": 2,
-                "Team": "Côte d'Ivoire",
+                "Team": "Germany",
                 "Won": 1
             },
             {
