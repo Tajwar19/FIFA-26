@@ -458,6 +458,20 @@ if __name__ == "__main__":
     # Ensure templates folder exists
     os.makedirs("templates", exist_ok=True)
     
+    # Start local background scheduler automatically
+    # When debug=True, Flask starts a reloader process. We only want to start the scheduler in the actual worker process.
+    if not app.debug or os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+        import subprocess
+        import sys
+        print("Starting local background scheduler (local_scheduler.py) automatically...")
+        try:
+            # Launch local_scheduler.py in the background
+            subprocess.Popen([sys.executable, "local_scheduler.py"])
+            print("Local background scheduler started successfully.")
+        except Exception as e:
+            print(f"Failed to start local background scheduler: {e}")
+
     # Run server on port 5000
     print(f"Starting FIFA World Cup 2026 Dashboard Server on http://127.0.0.1:5000")
     app.run(debug=True, port=5000)
+

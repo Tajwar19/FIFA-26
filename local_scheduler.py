@@ -94,4 +94,53 @@ def main():
             time.sleep(10)
 
 if __name__ == "__main__":
+    import socket
+    import threading
+
+    def listen_for_shutdown(sock):
+        try:
+            sock.listen(1)
+            while True:
+                conn, addr = sock.accept()
+                msg = conn.recv(1024)
+                if msg == b"shutdown":
+                    print("\n[Scheduler] Received shutdown signal from new instance. Exiting...")
+                    conn.close()
+                    os._exit(0)
+        except Exception:
+            pass
+
+    port = 54321
+    lock_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        lock_socket.bind(('127.0.0.1', port))
+    except socket.error:
+        # Port is already in use, try to shut down the existing instance
+        try:
+            client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            client.connect(('127.0.0.1', port))
+            client.sendall(b"shutdown")
+            client.close()
+            print("[Scheduler] Sent shutdown signal to already running instance.")
+        except Exception:
+            pass
+        
+        # Wait and retry binding to the port
+        for _ in range(15):
+            time.sleep(0.2)
+            try:
+                lock_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                lock_socket.bind(('127.0.0.1', port))
+                break
+            except socket.error:
+                continue
+        else:
+            print("[Scheduler] Failed to acquire scheduler lock. Exiting...")
+            sys.exit(0)
+
+    # Start a daemon thread to listen for shutdown requests
+    t = threading.Thread(target=listen_for_shutdown, args=(lock_socket,), daemon=True)
+    t.start()
+
     main()
+

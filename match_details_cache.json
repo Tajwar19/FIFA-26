@@ -605,5 +605,170 @@
         ],
         "HT": "0 - 1",
         "Status": "1FT3"
+    },
+    "400021440": {
+        "Referee": "Tori Penso",
+        "Attendance": "67442",
+        "Goals1": [
+            {
+                "Player": "Michal SADILEK",
+                "Minute": "6'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "MOKOENA",
+                "Minute": "83'",
+                "Type": 1
+            }
+        ],
+        "HT": "1 - 0",
+        "Status": "1FT1"
+    },
+    "400021446": {
+        "Referee": "João Pedro Silva Pinheiro",
+        "Attendance": "70026",
+        "Goals1": [
+            {
+                "Player": "Johan MANZAMBI",
+                "Minute": "74'",
+                "Type": 2
+            },
+            {
+                "Player": "VARGAS",
+                "Minute": "84'",
+                "Type": 2
+            },
+            {
+                "Player": "Johan MANZAMBI",
+                "Minute": "90'",
+                "Type": 2
+            },
+            {
+                "Player": "XHAKA",
+                "Minute": "90'+7'",
+                "Type": 1
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Ermin MAHMIC",
+                "Minute": "90'+3'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 0",
+        "Status": "4FT1"
+    },
+    "400021450": {
+        "Referee": "Cristián Marcelo Garay Reyes",
+        "Attendance": "52497",
+        "Goals1": [
+            {
+                "Player": "Cyle LARIN",
+                "Minute": "16'",
+                "Type": 2
+            },
+            {
+                "Player": "Jonathan DAVID",
+                "Minute": "29'",
+                "Type": 2
+            },
+            {
+                "Player": "Jonathan DAVID",
+                "Minute": "45'+3'",
+                "Type": 2
+            },
+            {
+                "Player": "Nathan SALIBA",
+                "Minute": "64'",
+                "Type": 2
+            },
+            {
+                "Player": "MOHAMED MANAI",
+                "Minute": "75'",
+                "Type": 3
+            },
+            {
+                "Player": "Jonathan DAVID",
+                "Minute": "90'+2'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "3 - 0",
+        "Status": "6FT0"
+    },
+    "400021442": {
+        "Referee": "Gustavo Tejera",
+        "Attendance": "45522",
+        "Goals1": [
+            {
+                "Player": "Luis ROMO",
+                "Minute": "50'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "0 - 0",
+        "Status": "1FT0"
+    },
+    "400021457": {
+        "Referee": "Alejandro José Hernández Hernández",
+        "Attendance": "68324",
+        "Goals1": [
+            {
+                "Player": "MATHEUS CUNHA",
+                "Minute": "23'",
+                "Type": 2
+            },
+            {
+                "Player": "MATHEUS CUNHA",
+                "Minute": "36'",
+                "Type": 2
+            },
+            {
+                "Player": "VINICIUS JUNIOR",
+                "Minute": "45'+3'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "3 - 0",
+        "Status": "3FT0"
+    },
+    "400021454": {
+        "Referee": "Ilgiz Tantashev",
+        "Attendance": "64146",
+        "Goals1": [],
+        "Goals2": [
+            {
+                "Player": "Ismael SAIBARI",
+                "Minute": "2'",
+                "Type": 2
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "0FT1"
+    },
+    "400021462": {
+        "Referee": "Felix Zwayer",
+        "Attendance": "66925",
+        "Goals1": [
+            {
+                "Player": "Cameron BURGESS",
+                "Minute": "11'",
+                "Type": 3
+            },
+            {
+                "Player": "Alex FREEMAN",
+                "Minute": "43'",
+                "Type": 2
+            }
+        ],
+        "Goals2": [],
+        "HT": "2 - 0",
+        "Status": "2FT0"
     }
 }

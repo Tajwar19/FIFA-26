@@ -63,14 +63,41 @@ def clean_dataframe(df):
     cleaned_df['Team'] = teams
     cleaned_df['Code'] = codes
     
-    # Statistics mapping: Played, Won, Drawn, Lost, GF, GA, GD, Points
-    stat_cols = ['Played', 'Won', 'Drawn', 'Lost', 'GF', 'GA', 'GD', 'Points']
+    # Statistics mapping: Played, Won, Drawn, Lost, GF, GA, GD
+    stat_cols = ['Played', 'Won', 'Drawn', 'Lost', 'GF', 'GA', 'GD']
     for offset, col_name in enumerate(stat_cols):
         col_idx = team_idx + 1 + offset
         if col_idx < num_cols:
             cleaned_df[col_name] = pd.to_numeric(df.iloc[:, col_idx], errors='coerce').fillna(0).astype(int)
         else:
             cleaned_df[col_name] = 0
+            
+    # Determine the correct column for Points (handling optional/extra columns like TCS)
+    points_idx = team_idx + 9 if num_cols >= 13 else team_idx + 8
+    for r in range(len(df)):
+        try:
+            played = int(pd.to_numeric(df.iloc[r, team_idx + 1], errors='coerce') or 0)
+            won = int(pd.to_numeric(df.iloc[r, team_idx + 2], errors='coerce') or 0)
+            drawn = int(pd.to_numeric(df.iloc[r, team_idx + 3], errors='coerce') or 0)
+            
+            if played > 0:
+                expected_pts = won * 3 + drawn
+                val_8 = int(pd.to_numeric(df.iloc[r, team_idx + 8], errors='coerce') or 0)
+                val_9 = int(pd.to_numeric(df.iloc[r, team_idx + 9], errors='coerce') or 0) if team_idx + 9 < num_cols else None
+                
+                if val_9 is not None and val_9 == expected_pts and val_8 != expected_pts:
+                    points_idx = team_idx + 9
+                    break
+                elif val_8 == expected_pts:
+                    points_idx = team_idx + 8
+                    break
+        except Exception:
+            pass
+            
+    if points_idx < num_cols:
+        cleaned_df['Points'] = pd.to_numeric(df.iloc[:, points_idx], errors='coerce').fillna(0).astype(int)
+    else:
+        cleaned_df['Points'] = 0
             
     return cleaned_df
 

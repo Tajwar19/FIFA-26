@@ -950,20 +950,32 @@
             "Time": "10 PM BST",
             "Team1": "Czechia",
             "Code1": "CZE",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "1",
             "Team2": "South Africa",
             "Code2": "RSA",
-            "Status": "10 PM BST",
+            "Status": "1FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group A",
             "Stadium": "Atlanta Stadium",
             "City": "Atlanta",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Michal SADILEK",
+                    "Minute": "6'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "MOKOENA",
+                    "Minute": "83'",
+                    "Type": 1
+                }
+            ],
+            "Referee": "Tori Penso",
+            "Attendance": "67442",
+            "HT": "1 - 0"
         },
         {
             "Match": "M26",
@@ -972,20 +984,47 @@
             "Time": "1 AM BST",
             "Team1": "Switzerland",
             "Code1": "SUI",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "4",
+            "Score2": "1",
             "Team2": "Bosnia and Herzegovina",
             "Code2": "BIH",
-            "Status": "1 AM BST",
+            "Status": "4FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group B",
             "Stadium": "Los Angeles Stadium",
             "City": "Los Angeles",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Johan MANZAMBI",
+                    "Minute": "74'",
+                    "Type": 2
+                },
+                {
+                    "Player": "VARGAS",
+                    "Minute": "84'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Johan MANZAMBI",
+                    "Minute": "90'",
+                    "Type": 2
+                },
+                {
+                    "Player": "XHAKA",
+                    "Minute": "90'+7'",
+                    "Type": 1
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Ermin MAHMIC",
+                    "Minute": "90'+3'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "João Pedro Silva Pinheiro",
+            "Attendance": "70026",
+            "HT": "0 - 0"
         },
         {
             "Match": "M27",
@@ -994,20 +1033,51 @@
             "Time": "4 AM BST",
             "Team1": "Canada",
             "Code1": "CAN",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "6",
+            "Score2": "0",
             "Team2": "Qatar",
             "Code2": "QAT",
-            "Status": "4 AM BST",
+            "Status": "6FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group B",
             "Stadium": "BC Place Vancouver",
             "City": "Vancouver",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Cyle LARIN",
+                    "Minute": "16'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Jonathan DAVID",
+                    "Minute": "29'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Jonathan DAVID",
+                    "Minute": "45'+3'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Nathan SALIBA",
+                    "Minute": "64'",
+                    "Type": 2
+                },
+                {
+                    "Player": "MOHAMED MANAI",
+                    "Minute": "75'",
+                    "Type": 3
+                },
+                {
+                    "Player": "Jonathan DAVID",
+                    "Minute": "90'+2'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Cristián Marcelo Garay Reyes",
+            "Attendance": "52497",
+            "HT": "3 - 0"
         },
         {
             "Match": "M28",
@@ -1016,20 +1086,26 @@
             "Time": "7 AM BST",
             "Team1": "Mexico",
             "Code1": "MEX",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "0",
             "Team2": "Korea Republic",
             "Code2": "KOR",
-            "Status": "7 AM BST",
+            "Status": "1FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group A",
             "Stadium": "Guadalajara Stadium",
             "City": "Guadalajara",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Luis ROMO",
+                    "Minute": "50'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Gustavo Tejera",
+            "Attendance": "45522",
+            "HT": "0 - 0"
         },
         {
             "Match": "M29",
@@ -1038,20 +1114,36 @@
             "Time": "6:30 AM BST",
             "Team1": "Brazil",
             "Code1": "BRA",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "3",
+            "Score2": "0",
             "Team2": "Haiti",
             "Code2": "HAI",
-            "Status": "6:30 AM BST",
+            "Status": "3FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group C",
             "Stadium": "Philadelphia Stadium",
             "City": "Philadelphia",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "MATHEUS CUNHA",
+                    "Minute": "23'",
+                    "Type": 2
+                },
+                {
+                    "Player": "MATHEUS CUNHA",
+                    "Minute": "36'",
+                    "Type": 2
+                },
+                {
+                    "Player": "VINICIUS JUNIOR",
+                    "Minute": "45'+3'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Alejandro José Hernández Hernández",
+            "Attendance": "68324",
+            "HT": "3 - 0"
         },
         {
             "Match": "M30",
@@ -1060,20 +1152,26 @@
             "Time": "4 AM BST",
             "Team1": "Scotland",
             "Code1": "SCO",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "1",
             "Team2": "Morocco",
             "Code2": "MAR",
-            "Status": "4 AM BST",
+            "Status": "0FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group C",
             "Stadium": "Boston Stadium",
             "City": "Boston",
             "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals2": [
+                {
+                    "Player": "Ismael SAIBARI",
+                    "Minute": "2'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Ilgiz Tantashev",
+            "Attendance": "64146",
+            "HT": "0 - 1"
         },
         {
             "Match": "M31",
@@ -1104,20 +1202,31 @@
             "Time": "1 AM BST",
             "Team1": "USA",
             "Code1": "USA",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "2",
+            "Score2": "0",
             "Team2": "Australia",
             "Code2": "AUS",
-            "Status": "1 AM BST",
+            "Status": "2FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group D",
             "Stadium": "Seattle Stadium",
             "City": "Seattle",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Cameron BURGESS",
+                    "Minute": "11'",
+                    "Type": 3
+                },
+                {
+                    "Player": "Alex FREEMAN",
+                    "Minute": "43'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Felix Zwayer",
+            "Attendance": "66925",
+            "HT": "2 - 0"
         },
         {
             "Match": "M33",
@@ -2139,8 +2248,8 @@
                 "MatchDay": null,
                 "Date": "Wednesday 01 July 2026",
                 "Time": "7 AM BST",
-                "Team1": "1A",
-                "Code1": "1A",
+                "Team1": "Mexico",
+                "Code1": "MEX",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "3CEFHI",
