@@ -249,7 +249,7 @@
                 "Status": "3 AM BST",
                 "Team1": "1I: Norway",
                 "Team1_raw": "1I",
-                "Team2": "3CDFGH: Netherlands",
+                "Team2": "3CDFGH: Japan",
                 "Team2_raw": "3CDFGH",
                 "Time": "3 AM BST"
             },
@@ -277,7 +277,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "7 AM BST",
-                "Team1": "1F: Sweden",
+                "Team1": "1F: Netherlands",
                 "Team1_raw": "1F",
                 "Team2": "2C: Morocco",
                 "Team2_raw": "2C",
@@ -356,7 +356,7 @@
                 "Status": "11 PM BST",
                 "Team1": "1C: Brazil",
                 "Team1_raw": "1C",
-                "Team2": "2F: Japan",
+                "Team2": "2F: Sweden",
                 "Team2_raw": "2F",
                 "Time": "11 PM BST"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-20 03:48:09 PM",
+    "last_updated": "2026-06-20 05:41:11 PM",
     "matches": {
         "group_stage": [
             {
@@ -1788,18 +1788,29 @@
                 "Code1": "NED",
                 "Code2": "SWE",
                 "Date": "Saturday 20 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "5'",
+                        "Player": "Brian BROBBEY",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "17'",
+                        "Player": "Brian BROBBEY",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group F",
-                "HT": "",
+                "HT": "2 - 0",
                 "Match": "M35",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Michael Oliver",
+                "Score1": "2",
+                "Score2": "0",
                 "Stadium": "Houston Stadium",
                 "Stage": "First Stage",
-                "Status": "11 PM BST",
+                "Status": "2FT0",
                 "Team1": "Netherlands",
                 "Team2": "Sweden",
                 "Time": "11 PM BST"
@@ -3031,7 +3042,7 @@
                     "Stadium": "Monterrey Stadium",
                     "Stage": "Round of 32",
                     "Status": "7 AM BST",
-                    "Team1": "1F: Sweden",
+                    "Team1": "1F: Netherlands",
                     "Team1_raw": "1F",
                     "Team2": "2C: Morocco",
                     "Team2_raw": "2C",
@@ -3057,7 +3068,7 @@
                     "Status": "11 PM BST",
                     "Team1": "1C: Brazil",
                     "Team1_raw": "1C",
-                    "Team2": "2F: Japan",
+                    "Team2": "2F: Sweden",
                     "Team2_raw": "2F",
                     "Time": "11 PM BST"
                 },
@@ -3081,7 +3092,7 @@
                     "Status": "3 AM BST",
                     "Team1": "1I: Norway",
                     "Team1_raw": "1I",
-                    "Team2": "3CDFGH: Netherlands",
+                    "Team2": "3CDFGH: Japan",
                     "Team2_raw": "3CDFGH",
                     "Time": "3 AM BST"
                 },
@@ -3675,15 +3686,28 @@
         ],
         "Group F": [
             {
+                "Code": "NED",
+                "Drawn": 1,
+                "GA": 2,
+                "GD": 2,
+                "GF": 4,
+                "Lost": 0,
+                "Played": 2,
+                "Points": 4,
+                "Pos": 1,
+                "Team": "Netherlands",
+                "Won": 1
+            },
+            {
                 "Code": "SWE",
                 "Drawn": 0,
-                "GA": 1,
-                "GD": 4,
+                "GA": 3,
+                "GD": 2,
                 "GF": 5,
-                "Lost": 0,
-                "Played": 1,
+                "Lost": 1,
+                "Played": 2,
                 "Points": 3,
-                "Pos": 1,
+                "Pos": 2,
                 "Team": "Sweden",
                 "Won": 1
             },
@@ -3696,21 +3720,8 @@
                 "Lost": 0,
                 "Played": 1,
                 "Points": 1,
-                "Pos": 2,
-                "Team": "Japan",
-                "Won": 0
-            },
-            {
-                "Code": "NED",
-                "Drawn": 1,
-                "GA": 2,
-                "GD": 0,
-                "GF": 2,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 1,
                 "Pos": 3,
-                "Team": "Netherlands",
+                "Team": "Japan",
                 "Won": 0
             },
             {
@@ -4082,7 +4093,7 @@
             "Won": 1
         },
         {
-            "Code": "NED",
+            "Code": "JPN",
             "Drawn": 1,
             "GA": 2,
             "GD": 0,
@@ -4092,7 +4103,7 @@
             "Played": 1,
             "Points": 1,
             "Pos": 3,
-            "Team": "Netherlands",
+            "Team": "Japan",
             "Won": 0
         },
         {

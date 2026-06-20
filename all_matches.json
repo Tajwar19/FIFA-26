@@ -1285,20 +1285,31 @@
             "Time": "11 PM BST",
             "Team1": "Netherlands",
             "Code1": "NED",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "2",
+            "Score2": "0",
             "Team2": "Sweden",
             "Code2": "SWE",
-            "Status": "11 PM BST",
+            "Status": "2FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group F",
             "Stadium": "Houston Stadium",
             "City": "Houston",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Brian BROBBEY",
+                    "Minute": "5'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Brian BROBBEY",
+                    "Minute": "17'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
+            "Referee": "Michael Oliver",
             "Attendance": 0,
-            "HT": ""
+            "HT": "2 - 0"
         },
         {
             "Match": "M36",
