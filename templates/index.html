@@ -1748,6 +1748,7 @@
                 <button class="tab-btn active" onclick="switchTab('matches')">All Matches</button>
                 <button class="tab-btn" onclick="switchTab('standings')">Group Standings</button>
                 <button class="tab-btn" onclick="switchTab('bracket')">Knockout Bracket</button>
+                <button class="tab-btn" onclick="switchTab('stats')">Statistics</button>
             </div>
         </div>
 
@@ -1890,6 +1891,95 @@
             <!-- Match list rows -->
             <div class="matches-list" id="matches-root">
                 <!-- Dynamic rendering in JS -->
+            </div>
+        </div>
+
+        <!-- Tab 4: Statistics -->
+        <div class="tab-panel" id="panel-stats">
+            <div class="stats-dashboard-container" style="display: flex; flex-direction: column; gap: 2rem; margin-top: 1rem; margin-bottom: 2rem;">
+                
+                <!-- KPI Section -->
+                <div class="stats-kpi-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                    <div class="group-card" style="text-align: center; padding: 1.5rem;">
+                        <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-cyan);" id="stat-kpi-matches">0</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Matches Played</div>
+                    </div>
+                    <div class="group-card" style="text-align: center; padding: 1.5rem;">
+                        <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-gold);" id="stat-kpi-goals">0</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Goals Scored</div>
+                    </div>
+                    <div class="group-card" style="text-align: center; padding: 1.5rem;">
+                        <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-green);" id="stat-kpi-average">0.00</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Goals / Match</div>
+                    </div>
+                    <div class="group-card" style="text-align: center; padding: 1.5rem;">
+                        <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: #a855f7;" id="stat-kpi-attendance">0</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Total Attendance</div>
+                    </div>
+                </div>
+
+                <!-- Main Stats Section: Top Scorers & Team Records -->
+                <div class="stats-main-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                    
+                    <!-- Top Scorers Card -->
+                    <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
+                        <div class="group-header">
+                            ⚽ Top Scorers
+                            <span style="color: var(--accent-gold);">Golden Boot Race</span>
+                        </div>
+                        <div style="overflow-x: auto;">
+                            <table class="standings-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50px; text-align: center;">Rank</th>
+                                        <th>Player</th>
+                                        <th>Team</th>
+                                        <th style="width: 70px; text-align: center;">Goals</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="stats-scorers-root">
+                                    <!-- Dynamic scorers rendering -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Team Records / Goals Card -->
+                    <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
+                        <div class="group-header">
+                            📊 Team Stats
+                            <span style="color: var(--accent-cyan);">Attack & Defense</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <!-- Top Attacking -->
+                            <div>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Top Scoring Teams</div>
+                                <div style="display: flex; flex-direction: column; gap: 0.4rem;" id="stats-teams-attacking-root">
+                                    <!-- Dynamic attacking teams -->
+                                </div>
+                            </div>
+                            <!-- Best Defending -->
+                            <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 1rem;">
+                                <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Best Defending Teams</div>
+                                <div style="display: flex; flex-direction: column; gap: 0.4rem;" id="stats-teams-defensive-root">
+                                    <!-- Dynamic defensive teams -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Match Records Card -->
+                    <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
+                        <div class="group-header">
+                            🏆 Match Records
+                            <span style="color: #a855f7;">Milestones</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;" id="stats-records-root">
+                            <!-- Dynamic match records -->
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -2270,6 +2360,221 @@
             return groupMatches.concat(knockoutMatches);
         }
 
+        // Render Statistics Tab
+        function renderStatsTab(matchesList, standingsData) {
+            const scorersRoot = document.getElementById('stats-scorers-root');
+            const attackingRoot = document.getElementById('stats-teams-attacking-root');
+            const defensiveRoot = document.getElementById('stats-teams-defensive-root');
+            const recordsRoot = document.getElementById('stats-records-root');
+
+            if (!matchesList || matchesList.length === 0 || !standingsData || Object.keys(standingsData).length === 0) {
+                if (scorersRoot) scorersRoot.innerHTML = '<tr><td colspan="4" class="empty-state">No stats data available.</td></tr>';
+                return;
+            }
+
+            // 1. KPI Calculations
+            let matchesPlayed = 0;
+            let totalGoals = 0;
+            let totalAttendance = 0;
+            let playedMatchesWithAtt = 0;
+
+            const playerGoals = {};
+            const playerTeams = {};
+
+            let highestScoringMatch = null;
+            let highestGoalsInMatch = 0;
+            let biggestWinMatch = null;
+            let biggestWinMargin = -1;
+            let highestAttendanceMatch = null;
+            let highestAttendanceVal = 0;
+
+            matchesList.forEach(m => {
+                const s1 = m.Score1 !== null && m.Score1 !== '' ? parseInt(m.Score1) : null;
+                const s2 = m.Score2 !== null && m.Score2 !== '' ? parseInt(m.Score2) : null;
+                const isPlayed = s1 !== null && s2 !== null && !isNaN(s1) && !isNaN(s2);
+
+                if (isPlayed) {
+                    matchesPlayed++;
+                    const matchGoals = s1 + s2;
+                    totalGoals += matchGoals;
+
+                    const att = m.Attendance ? parseInt(m.Attendance) : 0;
+                    if (att > 0) {
+                        totalAttendance += att;
+                        playedMatchesWithAtt++;
+                        if (att > highestAttendanceVal) {
+                            highestAttendanceVal = att;
+                            highestAttendanceMatch = m;
+                        }
+                    }
+
+                    // Process Scorers
+                    const processGoals = (goalsList, teamName, teamCode) => {
+                        if (!goalsList) return;
+                        goalsList.forEach(g => {
+                            if (g.Player && g.Type !== 3) {
+                                const pName = g.Player.trim();
+                                playerGoals[pName] = (playerGoals[pName] || 0) + 1;
+                                playerTeams[pName] = teamCode || cleanTeamName(teamName);
+                            }
+                        });
+                    };
+                    processGoals(m.Goals1, m.Team1, m.Code1);
+                    processGoals(m.Goals2, m.Team2, m.Code2);
+
+                    // Highest Scoring Match
+                    if (matchGoals > highestGoalsInMatch) {
+                        highestGoalsInMatch = matchGoals;
+                        highestScoringMatch = m;
+                    }
+
+                    // Biggest Win margin
+                    const margin = Math.abs(s1 - s2);
+                    if (margin > biggestWinMargin) {
+                        biggestWinMargin = margin;
+                        biggestWinMatch = m;
+                    }
+                }
+            });
+
+            // Update KPI values
+            document.getElementById('stat-kpi-matches').innerText = matchesPlayed;
+            document.getElementById('stat-kpi-goals').innerText = totalGoals;
+            document.getElementById('stat-kpi-average').innerText = matchesPlayed > 0 ? (totalGoals / matchesPlayed).toFixed(2) : '0.00';
+            document.getElementById('stat-kpi-attendance').innerText = totalAttendance > 0 ? totalAttendance.toLocaleString() : '0';
+
+            // 2. Render Top Scorers Table
+            const sortedScorers = Object.entries(playerGoals).sort((a, b) => b[1] - a[1]);
+            if (scorersRoot) {
+                scorersRoot.innerHTML = '';
+                if (sortedScorers.length === 0) {
+                    scorersRoot.innerHTML = '<tr><td colspan="4" class="empty-state" style="border:none; text-align:center;">No scorers recorded yet.</td></tr>';
+                } else {
+                    let lastGoals = -1;
+                    let currentRank = 0;
+                    sortedScorers.slice(0, 10).forEach(([player, goals], idx) => {
+                        if (goals !== lastGoals) {
+                            currentRank = idx + 1;
+                            lastGoals = goals;
+                        }
+                        
+                        let rankText = currentRank;
+                        if (currentRank === 1) rankText = '🥇';
+                        else if (currentRank === 2) rankText = '🥈';
+                        else if (currentRank === 3) rankText = '🥉';
+
+                        const teamCode = playerTeams[player] || '';
+                        scorersRoot.innerHTML += `
+                            <tr>
+                                <td class="num-bold" style="text-align: center;">${rankText}</td>
+                                <td style="font-weight:600;">${player}</td>
+                                <td>
+                                    <div class="team-name-cell" style="font-size:0.8rem;">
+                                        ${getTeamFlagHtml(null, teamCode, 'bracket')}
+                                        <span>${teamCode}</span>
+                                    </div>
+                                </td>
+                                <td class="points-highlight" style="text-align: center; font-size:1rem;">${goals}</td>
+                            </tr>
+                        `;
+                    });
+                }
+            }
+
+            // 3. Team Statistics: Attacking & Defending
+            const teamStatsList = [];
+            Object.values(standingsData).flat().forEach(t => {
+                teamStatsList.push({
+                    Team: t.Team,
+                    Code: t.Code,
+                    GF: parseInt(t.GF) || 0,
+                    GA: parseInt(t.GA) || 0,
+                    Played: parseInt(t.Played) || 0
+                });
+            });
+
+            // Top Attacking
+            const topAttacking = [...teamStatsList].sort((a, b) => b.GF - a.GF).slice(0, 5);
+            if (attackingRoot) {
+                attackingRoot.innerHTML = '';
+                topAttacking.forEach((t, i) => {
+                    attackingRoot.innerHTML += `
+                        <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.02); padding: 0.5rem 0.75rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
+                            <div class="team-name-cell">
+                                <span style="font-weight:700; color:var(--accent-cyan); width:15px;">${i+1}</span>
+                                ${getTeamFlagHtml(t.Team, t.Code, 'bracket')}
+                                <span>${t.Team}</span>
+                            </div>
+                            <span class="num-bold" style="color:#ffffff;">${t.GF} Goals <span style="font-size:0.75rem; color:var(--text-muted);">(${t.Played} pl)</span></span>
+                        </div>
+                    `;
+                });
+            }
+
+            // Best Defending (GA ascending, Played > 0)
+            const playedTeams = teamStatsList.filter(t => t.Played > 0);
+            const topDefensive = [...playedTeams].sort((a, b) => a.GA - b.GA).slice(0, 5);
+            if (defensiveRoot) {
+                defensiveRoot.innerHTML = '';
+                if (topDefensive.length === 0) {
+                    defensiveRoot.innerHTML = '<div class="empty-state" style="border:none; padding:1rem;">No games played yet.</div>';
+                } else {
+                    topDefensive.forEach((t, i) => {
+                        defensiveRoot.innerHTML += `
+                            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.02); padding: 0.5rem 0.75rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04);">
+                                <div class="team-name-cell">
+                                    <span style="font-weight:700; color:var(--accent-green); width:15px;">${i+1}</span>
+                                    ${getTeamFlagHtml(t.Team, t.Code, 'bracket')}
+                                    <span>${t.Team}</span>
+                                </div>
+                                <span class="num-bold" style="color:#ffffff;">${t.GA} Conceded <span style="font-size:0.75rem; color:var(--text-muted);">(${t.Played} pl)</span></span>
+                            </div>
+                        `;
+                    });
+                }
+            }
+
+            // 4. Match Records
+            if (recordsRoot) {
+                recordsRoot.innerHTML = '';
+                
+                const addRecordRow = (title, matchObj, labelText) => {
+                    if (!matchObj) return;
+                    recordsRoot.innerHTML += `
+                        <div style="background: rgba(255,255,255,0.02); padding: 0.85rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04);">
+                            <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:0.4rem; letter-spacing:0.05em;">${title}</div>
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                                <div class="team-name-cell" style="font-size:0.9rem; font-weight:600;">
+                                    ${getTeamFlagHtml(null, matchObj.Code1, 'bracket')}
+                                    <span>${matchObj.Team1}</span>
+                                    <span class="num-bold" style="margin: 0 0.3rem;">${matchObj.Score1}-${matchObj.Score2}</span>
+                                    ${getTeamFlagHtml(null, matchObj.Code2, 'bracket')}
+                                    <span>${matchObj.Team2}</span>
+                                </div>
+                                <span class="num-bold" style="color:var(--accent-gold); font-size:1.05rem;">${labelText}</span>
+                            </div>
+                            <div style="font-size:0.75rem; color:var(--text-muted);">📍 ${matchObj.Stadium} · ${matchObj.City}</div>
+                        </div>
+                    `;
+                };
+
+                // Add record rows
+                if (highestScoringMatch && highestGoalsInMatch > 0) {
+                    addRecordRow("Highest Scoring Match", highestScoringMatch, `${highestGoalsInMatch} Goals`);
+                }
+                if (biggestWinMatch && biggestWinMargin >= 0) {
+                    addRecordRow("Biggest Goal Margin", biggestWinMatch, `+${biggestWinMargin} GD`);
+                }
+                if (highestAttendanceMatch && highestAttendanceVal > 0) {
+                    addRecordRow("Highest Attendance", highestAttendanceMatch, `${highestAttendanceVal.toLocaleString()} fans`);
+                }
+                
+                if (recordsRoot.children.length === 0) {
+                    recordsRoot.innerHTML = '<div class="empty-state" style="border:none;">No tournament records yet.</div>';
+                }
+            }
+        }
+
         function refreshViews() {
             if (!dashboardData) return;
 
@@ -2294,6 +2599,7 @@
 
                 const predictedMatchesList = getPredictedMatchesList(predictedGroups, predictedBracket);
                 renderMatches(predictedMatchesList);
+                renderStatsTab(predictedMatchesList, predictedGroups);
             } else {
                 document.body.classList.remove('predict-mode-active');
                 document.getElementById('btn-mode-real').classList.add('active');
@@ -2306,6 +2612,7 @@
                     Object.values(dashboardData.matches.knockout_stage).flat()
                 );
                 renderMatches(realMatchesList);
+                renderStatsTab(realMatchesList, dashboardData.standings);
             }
 
             // Auto-focus zoom to correct stage if bracket panel is currently visible
