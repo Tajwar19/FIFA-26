@@ -139,10 +139,21 @@ def scrape_bracket_tree():
             print(f"  {m['Match']} ({m['Date']} {m['Time']}): {m['Team1']} vs {m['Team2']}{next_txt}")
             
     # Save files
-    # 1. JSON
-    with open("bracket_tree.json", "w", encoding="utf-8") as f:
-        json.dump(bracket_tree, f, indent=4, ensure_ascii=False)
-    print("\nSaved bracket tree to bracket_tree.json")
+    # 1. JSON (only save if changed to preserve modified timestamp)
+    existing_data = None
+    if os.path.exists("bracket_tree.json"):
+        try:
+            with open("bracket_tree.json", "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
+        except Exception:
+            pass
+            
+    if existing_data != bracket_tree:
+        with open("bracket_tree.json", "w", encoding="utf-8") as f:
+            json.dump(bracket_tree, f, indent=4, ensure_ascii=False)
+        print("\nSaved bracket tree to bracket_tree.json")
+    else:
+        print("\nNo changes in bracket tree. Skipping file write to preserve timestamp.")
     
     pass
 

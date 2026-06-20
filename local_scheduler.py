@@ -43,8 +43,39 @@ def check_and_push_git():
     """
     Checks if there are modifications in the scraped files and pushes them to GitHub.
     """
-    print("Git auto-push is disabled during matches overhaul.")
-    return
+    try:
+        # 1. Check git status to see if any tracked files changed
+        status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, check=True)
+        files_to_push = ["all_standings.json", "all_matches.json", "bracket_tree.json", "data.json", "index.html"]
+        has_changes = False
+        
+        for line in status.stdout.splitlines():
+            # Lines starting with ' M' or 'M ' indicate modifications
+            for f in files_to_push:
+                if f in line or f" {f}" in line:
+                    has_changes = True
+                    break
+        
+        if has_changes:
+            print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Standings/match changes detected. Preparing commit...")
+            # Add files
+            subprocess.run(["git", "add", "-f"] + files_to_push, check=True)
+            
+            # Commit
+            bdt_now = get_bdt_time()
+            commit_msg = f"Auto-update live data: {bdt_now.strftime('%Y-%m-%d %I:%M:%S %p')} (BDT)"
+            subprocess.run(["git", "-c", "core.autocrlf=true", "commit", "-m", commit_msg], check=True)
+            
+            # Push
+            print("Pushing updates to GitHub...")
+            subprocess.run(["git", "push", "origin", "main"], check=True)
+            print("Push completed successfully!")
+        else:
+            print("No changes in standings or matches. Skipping git push.")
+            
+    except Exception as git_err:
+        print(f"Git push operation failed: {git_err}")
+
 
 def main():
     print("==========================================================")

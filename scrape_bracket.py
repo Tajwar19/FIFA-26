@@ -255,9 +255,21 @@ def scrape_bracket():
         "knockout_stage": knockout_by_stage
     }
     
-    with open("all_matches.json", "w", encoding="utf-8") as f:
-        json.dump(consolidated_json, f, indent=4, ensure_ascii=False)
-    print("Saved combined matches data to all_matches.json")
+    # Only save if changed to preserve modified timestamp
+    existing_data = None
+    if os.path.exists("all_matches.json"):
+        try:
+            with open("all_matches.json", "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
+        except Exception:
+            pass
+            
+    if existing_data != consolidated_json:
+        with open("all_matches.json", "w", encoding="utf-8") as f:
+            json.dump(consolidated_json, f, indent=4, ensure_ascii=False)
+        print("Saved combined matches data to all_matches.json")
+    else:
+        print("No changes in matches data. Skipping file write to preserve timestamp.")
 
 if __name__ == "__main__":
     scrape_bracket()
