@@ -215,11 +215,22 @@ def scrape_standings():
             # Convert to dictionary format
             all_standings[group_name] = cleaned_df.to_dict(orient="records")
             
-        # Save all standings to JSON
+        # Save all standings to JSON (only save if changed to preserve modified timestamp)
         json_filename = "all_standings.json"
-        with open(json_filename, "w", encoding="utf-8") as f:
-            json.dump(all_standings, f, indent=4, ensure_ascii=False)
-        print(f"\nSaved all standings to {json_filename}")
+        existing_data = None
+        if os.path.exists(json_filename):
+            try:
+                with open(json_filename, "r", encoding="utf-8") as f:
+                    existing_data = json.load(f)
+            except Exception:
+                pass
+                
+        if existing_data != all_standings:
+            with open(json_filename, "w", encoding="utf-8") as f:
+                json.dump(all_standings, f, indent=4, ensure_ascii=False)
+            print(f"\nSaved all standings to {json_filename}")
+        else:
+            print("\nNo standings changes detected. Skipping file write to preserve timestamp.")
         
         browser.close()
 
