@@ -376,7 +376,7 @@
                 "Time": "11 PM BST"
             },
             {
-                "Date": "07/01/202607:00",
+                "Date": "07/01/202601:00",
                 "Match": "M79",
                 "NextMatch": "M92",
                 "Round": "Round of 32 (Right)",
@@ -388,7 +388,7 @@
                 "Team1_raw": "MEX",
                 "Team2": "3CEFHI: Spain",
                 "Team2_raw": "3CEFHI",
-                "Time": "07:00"
+                "Time": "01:00"
             },
             {
                 "Date": "Wednesday 01 July 2026",
@@ -461,7 +461,7 @@
                 "Status": "7:30 AM BST",
                 "Team1": "1K: Colombia",
                 "Team1_raw": "1K",
-                "Team2": "3DEIJL: Ecuador",
+                "Team2": "3DEIJL: Paraguay",
                 "Team2_raw": "3DEIJL",
                 "Time": "7:30 AM BST"
             }
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-20 08:44:44 AM",
+    "last_updated": "2026-06-20 04:17:50 AM",
     "matches": {
         "group_stage": [
             {
@@ -1684,17 +1684,23 @@
                 "Code2": "PAR",
                 "Date": "Saturday 20 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "2'",
+                        "Player": "Matias GALARZA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group D",
-                "HT": "",
+                "HT": "0 - 1",
                 "Match": "M31",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Ivan Arcides Barton Cisneros",
+                "Score1": "0",
+                "Score2": "1",
                 "Stadium": "San Francisco Bay Area Stadium",
                 "Stage": "First Stage",
-                "Status": "9 AM BST",
+                "Status": "0FT1",
                 "Team1": "Türkiye",
                 "Team2": "Paraguay",
                 "Time": "9 AM BST"
@@ -3315,7 +3321,7 @@
                     "Status": "7:30 AM BST",
                     "Team1": "1K: Colombia",
                     "Team1_raw": "1K",
-                    "Team2": "3DEIJL: Ecuador",
+                    "Team2": "3DEIJL: Paraguay",
                     "Team2_raw": "3DEIJL",
                     "Time": "7:30 AM BST"
                 },
@@ -3587,29 +3593,29 @@
                 "Won": 1
             },
             {
-                "Code": "TUR",
-                "Drawn": 0,
-                "GA": 2,
-                "GD": -2,
-                "GF": 0,
-                "Lost": 1,
-                "Played": 1,
-                "Points": 0,
-                "Pos": 3,
-                "Team": "Türkiye",
-                "Won": 0
-            },
-            {
                 "Code": "PAR",
                 "Drawn": 0,
                 "GA": 4,
-                "GD": -3,
-                "GF": 1,
+                "GD": -2,
+                "GF": 2,
                 "Lost": 1,
-                "Played": 1,
+                "Played": 2,
+                "Points": 3,
+                "Pos": 3,
+                "Team": "Paraguay",
+                "Won": 1
+            },
+            {
+                "Code": "TUR",
+                "Drawn": 0,
+                "GA": 3,
+                "GD": -3,
+                "GF": 0,
+                "Lost": 2,
+                "Played": 2,
                 "Points": 0,
                 "Pos": 4,
-                "Team": "Paraguay",
+                "Team": "Türkiye",
                 "Won": 0
             }
         ],
@@ -4062,6 +4068,20 @@
             "Won": 1
         },
         {
+            "Code": "PAR",
+            "Drawn": 0,
+            "GA": 4,
+            "GD": -2,
+            "GF": 2,
+            "Group": "D",
+            "Lost": 1,
+            "Played": 2,
+            "Points": 3,
+            "Pos": 2,
+            "Team": "Paraguay",
+            "Won": 1
+        },
+        {
             "Code": "NED",
             "Drawn": 1,
             "GA": 2,
@@ -4071,7 +4091,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": 1,
-            "Pos": 2,
+            "Pos": 3,
             "Team": "Netherlands",
             "Won": 0
         },
@@ -4085,7 +4105,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": 1,
-            "Pos": 3,
+            "Pos": 4,
             "Team": "Belgium",
             "Won": 0
         },
@@ -4099,7 +4119,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": 1,
-            "Pos": 4,
+            "Pos": 5,
             "Team": "Portugal",
             "Won": 0
         },
@@ -4113,7 +4133,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": 1,
-            "Pos": 5,
+            "Pos": 6,
             "Team": "Spain",
             "Won": 0
         },
@@ -4127,7 +4147,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 6,
+            "Pos": 7,
             "Team": "Czechia",
             "Won": 0
         },
@@ -4141,7 +4161,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 7,
+            "Pos": 8,
             "Team": "Bosnia and Herzegovina",
             "Won": 0
         },
@@ -4155,7 +4175,7 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 8,
+            "Pos": 9,
             "Team": "Ecuador",
             "Won": 0
         },
@@ -4169,7 +4189,7 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 9,
+            "Pos": 10,
             "Team": "Panama",
             "Won": 0
         },
@@ -4183,7 +4203,7 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 10,
+            "Pos": 11,
             "Team": "Senegal",
             "Won": 0
         },
@@ -4197,22 +4217,8 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 11,
-            "Team": "Jordan",
-            "Won": 0
-        },
-        {
-            "Code": "TUR",
-            "Drawn": 0,
-            "GA": 2,
-            "GD": -2,
-            "GF": 0,
-            "Group": "D",
-            "Lost": 1,
-            "Played": 1,
-            "Points": 0,
             "Pos": 12,
-            "Team": "Türkiye",
+            "Team": "Jordan",
             "Won": 0
         }
     ]

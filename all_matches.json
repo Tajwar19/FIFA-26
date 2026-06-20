@@ -1180,20 +1180,26 @@
             "Time": "9 AM BST",
             "Team1": "Türkiye",
             "Code1": "TUR",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "1",
             "Team2": "Paraguay",
             "Code2": "PAR",
-            "Status": "9 AM BST",
+            "Status": "0FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group D",
             "Stadium": "San Francisco Bay Area Stadium",
             "City": "San Francisco Bay Area",
             "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
+            "Goals2": [
+                {
+                    "Player": "Matias GALARZA",
+                    "Minute": "2'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Ivan Arcides Barton Cisneros",
             "Attendance": 0,
-            "HT": ""
+            "HT": "0 - 1"
         },
         {
             "Match": "M32",
