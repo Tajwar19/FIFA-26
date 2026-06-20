@@ -322,8 +322,8 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "6 AM BST",
-                "Team1": "1D: USA",
-                "Team1_raw": "1D",
+                "Team1": "USA",
+                "Team1_raw": "USA",
                 "Team2": "3BEFIJ: Bosnia and Herzegovina",
                 "Team2_raw": "3BEFIJ",
                 "Time": "6 AM BST"
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-20 04:17:50 AM",
+    "last_updated": "2026-06-20 09:29:52 AM",
     "matches": {
         "group_stage": [
             {
@@ -1678,7 +1678,7 @@
                 "Time": "4 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68827",
                 "City": "San Francisco Bay Area",
                 "Code1": "TUR",
                 "Code2": "PAR",
@@ -3160,7 +3160,7 @@
                 {
                     "Attendance": 0,
                     "City": "San Francisco Bay Area",
-                    "Code1": "1D",
+                    "Code1": "USA",
                     "Code2": "3BEFIJ",
                     "Date": "Thursday 02 July 2026",
                     "Goals1": [],
@@ -3175,8 +3175,8 @@
                     "Stadium": "San Francisco Bay Area Stadium",
                     "Stage": "Round of 32",
                     "Status": "6 AM BST",
-                    "Team1": "1D: USA",
-                    "Team1_raw": "1D",
+                    "Team1": "USA",
+                    "Team1_raw": "USA",
                     "Team2": "3BEFIJ: Bosnia and Herzegovina",
                     "Team2_raw": "3BEFIJ",
                     "Time": "6 AM BST"

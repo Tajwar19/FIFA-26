@@ -1198,7 +1198,7 @@
                 }
             ],
             "Referee": "Ivan Arcides Barton Cisneros",
-            "Attendance": 0,
+            "Attendance": "68827",
             "HT": "0 - 1"
         },
         {
@@ -2298,8 +2298,8 @@
                 "MatchDay": null,
                 "Date": "Thursday 02 July 2026",
                 "Time": "6 AM BST",
-                "Team1": "1D",
-                "Code1": "1D",
+                "Team1": "USA",
+                "Code1": "USA",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "3BEFIJ",
