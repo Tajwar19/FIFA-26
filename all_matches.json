@@ -1285,11 +1285,11 @@
             "Time": "11 PM BST",
             "Team1": "Netherlands",
             "Code1": "NED",
-            "Score1": "2",
-            "Score2": "0",
+            "Score1": "5",
+            "Score2": "1",
             "Team2": "Sweden",
             "Code2": "SWE",
-            "Status": "2FT0",
+            "Status": "5FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group F",
             "Stadium": "Houston Stadium",
@@ -1304,11 +1304,32 @@
                     "Player": "Brian BROBBEY",
                     "Minute": "17'",
                     "Type": 2
+                },
+                {
+                    "Player": "Cody GAKPO",
+                    "Minute": "47'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Cody GAKPO",
+                    "Minute": "54'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Crysencio SUMMERVILLE",
+                    "Minute": "89'",
+                    "Type": 2
                 }
             ],
-            "Goals2": [],
+            "Goals2": [
+                {
+                    "Player": "Anthony ELANGA",
+                    "Minute": "59'",
+                    "Type": 2
+                }
+            ],
             "Referee": "Michael Oliver",
-            "Attendance": 0,
+            "Attendance": "68777",
             "HT": "2 - 0"
         },
         {

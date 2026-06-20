@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-20 05:41:11 PM",
+    "last_updated": "2026-06-20 07:47:14 PM",
     "matches": {
         "group_stage": [
             {
@@ -1783,7 +1783,7 @@
                 "Time": "6 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68777",
                 "City": "Houston",
                 "Code1": "NED",
                 "Code2": "SWE",
@@ -1798,19 +1798,40 @@
                         "Minute": "17'",
                         "Player": "Brian BROBBEY",
                         "Type": 2
+                    },
+                    {
+                        "Minute": "47'",
+                        "Player": "Cody GAKPO",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "54'",
+                        "Player": "Cody GAKPO",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "89'",
+                        "Player": "Crysencio SUMMERVILLE",
+                        "Type": 2
                     }
                 ],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "59'",
+                        "Player": "Anthony ELANGA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group F",
                 "HT": "2 - 0",
                 "Match": "M35",
                 "MatchDay": null,
                 "Referee": "Michael Oliver",
-                "Score1": "2",
-                "Score2": "0",
+                "Score1": "5",
+                "Score2": "1",
                 "Stadium": "Houston Stadium",
                 "Stage": "First Stage",
-                "Status": "2FT0",
+                "Status": "5FT1",
                 "Team1": "Netherlands",
                 "Team2": "Sweden",
                 "Time": "11 PM BST"
@@ -3688,9 +3709,9 @@
             {
                 "Code": "NED",
                 "Drawn": 1,
-                "GA": 2,
-                "GD": 2,
-                "GF": 4,
+                "GA": 3,
+                "GD": 4,
+                "GF": 7,
                 "Lost": 0,
                 "Played": 2,
                 "Points": 4,
@@ -3701,9 +3722,9 @@
             {
                 "Code": "SWE",
                 "Drawn": 0,
-                "GA": 3,
-                "GD": 2,
-                "GF": 5,
+                "GA": 6,
+                "GD": 0,
+                "GF": 6,
                 "Lost": 1,
                 "Played": 2,
                 "Points": 3,
