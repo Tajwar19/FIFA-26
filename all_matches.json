@@ -1241,16 +1241,27 @@
             "Time": "2 AM BST",
             "Team1": "Germany",
             "Code1": "GER",
-            "Score1": "0",
+            "Score1": "2",
             "Score2": "1",
             "Team2": "Côte d'Ivoire",
             "Code2": "CIV",
-            "Status": "0FT1",
+            "Status": "2FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group E",
             "Stadium": "Toronto Stadium",
             "City": "Toronto",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Deniz UNDAV",
+                    "Minute": "68'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Deniz UNDAV",
+                    "Minute": "90'+4'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [
                 {
                     "Player": "Franck KESSIE",

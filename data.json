@@ -232,7 +232,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "2:30 AM BST",
-                "Team1": "1E: Côte d'Ivoire",
+                "Team1": "1E: Germany",
                 "Team1_raw": "1E",
                 "Team2": "3ABCDF: Scotland",
                 "Team2_raw": "3ABCDF",
@@ -369,7 +369,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "11 PM BST",
-                "Team1": "2E: Germany",
+                "Team1": "2E: Côte d'Ivoire",
                 "Team1_raw": "2E",
                 "Team2": "2I: France",
                 "Team2_raw": "2I",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-20 09:24:36 PM",
+    "last_updated": "2026-06-20 11:18:12 PM",
     "matches": {
         "group_stage": [
             {
@@ -1744,7 +1744,18 @@
                 "Code1": "GER",
                 "Code2": "CIV",
                 "Date": "Sunday 21 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "68'",
+                        "Player": "Deniz UNDAV",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "90'+4'",
+                        "Player": "Deniz UNDAV",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [
                     {
                         "Minute": "30'",
@@ -1757,11 +1768,11 @@
                 "Match": "M33",
                 "MatchDay": null,
                 "Referee": "Juan Gabriel Benítez",
-                "Score1": "0",
+                "Score1": "2",
                 "Score2": "1",
                 "Stadium": "Toronto Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT1",
+                "Status": "2FT1",
                 "Team1": "Germany",
                 "Team2": "Côte d'Ivoire",
                 "Time": "2 AM BST"
@@ -3045,7 +3056,7 @@
                     "Stadium": "Boston Stadium",
                     "Stage": "Round of 32",
                     "Status": "2:30 AM BST",
-                    "Team1": "1E: Côte d'Ivoire",
+                    "Team1": "1E: Germany",
                     "Team1_raw": "1E",
                     "Team2": "3ABCDF: Scotland",
                     "Team2_raw": "3ABCDF",
@@ -3141,7 +3152,7 @@
                     "Stadium": "Dallas Stadium",
                     "Stage": "Round of 32",
                     "Status": "11 PM BST",
-                    "Team1": "2E: Germany",
+                    "Team1": "2E: Côte d'Ivoire",
                     "Team1_raw": "2E",
                     "Team2": "2I: France",
                     "Team2_raw": "2I",
@@ -3659,29 +3670,29 @@
         ],
         "Group E": [
             {
-                "Code": "CIV",
+                "Code": "GER",
                 "Drawn": 0,
-                "GA": 0,
-                "GD": 2,
-                "GF": 2,
+                "GA": 2,
+                "GD": 7,
+                "GF": 9,
                 "Lost": 0,
                 "Played": 2,
                 "Points": 6,
                 "Pos": 1,
-                "Team": "Côte d'Ivoire",
+                "Team": "Germany",
                 "Won": 2
             },
             {
-                "Code": "GER",
+                "Code": "CIV",
                 "Drawn": 0,
                 "GA": 2,
-                "GD": 5,
-                "GF": 7,
+                "GD": 0,
+                "GF": 2,
                 "Lost": 1,
                 "Played": 2,
                 "Points": 3,
                 "Pos": 2,
-                "Team": "Germany",
+                "Team": "Côte d'Ivoire",
                 "Won": 1
             },
             {
