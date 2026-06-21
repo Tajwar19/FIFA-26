@@ -1280,20 +1280,20 @@
             "Time": "6 AM BST",
             "Team1": "Ecuador",
             "Code1": "ECU",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "0",
             "Team2": "Curaçao",
             "Code2": "CUW",
-            "Status": "6 AM BST",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group E",
             "Stadium": "Kansas City Stadium",
             "City": "Kansas City",
             "Goals1": [],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Ning Ma",
+            "Attendance": "68598",
+            "HT": "0 - 0"
         },
         {
             "Match": "M35",
@@ -1356,20 +1356,31 @@
             "Time": "10 AM BST",
             "Team1": "Tunisia",
             "Code1": "TUN",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "2",
             "Team2": "Japan",
             "Code2": "JPN",
-            "Status": "10 AM BST",
+            "Status": "0FT2",
             "Stage": "First Stage",
             "Group_or_Match": "Group F",
             "Stadium": "Monterrey Stadium",
             "City": "Monterrey",
             "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals2": [
+                {
+                    "Player": "Daichi KAMADA",
+                    "Minute": "4'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Ayase UEDA",
+                    "Minute": "31'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Istvan Kovacs",
+            "Attendance": "51243",
+            "HT": "0 - 2"
         },
         {
             "Match": "M37",
@@ -2193,8 +2204,8 @@
                 "MatchDay": null,
                 "Date": "Tuesday 30 June 2026",
                 "Time": "2:30 AM BST",
-                "Team1": "1E",
-                "Code1": "1E",
+                "Team1": "Germany",
+                "Code1": "GER",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "3ABCDF",

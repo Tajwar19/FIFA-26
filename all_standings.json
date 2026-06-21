@@ -246,27 +246,27 @@
             "Pos": 3,
             "Team": "Ecuador",
             "Code": "ECU",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 1,
             "GF": 0,
             "GA": 1,
             "GD": -1,
-            "Points": 0
+            "Points": 1
         },
         {
             "Pos": 4,
             "Team": "Curaçao",
             "Code": "CUW",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 1,
             "GF": 1,
             "GA": 7,
             "GD": -6,
-            "Points": 0
+            "Points": 1
         }
     ],
     "Group F": [
@@ -285,6 +285,19 @@
         },
         {
             "Pos": 2,
+            "Team": "Japan",
+            "Code": "JPN",
+            "Played": 2,
+            "Won": 1,
+            "Drawn": 1,
+            "Lost": 0,
+            "GF": 4,
+            "GA": 2,
+            "GD": 2,
+            "Points": 4
+        },
+        {
+            "Pos": 3,
             "Team": "Sweden",
             "Code": "SWE",
             "Played": 2,
@@ -297,29 +310,16 @@
             "Points": 3
         },
         {
-            "Pos": 3,
-            "Team": "Japan",
-            "Code": "JPN",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 2,
-            "GA": 2,
-            "GD": 0,
-            "Points": 1
-        },
-        {
             "Pos": 4,
             "Team": "Tunisia",
             "Code": "TUN",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
             "Drawn": 0,
-            "Lost": 1,
+            "Lost": 2,
             "GF": 1,
-            "GA": 5,
-            "GD": -4,
+            "GA": 7,
+            "GD": -6,
             "Points": 0
         }
     ],
