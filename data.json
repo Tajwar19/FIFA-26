@@ -307,7 +307,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "1 AM BST",
-                "Team1": "1H: Uruguay",
+                "Team1": "1H: Spain",
                 "Team1_raw": "1H",
                 "Team2": "2J: Austria",
                 "Team2_raw": "2J",
@@ -324,7 +324,7 @@
                 "Status": "6 AM BST",
                 "Team1": "USA",
                 "Team1_raw": "USA",
-                "Team2": "3BEFIJ: Ecuador",
+                "Team2": "3BEFIJ: Bosnia and Herzegovina",
                 "Team2_raw": "3BEFIJ",
                 "Time": "6 AM BST"
             },
@@ -386,7 +386,7 @@
                 "Status": "",
                 "Team1": "MEX",
                 "Team1_raw": "MEX",
-                "Team2": "3CEFHI: Spain",
+                "Team2": "3CEFHI: Ecuador",
                 "Team2_raw": "3CEFHI",
                 "Time": "01:00"
             },
@@ -416,7 +416,7 @@
                 "Status": "4 AM BST",
                 "Team1": "1J: Argentina",
                 "Team1_raw": "1J",
-                "Team2": "2H: Saudi Arabia",
+                "Team2": "2H: Uruguay",
                 "Team2_raw": "2H",
                 "Time": "4 AM BST"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-21 03:59:14 PM",
+    "last_updated": "2026-06-21 05:48:49 PM",
     "matches": {
         "group_stage": [
             {
@@ -1919,23 +1919,44 @@
                 "Time": "4 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68239",
                 "City": "Atlanta",
                 "Code1": "ESP",
                 "Code2": "KSA",
                 "Date": "Sunday 21 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "10'",
+                        "Player": "Lamine YAMAL",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "21'",
+                        "Player": "Mikel OYARZABAL",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "24'",
+                        "Player": "Mikel OYARZABAL",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "49'",
+                        "Player": "HASSAN ALTAMBAKTI",
+                        "Type": 3
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group H",
-                "HT": "",
+                "HT": "3 - 0",
                 "Match": "M38",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Raphael Claus",
+                "Score1": "4",
+                "Score2": "0",
                 "Stadium": "Atlanta Stadium",
                 "Stage": "First Stage",
-                "Status": "10 PM BST",
+                "Status": "4FT0",
                 "Team1": "Spain",
                 "Team2": "Saudi Arabia",
                 "Time": "10 PM BST"
@@ -3199,7 +3220,7 @@
                     "Status": "7 AM BST",
                     "Team1": "Mexico",
                     "Team1_raw": "Mexico",
-                    "Team2": "3CEFHI: Spain",
+                    "Team2": "3CEFHI: Ecuador",
                     "Team2_raw": "3CEFHI",
                     "Time": "7 AM BST"
                 },
@@ -3247,7 +3268,7 @@
                     "Status": "6 AM BST",
                     "Team1": "USA",
                     "Team1_raw": "USA",
-                    "Team2": "3BEFIJ: Ecuador",
+                    "Team2": "3BEFIJ: Bosnia and Herzegovina",
                     "Team2_raw": "3BEFIJ",
                     "Time": "6 AM BST"
                 },
@@ -3317,7 +3338,7 @@
                     "Stadium": "Los Angeles Stadium",
                     "Stage": "Round of 32",
                     "Status": "1 AM BST",
-                    "Team1": "1H: Uruguay",
+                    "Team1": "1H: Spain",
                     "Team1_raw": "1H",
                     "Team2": "2J: Austria",
                     "Team2_raw": "2J",
@@ -3367,7 +3388,7 @@
                     "Status": "4 AM BST",
                     "Team1": "1J: Argentina",
                     "Team1_raw": "1J",
-                    "Team2": "2H: Saudi Arabia",
+                    "Team2": "2H: Uruguay",
                     "Team2_raw": "2H",
                     "Time": "4 AM BST"
                 },
@@ -3853,6 +3874,19 @@
         ],
         "Group H": [
             {
+                "Code": "ESP",
+                "Drawn": 1,
+                "GA": 0,
+                "GD": 4,
+                "GF": 4,
+                "Lost": 0,
+                "Played": 2,
+                "Points": 4,
+                "Pos": 1,
+                "Team": "Spain",
+                "Won": 1
+            },
+            {
                 "Code": "URU",
                 "Drawn": 1,
                 "GA": 1,
@@ -3861,34 +3895,21 @@
                 "Lost": 0,
                 "Played": 1,
                 "Points": 1,
-                "Pos": 1,
+                "Pos": 2,
                 "Team": "Uruguay",
                 "Won": 0
             },
             {
                 "Code": "KSA",
                 "Drawn": 1,
-                "GA": 1,
-                "GD": 0,
+                "GA": 5,
+                "GD": -4,
                 "GF": 1,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 1,
-                "Pos": 2,
-                "Team": "Saudi Arabia",
-                "Won": 0
-            },
-            {
-                "Code": "ESP",
-                "Drawn": 1,
-                "GA": 0,
-                "GD": 0,
-                "GF": 0,
-                "Lost": 0,
-                "Played": 1,
+                "Lost": 1,
+                "Played": 2,
                 "Points": 1,
                 "Pos": 3,
-                "Team": "Spain",
+                "Team": "Saudi Arabia",
                 "Won": 0
             },
             {
@@ -4194,20 +4215,6 @@
             "Won": 0
         },
         {
-            "Code": "ESP",
-            "Drawn": 1,
-            "GA": 0,
-            "GD": 0,
-            "GF": 0,
-            "Group": "H",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 6,
-            "Team": "Spain",
-            "Won": 0
-        },
-        {
             "Code": "CZE",
             "Drawn": 1,
             "GA": 3,
@@ -4217,7 +4224,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 7,
+            "Pos": 6,
             "Team": "Czechia",
             "Won": 0
         },
@@ -4231,7 +4238,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 8,
+            "Pos": 7,
             "Team": "Ecuador",
             "Won": 0
         },
@@ -4245,8 +4252,22 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 9,
+            "Pos": 8,
             "Team": "Bosnia and Herzegovina",
+            "Won": 0
+        },
+        {
+            "Code": "KSA",
+            "Drawn": 1,
+            "GA": 5,
+            "GD": -4,
+            "GF": 1,
+            "Group": "H",
+            "Lost": 1,
+            "Played": 2,
+            "Points": 1,
+            "Pos": 9,
+            "Team": "Saudi Arabia",
             "Won": 0
         },
         {

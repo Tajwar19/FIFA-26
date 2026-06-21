@@ -380,6 +380,19 @@
     "Group H": [
         {
             "Pos": 1,
+            "Team": "Spain",
+            "Code": "ESP",
+            "Played": 2,
+            "Won": 1,
+            "Drawn": 1,
+            "Lost": 0,
+            "GF": 4,
+            "GA": 0,
+            "GD": 4,
+            "Points": 4
+        },
+        {
+            "Pos": 2,
             "Team": "Uruguay",
             "Code": "URU",
             "Played": 1,
@@ -392,29 +405,16 @@
             "Points": 1
         },
         {
-            "Pos": 2,
+            "Pos": 3,
             "Team": "Saudi Arabia",
             "Code": "KSA",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
             "Drawn": 1,
-            "Lost": 0,
+            "Lost": 1,
             "GF": 1,
-            "GA": 1,
-            "GD": 0,
-            "Points": 1
-        },
-        {
-            "Pos": 3,
-            "Team": "Spain",
-            "Code": "ESP",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 0,
-            "GA": 0,
-            "GD": 0,
+            "GA": 5,
+            "GD": -4,
             "Points": 1
         },
         {

@@ -1421,20 +1421,41 @@
             "Time": "10 PM BST",
             "Team1": "Spain",
             "Code1": "ESP",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "4",
+            "Score2": "0",
             "Team2": "Saudi Arabia",
             "Code2": "KSA",
-            "Status": "10 PM BST",
+            "Status": "4FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group H",
             "Stadium": "Atlanta Stadium",
             "City": "Atlanta",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Lamine YAMAL",
+                    "Minute": "10'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Mikel OYARZABAL",
+                    "Minute": "21'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Mikel OYARZABAL",
+                    "Minute": "24'",
+                    "Type": 2
+                },
+                {
+                    "Player": "HASSAN ALTAMBAKTI",
+                    "Minute": "49'",
+                    "Type": 3
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Raphael Claus",
+            "Attendance": "68239",
+            "HT": "3 - 0"
         },
         {
             "Match": "M39",
