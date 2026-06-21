@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-21 05:01:43 AM",
+    "last_updated": "2026-06-21 10:00:20 AM",
     "matches": {
         "group_stage": [
             {
@@ -1870,6 +1870,16 @@
                         "Minute": "31'",
                         "Player": "Ayase UEDA",
                         "Type": 2
+                    },
+                    {
+                        "Minute": "69'",
+                        "Player": "Junya ITO",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "83'",
+                        "Player": "Ayase UEDA",
+                        "Type": 2
                     }
                 ],
                 "Group_or_Match": "Group F",
@@ -1878,10 +1888,10 @@
                 "MatchDay": null,
                 "Referee": "Istvan Kovacs",
                 "Score1": "0",
-                "Score2": "2",
+                "Score2": "4",
                 "Stadium": "Monterrey Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT2",
+                "Status": "0FT4",
                 "Team1": "Tunisia",
                 "Team2": "Japan",
                 "Time": "10 AM BST"
@@ -3751,8 +3761,8 @@
                 "Code": "JPN",
                 "Drawn": 1,
                 "GA": 2,
-                "GD": 2,
-                "GF": 4,
+                "GD": 4,
+                "GF": 6,
                 "Lost": 0,
                 "Played": 2,
                 "Points": 4,
@@ -3776,8 +3786,8 @@
             {
                 "Code": "TUN",
                 "Drawn": 0,
-                "GA": 7,
-                "GD": -6,
+                "GA": 9,
+                "GD": -8,
                 "GF": 1,
                 "Lost": 2,
                 "Played": 2,

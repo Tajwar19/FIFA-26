@@ -1357,10 +1357,10 @@
             "Team1": "Tunisia",
             "Code1": "TUN",
             "Score1": "0",
-            "Score2": "2",
+            "Score2": "4",
             "Team2": "Japan",
             "Code2": "JPN",
-            "Status": "0FT2",
+            "Status": "0FT4",
             "Stage": "First Stage",
             "Group_or_Match": "Group F",
             "Stadium": "Monterrey Stadium",
@@ -1375,6 +1375,16 @@
                 {
                     "Player": "Ayase UEDA",
                     "Minute": "31'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Junya ITO",
+                    "Minute": "69'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Ayase UEDA",
+                    "Minute": "83'",
                     "Type": 2
                 }
             ],
