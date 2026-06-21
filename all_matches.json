@@ -1399,20 +1399,37 @@
             "Time": "4 AM BST",
             "Team1": "Uruguay",
             "Code1": "URU",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "2",
+            "Score2": "1",
             "Team2": "Cabo Verde",
             "Code2": "CPV",
-            "Status": "4 AM BST",
+            "Status": "2FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group H",
             "Stadium": "Miami Stadium",
             "City": "Miami",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
+            "Goals1": [
+                {
+                    "Player": "Maxi ARAUJO",
+                    "Minute": "44'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Agustin CANOBBIO",
+                    "Minute": "45'+6'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "KEVIN PINA",
+                    "Minute": "21'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Espen Eskås",
             "Attendance": 0,
-            "HT": ""
+            "HT": "2 - 1"
         },
         {
             "Match": "M38",

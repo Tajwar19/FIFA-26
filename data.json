@@ -324,7 +324,7 @@
                 "Status": "6 AM BST",
                 "Team1": "USA",
                 "Team1_raw": "USA",
-                "Team2": "3BEFIJ: Bosnia and Herzegovina",
+                "Team2": "3BEFIJ: Ecuador",
                 "Team2_raw": "3BEFIJ",
                 "Time": "6 AM BST"
             },
@@ -386,7 +386,7 @@
                 "Status": "",
                 "Team1": "MEX",
                 "Team1_raw": "MEX",
-                "Team2": "3CEFHI: Ecuador",
+                "Team2": "3CEFHI: Cabo Verde",
                 "Team2_raw": "3CEFHI",
                 "Time": "01:00"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-21 09:22:22 PM",
+    "last_updated": "2026-06-21 11:23:03 PM",
     "matches": {
         "group_stage": [
             {
@@ -1902,18 +1902,35 @@
                 "Code1": "URU",
                 "Code2": "CPV",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Minute": "44'",
+                        "Player": "Maxi ARAUJO",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "45'+6'",
+                        "Player": "Agustin CANOBBIO",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Minute": "21'",
+                        "Player": "KEVIN PINA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group H",
-                "HT": "",
+                "HT": "2 - 1",
                 "Match": "M37",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Espen Eskås",
+                "Score1": "2",
+                "Score2": "1",
                 "Stadium": "Miami Stadium",
                 "Stage": "First Stage",
-                "Status": "4 AM BST",
+                "Status": "2FT1",
                 "Team1": "Uruguay",
                 "Team2": "Cabo Verde",
                 "Time": "4 AM BST"
@@ -3220,7 +3237,7 @@
                     "Status": "7 AM BST",
                     "Team1": "Mexico",
                     "Team1_raw": "Mexico",
-                    "Team2": "3CEFHI: Ecuador",
+                    "Team2": "3CEFHI: Cabo Verde",
                     "Team2_raw": "3CEFHI",
                     "Time": "7 AM BST"
                 },
@@ -3268,7 +3285,7 @@
                     "Status": "6 AM BST",
                     "Team1": "USA",
                     "Team1_raw": "USA",
-                    "Team2": "3BEFIJ: Bosnia and Herzegovina",
+                    "Team2": "3BEFIJ: Ecuador",
                     "Team2_raw": "3BEFIJ",
                     "Time": "6 AM BST"
                 },
@@ -3889,14 +3906,27 @@
             {
                 "Code": "URU",
                 "Drawn": 1,
-                "GA": 1,
-                "GD": 0,
-                "GF": 1,
+                "GA": 2,
+                "GD": 1,
+                "GF": 3,
                 "Lost": 0,
-                "Played": 1,
-                "Points": 1,
+                "Played": 2,
+                "Points": 4,
                 "Pos": 2,
                 "Team": "Uruguay",
+                "Won": 1
+            },
+            {
+                "Code": "CPV",
+                "Drawn": 1,
+                "GA": 2,
+                "GD": -1,
+                "GF": 1,
+                "Lost": 1,
+                "Played": 2,
+                "Points": 1,
+                "Pos": 3,
+                "Team": "Cabo Verde",
                 "Won": 0
             },
             {
@@ -3908,21 +3938,8 @@
                 "Lost": 1,
                 "Played": 2,
                 "Points": 1,
-                "Pos": 3,
-                "Team": "Saudi Arabia",
-                "Won": 0
-            },
-            {
-                "Code": "CPV",
-                "Drawn": 1,
-                "GA": 0,
-                "GD": 0,
-                "GF": 0,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 1,
                 "Pos": 4,
-                "Team": "Cabo Verde",
+                "Team": "Saudi Arabia",
                 "Won": 0
             }
         ],
@@ -4229,6 +4246,20 @@
             "Won": 0
         },
         {
+            "Code": "CPV",
+            "Drawn": 1,
+            "GA": 2,
+            "GD": -1,
+            "GF": 1,
+            "Group": "H",
+            "Lost": 1,
+            "Played": 2,
+            "Points": 1,
+            "Pos": 7,
+            "Team": "Cabo Verde",
+            "Won": 0
+        },
+        {
             "Code": "ECU",
             "Drawn": 1,
             "GA": 1,
@@ -4238,7 +4269,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 7,
+            "Pos": 8,
             "Team": "Ecuador",
             "Won": 0
         },
@@ -4252,22 +4283,8 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 8,
-            "Team": "Bosnia and Herzegovina",
-            "Won": 0
-        },
-        {
-            "Code": "KSA",
-            "Drawn": 1,
-            "GA": 5,
-            "GD": -4,
-            "GF": 1,
-            "Group": "H",
-            "Lost": 1,
-            "Played": 2,
-            "Points": 1,
             "Pos": 9,
-            "Team": "Saudi Arabia",
+            "Team": "Bosnia and Herzegovina",
             "Won": 0
         },
         {
