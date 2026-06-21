@@ -326,6 +326,32 @@
     "Group G": [
         {
             "Pos": 1,
+            "Team": "IR Iran",
+            "Code": "IRN",
+            "Played": 2,
+            "Won": 0,
+            "Drawn": 2,
+            "Lost": 0,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "Points": 2
+        },
+        {
+            "Pos": 2,
+            "Team": "Belgium",
+            "Code": "BEL",
+            "Played": 2,
+            "Won": 0,
+            "Drawn": 2,
+            "Lost": 0,
+            "GF": 1,
+            "GA": 1,
+            "GD": 0,
+            "Points": 2
+        },
+        {
+            "Pos": 3,
             "Team": "New Zealand",
             "Code": "NZL",
             "Played": 1,
@@ -334,32 +360,6 @@
             "Lost": 0,
             "GF": 2,
             "GA": 2,
-            "GD": 0,
-            "Points": 1
-        },
-        {
-            "Pos": 2,
-            "Team": "IR Iran",
-            "Code": "IRN",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 2,
-            "GA": 2,
-            "GD": 0,
-            "Points": 1
-        },
-        {
-            "Pos": 3,
-            "Team": "Belgium",
-            "Code": "BEL",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 1,
-            "GA": 1,
             "GD": 0,
             "Points": 1
         },
