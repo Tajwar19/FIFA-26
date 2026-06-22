@@ -337,7 +337,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "2 AM BST",
-                "Team1": "1G: IR Iran",
+                "Team1": "1G: Egypt",
                 "Team1_raw": "1G",
                 "Team2": "3AEHIJ: Czechia",
                 "Team2_raw": "3AEHIJ",
@@ -431,7 +431,7 @@
                 "Status": "12 AM BST",
                 "Team1": "2D: Australia",
                 "Team1_raw": "2D",
-                "Team2": "2G: Belgium",
+                "Team2": "2G: IR Iran",
                 "Team2_raw": "2G",
                 "Time": "12 AM BST"
             },
@@ -446,7 +446,7 @@
                 "Status": "9 AM BST",
                 "Team1": "1B: Canada",
                 "Team1_raw": "1B",
-                "Team2": "3EFGIJ: New Zealand",
+                "Team2": "3EFGIJ: Belgium",
                 "Team2_raw": "3EFGIJ",
                 "Time": "9 AM BST"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-21 11:23:03 PM",
+    "last_updated": "2026-06-22 05:09:33 AM",
     "matches": {
         "group_stage": [
             {
@@ -1897,7 +1897,7 @@
                 "Time": "10 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "64003",
                 "City": "Miami",
                 "Code1": "URU",
                 "Code2": "CPV",
@@ -1919,6 +1919,11 @@
                         "Minute": "21'",
                         "Player": "KEVIN PINA",
                         "Type": 2
+                    },
+                    {
+                        "Minute": "61'",
+                        "Player": "HELIO VARELA",
+                        "Type": 2
                     }
                 ],
                 "Group_or_Match": "Group H",
@@ -1927,10 +1932,10 @@
                 "MatchDay": null,
                 "Referee": "Espen Eskås",
                 "Score1": "2",
-                "Score2": "1",
+                "Score2": "2",
                 "Stadium": "Miami Stadium",
                 "Stage": "First Stage",
-                "Status": "2FT1",
+                "Status": "2FT2",
                 "Team1": "Uruguay",
                 "Team2": "Cabo Verde",
                 "Time": "4 AM BST"
@@ -2001,23 +2006,45 @@
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "52497",
                 "City": "Vancouver",
                 "Code1": "NZL",
                 "Code2": "EGY",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Minute": "15'",
+                        "Player": "Finn SURMAN",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Minute": "58'",
+                        "Player": "MOSTAFA ZICO",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "67'",
+                        "Player": "MOHAMED SALAH",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "82'",
+                        "Player": "TREZEGUET",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group G",
-                "HT": "",
+                "HT": "1 - 0",
                 "Match": "M40",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Omar Mohamed Al Ali",
+                "Score1": "1",
+                "Score2": "3",
                 "Stadium": "BC Place Vancouver",
                 "Stage": "First Stage",
-                "Status": "7 AM BST",
+                "Status": "1FT3",
                 "Team1": "New Zealand",
                 "Team2": "Egypt",
                 "Time": "7 AM BST"
@@ -3307,7 +3334,7 @@
                     "Stadium": "Seattle Stadium",
                     "Stage": "Round of 32",
                     "Status": "2 AM BST",
-                    "Team1": "1G: IR Iran",
+                    "Team1": "1G: Egypt",
                     "Team1_raw": "1G",
                     "Team2": "3AEHIJ: Czechia",
                     "Team2_raw": "3AEHIJ",
@@ -3381,7 +3408,7 @@
                     "Status": "9 AM BST",
                     "Team1": "1B: Canada",
                     "Team1_raw": "1B",
-                    "Team2": "3EFGIJ: New Zealand",
+                    "Team2": "3EFGIJ: Belgium",
                     "Team2_raw": "3EFGIJ",
                     "Time": "9 AM BST"
                 },
@@ -3453,7 +3480,7 @@
                     "Status": "12 AM BST",
                     "Team1": "2D: Australia",
                     "Team1_raw": "2D",
-                    "Team2": "2G: Belgium",
+                    "Team2": "2G: IR Iran",
                     "Team2_raw": "2G",
                     "Time": "12 AM BST"
                 }
@@ -3837,6 +3864,19 @@
         ],
         "Group G": [
             {
+                "Code": "EGY",
+                "Drawn": 1,
+                "GA": 2,
+                "GD": 2,
+                "GF": 4,
+                "Lost": 0,
+                "Played": 2,
+                "Points": 4,
+                "Pos": 1,
+                "Team": "Egypt",
+                "Won": 1
+            },
+            {
                 "Code": "IRN",
                 "Drawn": 2,
                 "GA": 2,
@@ -3845,7 +3885,7 @@
                 "Lost": 0,
                 "Played": 2,
                 "Points": 2,
-                "Pos": 1,
+                "Pos": 2,
                 "Team": "IR Iran",
                 "Won": 0
             },
@@ -3858,34 +3898,21 @@
                 "Lost": 0,
                 "Played": 2,
                 "Points": 2,
-                "Pos": 2,
+                "Pos": 3,
                 "Team": "Belgium",
                 "Won": 0
             },
             {
                 "Code": "NZL",
                 "Drawn": 1,
-                "GA": 2,
-                "GD": 0,
-                "GF": 2,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 1,
-                "Pos": 3,
-                "Team": "New Zealand",
-                "Won": 0
-            },
-            {
-                "Code": "EGY",
-                "Drawn": 1,
-                "GA": 1,
-                "GD": 0,
-                "GF": 1,
-                "Lost": 0,
-                "Played": 1,
+                "GA": 5,
+                "GD": -2,
+                "GF": 3,
+                "Lost": 1,
+                "Played": 2,
                 "Points": 1,
                 "Pos": 4,
-                "Team": "Egypt",
+                "Team": "New Zealand",
                 "Won": 0
             }
         ],
@@ -3905,26 +3932,26 @@
             },
             {
                 "Code": "URU",
-                "Drawn": 1,
-                "GA": 2,
-                "GD": 1,
+                "Drawn": 2,
+                "GA": 3,
+                "GD": 0,
                 "GF": 3,
                 "Lost": 0,
                 "Played": 2,
-                "Points": 4,
+                "Points": 2,
                 "Pos": 2,
                 "Team": "Uruguay",
-                "Won": 1
+                "Won": 0
             },
             {
                 "Code": "CPV",
-                "Drawn": 1,
+                "Drawn": 2,
                 "GA": 2,
-                "GD": -1,
-                "GF": 1,
-                "Lost": 1,
+                "GD": 0,
+                "GF": 2,
+                "Lost": 0,
                 "Played": 2,
-                "Points": 1,
+                "Points": 2,
                 "Pos": 3,
                 "Team": "Cabo Verde",
                 "Won": 0
@@ -4204,17 +4231,31 @@
             "Won": 1
         },
         {
-            "Code": "NZL",
-            "Drawn": 1,
+            "Code": "CPV",
+            "Drawn": 2,
             "GA": 2,
             "GD": 0,
             "GF": 2,
+            "Group": "H",
+            "Lost": 0,
+            "Played": 2,
+            "Points": 2,
+            "Pos": 4,
+            "Team": "Cabo Verde",
+            "Won": 0
+        },
+        {
+            "Code": "BEL",
+            "Drawn": 2,
+            "GA": 1,
+            "GD": 0,
+            "GF": 1,
             "Group": "G",
             "Lost": 0,
-            "Played": 1,
-            "Points": 1,
-            "Pos": 4,
-            "Team": "New Zealand",
+            "Played": 2,
+            "Points": 2,
+            "Pos": 5,
+            "Team": "Belgium",
             "Won": 0
         },
         {
@@ -4227,7 +4268,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": 1,
-            "Pos": 5,
+            "Pos": 6,
             "Team": "Portugal",
             "Won": 0
         },
@@ -4241,22 +4282,8 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 6,
-            "Team": "Czechia",
-            "Won": 0
-        },
-        {
-            "Code": "CPV",
-            "Drawn": 1,
-            "GA": 2,
-            "GD": -1,
-            "GF": 1,
-            "Group": "H",
-            "Lost": 1,
-            "Played": 2,
-            "Points": 1,
             "Pos": 7,
-            "Team": "Cabo Verde",
+            "Team": "Czechia",
             "Won": 0
         },
         {

@@ -326,6 +326,19 @@
     "Group G": [
         {
             "Pos": 1,
+            "Team": "Egypt",
+            "Code": "EGY",
+            "Played": 2,
+            "Won": 1,
+            "Drawn": 1,
+            "Lost": 0,
+            "GF": 4,
+            "GA": 2,
+            "GD": 2,
+            "Points": 4
+        },
+        {
+            "Pos": 2,
             "Team": "IR Iran",
             "Code": "IRN",
             "Played": 2,
@@ -338,7 +351,7 @@
             "Points": 2
         },
         {
-            "Pos": 2,
+            "Pos": 3,
             "Team": "Belgium",
             "Code": "BEL",
             "Played": 2,
@@ -351,29 +364,16 @@
             "Points": 2
         },
         {
-            "Pos": 3,
+            "Pos": 4,
             "Team": "New Zealand",
             "Code": "NZL",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
             "Drawn": 1,
-            "Lost": 0,
-            "GF": 2,
-            "GA": 2,
-            "GD": 0,
-            "Points": 1
-        },
-        {
-            "Pos": 4,
-            "Team": "Egypt",
-            "Code": "EGY",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 1,
-            "GA": 1,
-            "GD": 0,
+            "Lost": 1,
+            "GF": 3,
+            "GA": 5,
+            "GD": -2,
             "Points": 1
         }
     ],
@@ -396,13 +396,13 @@
             "Team": "Uruguay",
             "Code": "URU",
             "Played": 2,
-            "Won": 1,
-            "Drawn": 1,
+            "Won": 0,
+            "Drawn": 2,
             "Lost": 0,
             "GF": 3,
-            "GA": 2,
-            "GD": 1,
-            "Points": 4
+            "GA": 3,
+            "GD": 0,
+            "Points": 2
         },
         {
             "Pos": 3,
@@ -410,12 +410,12 @@
             "Code": "CPV",
             "Played": 2,
             "Won": 0,
-            "Drawn": 1,
-            "Lost": 1,
-            "GF": 1,
+            "Drawn": 2,
+            "Lost": 0,
+            "GF": 2,
             "GA": 2,
-            "GD": -1,
-            "Points": 1
+            "GD": 0,
+            "Points": 2
         },
         {
             "Pos": 4,

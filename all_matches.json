@@ -1400,10 +1400,10 @@
             "Team1": "Uruguay",
             "Code1": "URU",
             "Score1": "2",
-            "Score2": "1",
+            "Score2": "2",
             "Team2": "Cabo Verde",
             "Code2": "CPV",
-            "Status": "2FT1",
+            "Status": "2FT2",
             "Stage": "First Stage",
             "Group_or_Match": "Group H",
             "Stadium": "Miami Stadium",
@@ -1425,10 +1425,15 @@
                     "Player": "KEVIN PINA",
                     "Minute": "21'",
                     "Type": 2
+                },
+                {
+                    "Player": "HELIO VARELA",
+                    "Minute": "61'",
+                    "Type": 2
                 }
             ],
             "Referee": "Espen Eskås",
-            "Attendance": 0,
+            "Attendance": "64003",
             "HT": "2 - 1"
         },
         {
@@ -1503,20 +1508,42 @@
             "Time": "7 AM BST",
             "Team1": "New Zealand",
             "Code1": "NZL",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "3",
             "Team2": "Egypt",
             "Code2": "EGY",
-            "Status": "7 AM BST",
+            "Status": "1FT3",
             "Stage": "First Stage",
             "Group_or_Match": "Group G",
             "Stadium": "BC Place Vancouver",
             "City": "Vancouver",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Finn SURMAN",
+                    "Minute": "15'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "MOSTAFA ZICO",
+                    "Minute": "58'",
+                    "Type": 2
+                },
+                {
+                    "Player": "MOHAMED SALAH",
+                    "Minute": "67'",
+                    "Type": 2
+                },
+                {
+                    "Player": "TREZEGUET",
+                    "Minute": "82'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Omar Mohamed Al Ali",
+            "Attendance": "52497",
+            "HT": "1 - 0"
         },
         {
             "Match": "M41",
