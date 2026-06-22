@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-22 12:18:06 PM",
+    "last_updated": "2026-06-22 06:15:47 PM",
     "matches": {
         "group_stage": [
             {
@@ -2099,18 +2099,24 @@
                 "Code1": "ARG",
                 "Code2": "AUT",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "38'",
+                        "Player": "Lionel MESSI",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group J",
-                "HT": "",
+                "HT": "1 - 0",
                 "Match": "M43",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Amin Mohamed Omar",
+                "Score1": "1",
+                "Score2": "0",
                 "Stadium": "Dallas Stadium",
                 "Stage": "First Stage",
-                "Status": "11 PM BST",
+                "Status": "1FT0",
                 "Team1": "Argentina",
                 "Team2": "Austria",
                 "Time": "11 PM BST"
@@ -4029,23 +4035,23 @@
                 "Code": "ARG",
                 "Drawn": 0,
                 "GA": 0,
-                "GD": 3,
-                "GF": 3,
+                "GD": 4,
+                "GF": 4,
                 "Lost": 0,
-                "Played": 1,
-                "Points": 3,
+                "Played": 2,
+                "Points": 6,
                 "Pos": 1,
                 "Team": "Argentina",
-                "Won": 1
+                "Won": 2
             },
             {
                 "Code": "AUT",
                 "Drawn": 0,
-                "GA": 1,
-                "GD": 2,
+                "GA": 2,
+                "GD": 1,
                 "GF": 3,
-                "Lost": 0,
-                "Played": 1,
+                "Lost": 1,
+                "Played": 2,
                 "Points": 3,
                 "Pos": 2,
                 "Team": "Austria",

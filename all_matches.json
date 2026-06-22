@@ -1596,20 +1596,26 @@
             "Time": "11 PM BST",
             "Team1": "Argentina",
             "Code1": "ARG",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "0",
             "Team2": "Austria",
             "Code2": "AUT",
-            "Status": "11 PM BST",
+            "Status": "1FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group J",
             "Stadium": "Dallas Stadium",
             "City": "Dallas",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Lionel MESSI",
+                    "Minute": "38'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
+            "Referee": "Amin Mohamed Omar",
             "Attendance": 0,
-            "HT": ""
+            "HT": "1 - 0"
         },
         {
             "Match": "M44",
