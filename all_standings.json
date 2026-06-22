@@ -434,6 +434,19 @@
     "Group I": [
         {
             "Pos": 1,
+            "Team": "France",
+            "Code": "FRA",
+            "Played": 2,
+            "Won": 2,
+            "Drawn": 0,
+            "Lost": 0,
+            "GF": 4,
+            "GA": 1,
+            "GD": 3,
+            "Points": 6
+        },
+        {
+            "Pos": 2,
             "Team": "Norway",
             "Code": "NOR",
             "Played": 1,
@@ -443,19 +456,6 @@
             "GF": 4,
             "GA": 1,
             "GD": 3,
-            "Points": 3
-        },
-        {
-            "Pos": 2,
-            "Team": "France",
-            "Code": "FRA",
-            "Played": 1,
-            "Won": 1,
-            "Drawn": 0,
-            "Lost": 0,
-            "GF": 3,
-            "GA": 1,
-            "GD": 2,
             "Points": 3
         },
         {
@@ -475,13 +475,13 @@
             "Pos": 4,
             "Team": "Iraq",
             "Code": "IRQ",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
             "Drawn": 0,
-            "Lost": 1,
+            "Lost": 2,
             "GF": 1,
-            "GA": 4,
-            "GD": -3,
+            "GA": 5,
+            "GD": -4,
             "Points": 0
         }
     ],
@@ -494,9 +494,9 @@
             "Won": 2,
             "Drawn": 0,
             "Lost": 0,
-            "GF": 4,
+            "GF": 5,
             "GA": 0,
-            "GD": 4,
+            "GD": 5,
             "Points": 6
         },
         {
@@ -508,8 +508,8 @@
             "Drawn": 0,
             "Lost": 1,
             "GF": 3,
-            "GA": 2,
-            "GD": 1,
+            "GA": 3,
+            "GD": 0,
             "Points": 3
         },
         {
