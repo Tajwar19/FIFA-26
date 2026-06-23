@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-23 08:15:24 PM",
+    "last_updated": "2026-06-23 11:14:15 PM",
     "matches": {
         "group_stage": [
             {
@@ -2209,7 +2209,7 @@
                 "Time": "9 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "63983",
                 "City": "Boston",
                 "Code1": "ENG",
                 "Code2": "GHA",
@@ -2239,15 +2239,15 @@
                 "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group L",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M46",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Pierre Ghislain Atcho",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "Toronto Stadium",
                 "Stage": "First Stage",
-                "Status": "5 AM BST",
+                "Status": "0FT0",
                 "Team1": "Panama",
                 "Team2": "Croatia",
                 "Time": "5 AM BST"
@@ -4258,26 +4258,26 @@
             },
             {
                 "Code": "PAN",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 1,
                 "GD": -1,
                 "GF": 0,
                 "Lost": 1,
-                "Played": 1,
-                "Points": 0,
+                "Played": 2,
+                "Points": 1,
                 "Pos": 3,
                 "Team": "Panama",
                 "Won": 0
             },
             {
                 "Code": "CRO",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 4,
                 "GD": -2,
                 "GF": 2,
                 "Lost": 1,
-                "Played": 1,
-                "Points": 0,
+                "Played": 2,
+                "Points": 1,
                 "Pos": 4,
                 "Team": "Croatia",
                 "Won": 0
@@ -4412,6 +4412,20 @@
             "Won": 0
         },
         {
+            "Code": "PAN",
+            "Drawn": 1,
+            "GA": 1,
+            "GD": -1,
+            "GF": 0,
+            "Group": "L",
+            "Lost": 1,
+            "Played": 2,
+            "Points": 1,
+            "Pos": 10,
+            "Team": "Panama",
+            "Won": 0
+        },
+        {
             "Code": "BIH",
             "Drawn": 1,
             "GA": 5,
@@ -4421,22 +4435,8 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 10,
-            "Team": "Bosnia and Herzegovina",
-            "Won": 0
-        },
-        {
-            "Code": "PAN",
-            "Drawn": 0,
-            "GA": 1,
-            "GD": -1,
-            "GF": 0,
-            "Group": "L",
-            "Lost": 1,
-            "Played": 1,
-            "Points": 0,
             "Pos": 11,
-            "Team": "Panama",
+            "Team": "Bosnia and Herzegovina",
             "Won": 0
         },
         {

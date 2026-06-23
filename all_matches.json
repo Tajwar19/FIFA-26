@@ -1723,7 +1723,7 @@
             "Goals1": [],
             "Goals2": [],
             "Referee": "Said MARTINEZ",
-            "Attendance": 0,
+            "Attendance": "63983",
             "HT": "0 - 0"
         },
         {
@@ -1733,20 +1733,20 @@
             "Time": "5 AM BST",
             "Team1": "Panama",
             "Code1": "PAN",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "0",
             "Team2": "Croatia",
             "Code2": "CRO",
-            "Status": "5 AM BST",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group L",
             "Stadium": "Toronto Stadium",
             "City": "Toronto",
             "Goals1": [],
             "Goals2": [],
-            "Referee": "",
+            "Referee": "Pierre Ghislain Atcho",
             "Attendance": 0,
-            "HT": ""
+            "HT": "0 - 0"
         },
         {
             "Match": "M47",

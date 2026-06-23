@@ -624,27 +624,27 @@
             "Pos": 3,
             "Team": "Panama",
             "Code": "PAN",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 1,
             "GF": 0,
             "GA": 1,
             "GD": -1,
-            "Points": 0
+            "Points": 1
         },
         {
             "Pos": 4,
             "Team": "Croatia",
             "Code": "CRO",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 1,
             "GF": 2,
             "GA": 4,
             "GD": -2,
-            "Points": 0
+            "Points": 1
         }
     ]
 }
