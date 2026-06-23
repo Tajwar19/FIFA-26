@@ -1629,7 +1629,7 @@
             ],
             "Goals2": [],
             "Referee": "Drew Fischer",
-            "Attendance": 0,
+            "Attendance": "68324",
             "HT": "1 - 0"
         },
         {
@@ -1673,10 +1673,10 @@
             "Team1": "Jordan",
             "Code1": "JOR",
             "Score1": "1",
-            "Score2": "0",
+            "Score2": "2",
             "Team2": "Algeria",
             "Code2": "ALG",
-            "Status": "1FT0",
+            "Status": "1FT2",
             "Stage": "First Stage",
             "Group_or_Match": "Group J",
             "Stadium": "San Francisco Bay Area Stadium",
@@ -1688,9 +1688,20 @@
                     "Type": 2
                 }
             ],
-            "Goals2": [],
+            "Goals2": [
+                {
+                    "Player": "Nadhir BENBOUALI",
+                    "Minute": "69'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Amine GOUIRI",
+                    "Minute": "82'",
+                    "Type": 2
+                }
+            ],
             "Referee": "Slavko VINCIC",
-            "Attendance": 0,
+            "Attendance": "68371",
             "HT": "1 - 0"
         },
         {
@@ -2603,8 +2614,8 @@
                 "MatchDay": null,
                 "Date": "Saturday 04 July 2026",
                 "Time": "4 AM BST",
-                "Team1": "1J",
-                "Code1": "1J",
+                "Team1": "Argentina",
+                "Code1": "ARG",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "2H",
