@@ -1711,20 +1711,20 @@
             "Time": "2 AM BST",
             "Team1": "England",
             "Code1": "ENG",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "0",
             "Team2": "Ghana",
             "Code2": "GHA",
-            "Status": "2 AM BST",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group L",
             "Stadium": "Boston Stadium",
             "City": "Boston",
             "Goals1": [],
             "Goals2": [],
-            "Referee": "",
+            "Referee": "Said MARTINEZ",
             "Attendance": 0,
-            "HT": ""
+            "HT": "0 - 0"
         },
         {
             "Match": "M46",
@@ -1755,20 +1755,46 @@
             "Time": "11 PM BST",
             "Team1": "Portugal",
             "Code1": "POR",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "5",
+            "Score2": "0",
             "Team2": "Uzbekistan",
             "Code2": "UZB",
-            "Status": "11 PM BST",
+            "Status": "5FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group K",
             "Stadium": "Houston Stadium",
             "City": "Houston",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "CRISTIANO RONALDO",
+                    "Minute": "6'",
+                    "Type": 2
+                },
+                {
+                    "Player": "NUNO MENDES",
+                    "Minute": "17'",
+                    "Type": 2
+                },
+                {
+                    "Player": "CRISTIANO RONALDO",
+                    "Minute": "39'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Abduvohid NEMATOV",
+                    "Minute": "60'",
+                    "Type": 3
+                },
+                {
+                    "Player": "RAFAEL LEAO",
+                    "Minute": "87'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Jalal Jayed",
+            "Attendance": "68777",
+            "HT": "3 - 0"
         },
         {
             "Match": "M48",

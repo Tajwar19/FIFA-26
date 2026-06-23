@@ -292,7 +292,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "5 AM BST",
-                "Team1": "2K: Congo DR",
+                "Team1": "2K: Colombia",
                 "Team1_raw": "2K",
                 "Team2": "2L: Ghana",
                 "Team2_raw": "2L",
@@ -401,7 +401,7 @@
                 "Status": "10 PM BST",
                 "Team1": "1L: England",
                 "Team1_raw": "1L",
-                "Team2": "3EHIJK: Portugal",
+                "Team2": "3EHIJK: Congo DR",
                 "Team2_raw": "3EHIJK",
                 "Time": "10 PM BST"
             },
@@ -459,7 +459,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "7:30 AM BST",
-                "Team1": "1K: Colombia",
+                "Team1": "1K: Portugal",
                 "Team1_raw": "1K",
                 "Team2": "3DEIJL: Paraguay",
                 "Team2_raw": "3DEIJL",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-23 04:29:55 PM",
+    "last_updated": "2026-06-23 08:15:24 PM",
     "matches": {
         "group_stage": [
             {
@@ -2217,15 +2217,15 @@
                 "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group L",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M45",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Said MARTINEZ",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "Boston Stadium",
                 "Stage": "First Stage",
-                "Status": "2 AM BST",
+                "Status": "0FT0",
                 "Team1": "England",
                 "Team2": "Ghana",
                 "Time": "2 AM BST"
@@ -2253,23 +2253,49 @@
                 "Time": "5 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68777",
                 "City": "Houston",
                 "Code1": "POR",
                 "Code2": "UZB",
                 "Date": "Tuesday 23 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "6'",
+                        "Player": "CRISTIANO RONALDO",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "17'",
+                        "Player": "NUNO MENDES",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "39'",
+                        "Player": "CRISTIANO RONALDO",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "60'",
+                        "Player": "Abduvohid NEMATOV",
+                        "Type": 3
+                    },
+                    {
+                        "Minute": "87'",
+                        "Player": "RAFAEL LEAO",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group K",
-                "HT": "",
+                "HT": "3 - 0",
                 "Match": "M47",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Jalal Jayed",
+                "Score1": "5",
+                "Score2": "0",
                 "Stadium": "Houston Stadium",
                 "Stage": "First Stage",
-                "Status": "11 PM BST",
+                "Status": "5FT0",
                 "Team1": "Portugal",
                 "Team2": "Uzbekistan",
                 "Time": "11 PM BST"
@@ -3359,7 +3385,7 @@
                     "Status": "10 PM BST",
                     "Team1": "1L: England",
                     "Team1_raw": "1L",
-                    "Team2": "3EHIJK: Portugal",
+                    "Team2": "3EHIJK: Congo DR",
                     "Team2_raw": "3EHIJK",
                     "Time": "10 PM BST"
                 },
@@ -3429,7 +3455,7 @@
                     "Stadium": "Toronto Stadium",
                     "Stage": "Round of 32",
                     "Status": "5 AM BST",
-                    "Team1": "2K: Congo DR",
+                    "Team1": "2K: Colombia",
                     "Team1_raw": "2K",
                     "Team2": "2L: Ghana",
                     "Team2_raw": "2L",
@@ -3525,7 +3551,7 @@
                     "Stadium": "Kansas City Stadium",
                     "Stage": "Round of 32",
                     "Status": "7:30 AM BST",
-                    "Team1": "1K: Colombia",
+                    "Team1": "1K: Portugal",
                     "Team1_raw": "1K",
                     "Team2": "3DEIJL: Paraguay",
                     "Team2_raw": "3DEIJL",
@@ -4151,6 +4177,19 @@
         ],
         "Group K": [
             {
+                "Code": "POR",
+                "Drawn": 1,
+                "GA": 1,
+                "GD": 5,
+                "GF": 6,
+                "Lost": 0,
+                "Played": 2,
+                "Points": 4,
+                "Pos": 1,
+                "Team": "Portugal",
+                "Won": 1
+            },
+            {
                 "Code": "COL",
                 "Drawn": 0,
                 "GA": 1,
@@ -4159,7 +4198,7 @@
                 "Lost": 0,
                 "Played": 1,
                 "Points": 3,
-                "Pos": 1,
+                "Pos": 2,
                 "Team": "Colombia",
                 "Won": 1
             },
@@ -4172,31 +4211,18 @@
                 "Lost": 0,
                 "Played": 1,
                 "Points": 1,
-                "Pos": 2,
-                "Team": "Congo DR",
-                "Won": 0
-            },
-            {
-                "Code": "POR",
-                "Drawn": 1,
-                "GA": 1,
-                "GD": 0,
-                "GF": 1,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 1,
                 "Pos": 3,
-                "Team": "Portugal",
+                "Team": "Congo DR",
                 "Won": 0
             },
             {
                 "Code": "UZB",
                 "Drawn": 0,
-                "GA": 3,
-                "GD": -2,
+                "GA": 8,
+                "GD": -7,
                 "GF": 1,
-                "Lost": 1,
-                "Played": 1,
+                "Lost": 2,
+                "Played": 2,
                 "Points": 0,
                 "Pos": 4,
                 "Team": "Uzbekistan",
@@ -4206,26 +4232,26 @@
         "Group L": [
             {
                 "Code": "ENG",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 2,
                 "GD": 2,
                 "GF": 4,
                 "Lost": 0,
-                "Played": 1,
-                "Points": 3,
+                "Played": 2,
+                "Points": 4,
                 "Pos": 1,
                 "Team": "England",
                 "Won": 1
             },
             {
                 "Code": "GHA",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 0,
                 "GD": 1,
                 "GF": 1,
                 "Lost": 0,
-                "Played": 1,
-                "Points": 3,
+                "Played": 2,
+                "Points": 4,
                 "Pos": 2,
                 "Team": "Ghana",
                 "Won": 1
@@ -4344,7 +4370,7 @@
             "Won": 0
         },
         {
-            "Code": "POR",
+            "Code": "COD",
             "Drawn": 1,
             "GA": 1,
             "GD": 0,
@@ -4354,7 +4380,7 @@
             "Played": 1,
             "Points": 1,
             "Pos": 7,
-            "Team": "Portugal",
+            "Team": "Congo DR",
             "Won": 0
         },
         {

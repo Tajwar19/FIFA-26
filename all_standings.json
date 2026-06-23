@@ -542,6 +542,19 @@
     "Group K": [
         {
             "Pos": 1,
+            "Team": "Portugal",
+            "Code": "POR",
+            "Played": 2,
+            "Won": 1,
+            "Drawn": 1,
+            "Lost": 0,
+            "GF": 6,
+            "GA": 1,
+            "GD": 5,
+            "Points": 4
+        },
+        {
+            "Pos": 2,
             "Team": "Colombia",
             "Code": "COL",
             "Played": 1,
@@ -554,22 +567,9 @@
             "Points": 3
         },
         {
-            "Pos": 2,
+            "Pos": 3,
             "Team": "Congo DR",
             "Code": "COD",
-            "Played": 1,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 1,
-            "GA": 1,
-            "GD": 0,
-            "Points": 1
-        },
-        {
-            "Pos": 3,
-            "Team": "Portugal",
-            "Code": "POR",
             "Played": 1,
             "Won": 0,
             "Drawn": 1,
@@ -583,13 +583,13 @@
             "Pos": 4,
             "Team": "Uzbekistan",
             "Code": "UZB",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
             "Drawn": 0,
-            "Lost": 1,
+            "Lost": 2,
             "GF": 1,
-            "GA": 3,
-            "GD": -2,
+            "GA": 8,
+            "GD": -7,
             "Points": 0
         }
     ],
@@ -598,27 +598,27 @@
             "Pos": 1,
             "Team": "England",
             "Code": "ENG",
-            "Played": 1,
+            "Played": 2,
             "Won": 1,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 0,
             "GF": 4,
             "GA": 2,
             "GD": 2,
-            "Points": 3
+            "Points": 4
         },
         {
             "Pos": 2,
             "Team": "Ghana",
             "Code": "GHA",
-            "Played": 1,
+            "Played": 2,
             "Won": 1,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 0,
             "GF": 1,
             "GA": 0,
             "GD": 1,
-            "Points": 3
+            "Points": 4
         },
         {
             "Pos": 3,
