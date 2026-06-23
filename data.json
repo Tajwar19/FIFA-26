@@ -324,7 +324,7 @@
                 "Status": "6 AM BST",
                 "Team1": "USA",
                 "Team1_raw": "USA",
-                "Team2": "3BEFIJ: Ecuador",
+                "Team2": "3BEFIJ: Jordan",
                 "Team2_raw": "3BEFIJ",
                 "Time": "6 AM BST"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-22 10:09:59 PM",
+    "last_updated": "2026-06-23 04:07:26 AM",
     "matches": {
         "group_stage": [
             {
@@ -2050,23 +2050,50 @@
                 "Time": "7 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "80663",
                 "City": "New Jersey",
                 "Code1": "NOR",
                 "Code2": "SEN",
                 "Date": "Tuesday 23 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Minute": "43'",
+                        "Player": "Marcus HOLMGREN PEDERSEN",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "48'",
+                        "Player": "Erling HAALAND",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "58'",
+                        "Player": "Erling HAALAND",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Minute": "53'",
+                        "Player": "Ismaila SARR",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "90'+3'",
+                        "Player": "Ismaila SARR",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group I",
-                "HT": "",
+                "HT": "1 - 0",
                 "Match": "M41",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Wilton SAMPAIO",
+                "Score1": "3",
+                "Score2": "2",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "6 AM BST",
+                "Status": "3FT2",
                 "Team1": "Norway",
                 "Team2": "Senegal",
                 "Time": "6 AM BST"
@@ -2082,6 +2109,16 @@
                         "Minute": "14'",
                         "Player": "Kylian MBAPPE",
                         "Type": 2
+                    },
+                    {
+                        "Minute": "54'",
+                        "Player": "Kylian MBAPPE",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "66'",
+                        "Player": "Ousmane DEMBELE",
+                        "Type": 2
                     }
                 ],
                 "Goals2": [],
@@ -2090,11 +2127,11 @@
                 "Match": "M42",
                 "MatchDay": null,
                 "Referee": "Drew Fischer",
-                "Score1": "1",
+                "Score1": "3",
                 "Score2": "0",
                 "Stadium": "Philadelphia Stadium",
                 "Stage": "First Stage",
-                "Status": "1FT0",
+                "Status": "3FT0",
                 "Team1": "France",
                 "Team2": "Iraq",
                 "Time": "3 AM BST"
@@ -2138,18 +2175,24 @@
                 "Code1": "JOR",
                 "Code2": "ALG",
                 "Date": "Tuesday 23 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "36'",
+                        "Player": "NIZAR ALRASHDAN",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group J",
-                "HT": "",
+                "HT": "1 - 0",
                 "Match": "M44",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Slavko VINCIC",
+                "Score1": "1",
+                "Score2": "0",
                 "Stadium": "San Francisco Bay Area Stadium",
                 "Stage": "First Stage",
-                "Status": "9 AM BST",
+                "Status": "1FT0",
                 "Team1": "Jordan",
                 "Team2": "Algeria",
                 "Time": "9 AM BST"
@@ -3329,7 +3372,7 @@
                     "Status": "6 AM BST",
                     "Team1": "USA",
                     "Team1_raw": "USA",
-                    "Team2": "3BEFIJ: Ecuador",
+                    "Team2": "3BEFIJ: Jordan",
                     "Team2_raw": "3BEFIJ",
                     "Time": "6 AM BST"
                 },
@@ -3992,8 +4035,8 @@
                 "Code": "FRA",
                 "Drawn": 0,
                 "GA": 1,
-                "GD": 3,
-                "GF": 4,
+                "GD": 5,
+                "GF": 6,
                 "Lost": 0,
                 "Played": 2,
                 "Points": 6,
@@ -4004,24 +4047,24 @@
             {
                 "Code": "NOR",
                 "Drawn": 0,
-                "GA": 1,
-                "GD": 3,
-                "GF": 4,
+                "GA": 3,
+                "GD": 4,
+                "GF": 7,
                 "Lost": 0,
-                "Played": 1,
-                "Points": 3,
+                "Played": 2,
+                "Points": 6,
                 "Pos": 2,
                 "Team": "Norway",
-                "Won": 1
+                "Won": 2
             },
             {
                 "Code": "SEN",
                 "Drawn": 0,
-                "GA": 3,
-                "GD": -2,
-                "GF": 1,
-                "Lost": 1,
-                "Played": 1,
+                "GA": 6,
+                "GD": -3,
+                "GF": 3,
+                "Lost": 2,
+                "Played": 2,
                 "Points": 0,
                 "Pos": 3,
                 "Team": "Senegal",
@@ -4030,8 +4073,8 @@
             {
                 "Code": "IRQ",
                 "Drawn": 0,
-                "GA": 5,
-                "GD": -4,
+                "GA": 7,
+                "GD": -6,
                 "GF": 1,
                 "Lost": 2,
                 "Played": 2,
@@ -4072,23 +4115,23 @@
                 "Code": "JOR",
                 "Drawn": 0,
                 "GA": 3,
-                "GD": -2,
-                "GF": 1,
+                "GD": -1,
+                "GF": 2,
                 "Lost": 1,
-                "Played": 1,
-                "Points": 0,
+                "Played": 2,
+                "Points": 3,
                 "Pos": 3,
                 "Team": "Jordan",
-                "Won": 0
+                "Won": 1
             },
             {
                 "Code": "ALG",
                 "Drawn": 0,
-                "GA": 3,
-                "GD": -3,
+                "GA": 4,
+                "GD": -4,
                 "GF": 0,
-                "Lost": 1,
-                "Played": 1,
+                "Lost": 2,
+                "Played": 2,
                 "Points": 0,
                 "Pos": 4,
                 "Team": "Algeria",
@@ -4234,6 +4277,20 @@
             "Won": 1
         },
         {
+            "Code": "JOR",
+            "Drawn": 0,
+            "GA": 3,
+            "GD": -1,
+            "GF": 2,
+            "Group": "J",
+            "Lost": 1,
+            "Played": 2,
+            "Points": 3,
+            "Pos": 3,
+            "Team": "Jordan",
+            "Won": 1
+        },
+        {
             "Code": "PAR",
             "Drawn": 0,
             "GA": 4,
@@ -4243,7 +4300,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 3,
+            "Pos": 4,
             "Team": "Paraguay",
             "Won": 1
         },
@@ -4257,7 +4314,7 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 4,
+            "Pos": 5,
             "Team": "Cabo Verde",
             "Won": 0
         },
@@ -4271,7 +4328,7 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 5,
+            "Pos": 6,
             "Team": "Belgium",
             "Won": 0
         },
@@ -4285,7 +4342,7 @@
             "Lost": 0,
             "Played": 1,
             "Points": 1,
-            "Pos": 6,
+            "Pos": 7,
             "Team": "Portugal",
             "Won": 0
         },
@@ -4299,7 +4356,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 7,
+            "Pos": 8,
             "Team": "Czechia",
             "Won": 0
         },
@@ -4313,7 +4370,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 8,
+            "Pos": 9,
             "Team": "Ecuador",
             "Won": 0
         },
@@ -4327,7 +4384,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 9,
+            "Pos": 10,
             "Team": "Bosnia and Herzegovina",
             "Won": 0
         },
@@ -4341,36 +4398,22 @@
             "Lost": 1,
             "Played": 1,
             "Points": 0,
-            "Pos": 10,
+            "Pos": 11,
             "Team": "Panama",
             "Won": 0
         },
         {
             "Code": "SEN",
             "Drawn": 0,
-            "GA": 3,
-            "GD": -2,
-            "GF": 1,
+            "GA": 6,
+            "GD": -3,
+            "GF": 3,
             "Group": "I",
-            "Lost": 1,
-            "Played": 1,
-            "Points": 0,
-            "Pos": 11,
-            "Team": "Senegal",
-            "Won": 0
-        },
-        {
-            "Code": "JOR",
-            "Drawn": 0,
-            "GA": 3,
-            "GD": -2,
-            "GF": 1,
-            "Group": "J",
-            "Lost": 1,
-            "Played": 1,
+            "Lost": 2,
+            "Played": 2,
             "Points": 0,
             "Pos": 12,
-            "Team": "Jordan",
+            "Team": "Senegal",
             "Won": 0
         }
     ]

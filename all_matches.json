@@ -1552,20 +1552,47 @@
             "Time": "6 AM BST",
             "Team1": "Norway",
             "Code1": "NOR",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "3",
+            "Score2": "2",
             "Team2": "Senegal",
             "Code2": "SEN",
-            "Status": "6 AM BST",
+            "Status": "3FT2",
             "Stage": "First Stage",
             "Group_or_Match": "Group I",
             "Stadium": "New York/New Jersey Stadium",
             "City": "New Jersey",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Marcus HOLMGREN PEDERSEN",
+                    "Minute": "43'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Erling HAALAND",
+                    "Minute": "48'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Erling HAALAND",
+                    "Minute": "58'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Ismaila SARR",
+                    "Minute": "53'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Ismaila SARR",
+                    "Minute": "90'+3'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Wilton SAMPAIO",
+            "Attendance": "80663",
+            "HT": "1 - 0"
         },
         {
             "Match": "M42",
@@ -1574,11 +1601,11 @@
             "Time": "3 AM BST",
             "Team1": "France",
             "Code1": "FRA",
-            "Score1": "1",
+            "Score1": "3",
             "Score2": "0",
             "Team2": "Iraq",
             "Code2": "IRQ",
-            "Status": "1FT0",
+            "Status": "3FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group I",
             "Stadium": "Philadelphia Stadium",
@@ -1587,6 +1614,16 @@
                 {
                     "Player": "Kylian MBAPPE",
                     "Minute": "14'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Kylian MBAPPE",
+                    "Minute": "54'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Ousmane DEMBELE",
+                    "Minute": "66'",
                     "Type": 2
                 }
             ],
@@ -1635,20 +1672,26 @@
             "Time": "9 AM BST",
             "Team1": "Jordan",
             "Code1": "JOR",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "0",
             "Team2": "Algeria",
             "Code2": "ALG",
-            "Status": "9 AM BST",
+            "Status": "1FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group J",
             "Stadium": "San Francisco Bay Area Stadium",
             "City": "San Francisco Bay Area",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "NIZAR ALRASHDAN",
+                    "Minute": "36'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
+            "Referee": "Slavko VINCIC",
             "Attendance": 0,
-            "HT": ""
+            "HT": "1 - 0"
         },
         {
             "Match": "M45",
