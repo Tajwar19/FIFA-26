@@ -249,7 +249,7 @@
                 "Status": "3 AM BST",
                 "Team1": "1I: France",
                 "Team1_raw": "1I",
-                "Team2": "3CDFGH: Scotland",
+                "Team2": "3CDFGH: Paraguay",
                 "Team2_raw": "3CDFGH",
                 "Time": "3 AM BST"
             },
@@ -292,7 +292,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "5 AM BST",
-                "Team1": "2K: Colombia",
+                "Team1": "2K: Portugal",
                 "Team1_raw": "2K",
                 "Team2": "2L: Ghana",
                 "Team2_raw": "2L",
@@ -386,7 +386,7 @@
                 "Status": "",
                 "Team1": "MEX",
                 "Team1_raw": "MEX",
-                "Team2": "3CEFHI: Cabo Verde",
+                "Team2": "3CEFHI: Scotland",
                 "Team2_raw": "3CEFHI",
                 "Time": "01:00"
             },
@@ -401,7 +401,7 @@
                 "Status": "10 PM BST",
                 "Team1": "1L: England",
                 "Team1_raw": "1L",
-                "Team2": "3EHIJK: Congo DR",
+                "Team2": "3EHIJK: Cabo Verde",
                 "Team2_raw": "3EHIJK",
                 "Time": "10 PM BST"
             },
@@ -459,9 +459,9 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "7:30 AM BST",
-                "Team1": "1K: Portugal",
+                "Team1": "1K: Colombia",
                 "Team1_raw": "1K",
-                "Team2": "3DEIJL: Paraguay",
+                "Team2": "3DEIJL: Croatia",
                 "Team2_raw": "3DEIJL",
                 "Time": "7:30 AM BST"
             }
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-23 11:14:15 PM",
+    "last_updated": "2026-06-24 04:10:20 AM",
     "matches": {
         "group_stage": [
             {
@@ -2231,23 +2231,29 @@
                 "Time": "2 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "43036",
                 "City": "Toronto",
                 "Code1": "PAN",
                 "Code2": "CRO",
                 "Date": "Wednesday 24 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "54'",
+                        "Player": "Ante BUDIMIR",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group L",
                 "HT": "0 - 0",
                 "Match": "M46",
                 "MatchDay": null,
                 "Referee": "Pierre Ghislain Atcho",
                 "Score1": "0",
-                "Score2": "0",
+                "Score2": "1",
                 "Stadium": "Toronto Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "0FT1",
                 "Team1": "Panama",
                 "Team2": "Croatia",
                 "Time": "5 AM BST"
@@ -2301,23 +2307,29 @@
                 "Time": "11 PM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "45358",
                 "City": "Guadalajara",
                 "Code1": "COL",
                 "Code2": "COD",
                 "Date": "Wednesday 24 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "76'",
+                        "Player": "Daniel MUNOZ",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group K",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M48",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Maurizio Mariani",
+                "Score1": "1",
+                "Score2": "0",
                 "Stadium": "Guadalajara Stadium",
                 "Stage": "First Stage",
-                "Status": "8 AM BST",
+                "Status": "1FT0",
                 "Team1": "Colombia",
                 "Team2": "Congo DR",
                 "Time": "8 AM BST"
@@ -3313,7 +3325,7 @@
                     "Status": "3 AM BST",
                     "Team1": "1I: France",
                     "Team1_raw": "1I",
-                    "Team2": "3CDFGH: Scotland",
+                    "Team2": "3CDFGH: Paraguay",
                     "Team2_raw": "3CDFGH",
                     "Time": "3 AM BST"
                 },
@@ -3361,7 +3373,7 @@
                     "Status": "7 AM BST",
                     "Team1": "Mexico",
                     "Team1_raw": "Mexico",
-                    "Team2": "3CEFHI: Cabo Verde",
+                    "Team2": "3CEFHI: Scotland",
                     "Team2_raw": "3CEFHI",
                     "Time": "7 AM BST"
                 },
@@ -3385,7 +3397,7 @@
                     "Status": "10 PM BST",
                     "Team1": "1L: England",
                     "Team1_raw": "1L",
-                    "Team2": "3EHIJK: Congo DR",
+                    "Team2": "3EHIJK: Cabo Verde",
                     "Team2_raw": "3EHIJK",
                     "Time": "10 PM BST"
                 },
@@ -3455,7 +3467,7 @@
                     "Stadium": "Toronto Stadium",
                     "Stage": "Round of 32",
                     "Status": "5 AM BST",
-                    "Team1": "2K: Colombia",
+                    "Team1": "2K: Portugal",
                     "Team1_raw": "2K",
                     "Team2": "2L: Ghana",
                     "Team2_raw": "2L",
@@ -3551,9 +3563,9 @@
                     "Stadium": "Kansas City Stadium",
                     "Stage": "Round of 32",
                     "Status": "7:30 AM BST",
-                    "Team1": "1K: Portugal",
+                    "Team1": "1K: Colombia",
                     "Team1_raw": "1K",
-                    "Team2": "3DEIJL: Paraguay",
+                    "Team2": "3DEIJL: Croatia",
                     "Team2_raw": "3DEIJL",
                     "Time": "7:30 AM BST"
                 },
@@ -4177,6 +4189,19 @@
         ],
         "Group K": [
             {
+                "Code": "COL",
+                "Drawn": 0,
+                "GA": 1,
+                "GD": 3,
+                "GF": 4,
+                "Lost": 0,
+                "Played": 2,
+                "Points": 6,
+                "Pos": 1,
+                "Team": "Colombia",
+                "Won": 2
+            },
+            {
                 "Code": "POR",
                 "Drawn": 1,
                 "GA": 1,
@@ -4185,31 +4210,18 @@
                 "Lost": 0,
                 "Played": 2,
                 "Points": 4,
-                "Pos": 1,
-                "Team": "Portugal",
-                "Won": 1
-            },
-            {
-                "Code": "COL",
-                "Drawn": 0,
-                "GA": 1,
-                "GD": 2,
-                "GF": 3,
-                "Lost": 0,
-                "Played": 1,
-                "Points": 3,
                 "Pos": 2,
-                "Team": "Colombia",
+                "Team": "Portugal",
                 "Won": 1
             },
             {
                 "Code": "COD",
                 "Drawn": 1,
-                "GA": 1,
-                "GD": 0,
+                "GA": 2,
+                "GD": -1,
                 "GF": 1,
-                "Lost": 0,
-                "Played": 1,
+                "Lost": 1,
+                "Played": 2,
                 "Points": 1,
                 "Pos": 3,
                 "Team": "Congo DR",
@@ -4257,29 +4269,29 @@
                 "Won": 1
             },
             {
-                "Code": "PAN",
-                "Drawn": 1,
-                "GA": 1,
+                "Code": "CRO",
+                "Drawn": 0,
+                "GA": 4,
                 "GD": -1,
-                "GF": 0,
+                "GF": 3,
                 "Lost": 1,
                 "Played": 2,
-                "Points": 1,
+                "Points": 3,
                 "Pos": 3,
-                "Team": "Panama",
-                "Won": 0
+                "Team": "Croatia",
+                "Won": 1
             },
             {
-                "Code": "CRO",
-                "Drawn": 1,
-                "GA": 4,
+                "Code": "PAN",
+                "Drawn": 0,
+                "GA": 2,
                 "GD": -2,
-                "GF": 2,
-                "Lost": 1,
+                "GF": 0,
+                "Lost": 2,
                 "Played": 2,
-                "Points": 1,
+                "Points": 0,
                 "Pos": 4,
-                "Team": "Croatia",
+                "Team": "Panama",
                 "Won": 0
             }
         ]
@@ -4314,6 +4326,20 @@
             "Won": 1
         },
         {
+            "Code": "CRO",
+            "Drawn": 0,
+            "GA": 4,
+            "GD": -1,
+            "GF": 3,
+            "Group": "L",
+            "Lost": 1,
+            "Played": 2,
+            "Points": 3,
+            "Pos": 3,
+            "Team": "Croatia",
+            "Won": 1
+        },
+        {
             "Code": "PAR",
             "Drawn": 0,
             "GA": 4,
@@ -4323,7 +4349,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 3,
+            "Pos": 4,
             "Team": "Paraguay",
             "Won": 1
         },
@@ -4337,7 +4363,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 4,
+            "Pos": 5,
             "Team": "Algeria",
             "Won": 1
         },
@@ -4351,7 +4377,7 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 5,
+            "Pos": 6,
             "Team": "Cabo Verde",
             "Won": 0
         },
@@ -4365,22 +4391,8 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 6,
-            "Team": "Belgium",
-            "Won": 0
-        },
-        {
-            "Code": "COD",
-            "Drawn": 1,
-            "GA": 1,
-            "GD": 0,
-            "GF": 1,
-            "Group": "K",
-            "Lost": 0,
-            "Played": 1,
-            "Points": 1,
             "Pos": 7,
-            "Team": "Congo DR",
+            "Team": "Belgium",
             "Won": 0
         },
         {
@@ -4398,6 +4410,20 @@
             "Won": 0
         },
         {
+            "Code": "COD",
+            "Drawn": 1,
+            "GA": 2,
+            "GD": -1,
+            "GF": 1,
+            "Group": "K",
+            "Lost": 1,
+            "Played": 2,
+            "Points": 1,
+            "Pos": 9,
+            "Team": "Congo DR",
+            "Won": 0
+        },
+        {
             "Code": "ECU",
             "Drawn": 1,
             "GA": 1,
@@ -4407,22 +4433,8 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 9,
-            "Team": "Ecuador",
-            "Won": 0
-        },
-        {
-            "Code": "PAN",
-            "Drawn": 1,
-            "GA": 1,
-            "GD": -1,
-            "GF": 0,
-            "Group": "L",
-            "Lost": 1,
-            "Played": 2,
-            "Points": 1,
             "Pos": 10,
-            "Team": "Panama",
+            "Team": "Ecuador",
             "Won": 0
         },
         {

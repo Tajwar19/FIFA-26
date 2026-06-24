@@ -542,6 +542,19 @@
     "Group K": [
         {
             "Pos": 1,
+            "Team": "Colombia",
+            "Code": "COL",
+            "Played": 2,
+            "Won": 2,
+            "Drawn": 0,
+            "Lost": 0,
+            "GF": 4,
+            "GA": 1,
+            "GD": 3,
+            "Points": 6
+        },
+        {
+            "Pos": 2,
             "Team": "Portugal",
             "Code": "POR",
             "Played": 2,
@@ -554,29 +567,16 @@
             "Points": 4
         },
         {
-            "Pos": 2,
-            "Team": "Colombia",
-            "Code": "COL",
-            "Played": 1,
-            "Won": 1,
-            "Drawn": 0,
-            "Lost": 0,
-            "GF": 3,
-            "GA": 1,
-            "GD": 2,
-            "Points": 3
-        },
-        {
             "Pos": 3,
             "Team": "Congo DR",
             "Code": "COD",
-            "Played": 1,
+            "Played": 2,
             "Won": 0,
             "Drawn": 1,
-            "Lost": 0,
+            "Lost": 1,
             "GF": 1,
-            "GA": 1,
-            "GD": 0,
+            "GA": 2,
+            "GD": -1,
             "Points": 1
         },
         {
@@ -622,29 +622,29 @@
         },
         {
             "Pos": 3,
+            "Team": "Croatia",
+            "Code": "CRO",
+            "Played": 2,
+            "Won": 1,
+            "Drawn": 0,
+            "Lost": 1,
+            "GF": 3,
+            "GA": 4,
+            "GD": -1,
+            "Points": 3
+        },
+        {
+            "Pos": 4,
             "Team": "Panama",
             "Code": "PAN",
             "Played": 2,
             "Won": 0,
-            "Drawn": 1,
-            "Lost": 1,
+            "Drawn": 0,
+            "Lost": 2,
             "GF": 0,
-            "GA": 1,
-            "GD": -1,
-            "Points": 1
-        },
-        {
-            "Pos": 4,
-            "Team": "Croatia",
-            "Code": "CRO",
-            "Played": 2,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 1,
-            "GF": 2,
-            "GA": 4,
+            "GA": 2,
             "GD": -2,
-            "Points": 1
+            "Points": 0
         }
     ]
 }

@@ -1734,18 +1734,24 @@
             "Team1": "Panama",
             "Code1": "PAN",
             "Score1": "0",
-            "Score2": "0",
+            "Score2": "1",
             "Team2": "Croatia",
             "Code2": "CRO",
-            "Status": "0FT0",
+            "Status": "0FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group L",
             "Stadium": "Toronto Stadium",
             "City": "Toronto",
             "Goals1": [],
-            "Goals2": [],
+            "Goals2": [
+                {
+                    "Player": "Ante BUDIMIR",
+                    "Minute": "54'",
+                    "Type": 2
+                }
+            ],
             "Referee": "Pierre Ghislain Atcho",
-            "Attendance": 0,
+            "Attendance": "43036",
             "HT": "0 - 0"
         },
         {
@@ -1803,20 +1809,26 @@
             "Time": "8 AM BST",
             "Team1": "Colombia",
             "Code1": "COL",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "0",
             "Team2": "Congo DR",
             "Code2": "COD",
-            "Status": "8 AM BST",
+            "Status": "1FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group K",
             "Stadium": "Guadalajara Stadium",
             "City": "Guadalajara",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Daniel MUNOZ",
+                    "Minute": "76'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Maurizio Mariani",
+            "Attendance": "45358",
+            "HT": "0 - 0"
         },
         {
             "Match": "M49",
