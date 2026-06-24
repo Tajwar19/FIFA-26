@@ -56,29 +56,29 @@
     "Group B": [
         {
             "Pos": 1,
+            "Team": "Switzerland",
+            "Code": "SUI",
+            "Played": 3,
+            "Won": 2,
+            "Drawn": 1,
+            "Lost": 0,
+            "GF": 7,
+            "GA": 3,
+            "GD": 4,
+            "Points": 7
+        },
+        {
+            "Pos": 2,
             "Team": "Canada",
             "Code": "CAN",
             "Played": 3,
             "Won": 1,
-            "Drawn": 2,
-            "Lost": 0,
-            "GF": 7,
-            "GA": 1,
-            "GD": 6,
-            "Points": 5
-        },
-        {
-            "Pos": 2,
-            "Team": "Switzerland",
-            "Code": "SUI",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 2,
-            "Lost": 0,
-            "GF": 5,
-            "GA": 2,
-            "GD": 3,
-            "Points": 5
+            "Drawn": 1,
+            "Lost": 1,
+            "GF": 8,
+            "GA": 3,
+            "GD": 5,
+            "Points": 4
         },
         {
             "Pos": 3,
@@ -88,9 +88,9 @@
             "Won": 1,
             "Drawn": 1,
             "Lost": 1,
-            "GF": 4,
+            "GF": 5,
             "GA": 6,
-            "GD": -2,
+            "GD": -1,
             "Points": 4
         },
         {
@@ -102,8 +102,8 @@
             "Drawn": 1,
             "Lost": 2,
             "GF": 2,
-            "GA": 9,
-            "GD": -7,
+            "GA": 10,
+            "GD": -8,
             "Points": 1
         }
     ],

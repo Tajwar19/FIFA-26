@@ -1881,19 +1881,36 @@
             "Time": "1 AM BST",
             "Team1": "Switzerland",
             "Code1": "SUI",
-            "Score1": "0",
-            "Score2": "0",
+            "Score1": "2",
+            "Score2": "1",
             "Team2": "Canada",
             "Code2": "CAN",
-            "Status": "0FT0",
+            "Status": "2FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group B",
             "Stadium": "BC Place Vancouver",
             "City": "Vancouver",
-            "Goals1": [],
-            "Goals2": [],
+            "Goals1": [
+                {
+                    "Player": "Ruben VARGAS",
+                    "Minute": "46'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Johan MANZAMBI",
+                    "Minute": "57'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Promise DAVID",
+                    "Minute": "76'",
+                    "Type": 2
+                }
+            ],
             "Referee": "Ramon ABATTI",
-            "Attendance": 0,
+            "Attendance": "52497",
             "HT": "0 - 0"
         },
         {
@@ -1903,11 +1920,11 @@
             "Time": "1 AM BST",
             "Team1": "Bosnia and Herzegovina",
             "Code1": "BIH",
-            "Score1": "2",
+            "Score1": "3",
             "Score2": "1",
             "Team2": "Qatar",
             "Code2": "QAT",
-            "Status": "2FT1",
+            "Status": "3FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group B",
             "Stadium": "Seattle Stadium",
@@ -1919,9 +1936,14 @@
                     "Type": 2
                 },
                 {
-                    "Player": "SULTAN ALBRAKE",
+                    "Player": "MAHMOUD ABUNADA",
                     "Minute": "34'",
                     "Type": 3
+                },
+                {
+                    "Player": "Ermin MAHMIC",
+                    "Minute": "80'",
+                    "Type": 2
                 }
             ],
             "Goals2": [
@@ -1932,7 +1954,7 @@
                 }
             ],
             "Referee": "Jesús Valenzuela Sáez",
-            "Attendance": 0,
+            "Attendance": "66925",
             "HT": "2 - 1"
         },
         {
@@ -2387,8 +2409,8 @@
                 "Code1": "2A",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "2B",
-                "Code2": "2B",
+                "Team2": "Canada",
+                "Code2": "CAN",
                 "Status": "1 AM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 73",
@@ -2647,8 +2669,8 @@
                 "MatchDay": null,
                 "Date": "Friday 03 July 2026",
                 "Time": "9 AM BST",
-                "Team1": "1B",
-                "Code1": "1B",
+                "Team1": "Switzerland",
+                "Code1": "SUI",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "3EFGIJ",
