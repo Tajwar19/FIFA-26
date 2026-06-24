@@ -1881,20 +1881,20 @@
             "Time": "1 AM BST",
             "Team1": "Switzerland",
             "Code1": "SUI",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "0",
             "Team2": "Canada",
             "Code2": "CAN",
-            "Status": "1 AM BST",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group B",
             "Stadium": "BC Place Vancouver",
             "City": "Vancouver",
             "Goals1": [],
             "Goals2": [],
-            "Referee": "",
+            "Referee": "Ramon ABATTI",
             "Attendance": 0,
-            "HT": ""
+            "HT": "0 - 0"
         },
         {
             "Match": "M52",
@@ -1903,20 +1903,37 @@
             "Time": "1 AM BST",
             "Team1": "Bosnia and Herzegovina",
             "Code1": "BIH",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "2",
+            "Score2": "1",
             "Team2": "Qatar",
             "Code2": "QAT",
-            "Status": "1 AM BST",
+            "Status": "2FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group B",
             "Stadium": "Seattle Stadium",
             "City": "Seattle",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
+            "Goals1": [
+                {
+                    "Player": "Kerim ALAJBEGOVIC",
+                    "Minute": "29'",
+                    "Type": 2
+                },
+                {
+                    "Player": "SULTAN ALBRAKE",
+                    "Minute": "34'",
+                    "Type": 3
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "HASSAN ALHAYDOS",
+                    "Minute": "42'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Jesús Valenzuela Sáez",
             "Attendance": 0,
-            "HT": ""
+            "HT": "2 - 1"
         },
         {
             "Match": "M53",

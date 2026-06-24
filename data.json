@@ -234,7 +234,7 @@
                 "Status": "",
                 "Team1": "GER",
                 "Team1_raw": "GER",
-                "Team2": "3ABCDF: Sweden",
+                "Team2": "3ABCDF: Bosnia and Herzegovina",
                 "Team2_raw": "3ABCDF",
                 "Time": "20:30"
             },
@@ -324,7 +324,7 @@
                 "Status": "6 AM BST",
                 "Team1": "USA",
                 "Team1_raw": "USA",
-                "Team2": "3BEFIJ: Algeria",
+                "Team2": "3BEFIJ: Sweden",
                 "Team2_raw": "3BEFIJ",
                 "Time": "6 AM BST"
             },
@@ -339,7 +339,7 @@
                 "Status": "2 AM BST",
                 "Team1": "1G: Egypt",
                 "Team1_raw": "1G",
-                "Team2": "3AEHIJ: Czechia",
+                "Team2": "3AEHIJ: Algeria",
                 "Team2_raw": "3AEHIJ",
                 "Time": "2 AM BST"
             }
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-24 04:26:18 PM",
+    "last_updated": "2026-06-24 07:56:47 PM",
     "matches": {
         "group_stage": [
             {
@@ -2387,15 +2387,15 @@
                 "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group B",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M51",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Ramon ABATTI",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "BC Place Vancouver",
                 "Stage": "First Stage",
-                "Status": "1 AM BST",
+                "Status": "0FT0",
                 "Team1": "Switzerland",
                 "Team2": "Canada",
                 "Time": "1 AM BST"
@@ -2406,18 +2406,35 @@
                 "Code1": "BIH",
                 "Code2": "QAT",
                 "Date": "Thursday 25 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Minute": "29'",
+                        "Player": "Kerim ALAJBEGOVIC",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "34'",
+                        "Player": "SULTAN ALBRAKE",
+                        "Type": 3
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Minute": "42'",
+                        "Player": "HASSAN ALHAYDOS",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group B",
-                "HT": "",
+                "HT": "2 - 1",
                 "Match": "M52",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Jesús Valenzuela Sáez",
+                "Score1": "2",
+                "Score2": "1",
                 "Stadium": "Seattle Stadium",
                 "Stage": "First Stage",
-                "Status": "1 AM BST",
+                "Status": "2FT1",
                 "Team1": "Bosnia and Herzegovina",
                 "Team2": "Qatar",
                 "Time": "1 AM BST"
@@ -3253,7 +3270,7 @@
                     "Status": "2:30 AM BST",
                     "Team1": "Germany",
                     "Team1_raw": "Germany",
-                    "Team2": "3ABCDF: Sweden",
+                    "Team2": "3ABCDF: Bosnia and Herzegovina",
                     "Team2_raw": "3ABCDF",
                     "Time": "2:30 AM BST"
                 },
@@ -3421,7 +3438,7 @@
                     "Status": "6 AM BST",
                     "Team1": "USA",
                     "Team1_raw": "USA",
-                    "Team2": "3BEFIJ: Algeria",
+                    "Team2": "3BEFIJ: Sweden",
                     "Team2_raw": "3BEFIJ",
                     "Time": "6 AM BST"
                 },
@@ -3445,7 +3462,7 @@
                     "Status": "2 AM BST",
                     "Team1": "1G: Egypt",
                     "Team1_raw": "1G",
-                    "Team2": "3AEHIJ: Czechia",
+                    "Team2": "3AEHIJ: Algeria",
                     "Team2_raw": "3AEHIJ",
                     "Time": "2 AM BST"
                 },
@@ -3704,26 +3721,26 @@
         "Group B": [
             {
                 "Code": "CAN",
-                "Drawn": 1,
+                "Drawn": 2,
                 "GA": 1,
                 "GD": 6,
                 "GF": 7,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 4,
+                "Played": 3,
+                "Points": 5,
                 "Pos": 1,
                 "Team": "Canada",
                 "Won": 1
             },
             {
                 "Code": "SUI",
-                "Drawn": 1,
+                "Drawn": 2,
                 "GA": 2,
                 "GD": 3,
                 "GF": 5,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 4,
+                "Played": 3,
+                "Points": 5,
                 "Pos": 2,
                 "Team": "Switzerland",
                 "Won": 1
@@ -3731,24 +3748,24 @@
             {
                 "Code": "BIH",
                 "Drawn": 1,
-                "GA": 5,
-                "GD": -3,
-                "GF": 2,
+                "GA": 6,
+                "GD": -2,
+                "GF": 4,
                 "Lost": 1,
-                "Played": 2,
-                "Points": 1,
+                "Played": 3,
+                "Points": 4,
                 "Pos": 3,
                 "Team": "Bosnia and Herzegovina",
-                "Won": 0
+                "Won": 1
             },
             {
                 "Code": "QAT",
                 "Drawn": 1,
-                "GA": 7,
-                "GD": -6,
-                "GF": 1,
-                "Lost": 1,
-                "Played": 2,
+                "GA": 9,
+                "GD": -7,
+                "GF": 2,
+                "Lost": 2,
+                "Played": 3,
                 "Points": 1,
                 "Pos": 4,
                 "Team": "Qatar",
@@ -4298,6 +4315,20 @@
     },
     "third_places": [
         {
+            "Code": "BIH",
+            "Drawn": 1,
+            "GA": 6,
+            "GD": -2,
+            "GF": 4,
+            "Group": "B",
+            "Lost": 1,
+            "Played": 3,
+            "Points": 4,
+            "Pos": 1,
+            "Team": "Bosnia and Herzegovina",
+            "Won": 1
+        },
+        {
             "Code": "SWE",
             "Drawn": 0,
             "GA": 6,
@@ -4307,7 +4338,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 1,
+            "Pos": 2,
             "Team": "Sweden",
             "Won": 1
         },
@@ -4321,7 +4352,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 2,
+            "Pos": 3,
             "Team": "Scotland",
             "Won": 1
         },
@@ -4335,7 +4366,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 3,
+            "Pos": 4,
             "Team": "Croatia",
             "Won": 1
         },
@@ -4349,7 +4380,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 4,
+            "Pos": 5,
             "Team": "Paraguay",
             "Won": 1
         },
@@ -4363,7 +4394,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 5,
+            "Pos": 6,
             "Team": "Algeria",
             "Won": 1
         },
@@ -4377,7 +4408,7 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 6,
+            "Pos": 7,
             "Team": "Cabo Verde",
             "Won": 0
         },
@@ -4391,7 +4422,7 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 7,
+            "Pos": 8,
             "Team": "Belgium",
             "Won": 0
         },
@@ -4405,7 +4436,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 8,
+            "Pos": 9,
             "Team": "Czechia",
             "Won": 0
         },
@@ -4419,7 +4450,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 9,
+            "Pos": 10,
             "Team": "Congo DR",
             "Won": 0
         },
@@ -4433,22 +4464,8 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 10,
-            "Team": "Ecuador",
-            "Won": 0
-        },
-        {
-            "Code": "BIH",
-            "Drawn": 1,
-            "GA": 5,
-            "GD": -3,
-            "GF": 2,
-            "Group": "B",
-            "Lost": 1,
-            "Played": 2,
-            "Points": 1,
             "Pos": 11,
-            "Team": "Bosnia and Herzegovina",
+            "Team": "Ecuador",
             "Won": 0
         },
         {
