@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-25 08:55:46 AM",
+    "last_updated": "2026-06-25 08:59:16 AM",
     "matches": {
         "group_stage": [
             {
@@ -3127,7 +3127,7 @@
                 {
                     "Attendance": 0,
                     "City": "Los Angeles",
-                    "Code1": "2A",
+                    "Code1": "RSA",
                     "Code2": "CAN",
                     "Date": "Monday 29 June 2026",
                     "Goals1": [],
@@ -3142,8 +3142,8 @@
                     "Stadium": "Los Angeles Stadium",
                     "Stage": "Round of 32",
                     "Status": "1 AM BST",
-                    "Team1": "2A: South Africa",
-                    "Team1_raw": "2A",
+                    "Team1": "South Africa",
+                    "Team1_raw": "South Africa",
                     "Team2": "Canada",
                     "Team2_raw": "Canada",
                     "Time": "1 AM BST"
