@@ -262,8 +262,8 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "",
-                "Team1": "2A: South Africa",
-                "Team1_raw": "2A",
+                "Team1": "RSA",
+                "Team1_raw": "RSA",
                 "Team2": "CAN",
                 "Team2_raw": "CAN",
                 "Time": "01:00"
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-25 08:59:16 AM",
+    "last_updated": "2026-06-25 09:02:29 AM",
     "matches": {
         "group_stage": [
             {
