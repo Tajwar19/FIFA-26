@@ -222,12 +222,12 @@
             "Code": "GER",
             "Played": 3,
             "Won": 2,
-            "Drawn": 1,
-            "Lost": 0,
+            "Drawn": 0,
+            "Lost": 1,
             "GF": 10,
-            "GA": 3,
-            "GD": 7,
-            "Points": 7
+            "GA": 4,
+            "GD": 6,
+            "Points": 6
         },
         {
             "Pos": 2,
@@ -237,9 +237,9 @@
             "Won": 2,
             "Drawn": 0,
             "Lost": 1,
-            "GF": 3,
+            "GF": 4,
             "GA": 2,
-            "GD": 1,
+            "GD": 2,
             "Points": 6
         },
         {
@@ -247,13 +247,13 @@
             "Team": "Ecuador",
             "Code": "ECU",
             "Played": 3,
-            "Won": 0,
-            "Drawn": 2,
+            "Won": 1,
+            "Drawn": 1,
             "Lost": 1,
-            "GF": 1,
+            "GF": 2,
             "GA": 2,
-            "GD": -1,
-            "Points": 2
+            "GD": 0,
+            "Points": 4
         },
         {
             "Pos": 4,
@@ -264,8 +264,8 @@
             "Drawn": 1,
             "Lost": 2,
             "GF": 1,
-            "GA": 8,
-            "GD": -7,
+            "GA": 9,
+            "GD": -8,
             "Points": 1
         }
     ],
@@ -274,52 +274,52 @@
             "Pos": 1,
             "Team": "Netherlands",
             "Code": "NED",
-            "Played": 2,
-            "Won": 1,
+            "Played": 3,
+            "Won": 2,
             "Drawn": 1,
             "Lost": 0,
-            "GF": 7,
+            "GF": 9,
             "GA": 3,
-            "GD": 4,
-            "Points": 4
+            "GD": 6,
+            "Points": 7
         },
         {
             "Pos": 2,
             "Team": "Japan",
             "Code": "JPN",
-            "Played": 2,
+            "Played": 3,
             "Won": 1,
-            "Drawn": 1,
+            "Drawn": 2,
             "Lost": 0,
             "GF": 6,
             "GA": 2,
             "GD": 4,
-            "Points": 4
+            "Points": 5
         },
         {
             "Pos": 3,
             "Team": "Sweden",
             "Code": "SWE",
-            "Played": 2,
+            "Played": 3,
             "Won": 1,
-            "Drawn": 0,
+            "Drawn": 1,
             "Lost": 1,
             "GF": 6,
             "GA": 6,
             "GD": 0,
-            "Points": 3
+            "Points": 4
         },
         {
             "Pos": 4,
             "Team": "Tunisia",
             "Code": "TUN",
-            "Played": 2,
+            "Played": 3,
             "Won": 0,
             "Drawn": 0,
-            "Lost": 2,
+            "Lost": 3,
             "GF": 1,
-            "GA": 9,
-            "GD": -8,
+            "GA": 11,
+            "GD": -10,
             "Points": 0
         }
     ],

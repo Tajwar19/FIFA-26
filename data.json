@@ -234,7 +234,7 @@
                 "Status": "",
                 "Team1": "GER",
                 "Team1_raw": "GER",
-                "Team2": "3ABCDF: Bosnia and Herzegovina",
+                "Team2": "3ABCDF: Sweden",
                 "Team2_raw": "3ABCDF",
                 "Time": "20:30"
             },
@@ -324,7 +324,7 @@
                 "Status": "6 AM BST",
                 "Team1": "USA",
                 "Team1_raw": "USA",
-                "Team2": "3BEFIJ: Sweden",
+                "Team2": "3BEFIJ: Bosnia and Herzegovina",
                 "Team2_raw": "3BEFIJ",
                 "Time": "6 AM BST"
             },
@@ -361,19 +361,19 @@
                 "Time": "17:00"
             },
             {
-                "Date": "Tuesday 30 June 2026",
+                "Date": "06/30/202617:00",
                 "Match": "M78",
                 "NextMatch": "M91",
                 "Round": "Round of 32 (Right)",
                 "Score1": "",
                 "Score2": "",
                 "Side": "RIGHT",
-                "Status": "11 PM BST",
-                "Team1": "2E: Côte d'Ivoire",
-                "Team1_raw": "2E",
+                "Status": "",
+                "Team1": "CIV",
+                "Team1_raw": "CIV",
                 "Team2": "2I: Norway",
                 "Team2_raw": "2I",
-                "Time": "11 PM BST"
+                "Time": "17:00"
             },
             {
                 "Date": "07/01/202601:00",
@@ -401,7 +401,7 @@
                 "Status": "10 PM BST",
                 "Team1": "1L: England",
                 "Team1_raw": "1L",
-                "Team2": "3EHIJK: Cabo Verde",
+                "Team2": "3EHIJK: Algeria",
                 "Team2_raw": "3EHIJK",
                 "Time": "10 PM BST"
             },
@@ -446,7 +446,7 @@
                 "Status": "",
                 "Team1": "SUI",
                 "Team1_raw": "SUI",
-                "Team2": "3EFGIJ: Algeria",
+                "Team2": "3EFGIJ: Ecuador",
                 "Team2_raw": "3EFGIJ",
                 "Time": "03:00"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-25 08:12:04 PM",
+    "last_updated": "2026-06-25 11:24:37 PM",
     "matches": {
         "group_stage": [
             {
@@ -2382,7 +2382,7 @@
                 "Time": "7 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68324",
                 "City": "Philadelphia",
                 "Code1": "CUW",
                 "Code2": "CIV",
@@ -2393,6 +2393,11 @@
                         "Minute": "7'",
                         "Player": "Nicolas PEPE",
                         "Type": 2
+                    },
+                    {
+                        "Minute": "64'",
+                        "Player": "Nicolas PEPE",
+                        "Type": 2
                     }
                 ],
                 "Group_or_Match": "Group E",
@@ -2401,16 +2406,16 @@
                 "MatchDay": null,
                 "Referee": "Glenn Nyberg",
                 "Score1": "0",
-                "Score2": "1",
+                "Score2": "2",
                 "Stadium": "Philadelphia Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT1",
+                "Status": "0FT2",
                 "Team1": "Curaçao",
                 "Team2": "Côte d'Ivoire",
                 "Time": "2 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "80663",
                 "City": "New Jersey",
                 "Code1": "ECU",
                 "Code2": "GER",
@@ -2419,6 +2424,11 @@
                     {
                         "Minute": "9'",
                         "Player": "Nilson ANGULO",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "77'",
+                        "Player": "Gonzalo PLATA",
                         "Type": 2
                     }
                 ],
@@ -2434,11 +2444,11 @@
                 "Match": "M56",
                 "MatchDay": null,
                 "Referee": "Tori Penso",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "1",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "1FT1",
+                "Status": "2FT1",
                 "Team1": "Ecuador",
                 "Team2": "Germany",
                 "Time": "2 AM BST"
@@ -2452,15 +2462,15 @@
                 "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group F",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M57",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Ivan Arcides Barton Cisneros",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "Dallas Stadium",
                 "Stage": "First Stage",
-                "Status": "5 AM BST",
+                "Status": "0FT0",
                 "Team1": "Japan",
                 "Team2": "Sweden",
                 "Time": "5 AM BST"
@@ -2472,17 +2482,28 @@
                 "Code2": "NED",
                 "Date": "Friday 26 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "3'",
+                        "Player": "Ellyes SKHIRI",
+                        "Type": 3
+                    },
+                    {
+                        "Minute": "7'",
+                        "Player": "Brian BROBBEY",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group F",
-                "HT": "",
+                "HT": "0 - 2",
                 "Match": "M58",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Katia Itzel García",
+                "Score1": "0",
+                "Score2": "2",
                 "Stadium": "Kansas City Stadium",
                 "Stage": "First Stage",
-                "Status": "5 AM BST",
+                "Status": "0FT2",
                 "Team1": "Tunisia",
                 "Team2": "Netherlands",
                 "Time": "5 AM BST"
@@ -3186,7 +3207,7 @@
                     "Status": "2:30 AM BST",
                     "Team1": "Germany",
                     "Team1_raw": "Germany",
-                    "Team2": "3ABCDF: Bosnia and Herzegovina",
+                    "Team2": "3ABCDF: Sweden",
                     "Team2_raw": "3ABCDF",
                     "Time": "2:30 AM BST"
                 },
@@ -3265,7 +3286,7 @@
                 {
                     "Attendance": 0,
                     "City": "Dallas",
-                    "Code1": "2E",
+                    "Code1": "CIV",
                     "Code2": "2I",
                     "Date": "Tuesday 30 June 2026",
                     "Goals1": [],
@@ -3280,8 +3301,8 @@
                     "Stadium": "Dallas Stadium",
                     "Stage": "Round of 32",
                     "Status": "11 PM BST",
-                    "Team1": "2E: Côte d'Ivoire",
-                    "Team1_raw": "2E",
+                    "Team1": "Côte d'Ivoire",
+                    "Team1_raw": "Côte d'Ivoire",
                     "Team2": "2I: Norway",
                     "Team2_raw": "2I",
                     "Time": "11 PM BST"
@@ -3330,7 +3351,7 @@
                     "Status": "10 PM BST",
                     "Team1": "1L: England",
                     "Team1_raw": "1L",
-                    "Team2": "3EHIJK: Cabo Verde",
+                    "Team2": "3EHIJK: Algeria",
                     "Team2_raw": "3EHIJK",
                     "Time": "10 PM BST"
                 },
@@ -3354,7 +3375,7 @@
                     "Status": "6 AM BST",
                     "Team1": "USA",
                     "Team1_raw": "USA",
-                    "Team2": "3BEFIJ: Sweden",
+                    "Team2": "3BEFIJ: Bosnia and Herzegovina",
                     "Team2_raw": "3BEFIJ",
                     "Time": "6 AM BST"
                 },
@@ -3450,7 +3471,7 @@
                     "Status": "9 AM BST",
                     "Team1": "Switzerland",
                     "Team1_raw": "Switzerland",
-                    "Team2": "3EFGIJ: Algeria",
+                    "Team2": "3EFGIJ: Ecuador",
                     "Team2_raw": "3EFGIJ",
                     "Time": "9 AM BST"
                 },
@@ -3799,13 +3820,13 @@
         "Group E": [
             {
                 "Code": "GER",
-                "Drawn": 1,
-                "GA": 3,
-                "GD": 7,
+                "Drawn": 0,
+                "GA": 4,
+                "GD": 6,
                 "GF": 10,
-                "Lost": 0,
+                "Lost": 1,
                 "Played": 3,
-                "Points": 7,
+                "Points": 6,
                 "Pos": 1,
                 "Team": "Germany",
                 "Won": 2
@@ -3814,8 +3835,8 @@
                 "Code": "CIV",
                 "Drawn": 0,
                 "GA": 2,
-                "GD": 1,
-                "GF": 3,
+                "GD": 2,
+                "GF": 4,
                 "Lost": 1,
                 "Played": 3,
                 "Points": 6,
@@ -3825,22 +3846,22 @@
             },
             {
                 "Code": "ECU",
-                "Drawn": 2,
+                "Drawn": 1,
                 "GA": 2,
-                "GD": -1,
-                "GF": 1,
+                "GD": 0,
+                "GF": 2,
                 "Lost": 1,
                 "Played": 3,
-                "Points": 2,
+                "Points": 4,
                 "Pos": 3,
                 "Team": "Ecuador",
-                "Won": 0
+                "Won": 1
             },
             {
                 "Code": "CUW",
                 "Drawn": 1,
-                "GA": 8,
-                "GD": -7,
+                "GA": 9,
+                "GD": -8,
                 "GF": 1,
                 "Lost": 2,
                 "Played": 3,
@@ -3855,37 +3876,37 @@
                 "Code": "NED",
                 "Drawn": 1,
                 "GA": 3,
-                "GD": 4,
-                "GF": 7,
+                "GD": 6,
+                "GF": 9,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 4,
+                "Played": 3,
+                "Points": 7,
                 "Pos": 1,
                 "Team": "Netherlands",
-                "Won": 1
+                "Won": 2
             },
             {
                 "Code": "JPN",
-                "Drawn": 1,
+                "Drawn": 2,
                 "GA": 2,
                 "GD": 4,
                 "GF": 6,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 4,
+                "Played": 3,
+                "Points": 5,
                 "Pos": 2,
                 "Team": "Japan",
                 "Won": 1
             },
             {
                 "Code": "SWE",
-                "Drawn": 0,
+                "Drawn": 1,
                 "GA": 6,
                 "GD": 0,
                 "GF": 6,
                 "Lost": 1,
-                "Played": 2,
-                "Points": 3,
+                "Played": 3,
+                "Points": 4,
                 "Pos": 3,
                 "Team": "Sweden",
                 "Won": 1
@@ -3893,11 +3914,11 @@
             {
                 "Code": "TUN",
                 "Drawn": 0,
-                "GA": 9,
-                "GD": -8,
+                "GA": 11,
+                "GD": -10,
                 "GF": 1,
-                "Lost": 2,
-                "Played": 2,
+                "Lost": 3,
+                "Played": 3,
                 "Points": 0,
                 "Pos": 4,
                 "Team": "Tunisia",
@@ -4231,6 +4252,34 @@
     },
     "third_places": [
         {
+            "Code": "SWE",
+            "Drawn": 1,
+            "GA": 6,
+            "GD": 0,
+            "GF": 6,
+            "Group": "F",
+            "Lost": 1,
+            "Played": 3,
+            "Points": 4,
+            "Pos": 1,
+            "Team": "Sweden",
+            "Won": 1
+        },
+        {
+            "Code": "ECU",
+            "Drawn": 1,
+            "GA": 2,
+            "GD": 0,
+            "GF": 2,
+            "Group": "E",
+            "Lost": 1,
+            "Played": 3,
+            "Points": 4,
+            "Pos": 2,
+            "Team": "Ecuador",
+            "Won": 1
+        },
+        {
             "Code": "BIH",
             "Drawn": 1,
             "GA": 6,
@@ -4240,22 +4289,8 @@
             "Lost": 1,
             "Played": 3,
             "Points": 4,
-            "Pos": 1,
+            "Pos": 3,
             "Team": "Bosnia and Herzegovina",
-            "Won": 1
-        },
-        {
-            "Code": "SWE",
-            "Drawn": 0,
-            "GA": 6,
-            "GD": 0,
-            "GF": 6,
-            "Group": "F",
-            "Lost": 1,
-            "Played": 2,
-            "Points": 3,
-            "Pos": 2,
-            "Team": "Sweden",
             "Won": 1
         },
         {
@@ -4268,7 +4303,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 3,
+            "Pos": 4,
             "Team": "Croatia",
             "Won": 1
         },
@@ -4282,7 +4317,7 @@
             "Lost": 2,
             "Played": 3,
             "Points": 3,
-            "Pos": 4,
+            "Pos": 5,
             "Team": "Korea Republic",
             "Won": 1
         },
@@ -4296,7 +4331,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 5,
+            "Pos": 6,
             "Team": "Paraguay",
             "Won": 1
         },
@@ -4310,7 +4345,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 6,
+            "Pos": 7,
             "Team": "Algeria",
             "Won": 1
         },
@@ -4324,7 +4359,7 @@
             "Lost": 2,
             "Played": 3,
             "Points": 3,
-            "Pos": 7,
+            "Pos": 8,
             "Team": "Scotland",
             "Won": 1
         },
@@ -4338,7 +4373,7 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 8,
+            "Pos": 9,
             "Team": "Cabo Verde",
             "Won": 0
         },
@@ -4352,22 +4387,8 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 9,
-            "Team": "Belgium",
-            "Won": 0
-        },
-        {
-            "Code": "ECU",
-            "Drawn": 2,
-            "GA": 2,
-            "GD": -1,
-            "GF": 1,
-            "Group": "E",
-            "Lost": 1,
-            "Played": 3,
-            "Points": 2,
             "Pos": 10,
-            "Team": "Ecuador",
+            "Team": "Belgium",
             "Won": 0
         },
         {
