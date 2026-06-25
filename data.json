@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-25 04:30:21 PM",
+    "last_updated": "2026-06-25 08:12:04 PM",
     "matches": {
         "group_stage": [
             {
@@ -2388,17 +2388,23 @@
                 "Code2": "CIV",
                 "Date": "Friday 26 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "7'",
+                        "Player": "Nicolas PEPE",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group E",
-                "HT": "",
+                "HT": "0 - 1",
                 "Match": "M55",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Glenn Nyberg",
+                "Score1": "0",
+                "Score2": "1",
                 "Stadium": "Philadelphia Stadium",
                 "Stage": "First Stage",
-                "Status": "2 AM BST",
+                "Status": "0FT1",
                 "Team1": "Curaçao",
                 "Team2": "Côte d'Ivoire",
                 "Time": "2 AM BST"
@@ -2409,18 +2415,30 @@
                 "Code1": "ECU",
                 "Code2": "GER",
                 "Date": "Friday 26 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Minute": "9'",
+                        "Player": "Nilson ANGULO",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Minute": "2'",
+                        "Player": "Leroy SANE",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group E",
-                "HT": "",
+                "HT": "1 - 1",
                 "Match": "M56",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Tori Penso",
+                "Score1": "1",
+                "Score2": "1",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "2 AM BST",
+                "Status": "1FT1",
                 "Team1": "Ecuador",
                 "Team2": "Germany",
                 "Time": "2 AM BST"
@@ -3781,13 +3799,13 @@
         "Group E": [
             {
                 "Code": "GER",
-                "Drawn": 0,
-                "GA": 2,
+                "Drawn": 1,
+                "GA": 3,
                 "GD": 7,
-                "GF": 9,
+                "GF": 10,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 6,
+                "Played": 3,
+                "Points": 7,
                 "Pos": 1,
                 "Team": "Germany",
                 "Won": 2
@@ -3796,24 +3814,24 @@
                 "Code": "CIV",
                 "Drawn": 0,
                 "GA": 2,
-                "GD": 0,
-                "GF": 2,
+                "GD": 1,
+                "GF": 3,
                 "Lost": 1,
-                "Played": 2,
-                "Points": 3,
+                "Played": 3,
+                "Points": 6,
                 "Pos": 2,
                 "Team": "Côte d'Ivoire",
-                "Won": 1
+                "Won": 2
             },
             {
                 "Code": "ECU",
-                "Drawn": 1,
-                "GA": 1,
+                "Drawn": 2,
+                "GA": 2,
                 "GD": -1,
-                "GF": 0,
+                "GF": 1,
                 "Lost": 1,
-                "Played": 2,
-                "Points": 1,
+                "Played": 3,
+                "Points": 2,
                 "Pos": 3,
                 "Team": "Ecuador",
                 "Won": 0
@@ -3821,11 +3839,11 @@
             {
                 "Code": "CUW",
                 "Drawn": 1,
-                "GA": 7,
-                "GD": -6,
+                "GA": 8,
+                "GD": -7,
                 "GF": 1,
-                "Lost": 1,
-                "Played": 2,
+                "Lost": 2,
+                "Played": 3,
                 "Points": 1,
                 "Pos": 4,
                 "Team": "Curaçao",
@@ -4339,6 +4357,20 @@
             "Won": 0
         },
         {
+            "Code": "ECU",
+            "Drawn": 2,
+            "GA": 2,
+            "GD": -1,
+            "GF": 1,
+            "Group": "E",
+            "Lost": 1,
+            "Played": 3,
+            "Points": 2,
+            "Pos": 10,
+            "Team": "Ecuador",
+            "Won": 0
+        },
+        {
             "Code": "COD",
             "Drawn": 1,
             "GA": 2,
@@ -4348,22 +4380,8 @@
             "Lost": 1,
             "Played": 2,
             "Points": 1,
-            "Pos": 10,
-            "Team": "Congo DR",
-            "Won": 0
-        },
-        {
-            "Code": "ECU",
-            "Drawn": 1,
-            "GA": 1,
-            "GD": -1,
-            "GF": 0,
-            "Group": "E",
-            "Lost": 1,
-            "Played": 2,
-            "Points": 1,
             "Pos": 11,
-            "Team": "Ecuador",
+            "Team": "Congo DR",
             "Won": 0
         },
         {

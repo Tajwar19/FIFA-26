@@ -1884,20 +1884,26 @@
             "Time": "2 AM BST",
             "Team1": "Curaçao",
             "Code1": "CUW",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "1",
             "Team2": "Côte d'Ivoire",
             "Code2": "CIV",
-            "Status": "2 AM BST",
+            "Status": "0FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group E",
             "Stadium": "Philadelphia Stadium",
             "City": "Philadelphia",
             "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
+            "Goals2": [
+                {
+                    "Player": "Nicolas PEPE",
+                    "Minute": "7'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Glenn Nyberg",
             "Attendance": 0,
-            "HT": ""
+            "HT": "0 - 1"
         },
         {
             "Match": "M56",
@@ -1906,20 +1912,32 @@
             "Time": "2 AM BST",
             "Team1": "Ecuador",
             "Code1": "ECU",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "1",
             "Team2": "Germany",
             "Code2": "GER",
-            "Status": "2 AM BST",
+            "Status": "1FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group E",
             "Stadium": "New York/New Jersey Stadium",
             "City": "New Jersey",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
+            "Goals1": [
+                {
+                    "Player": "Nilson ANGULO",
+                    "Minute": "9'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Leroy SANE",
+                    "Minute": "2'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Tori Penso",
             "Attendance": 0,
-            "HT": ""
+            "HT": "1 - 1"
         },
         {
             "Match": "M57",
