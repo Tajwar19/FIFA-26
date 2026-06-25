@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-25 08:54:47 AM",
+    "last_updated": "2026-06-25 08:55:46 AM",
     "matches": {
         "group_stage": [
             {
@@ -3567,8 +3567,8 @@
                 "Code": "MEX",
                 "Drawn": 0,
                 "GA": 0,
-                "GD": 5,
-                "GF": 5,
+                "GD": 6,
+                "GF": 6,
                 "Lost": 0,
                 "Played": 3,
                 "Points": 9,
@@ -3605,8 +3605,8 @@
             {
                 "Code": "CZE",
                 "Drawn": 1,
-                "GA": 5,
-                "GD": -3,
+                "GA": 6,
+                "GD": -4,
                 "GF": 2,
                 "Lost": 2,
                 "Played": 3,
