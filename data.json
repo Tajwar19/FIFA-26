@@ -224,7 +224,7 @@
         ],
         "Round of 32 (Left)": [
             {
-                "Date": "06/29/202620:30",
+                "Date": "06/30/202602:30",
                 "Match": "M74",
                 "NextMatch": "M89",
                 "Round": "Round of 32 (Left)",
@@ -236,7 +236,7 @@
                 "Team1_raw": "GER",
                 "Team2": "3ABCDF: Bosnia and Herzegovina",
                 "Team2_raw": "3ABCDF",
-                "Time": "20:30"
+                "Time": "02:30"
             },
             {
                 "Date": "Wednesday 01 July 2026",
@@ -254,7 +254,7 @@
                 "Time": "3 AM BST"
             },
             {
-                "Date": "06/28/202619:00",
+                "Date": "06/29/202601:00",
                 "Match": "M73",
                 "NextMatch": "M90",
                 "Round": "Round of 32 (Left)",
@@ -262,26 +262,26 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "",
-                "Team1": "2A: Korea Republic",
+                "Team1": "2A: South Africa",
                 "Team1_raw": "2A",
                 "Team2": "CAN",
                 "Team2_raw": "CAN",
-                "Time": "19:00"
+                "Time": "01:00"
             },
             {
-                "Date": "Tuesday 30 June 2026",
+                "Date": "06/30/202607:00",
                 "Match": "M75",
                 "NextMatch": "M90",
                 "Round": "Round of 32 (Left)",
                 "Score1": "",
                 "Score2": "",
                 "Side": "LEFT",
-                "Status": "7 AM BST",
+                "Status": "",
                 "Team1": "1F: Netherlands",
                 "Team1_raw": "1F",
-                "Team2": "2C: Morocco",
-                "Team2_raw": "2C",
-                "Time": "7 AM BST"
+                "Team2": "MAR",
+                "Team2_raw": "MAR",
+                "Time": "07:00"
             },
             {
                 "Date": "Friday 03 July 2026",
@@ -339,26 +339,26 @@
                 "Status": "2 AM BST",
                 "Team1": "1G: Egypt",
                 "Team1_raw": "1G",
-                "Team2": "3AEHIJ: Algeria",
+                "Team2": "3AEHIJ: Korea Republic",
                 "Team2_raw": "3AEHIJ",
                 "Time": "2 AM BST"
             }
         ],
         "Round of 32 (Right)": [
             {
-                "Date": "Monday 29 June 2026",
+                "Date": "06/29/202623:00",
                 "Match": "M76",
                 "NextMatch": "M91",
                 "Round": "Round of 32 (Right)",
                 "Score1": "",
                 "Score2": "",
                 "Side": "RIGHT",
-                "Status": "11 PM BST",
-                "Team1": "1C: Brazil",
-                "Team1_raw": "1C",
+                "Status": "",
+                "Team1": "BRA",
+                "Team1_raw": "BRA",
                 "Team2": "2F: Japan",
                 "Team2_raw": "2F",
-                "Time": "11 PM BST"
+                "Time": "23:00"
             },
             {
                 "Date": "Tuesday 30 June 2026",
@@ -376,7 +376,7 @@
                 "Time": "11 PM BST"
             },
             {
-                "Date": "07/01/202601:00",
+                "Date": "07/01/202607:00",
                 "Match": "M79",
                 "NextMatch": "M92",
                 "Round": "Round of 32 (Right)",
@@ -388,7 +388,7 @@
                 "Team1_raw": "MEX",
                 "Team2": "3CEFHI: Scotland",
                 "Team2_raw": "3CEFHI",
-                "Time": "01:00"
+                "Time": "07:00"
             },
             {
                 "Date": "Wednesday 01 July 2026",
@@ -406,7 +406,7 @@
                 "Time": "10 PM BST"
             },
             {
-                "Date": "07/03/202622:00",
+                "Date": "07/04/202604:00",
                 "Match": "M86",
                 "NextMatch": "M95",
                 "Round": "Round of 32 (Right)",
@@ -418,7 +418,7 @@
                 "Team1_raw": "ARG",
                 "Team2": "2H: Uruguay",
                 "Team2_raw": "2H",
-                "Time": "22:00"
+                "Time": "04:00"
             },
             {
                 "Date": "Saturday 04 July 2026",
@@ -436,7 +436,7 @@
                 "Time": "12 AM BST"
             },
             {
-                "Date": "07/03/202603:00",
+                "Date": "07/03/202609:00",
                 "Match": "M85",
                 "NextMatch": "M96",
                 "Round": "Round of 32 (Right)",
@@ -446,9 +446,9 @@
                 "Status": "",
                 "Team1": "SUI",
                 "Team1_raw": "SUI",
-                "Team2": "3EFGIJ: Belgium",
+                "Team2": "3EFGIJ: Algeria",
                 "Team2_raw": "3EFGIJ",
-                "Time": "03:00"
+                "Time": "09:00"
             },
             {
                 "Date": "Saturday 04 July 2026",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-24 09:39:17 PM",
+    "last_updated": "2026-06-25 08:38:08 AM",
     "matches": {
         "group_stage": [
             {
@@ -1739,32 +1739,15 @@
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": "43036",
+                "Attendance": 0,
                 "City": "Toronto",
                 "Code1": "GER",
                 "Code2": "CIV",
                 "Date": "Sunday 21 June 2026",
-                "Goals1": [
-                    {
-                        "Minute": "68'",
-                        "Player": "Deniz UNDAV",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "90'+4'",
-                        "Player": "Deniz UNDAV",
-                        "Type": 2
-                    }
-                ],
-                "Goals2": [
-                    {
-                        "Minute": "30'",
-                        "Player": "Franck KESSIE",
-                        "Type": 2
-                    }
-                ],
+                "Goals1": [],
+                "Goals2": [],
                 "Group_or_Match": "Group E",
-                "HT": "0 - 1",
+                "HT": "0 - 0",
                 "Match": "M33",
                 "MatchDay": null,
                 "Referee": "Juan Gabriel Benítez",
@@ -1772,13 +1755,13 @@
                 "Score2": "1",
                 "Stadium": "Toronto Stadium",
                 "Stage": "First Stage",
-                "Status": "2FT1",
+                "Status": "0FT0",
                 "Team1": "Germany",
                 "Team2": "Côte d'Ivoire",
                 "Time": "2 AM BST"
             },
             {
-                "Attendance": "68598",
+                "Attendance": 0,
                 "City": "Kansas City",
                 "Code1": "ECU",
                 "Code2": "CUW",
@@ -1800,47 +1783,15 @@
                 "Time": "6 AM BST"
             },
             {
-                "Attendance": "68777",
+                "Attendance": 0,
                 "City": "Houston",
                 "Code1": "NED",
                 "Code2": "SWE",
                 "Date": "Saturday 20 June 2026",
-                "Goals1": [
-                    {
-                        "Minute": "5'",
-                        "Player": "Brian BROBBEY",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "17'",
-                        "Player": "Brian BROBBEY",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "47'",
-                        "Player": "Cody GAKPO",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "54'",
-                        "Player": "Cody GAKPO",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "89'",
-                        "Player": "Crysencio SUMMERVILLE",
-                        "Type": 2
-                    }
-                ],
-                "Goals2": [
-                    {
-                        "Minute": "59'",
-                        "Player": "Anthony ELANGA",
-                        "Type": 2
-                    }
-                ],
+                "Goals1": [],
+                "Goals2": [],
                 "Group_or_Match": "Group F",
-                "HT": "2 - 0",
+                "HT": "0 - 0",
                 "Match": "M35",
                 "MatchDay": null,
                 "Referee": "Michael Oliver",
@@ -1848,42 +1799,21 @@
                 "Score2": "1",
                 "Stadium": "Houston Stadium",
                 "Stage": "First Stage",
-                "Status": "5FT1",
+                "Status": "0FT0",
                 "Team1": "Netherlands",
                 "Team2": "Sweden",
                 "Time": "11 PM BST"
             },
             {
-                "Attendance": "51243",
+                "Attendance": 0,
                 "City": "Monterrey",
                 "Code1": "TUN",
                 "Code2": "JPN",
                 "Date": "Sunday 21 June 2026",
                 "Goals1": [],
-                "Goals2": [
-                    {
-                        "Minute": "4'",
-                        "Player": "Daichi KAMADA",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "31'",
-                        "Player": "Ayase UEDA",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "69'",
-                        "Player": "Junya ITO",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "83'",
-                        "Player": "Ayase UEDA",
-                        "Type": 2
-                    }
-                ],
+                "Goals2": [],
                 "Group_or_Match": "Group F",
-                "HT": "0 - 2",
+                "HT": "0 - 0",
                 "Match": "M36",
                 "MatchDay": null,
                 "Referee": "Istvan Kovacs",
@@ -1891,43 +1821,21 @@
                 "Score2": "4",
                 "Stadium": "Monterrey Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT4",
+                "Status": "0FT0",
                 "Team1": "Tunisia",
                 "Team2": "Japan",
                 "Time": "10 AM BST"
             },
             {
-                "Attendance": "64003",
+                "Attendance": 0,
                 "City": "Miami",
                 "Code1": "URU",
                 "Code2": "CPV",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [
-                    {
-                        "Minute": "44'",
-                        "Player": "Maxi ARAUJO",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "45'+6'",
-                        "Player": "Agustin CANOBBIO",
-                        "Type": 2
-                    }
-                ],
-                "Goals2": [
-                    {
-                        "Minute": "21'",
-                        "Player": "KEVIN PINA",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "61'",
-                        "Player": "HELIO VARELA",
-                        "Type": 2
-                    }
-                ],
+                "Goals1": [],
+                "Goals2": [],
                 "Group_or_Match": "Group H",
-                "HT": "2 - 1",
+                "HT": "0 - 0",
                 "Match": "M37",
                 "MatchDay": null,
                 "Referee": "Espen Eskås",
@@ -1935,42 +1843,21 @@
                 "Score2": "2",
                 "Stadium": "Miami Stadium",
                 "Stage": "First Stage",
-                "Status": "2FT2",
+                "Status": "0FT0",
                 "Team1": "Uruguay",
                 "Team2": "Cabo Verde",
                 "Time": "4 AM BST"
             },
             {
-                "Attendance": "68239",
+                "Attendance": 0,
                 "City": "Atlanta",
                 "Code1": "ESP",
                 "Code2": "KSA",
                 "Date": "Sunday 21 June 2026",
-                "Goals1": [
-                    {
-                        "Minute": "10'",
-                        "Player": "Lamine YAMAL",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "21'",
-                        "Player": "Mikel OYARZABAL",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "24'",
-                        "Player": "Mikel OYARZABAL",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "49'",
-                        "Player": "HASSAN ALTAMBAKTI",
-                        "Type": 3
-                    }
-                ],
+                "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group H",
-                "HT": "3 - 0",
+                "HT": "0 - 0",
                 "Match": "M38",
                 "MatchDay": null,
                 "Referee": "Raphael Claus",
@@ -1978,13 +1865,13 @@
                 "Score2": "0",
                 "Stadium": "Atlanta Stadium",
                 "Stage": "First Stage",
-                "Status": "4FT0",
+                "Status": "0FT0",
                 "Team1": "Spain",
                 "Team2": "Saudi Arabia",
                 "Time": "10 PM BST"
             },
             {
-                "Attendance": "70317",
+                "Attendance": 0,
                 "City": "Los Angeles",
                 "Code1": "BEL",
                 "Code2": "IRN",
@@ -2006,37 +1893,15 @@
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": "52497",
+                "Attendance": 0,
                 "City": "Vancouver",
                 "Code1": "NZL",
                 "Code2": "EGY",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [
-                    {
-                        "Minute": "15'",
-                        "Player": "Finn SURMAN",
-                        "Type": 2
-                    }
-                ],
-                "Goals2": [
-                    {
-                        "Minute": "58'",
-                        "Player": "MOSTAFA ZICO",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "67'",
-                        "Player": "MOHAMED SALAH",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "82'",
-                        "Player": "TREZEGUET",
-                        "Type": 2
-                    }
-                ],
+                "Goals1": [],
+                "Goals2": [],
                 "Group_or_Match": "Group G",
-                "HT": "1 - 0",
+                "HT": "0 - 0",
                 "Match": "M40",
                 "MatchDay": null,
                 "Referee": "Omar Mohamed Al Ali",
@@ -2044,48 +1909,21 @@
                 "Score2": "3",
                 "Stadium": "BC Place Vancouver",
                 "Stage": "First Stage",
-                "Status": "1FT3",
+                "Status": "0FT0",
                 "Team1": "New Zealand",
                 "Team2": "Egypt",
                 "Time": "7 AM BST"
             },
             {
-                "Attendance": "80663",
+                "Attendance": 0,
                 "City": "New Jersey",
                 "Code1": "NOR",
                 "Code2": "SEN",
                 "Date": "Tuesday 23 June 2026",
-                "Goals1": [
-                    {
-                        "Minute": "43'",
-                        "Player": "Marcus HOLMGREN PEDERSEN",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "48'",
-                        "Player": "Erling HAALAND",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "58'",
-                        "Player": "Erling HAALAND",
-                        "Type": 2
-                    }
-                ],
-                "Goals2": [
-                    {
-                        "Minute": "53'",
-                        "Player": "Ismaila SARR",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "90'+3'",
-                        "Player": "Ismaila SARR",
-                        "Type": 2
-                    }
-                ],
+                "Goals1": [],
+                "Goals2": [],
                 "Group_or_Match": "Group I",
-                "HT": "1 - 0",
+                "HT": "0 - 0",
                 "Match": "M41",
                 "MatchDay": null,
                 "Referee": "Wilton SAMPAIO",
@@ -2093,37 +1931,21 @@
                 "Score2": "2",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "3FT2",
+                "Status": "0FT0",
                 "Team1": "Norway",
                 "Team2": "Senegal",
                 "Time": "6 AM BST"
             },
             {
-                "Attendance": "68324",
+                "Attendance": 0,
                 "City": "Philadelphia",
                 "Code1": "FRA",
                 "Code2": "IRQ",
                 "Date": "Tuesday 23 June 2026",
-                "Goals1": [
-                    {
-                        "Minute": "14'",
-                        "Player": "Kylian MBAPPE",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "54'",
-                        "Player": "Kylian MBAPPE",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "66'",
-                        "Player": "Ousmane DEMBELE",
-                        "Type": 2
-                    }
-                ],
+                "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group I",
-                "HT": "1 - 0",
+                "HT": "0 - 0",
                 "Match": "M42",
                 "MatchDay": null,
                 "Referee": "Drew Fischer",
@@ -2131,32 +1953,21 @@
                 "Score2": "0",
                 "Stadium": "Philadelphia Stadium",
                 "Stage": "First Stage",
-                "Status": "3FT0",
+                "Status": "0FT0",
                 "Team1": "France",
                 "Team2": "Iraq",
                 "Time": "3 AM BST"
             },
             {
-                "Attendance": "70649",
+                "Attendance": 0,
                 "City": "Dallas",
                 "Code1": "ARG",
                 "Code2": "AUT",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [
-                    {
-                        "Minute": "38'",
-                        "Player": "Lionel MESSI",
-                        "Type": 2
-                    },
-                    {
-                        "Minute": "90'+5'",
-                        "Player": "Lionel MESSI",
-                        "Type": 2
-                    }
-                ],
+                "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group J",
-                "HT": "1 - 0",
+                "HT": "0 - 0",
                 "Match": "M43",
                 "MatchDay": null,
                 "Referee": "Amin Mohamed Omar",
@@ -2164,7 +1975,7 @@
                 "Score2": "0",
                 "Stadium": "Dallas Stadium",
                 "Stage": "First Stage",
-                "Status": "2FT0",
+                "Status": "0FT0",
                 "Team1": "Argentina",
                 "Team2": "Austria",
                 "Time": "11 PM BST"
@@ -2335,45 +2146,93 @@
                 "Time": "8 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "64478",
                 "City": "Miami",
                 "Code1": "SCO",
                 "Code2": "BRA",
                 "Date": "Thursday 25 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "7'",
+                        "Player": "VINICIUS JUNIOR",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "45'+3'",
+                        "Player": "VINICIUS JUNIOR",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "60'",
+                        "Player": "MATHEUS CUNHA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group C",
-                "HT": "",
+                "HT": "0 - 2",
                 "Match": "M49",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "César Arturo Ramos Palazuelos",
+                "Score1": "0",
+                "Score2": "3",
                 "Stadium": "Miami Stadium",
                 "Stage": "First Stage",
-                "Status": "4 AM BST",
+                "Status": "0FT3",
                 "Team1": "Scotland",
                 "Team2": "Brazil",
                 "Time": "4 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68239",
                 "City": "Atlanta",
                 "Code1": "MAR",
                 "Code2": "HAI",
                 "Date": "Thursday 25 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Minute": "39'",
+                        "Player": "Achraf HAKIMI",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "45'+1'",
+                        "Player": "Ismael SAIBARI",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "78'",
+                        "Player": "Soufiane RAHIMI",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "89'",
+                        "Player": "Gessime YASSINE",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Minute": "10'",
+                        "Player": "Yassine BOUNOU",
+                        "Type": 3
+                    },
+                    {
+                        "Minute": "43'",
+                        "Player": "Wilson ISIDOR",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group C",
-                "HT": "",
+                "HT": "2 - 2",
                 "Match": "M50",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Danny Desmond Makkelie",
+                "Score1": "4",
+                "Score2": "2",
                 "Stadium": "Atlanta Stadium",
                 "Stage": "First Stage",
-                "Status": "4 AM BST",
+                "Status": "4FT2",
                 "Team1": "Morocco",
                 "Team2": "Haiti",
                 "Time": "4 AM BST"
@@ -2462,45 +2321,62 @@
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "80824",
                 "City": "Mexico City",
                 "Code1": "CZE",
                 "Code2": "MEX",
                 "Date": "Thursday 25 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Minute": "55'",
+                        "Player": "Mateo CHAVEZ",
+                        "Type": 2
+                    },
+                    {
+                        "Minute": "61'",
+                        "Player": "Julian QUINONES",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group A",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M53",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Yael Falcón Pérez",
+                "Score1": "0",
+                "Score2": "2",
                 "Stadium": "Mexico City Stadium",
                 "Stage": "First Stage",
-                "Status": "7 AM BST",
+                "Status": "0FT2",
                 "Team1": "Czechia",
                 "Team2": "Mexico",
                 "Time": "7 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "51243",
                 "City": "Monterrey",
                 "Code1": "RSA",
                 "Code2": "KOR",
                 "Date": "Thursday 25 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Minute": "63'",
+                        "Player": "Thapelo MASEKO",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group A",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M54",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Facundo TELLO",
+                "Score1": "1",
+                "Score2": "0",
                 "Stadium": "Monterrey Stadium",
                 "Stage": "First Stage",
-                "Status": "7 AM BST",
+                "Status": "1FT0",
                 "Team1": "South Africa",
                 "Team2": "Korea Republic",
                 "Time": "7 AM BST"
@@ -3266,7 +3142,7 @@
                     "Stadium": "Los Angeles Stadium",
                     "Stage": "Round of 32",
                     "Status": "1 AM BST",
-                    "Team1": "2A: Korea Republic",
+                    "Team1": "2A: South Africa",
                     "Team1_raw": "2A",
                     "Team2": "Canada",
                     "Team2_raw": "Canada",
@@ -3300,7 +3176,7 @@
                     "Attendance": 0,
                     "City": "Monterrey",
                     "Code1": "1F",
-                    "Code2": "2C",
+                    "Code2": "MAR",
                     "Date": "Tuesday 30 June 2026",
                     "Goals1": [],
                     "Goals2": [],
@@ -3316,14 +3192,14 @@
                     "Status": "7 AM BST",
                     "Team1": "1F: Netherlands",
                     "Team1_raw": "1F",
-                    "Team2": "2C: Morocco",
-                    "Team2_raw": "2C",
+                    "Team2": "Morocco",
+                    "Team2_raw": "Morocco",
                     "Time": "7 AM BST"
                 },
                 {
                     "Attendance": 0,
                     "City": "Houston",
-                    "Code1": "1C",
+                    "Code1": "BRA",
                     "Code2": "2F",
                     "Date": "Monday 29 June 2026",
                     "Goals1": [],
@@ -3338,8 +3214,8 @@
                     "Stadium": "Houston Stadium",
                     "Stage": "Round of 32",
                     "Status": "11 PM BST",
-                    "Team1": "1C: Brazil",
-                    "Team1_raw": "1C",
+                    "Team1": "Brazil",
+                    "Team1_raw": "Brazil",
                     "Team2": "2F: Japan",
                     "Team2_raw": "2F",
                     "Time": "11 PM BST"
@@ -3484,7 +3360,7 @@
                     "Status": "2 AM BST",
                     "Team1": "1G: Egypt",
                     "Team1_raw": "1G",
-                    "Team2": "3AEHIJ: Algeria",
+                    "Team2": "3AEHIJ: Korea Republic",
                     "Team2_raw": "3AEHIJ",
                     "Time": "2 AM BST"
                 },
@@ -3556,7 +3432,7 @@
                     "Status": "9 AM BST",
                     "Team1": "Switzerland",
                     "Team1_raw": "Switzerland",
-                    "Team2": "3EFGIJ: Belgium",
+                    "Team2": "3EFGIJ: Algeria",
                     "Team2_raw": "3EFGIJ",
                     "Time": "9 AM BST"
                 },
@@ -3691,52 +3567,52 @@
                 "Code": "MEX",
                 "Drawn": 0,
                 "GA": 0,
-                "GD": 3,
-                "GF": 3,
+                "GD": 5,
+                "GF": 5,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 6,
+                "Played": 3,
+                "Points": 9,
                 "Pos": 1,
                 "Team": "Mexico",
-                "Won": 2
+                "Won": 3
+            },
+            {
+                "Code": "RSA",
+                "Drawn": 1,
+                "GA": 3,
+                "GD": -1,
+                "GF": 2,
+                "Lost": 1,
+                "Played": 3,
+                "Points": 4,
+                "Pos": 2,
+                "Team": "South Africa",
+                "Won": 1
             },
             {
                 "Code": "KOR",
                 "Drawn": 0,
-                "GA": 2,
-                "GD": 0,
+                "GA": 3,
+                "GD": -1,
                 "GF": 2,
-                "Lost": 1,
-                "Played": 2,
+                "Lost": 2,
+                "Played": 3,
                 "Points": 3,
-                "Pos": 2,
+                "Pos": 3,
                 "Team": "Korea Republic",
                 "Won": 1
             },
             {
                 "Code": "CZE",
                 "Drawn": 1,
-                "GA": 3,
-                "GD": -1,
+                "GA": 5,
+                "GD": -3,
                 "GF": 2,
-                "Lost": 1,
-                "Played": 2,
-                "Points": 1,
-                "Pos": 3,
-                "Team": "Czechia",
-                "Won": 0
-            },
-            {
-                "Code": "RSA",
-                "Drawn": 1,
-                "GA": 3,
-                "GD": -2,
-                "GF": 1,
-                "Lost": 1,
-                "Played": 2,
+                "Lost": 2,
+                "Played": 3,
                 "Points": 1,
                 "Pos": 4,
-                "Team": "South Africa",
+                "Team": "Czechia",
                 "Won": 0
             }
         ],
@@ -3799,36 +3675,36 @@
                 "Code": "BRA",
                 "Drawn": 1,
                 "GA": 1,
-                "GD": 3,
-                "GF": 4,
+                "GD": 6,
+                "GF": 7,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 4,
+                "Played": 3,
+                "Points": 7,
                 "Pos": 1,
                 "Team": "Brazil",
-                "Won": 1
+                "Won": 2
             },
             {
                 "Code": "MAR",
                 "Drawn": 1,
-                "GA": 1,
-                "GD": 1,
-                "GF": 2,
+                "GA": 3,
+                "GD": 3,
+                "GF": 6,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 4,
+                "Played": 3,
+                "Points": 7,
                 "Pos": 2,
                 "Team": "Morocco",
-                "Won": 1
+                "Won": 2
             },
             {
                 "Code": "SCO",
                 "Drawn": 0,
-                "GA": 1,
-                "GD": 0,
+                "GA": 4,
+                "GD": -3,
                 "GF": 1,
-                "Lost": 1,
-                "Played": 2,
+                "Lost": 2,
+                "Played": 3,
                 "Points": 3,
                 "Pos": 3,
                 "Team": "Scotland",
@@ -3837,11 +3713,11 @@
             {
                 "Code": "HAI",
                 "Drawn": 0,
-                "GA": 4,
-                "GD": -4,
-                "GF": 0,
-                "Lost": 2,
-                "Played": 2,
+                "GA": 8,
+                "GD": -6,
+                "GF": 2,
+                "Lost": 3,
+                "Played": 3,
                 "Points": 0,
                 "Pos": 4,
                 "Team": "Haiti",
@@ -4365,20 +4241,6 @@
             "Won": 1
         },
         {
-            "Code": "SCO",
-            "Drawn": 0,
-            "GA": 1,
-            "GD": 0,
-            "GF": 1,
-            "Group": "C",
-            "Lost": 1,
-            "Played": 2,
-            "Points": 3,
-            "Pos": 3,
-            "Team": "Scotland",
-            "Won": 1
-        },
-        {
             "Code": "CRO",
             "Drawn": 0,
             "GA": 4,
@@ -4388,8 +4250,22 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 4,
+            "Pos": 3,
             "Team": "Croatia",
+            "Won": 1
+        },
+        {
+            "Code": "KOR",
+            "Drawn": 0,
+            "GA": 3,
+            "GD": -1,
+            "GF": 2,
+            "Group": "A",
+            "Lost": 2,
+            "Played": 3,
+            "Points": 3,
+            "Pos": 4,
+            "Team": "Korea Republic",
             "Won": 1
         },
         {
@@ -4421,6 +4297,20 @@
             "Won": 1
         },
         {
+            "Code": "SCO",
+            "Drawn": 0,
+            "GA": 4,
+            "GD": -3,
+            "GF": 1,
+            "Group": "C",
+            "Lost": 2,
+            "Played": 3,
+            "Points": 3,
+            "Pos": 7,
+            "Team": "Scotland",
+            "Won": 1
+        },
+        {
             "Code": "CPV",
             "Drawn": 2,
             "GA": 2,
@@ -4430,7 +4320,7 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 7,
+            "Pos": 8,
             "Team": "Cabo Verde",
             "Won": 0
         },
@@ -4444,22 +4334,8 @@
             "Lost": 0,
             "Played": 2,
             "Points": 2,
-            "Pos": 8,
-            "Team": "Belgium",
-            "Won": 0
-        },
-        {
-            "Code": "CZE",
-            "Drawn": 1,
-            "GA": 3,
-            "GD": -1,
-            "GF": 2,
-            "Group": "A",
-            "Lost": 1,
-            "Played": 2,
-            "Points": 1,
             "Pos": 9,
-            "Team": "Czechia",
+            "Team": "Belgium",
             "Won": 0
         },
         {

@@ -1245,33 +1245,16 @@
             "Score2": "1",
             "Team2": "Côte d'Ivoire",
             "Code2": "CIV",
-            "Status": "2FT1",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group E",
             "Stadium": "Toronto Stadium",
             "City": "Toronto",
-            "Goals1": [
-                {
-                    "Player": "Deniz UNDAV",
-                    "Minute": "68'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Deniz UNDAV",
-                    "Minute": "90'+4'",
-                    "Type": 2
-                }
-            ],
-            "Goals2": [
-                {
-                    "Player": "Franck KESSIE",
-                    "Minute": "30'",
-                    "Type": 2
-                }
-            ],
+            "Goals1": [],
+            "Goals2": [],
             "Referee": "Juan Gabriel Benítez",
-            "Attendance": "43036",
-            "HT": "0 - 1"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M34",
@@ -1292,7 +1275,7 @@
             "Goals1": [],
             "Goals2": [],
             "Referee": "Ning Ma",
-            "Attendance": "68598",
+            "Attendance": 0,
             "HT": "0 - 0"
         },
         {
@@ -1306,48 +1289,16 @@
             "Score2": "1",
             "Team2": "Sweden",
             "Code2": "SWE",
-            "Status": "5FT1",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group F",
             "Stadium": "Houston Stadium",
             "City": "Houston",
-            "Goals1": [
-                {
-                    "Player": "Brian BROBBEY",
-                    "Minute": "5'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Brian BROBBEY",
-                    "Minute": "17'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Cody GAKPO",
-                    "Minute": "47'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Cody GAKPO",
-                    "Minute": "54'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Crysencio SUMMERVILLE",
-                    "Minute": "89'",
-                    "Type": 2
-                }
-            ],
-            "Goals2": [
-                {
-                    "Player": "Anthony ELANGA",
-                    "Minute": "59'",
-                    "Type": 2
-                }
-            ],
+            "Goals1": [],
+            "Goals2": [],
             "Referee": "Michael Oliver",
-            "Attendance": "68777",
-            "HT": "2 - 0"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M36",
@@ -1360,37 +1311,16 @@
             "Score2": "4",
             "Team2": "Japan",
             "Code2": "JPN",
-            "Status": "0FT4",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group F",
             "Stadium": "Monterrey Stadium",
             "City": "Monterrey",
             "Goals1": [],
-            "Goals2": [
-                {
-                    "Player": "Daichi KAMADA",
-                    "Minute": "4'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Ayase UEDA",
-                    "Minute": "31'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Junya ITO",
-                    "Minute": "69'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Ayase UEDA",
-                    "Minute": "83'",
-                    "Type": 2
-                }
-            ],
+            "Goals2": [],
             "Referee": "Istvan Kovacs",
-            "Attendance": "51243",
-            "HT": "0 - 2"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M37",
@@ -1403,38 +1333,16 @@
             "Score2": "2",
             "Team2": "Cabo Verde",
             "Code2": "CPV",
-            "Status": "2FT2",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group H",
             "Stadium": "Miami Stadium",
             "City": "Miami",
-            "Goals1": [
-                {
-                    "Player": "Maxi ARAUJO",
-                    "Minute": "44'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Agustin CANOBBIO",
-                    "Minute": "45'+6'",
-                    "Type": 2
-                }
-            ],
-            "Goals2": [
-                {
-                    "Player": "KEVIN PINA",
-                    "Minute": "21'",
-                    "Type": 2
-                },
-                {
-                    "Player": "HELIO VARELA",
-                    "Minute": "61'",
-                    "Type": 2
-                }
-            ],
+            "Goals1": [],
+            "Goals2": [],
             "Referee": "Espen Eskås",
-            "Attendance": "64003",
-            "HT": "2 - 1"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M38",
@@ -1447,37 +1355,16 @@
             "Score2": "0",
             "Team2": "Saudi Arabia",
             "Code2": "KSA",
-            "Status": "4FT0",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group H",
             "Stadium": "Atlanta Stadium",
             "City": "Atlanta",
-            "Goals1": [
-                {
-                    "Player": "Lamine YAMAL",
-                    "Minute": "10'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Mikel OYARZABAL",
-                    "Minute": "21'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Mikel OYARZABAL",
-                    "Minute": "24'",
-                    "Type": 2
-                },
-                {
-                    "Player": "HASSAN ALTAMBAKTI",
-                    "Minute": "49'",
-                    "Type": 3
-                }
-            ],
+            "Goals1": [],
             "Goals2": [],
             "Referee": "Raphael Claus",
-            "Attendance": "68239",
-            "HT": "3 - 0"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M39",
@@ -1498,7 +1385,7 @@
             "Goals1": [],
             "Goals2": [],
             "Referee": "Darío Herrera",
-            "Attendance": "70317",
+            "Attendance": 0,
             "HT": "0 - 0"
         },
         {
@@ -1512,38 +1399,16 @@
             "Score2": "3",
             "Team2": "Egypt",
             "Code2": "EGY",
-            "Status": "1FT3",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group G",
             "Stadium": "BC Place Vancouver",
             "City": "Vancouver",
-            "Goals1": [
-                {
-                    "Player": "Finn SURMAN",
-                    "Minute": "15'",
-                    "Type": 2
-                }
-            ],
-            "Goals2": [
-                {
-                    "Player": "MOSTAFA ZICO",
-                    "Minute": "58'",
-                    "Type": 2
-                },
-                {
-                    "Player": "MOHAMED SALAH",
-                    "Minute": "67'",
-                    "Type": 2
-                },
-                {
-                    "Player": "TREZEGUET",
-                    "Minute": "82'",
-                    "Type": 2
-                }
-            ],
+            "Goals1": [],
+            "Goals2": [],
             "Referee": "Omar Mohamed Al Ali",
-            "Attendance": "52497",
-            "HT": "1 - 0"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M41",
@@ -1556,43 +1421,16 @@
             "Score2": "2",
             "Team2": "Senegal",
             "Code2": "SEN",
-            "Status": "3FT2",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group I",
             "Stadium": "New York/New Jersey Stadium",
             "City": "New Jersey",
-            "Goals1": [
-                {
-                    "Player": "Marcus HOLMGREN PEDERSEN",
-                    "Minute": "43'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Erling HAALAND",
-                    "Minute": "48'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Erling HAALAND",
-                    "Minute": "58'",
-                    "Type": 2
-                }
-            ],
-            "Goals2": [
-                {
-                    "Player": "Ismaila SARR",
-                    "Minute": "53'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Ismaila SARR",
-                    "Minute": "90'+3'",
-                    "Type": 2
-                }
-            ],
+            "Goals1": [],
+            "Goals2": [],
             "Referee": "Wilton SAMPAIO",
-            "Attendance": "80663",
-            "HT": "1 - 0"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M42",
@@ -1605,32 +1443,16 @@
             "Score2": "0",
             "Team2": "Iraq",
             "Code2": "IRQ",
-            "Status": "3FT0",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group I",
             "Stadium": "Philadelphia Stadium",
             "City": "Philadelphia",
-            "Goals1": [
-                {
-                    "Player": "Kylian MBAPPE",
-                    "Minute": "14'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Kylian MBAPPE",
-                    "Minute": "54'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Ousmane DEMBELE",
-                    "Minute": "66'",
-                    "Type": 2
-                }
-            ],
+            "Goals1": [],
             "Goals2": [],
             "Referee": "Drew Fischer",
-            "Attendance": "68324",
-            "HT": "1 - 0"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M43",
@@ -1643,27 +1465,16 @@
             "Score2": "0",
             "Team2": "Austria",
             "Code2": "AUT",
-            "Status": "2FT0",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group J",
             "Stadium": "Dallas Stadium",
             "City": "Dallas",
-            "Goals1": [
-                {
-                    "Player": "Lionel MESSI",
-                    "Minute": "38'",
-                    "Type": 2
-                },
-                {
-                    "Player": "Lionel MESSI",
-                    "Minute": "90'+5'",
-                    "Type": 2
-                }
-            ],
+            "Goals1": [],
             "Goals2": [],
             "Referee": "Amin Mohamed Omar",
-            "Attendance": "70649",
-            "HT": "1 - 0"
+            "Attendance": 0,
+            "HT": "0 - 0"
         },
         {
             "Match": "M44",
@@ -1837,20 +1648,36 @@
             "Time": "4 AM BST",
             "Team1": "Scotland",
             "Code1": "SCO",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "3",
             "Team2": "Brazil",
             "Code2": "BRA",
-            "Status": "4 AM BST",
+            "Status": "0FT3",
             "Stage": "First Stage",
             "Group_or_Match": "Group C",
             "Stadium": "Miami Stadium",
             "City": "Miami",
             "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals2": [
+                {
+                    "Player": "VINICIUS JUNIOR",
+                    "Minute": "7'",
+                    "Type": 2
+                },
+                {
+                    "Player": "VINICIUS JUNIOR",
+                    "Minute": "45'+3'",
+                    "Type": 2
+                },
+                {
+                    "Player": "MATHEUS CUNHA",
+                    "Minute": "60'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "César Arturo Ramos Palazuelos",
+            "Attendance": "64478",
+            "HT": "0 - 2"
         },
         {
             "Match": "M50",
@@ -1859,20 +1686,52 @@
             "Time": "4 AM BST",
             "Team1": "Morocco",
             "Code1": "MAR",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "4",
+            "Score2": "2",
             "Team2": "Haiti",
             "Code2": "HAI",
-            "Status": "4 AM BST",
+            "Status": "4FT2",
             "Stage": "First Stage",
             "Group_or_Match": "Group C",
             "Stadium": "Atlanta Stadium",
             "City": "Atlanta",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Achraf HAKIMI",
+                    "Minute": "39'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Ismael SAIBARI",
+                    "Minute": "45'+1'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Soufiane RAHIMI",
+                    "Minute": "78'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Gessime YASSINE",
+                    "Minute": "89'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Yassine BOUNOU",
+                    "Minute": "10'",
+                    "Type": 3
+                },
+                {
+                    "Player": "Wilson ISIDOR",
+                    "Minute": "43'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Danny Desmond Makkelie",
+            "Attendance": "68239",
+            "HT": "2 - 2"
         },
         {
             "Match": "M51",
@@ -1964,20 +1823,31 @@
             "Time": "7 AM BST",
             "Team1": "Czechia",
             "Code1": "CZE",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "2",
             "Team2": "Mexico",
             "Code2": "MEX",
-            "Status": "7 AM BST",
+            "Status": "0FT2",
             "Stage": "First Stage",
             "Group_or_Match": "Group A",
             "Stadium": "Mexico City Stadium",
             "City": "Mexico City",
             "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals2": [
+                {
+                    "Player": "Mateo CHAVEZ",
+                    "Minute": "55'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Julian QUINONES",
+                    "Minute": "61'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Yael Falcón Pérez",
+            "Attendance": "80824",
+            "HT": "0 - 0"
         },
         {
             "Match": "M54",
@@ -1986,20 +1856,26 @@
             "Time": "7 AM BST",
             "Team1": "South Africa",
             "Code1": "RSA",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "0",
             "Team2": "Korea Republic",
             "Code2": "KOR",
-            "Status": "7 AM BST",
+            "Status": "1FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group A",
             "Stadium": "Monterrey Stadium",
             "City": "Monterrey",
-            "Goals1": [],
+            "Goals1": [
+                {
+                    "Player": "Thapelo MASEKO",
+                    "Minute": "63'",
+                    "Type": 2
+                }
+            ],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Facundo TELLO",
+            "Attendance": "51243",
+            "HT": "0 - 0"
         },
         {
             "Match": "M55",
@@ -2453,8 +2329,8 @@
                 "Code1": "1F",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "2C",
-                "Code2": "2C",
+                "Team2": "Morocco",
+                "Code2": "MAR",
                 "Status": "7 AM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 75",
@@ -2471,8 +2347,8 @@
                 "MatchDay": null,
                 "Date": "Monday 29 June 2026",
                 "Time": "11 PM BST",
-                "Team1": "1C",
-                "Code1": "1C",
+                "Team1": "Brazil",
+                "Code1": "BRA",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "2F",
