@@ -224,7 +224,7 @@
         ],
         "Round of 32 (Left)": [
             {
-                "Date": "06/30/202602:30",
+                "Date": "06/29/202620:30",
                 "Match": "M74",
                 "NextMatch": "M89",
                 "Round": "Round of 32 (Left)",
@@ -236,7 +236,7 @@
                 "Team1_raw": "GER",
                 "Team2": "3ABCDF: Bosnia and Herzegovina",
                 "Team2_raw": "3ABCDF",
-                "Time": "02:30"
+                "Time": "20:30"
             },
             {
                 "Date": "Wednesday 01 July 2026",
@@ -254,7 +254,7 @@
                 "Time": "3 AM BST"
             },
             {
-                "Date": "06/29/202601:00",
+                "Date": "06/28/202619:00",
                 "Match": "M73",
                 "NextMatch": "M90",
                 "Round": "Round of 32 (Left)",
@@ -266,10 +266,10 @@
                 "Team1_raw": "RSA",
                 "Team2": "CAN",
                 "Team2_raw": "CAN",
-                "Time": "01:00"
+                "Time": "19:00"
             },
             {
-                "Date": "06/30/202607:00",
+                "Date": "06/30/202601:00",
                 "Match": "M75",
                 "NextMatch": "M90",
                 "Round": "Round of 32 (Left)",
@@ -281,7 +281,7 @@
                 "Team1_raw": "1F",
                 "Team2": "MAR",
                 "Team2_raw": "MAR",
-                "Time": "07:00"
+                "Time": "01:00"
             },
             {
                 "Date": "Friday 03 July 2026",
@@ -346,7 +346,7 @@
         ],
         "Round of 32 (Right)": [
             {
-                "Date": "06/29/202623:00",
+                "Date": "06/29/202617:00",
                 "Match": "M76",
                 "NextMatch": "M91",
                 "Round": "Round of 32 (Right)",
@@ -358,7 +358,7 @@
                 "Team1_raw": "BRA",
                 "Team2": "2F: Japan",
                 "Team2_raw": "2F",
-                "Time": "23:00"
+                "Time": "17:00"
             },
             {
                 "Date": "Tuesday 30 June 2026",
@@ -376,7 +376,7 @@
                 "Time": "11 PM BST"
             },
             {
-                "Date": "07/01/202607:00",
+                "Date": "07/01/202601:00",
                 "Match": "M79",
                 "NextMatch": "M92",
                 "Round": "Round of 32 (Right)",
@@ -388,7 +388,7 @@
                 "Team1_raw": "MEX",
                 "Team2": "3CEFHI: Scotland",
                 "Team2_raw": "3CEFHI",
-                "Time": "07:00"
+                "Time": "01:00"
             },
             {
                 "Date": "Wednesday 01 July 2026",
@@ -406,7 +406,7 @@
                 "Time": "10 PM BST"
             },
             {
-                "Date": "07/04/202604:00",
+                "Date": "07/03/202622:00",
                 "Match": "M86",
                 "NextMatch": "M95",
                 "Round": "Round of 32 (Right)",
@@ -418,7 +418,7 @@
                 "Team1_raw": "ARG",
                 "Team2": "2H: Uruguay",
                 "Team2_raw": "2H",
-                "Time": "04:00"
+                "Time": "22:00"
             },
             {
                 "Date": "Saturday 04 July 2026",
@@ -436,7 +436,7 @@
                 "Time": "12 AM BST"
             },
             {
-                "Date": "07/03/202609:00",
+                "Date": "07/03/202603:00",
                 "Match": "M85",
                 "NextMatch": "M96",
                 "Round": "Round of 32 (Right)",
@@ -448,7 +448,7 @@
                 "Team1_raw": "SUI",
                 "Team2": "3EFGIJ: Algeria",
                 "Team2_raw": "3EFGIJ",
-                "Time": "09:00"
+                "Time": "03:00"
             },
             {
                 "Date": "Saturday 04 July 2026",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-25 10:01:49 AM",
+    "last_updated": "2026-06-25 04:11:01 AM",
     "matches": {
         "group_stage": [
             {
