@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 08:21:16 AM",
+    "last_updated": "2026-06-27 09:01:47 AM",
     "matches": {
         "group_stage": [
             {
@@ -2566,15 +2566,15 @@
                 "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group G",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M63",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Szymon MARCINIAK",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "Seattle Stadium",
                 "Stage": "First Stage",
-                "Status": "9 AM BST",
+                "Status": "0FT0",
                 "Team1": "Egypt",
                 "Team2": "IR Iran",
                 "Time": "9 AM BST"
