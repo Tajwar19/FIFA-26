@@ -7,7 +7,7 @@
             "Date": "06/30/202602:30",
             "Time": "02:30",
             "Team1": "GER",
-            "Team2": "PAR",
+            "Team2": "3ABCDF",
             "NextMatch": "M89"
         },
         {
@@ -17,7 +17,7 @@
             "Date": "07/01/202603:00",
             "Time": "03:00",
             "Team1": "FRA",
-            "Team2": "SWE",
+            "Team2": "3CDFGH",
             "NextMatch": "M89"
         },
         {
@@ -56,7 +56,7 @@
             "Side": "LEFT",
             "Date": "07/03/202601:00",
             "Time": "01:00",
-            "Team1": "ESP",
+            "Team1": "1H",
             "Team2": "2J",
             "NextMatch": "M93"
         },
@@ -305,7 +305,7 @@
             "Date": "07/04/202604:00",
             "Time": "04:00",
             "Team1": "ARG",
-            "Team2": "CPV",
+            "Team2": "2H",
             "NextMatch": "M95"
         },
         {
