@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 11:08:32 AM",
+    "last_updated": "2026-06-27 11:09:19 AM",
     "matches": {
         "group_stage": [
             {
@@ -3488,7 +3488,7 @@
                     "Attendance": 0,
                     "City": "Dallas",
                     "Code1": "AUS",
-                    "Code2": "2G",
+                    "Code2": "EGY",
                     "Date": "Saturday 04 July 2026",
                     "Goals1": [],
                     "Goals2": [],
@@ -3504,8 +3504,8 @@
                     "Status": "12 AM BST",
                     "Team1": "Australia",
                     "Team1_raw": "Australia",
-                    "Team2": "2G: Egypt",
-                    "Team2_raw": "2G",
+                    "Team2": "Egypt",
+                    "Team2_raw": "Egypt",
                     "Time": "12 AM BST"
                 }
             ],
