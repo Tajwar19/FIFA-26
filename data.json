@@ -329,19 +329,19 @@
                 "Time": "06:00"
             },
             {
-                "Date": "Thursday 02 July 2026",
+                "Date": "07/02/202602:00",
                 "Match": "M82",
                 "NextMatch": "M94",
                 "Round": "Round of 32 (Left)",
                 "Score1": "",
                 "Score2": "",
                 "Side": "LEFT",
-                "Status": "2 AM BST",
+                "Status": "",
                 "Team1": "1G: Belgium",
                 "Team1_raw": "1G",
                 "Team2": "3AEHIJ: Korea Republic",
                 "Team2_raw": "3AEHIJ",
-                "Time": "2 AM BST"
+                "Time": "02:00"
             }
         ],
         "Round of 32 (Right)": [
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 10:57:11 AM",
+    "last_updated": "2026-06-27 10:59:49 AM",
     "matches": {
         "group_stage": [
             {
@@ -3343,7 +3343,7 @@
                 {
                     "Attendance": 0,
                     "City": "Seattle",
-                    "Code1": "1G",
+                    "Code1": "BEL",
                     "Code2": "3AEHIJ",
                     "Date": "Thursday 02 July 2026",
                     "Goals1": [],
@@ -3358,8 +3358,8 @@
                     "Stadium": "Seattle Stadium",
                     "Stage": "Round of 32",
                     "Status": "2 AM BST",
-                    "Team1": "1G: Belgium",
-                    "Team1_raw": "1G",
+                    "Team1": "Belgium",
+                    "Team1_raw": "Belgium",
                     "Team2": "3AEHIJ: Korea Republic",
                     "Team2_raw": "3AEHIJ",
                     "Time": "2 AM BST"
