@@ -337,8 +337,8 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "",
-                "Team1": "1G: Belgium",
-                "Team1_raw": "1G",
+                "Team1": "BEL",
+                "Team1_raw": "BEL",
                 "Team2": "3AEHIJ: Korea Republic",
                 "Team2_raw": "3AEHIJ",
                 "Time": "02:00"
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 11:03:39 AM",
+    "last_updated": "2026-06-27 11:05:04 AM",
     "matches": {
         "group_stage": [
             {
