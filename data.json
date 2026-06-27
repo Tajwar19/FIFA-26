@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 09:01:47 AM",
+    "last_updated": "2026-06-27 09:02:18 AM",
     "matches": {
         "group_stage": [
             {
@@ -2588,15 +2588,15 @@
                 "Goals1": [],
                 "Goals2": [],
                 "Group_or_Match": "Group G",
-                "HT": "",
+                "HT": "0 - 0",
                 "Match": "M64",
                 "MatchDay": null,
-                "Referee": "",
-                "Score1": "",
-                "Score2": "",
+                "Referee": "Adham Mohammad Tumah Makhadmeh",
+                "Score1": "0",
+                "Score2": "0",
                 "Stadium": "BC Place Vancouver",
                 "Stage": "First Stage",
-                "Status": "9 AM BST",
+                "Status": "0FT0",
                 "Team1": "New Zealand",
                 "Team2": "Belgium",
                 "Time": "9 AM BST"
