@@ -386,7 +386,7 @@
                 "Status": "",
                 "Team1": "MEX",
                 "Team1_raw": "MEX",
-                "Team2": "3CEFHI: Senegal",
+                "Team2": "3CEFHI: Ecuador",
                 "Team2_raw": "3CEFHI",
                 "Time": "07:00"
             },
@@ -401,7 +401,7 @@
                 "Status": "10 PM BST",
                 "Team1": "1L: England",
                 "Team1_raw": "1L",
-                "Team2": "3EHIJK: Algeria",
+                "Team2": "3EHIJK: Senegal",
                 "Team2_raw": "3EHIJK",
                 "Time": "10 PM BST"
             },
@@ -446,7 +446,7 @@
                 "Status": "",
                 "Team1": "SUI",
                 "Team1_raw": "SUI",
-                "Team2": "3EFGIJ: Ecuador",
+                "Team2": "3EFGIJ: Belgium",
                 "Team2_raw": "3EFGIJ",
                 "Time": "09:00"
             },
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 09:02:18 AM",
+    "last_updated": "2026-06-27 09:05:17 AM",
     "matches": {
         "group_stage": [
             {
@@ -3288,7 +3288,7 @@
                     "Status": "7 AM BST",
                     "Team1": "Mexico",
                     "Team1_raw": "Mexico",
-                    "Team2": "3CEFHI: Senegal",
+                    "Team2": "3CEFHI: Ecuador",
                     "Team2_raw": "3CEFHI",
                     "Time": "7 AM BST"
                 },
@@ -3312,7 +3312,7 @@
                     "Status": "10 PM BST",
                     "Team1": "1L: England",
                     "Team1_raw": "1L",
-                    "Team2": "3EHIJK: Algeria",
+                    "Team2": "3EHIJK: Senegal",
                     "Team2_raw": "3EHIJK",
                     "Time": "10 PM BST"
                 },
@@ -3432,7 +3432,7 @@
                     "Status": "9 AM BST",
                     "Team1": "Switzerland",
                     "Team1_raw": "Switzerland",
-                    "Team2": "3EFGIJ: Ecuador",
+                    "Team2": "3EFGIJ: Belgium",
                     "Team2_raw": "3EFGIJ",
                     "Time": "9 AM BST"
                 },
@@ -3889,52 +3889,52 @@
         "Group G": [
             {
                 "Code": "EGY",
-                "Drawn": 1,
+                "Drawn": 2,
                 "GA": 2,
                 "GD": 2,
                 "GF": 4,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 4,
+                "Played": 3,
+                "Points": 5,
                 "Pos": 1,
                 "Team": "Egypt",
                 "Won": 1
             },
             {
                 "Code": "IRN",
-                "Drawn": 2,
+                "Drawn": 3,
                 "GA": 2,
                 "GD": 0,
                 "GF": 2,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 2,
+                "Played": 3,
+                "Points": 3,
                 "Pos": 2,
                 "Team": "IR Iran",
                 "Won": 0
             },
             {
                 "Code": "BEL",
-                "Drawn": 2,
+                "Drawn": 3,
                 "GA": 1,
                 "GD": 0,
                 "GF": 1,
                 "Lost": 0,
-                "Played": 2,
-                "Points": 2,
+                "Played": 3,
+                "Points": 3,
                 "Pos": 3,
                 "Team": "Belgium",
                 "Won": 0
             },
             {
                 "Code": "NZL",
-                "Drawn": 1,
+                "Drawn": 2,
                 "GA": 5,
                 "GD": -2,
                 "GF": 3,
                 "Lost": 1,
-                "Played": 2,
-                "Points": 1,
+                "Played": 3,
+                "Points": 2,
                 "Pos": 4,
                 "Team": "New Zealand",
                 "Won": 0
@@ -4283,6 +4283,20 @@
             "Won": 1
         },
         {
+            "Code": "BEL",
+            "Drawn": 3,
+            "GA": 1,
+            "GD": 0,
+            "GF": 1,
+            "Group": "G",
+            "Lost": 0,
+            "Played": 3,
+            "Points": 3,
+            "Pos": 6,
+            "Team": "Belgium",
+            "Won": 0
+        },
+        {
             "Code": "CRO",
             "Drawn": 0,
             "GA": 4,
@@ -4292,7 +4306,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 6,
+            "Pos": 7,
             "Team": "Croatia",
             "Won": 1
         },
@@ -4306,7 +4320,7 @@
             "Lost": 2,
             "Played": 3,
             "Points": 3,
-            "Pos": 7,
+            "Pos": 8,
             "Team": "Korea Republic",
             "Won": 1
         },
@@ -4320,7 +4334,7 @@
             "Lost": 1,
             "Played": 2,
             "Points": 3,
-            "Pos": 8,
+            "Pos": 9,
             "Team": "Algeria",
             "Won": 1
         },
@@ -4334,23 +4348,9 @@
             "Lost": 2,
             "Played": 3,
             "Points": 3,
-            "Pos": 9,
+            "Pos": 10,
             "Team": "Scotland",
             "Won": 1
-        },
-        {
-            "Code": "BEL",
-            "Drawn": 2,
-            "GA": 1,
-            "GD": 0,
-            "GF": 1,
-            "Group": "G",
-            "Lost": 0,
-            "Played": 2,
-            "Points": 2,
-            "Pos": 10,
-            "Team": "Belgium",
-            "Won": 0
         },
         {
             "Code": "URU",

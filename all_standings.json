@@ -328,53 +328,53 @@
             "Pos": 1,
             "Team": "Egypt",
             "Code": "EGY",
-            "Played": 2,
+            "Played": 3,
             "Won": 1,
-            "Drawn": 1,
+            "Drawn": 2,
             "Lost": 0,
             "GF": 4,
             "GA": 2,
             "GD": 2,
-            "Points": 4
+            "Points": 5
         },
         {
             "Pos": 2,
             "Team": "IR Iran",
             "Code": "IRN",
-            "Played": 2,
+            "Played": 3,
             "Won": 0,
-            "Drawn": 2,
+            "Drawn": 3,
             "Lost": 0,
             "GF": 2,
             "GA": 2,
             "GD": 0,
-            "Points": 2
+            "Points": 3
         },
         {
             "Pos": 3,
             "Team": "Belgium",
             "Code": "BEL",
-            "Played": 2,
+            "Played": 3,
             "Won": 0,
-            "Drawn": 2,
+            "Drawn": 3,
             "Lost": 0,
             "GF": 1,
             "GA": 1,
             "GD": 0,
-            "Points": 2
+            "Points": 3
         },
         {
             "Pos": 4,
             "Team": "New Zealand",
             "Code": "NZL",
-            "Played": 2,
+            "Played": 3,
             "Won": 0,
-            "Drawn": 1,
+            "Drawn": 2,
             "Lost": 1,
             "GF": 3,
             "GA": 5,
             "GD": -2,
-            "Points": 1
+            "Points": 2
         }
     ],
     "Group H": [
