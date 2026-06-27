@@ -326,19 +326,6 @@
     "Group G": [
         {
             "Pos": 1,
-            "Team": "Belgium",
-            "Code": "BEL",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 2,
-            "Lost": 0,
-            "GF": 4,
-            "GA": 1,
-            "GD": 3,
-            "Points": 5
-        },
-        {
-            "Pos": 2,
             "Team": "Egypt",
             "Code": "EGY",
             "Played": 3,
@@ -347,6 +334,19 @@
             "Lost": 0,
             "GF": 5,
             "GA": 3,
+            "GD": 2,
+            "Points": 5
+        },
+        {
+            "Pos": 2,
+            "Team": "Belgium",
+            "Code": "BEL",
+            "Played": 3,
+            "Won": 1,
+            "Drawn": 2,
+            "Lost": 0,
+            "GF": 4,
+            "GA": 2,
             "GD": 2,
             "Points": 5
         },
@@ -371,9 +371,9 @@
             "Won": 0,
             "Drawn": 1,
             "Lost": 2,
-            "GF": 3,
+            "GF": 4,
             "GA": 8,
-            "GD": -5,
+            "GD": -4,
             "Points": 1
         }
     ],
