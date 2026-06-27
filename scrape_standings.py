@@ -206,7 +206,7 @@ def scrape_standings():
         
         # Clean and save the data
         all_standings = {}
-        for idx, df in enumerate(dfs):
+        for idx, df in enumerate(dfs[:12]):
             group_name = group_headings[idx] if idx < len(group_headings) else f"Group_{idx + 1}"
             
             # Clean DataFrame before processing
