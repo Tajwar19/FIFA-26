@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 10:13:18 AM",
+    "last_updated": "2026-06-27 10:13:50 AM",
     "matches": {
         "group_stage": [
             {
@@ -3904,8 +3904,8 @@
                 "Code": "BEL",
                 "Drawn": 2,
                 "GA": 1,
-                "GD": 1,
-                "GF": 2,
+                "GD": 2,
+                "GF": 3,
                 "Lost": 0,
                 "Played": 3,
                 "Points": 5,
@@ -3929,8 +3929,8 @@
             {
                 "Code": "NZL",
                 "Drawn": 1,
-                "GA": 6,
-                "GD": -3,
+                "GA": 7,
+                "GD": -4,
                 "GF": 3,
                 "Lost": 2,
                 "Played": 3,
