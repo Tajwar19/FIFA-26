@@ -197,7 +197,10 @@ def scrape_standings():
             fallback_groups = [f"Group {c}" for c in "ABCDEFGHIJKL"]
             for idx in range(len(dfs)):
                 if idx >= len(group_headings):
-                    group_headings.append(fallback_groups[idx])
+                    if idx < len(fallback_groups):
+                        group_headings.append(fallback_groups[idx])
+                    else:
+                        group_headings.append(f"Group_{idx + 1}")
         
         print(f"Group headings detected/used: {group_headings}")
         
