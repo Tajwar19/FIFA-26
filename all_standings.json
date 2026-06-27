@@ -329,29 +329,16 @@
             "Team": "Egypt",
             "Code": "EGY",
             "Played": 3,
-            "Won": 1,
-            "Drawn": 2,
+            "Won": 2,
+            "Drawn": 1,
             "Lost": 0,
-            "GF": 4,
+            "GF": 5,
             "GA": 2,
-            "GD": 2,
-            "Points": 5
+            "GD": 3,
+            "Points": 7
         },
         {
             "Pos": 2,
-            "Team": "IR Iran",
-            "Code": "IRN",
-            "Played": 3,
-            "Won": 0,
-            "Drawn": 3,
-            "Lost": 0,
-            "GF": 2,
-            "GA": 2,
-            "GD": 0,
-            "Points": 3
-        },
-        {
-            "Pos": 3,
             "Team": "Belgium",
             "Code": "BEL",
             "Played": 3,
@@ -362,6 +349,19 @@
             "GA": 1,
             "GD": 0,
             "Points": 3
+        },
+        {
+            "Pos": 3,
+            "Team": "IR Iran",
+            "Code": "IRN",
+            "Played": 3,
+            "Won": 0,
+            "Drawn": 2,
+            "Lost": 1,
+            "GF": 2,
+            "GA": 3,
+            "GD": -1,
+            "Points": 2
         },
         {
             "Pos": 4,
