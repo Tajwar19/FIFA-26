@@ -1,19 +1,6 @@
 {
     "Group A": [
         {
-            "Pos": 1,
-            "Team": "Mexico",
-            "Code": "MEX",
-            "Played": 3,
-            "Won": 3,
-            "Drawn": 0,
-            "Lost": 0,
-            "GF": 6,
-            "GA": 0,
-            "GD": 6,
-            "Points": 9
-        },
-        {
             "Pos": 2,
             "Team": "South Africa",
             "Code": "RSA",
@@ -25,140 +12,21 @@
             "GA": 3,
             "GD": -1,
             "Points": 4
-        },
-        {
-            "Pos": 3,
-            "Team": "Korea Republic",
-            "Code": "KOR",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 0,
-            "Lost": 2,
-            "GF": 2,
-            "GA": 3,
-            "GD": -1,
-            "Points": 3
-        },
-        {
-            "Pos": 4,
-            "Team": "Czechia",
-            "Code": "CZE",
-            "Played": 3,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 2,
-            "GF": 2,
-            "GA": 6,
-            "GD": -4,
-            "Points": 1
-        }
-    ],
-    "Group B": [
-        {
-            "Pos": 1,
-            "Team": "Switzerland",
-            "Code": "SUI",
-            "Played": 3,
-            "Won": 2,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 7,
-            "GA": 3,
-            "GD": 4,
-            "Points": 7
-        },
-        {
-            "Pos": 2,
-            "Team": "Canada",
-            "Code": "CAN",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 1,
-            "Lost": 1,
-            "GF": 8,
-            "GA": 3,
-            "GD": 5,
-            "Points": 4
-        },
-        {
-            "Pos": 3,
-            "Team": "Bosnia and Herzegovina",
-            "Code": "BIH",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 1,
-            "Lost": 1,
-            "GF": 5,
-            "GA": 6,
-            "GD": -1,
-            "Points": 4
-        },
-        {
-            "Pos": 4,
-            "Team": "Qatar",
-            "Code": "QAT",
-            "Played": 3,
-            "Won": 0,
-            "Drawn": 1,
-            "Lost": 2,
-            "GF": 2,
-            "GA": 10,
-            "GD": -8,
-            "Points": 1
         }
     ],
     "Group C": [
         {
-            "Pos": 1,
-            "Team": "Brazil",
-            "Code": "BRA",
-            "Played": 3,
-            "Won": 2,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 7,
-            "GA": 1,
-            "GD": 6,
-            "Points": 7
-        },
-        {
-            "Pos": 2,
-            "Team": "Morocco",
-            "Code": "MAR",
-            "Played": 3,
-            "Won": 2,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 6,
-            "GA": 3,
-            "GD": 3,
-            "Points": 7
-        },
-        {
-            "Pos": 3,
-            "Team": "Scotland",
-            "Code": "SCO",
-            "Played": 3,
-            "Won": 1,
+            "Pos": 0,
+            "Team": "4",
+            "Code": "",
+            "Played": 0,
+            "Won": 3,
             "Drawn": 0,
-            "Lost": 2,
-            "GF": 1,
-            "GA": 4,
-            "GD": -3,
-            "Points": 3
-        },
-        {
-            "Pos": 4,
-            "Team": "Haiti",
-            "Code": "HAI",
-            "Played": 3,
-            "Won": 0,
-            "Drawn": 0,
-            "Lost": 3,
-            "GF": 2,
-            "GA": 8,
-            "GD": -6,
-            "Points": 0
+            "Lost": 0,
+            "GF": 3,
+            "GA": 2,
+            "GD": 8,
+            "Points": -7
         }
     ],
     "Group D": [
@@ -187,48 +55,9 @@
             "GA": 2,
             "GD": 0,
             "Points": 4
-        },
-        {
-            "Pos": 3,
-            "Team": "Paraguay",
-            "Code": "PAR",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 1,
-            "Lost": 1,
-            "GF": 2,
-            "GA": 4,
-            "GD": -2,
-            "Points": 4
-        },
-        {
-            "Pos": 4,
-            "Team": "Türkiye",
-            "Code": "TUR",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 0,
-            "Lost": 2,
-            "GF": 3,
-            "GA": 5,
-            "GD": -2,
-            "Points": 3
         }
     ],
     "Group E": [
-        {
-            "Pos": 1,
-            "Team": "Germany",
-            "Code": "GER",
-            "Played": 3,
-            "Won": 2,
-            "Drawn": 0,
-            "Lost": 1,
-            "GF": 10,
-            "GA": 4,
-            "GD": 6,
-            "Points": 6
-        },
         {
             "Pos": 2,
             "Team": "Côte d'Ivoire",
@@ -241,19 +70,6 @@
             "GA": 2,
             "GD": 2,
             "Points": 6
-        },
-        {
-            "Pos": 3,
-            "Team": "Ecuador",
-            "Code": "ECU",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 1,
-            "Lost": 1,
-            "GF": 2,
-            "GA": 2,
-            "GD": 0,
-            "Points": 4
         },
         {
             "Pos": 4,
@@ -295,48 +111,9 @@
             "GA": 3,
             "GD": 4,
             "Points": 5
-        },
-        {
-            "Pos": 3,
-            "Team": "Sweden",
-            "Code": "SWE",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 1,
-            "Lost": 1,
-            "GF": 7,
-            "GA": 7,
-            "GD": 0,
-            "Points": 4
-        },
-        {
-            "Pos": 4,
-            "Team": "Tunisia",
-            "Code": "TUN",
-            "Played": 3,
-            "Won": 0,
-            "Drawn": 0,
-            "Lost": 3,
-            "GF": 2,
-            "GA": 12,
-            "GD": -10,
-            "Points": 0
         }
     ],
     "Group G": [
-        {
-            "Pos": 1,
-            "Team": "Belgium",
-            "Code": "BEL",
-            "Played": 3,
-            "Won": 1,
-            "Drawn": 2,
-            "Lost": 0,
-            "GF": 6,
-            "GA": 2,
-            "GD": 4,
-            "Points": 5
-        },
         {
             "Pos": 2,
             "Team": "Egypt",
@@ -349,19 +126,6 @@
             "GA": 3,
             "GD": 2,
             "Points": 5
-        },
-        {
-            "Pos": 3,
-            "Team": "IR Iran",
-            "Code": "IRN",
-            "Played": 3,
-            "Won": 0,
-            "Drawn": 3,
-            "Lost": 0,
-            "GF": 3,
-            "GA": 3,
-            "GD": 0,
-            "Points": 3
         },
         {
             "Pos": 4,
@@ -390,19 +154,6 @@
             "GA": 0,
             "GD": 5,
             "Points": 7
-        },
-        {
-            "Pos": 2,
-            "Team": "Cabo Verde",
-            "Code": "CPV",
-            "Played": 3,
-            "Won": 0,
-            "Drawn": 3,
-            "Lost": 0,
-            "GF": 2,
-            "GA": 2,
-            "GD": 0,
-            "Points": 3
         },
         {
             "Pos": 3,
@@ -470,19 +221,6 @@
             "GA": 6,
             "GD": 2,
             "Points": 3
-        },
-        {
-            "Pos": 4,
-            "Team": "Iraq",
-            "Code": "IRQ",
-            "Played": 3,
-            "Won": 0,
-            "Drawn": 0,
-            "Lost": 3,
-            "GF": 1,
-            "GA": 12,
-            "GD": -11,
-            "Points": 0
         }
     ],
     "Group J": [
@@ -498,32 +236,6 @@
             "GA": 0,
             "GD": 5,
             "Points": 6
-        },
-        {
-            "Pos": 2,
-            "Team": "Austria",
-            "Code": "AUT",
-            "Played": 2,
-            "Won": 1,
-            "Drawn": 0,
-            "Lost": 1,
-            "GF": 3,
-            "GA": 3,
-            "GD": 0,
-            "Points": 3
-        },
-        {
-            "Pos": 3,
-            "Team": "Algeria",
-            "Code": "ALG",
-            "Played": 2,
-            "Won": 1,
-            "Drawn": 0,
-            "Lost": 1,
-            "GF": 2,
-            "GA": 4,
-            "GD": -2,
-            "Points": 3
         },
         {
             "Pos": 4,
@@ -554,19 +266,6 @@
             "Points": 6
         },
         {
-            "Pos": 2,
-            "Team": "Portugal",
-            "Code": "POR",
-            "Played": 2,
-            "Won": 1,
-            "Drawn": 1,
-            "Lost": 0,
-            "GF": 6,
-            "GA": 1,
-            "GD": 5,
-            "Points": 4
-        },
-        {
             "Pos": 3,
             "Team": "Congo DR",
             "Code": "COD",
@@ -578,52 +277,119 @@
             "GA": 2,
             "GD": -1,
             "Points": 1
-        },
-        {
-            "Pos": 4,
-            "Team": "Uzbekistan",
-            "Code": "UZB",
-            "Played": 2,
-            "Won": 0,
-            "Drawn": 0,
-            "Lost": 2,
-            "GF": 1,
-            "GA": 8,
-            "GD": -7,
-            "Points": 0
         }
     ],
     "Group L": [
         {
-            "Pos": 1,
-            "Team": "England",
-            "Code": "ENG",
-            "Played": 2,
-            "Won": 1,
+            "Pos": 0,
+            "Team": "3",
+            "Code": "",
+            "Played": 0,
+            "Won": 2,
             "Drawn": 1,
             "Lost": 0,
-            "GF": 4,
-            "GA": 2,
+            "GF": 1,
+            "GA": 3,
+            "GD": 4,
+            "Points": -1
+        },
+        {
+            "Pos": 0,
+            "Team": "4",
+            "Code": "",
+            "Played": 0,
+            "Won": 2,
+            "Drawn": 0,
+            "Lost": 0,
+            "GF": 2,
+            "GA": 0,
             "GD": 2,
+            "Points": -3
+        }
+    ],
+    "Group B": [
+        {
+            "Pos": 1,
+            "Team": "SwedenSWEGroup F",
+            "Code": "",
+            "Played": 3,
+            "Won": 1,
+            "Drawn": 1,
+            "Lost": 1,
+            "GF": 7,
+            "GA": 7,
+            "GD": 0,
             "Points": 4
         },
         {
             "Pos": 2,
-            "Team": "Ghana",
-            "Code": "GHA",
-            "Played": 2,
+            "Team": "EcuadorECUGroup E",
+            "Code": "",
+            "Played": 3,
             "Won": 1,
             "Drawn": 1,
-            "Lost": 0,
-            "GF": 1,
-            "GA": 0,
-            "GD": 1,
+            "Lost": 1,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
             "Points": 4
         },
         {
             "Pos": 3,
-            "Team": "Croatia",
-            "Code": "CRO",
+            "Team": "Bosnia and HerzegovinaBIHGroup B",
+            "Code": "",
+            "Played": 3,
+            "Won": 1,
+            "Drawn": 1,
+            "Lost": 1,
+            "GF": 5,
+            "GA": 6,
+            "GD": -1,
+            "Points": 4
+        },
+        {
+            "Pos": 4,
+            "Team": "ParaguayPARGroup D",
+            "Code": "",
+            "Played": 3,
+            "Won": 1,
+            "Drawn": 1,
+            "Lost": 1,
+            "GF": 2,
+            "GA": 4,
+            "GD": -2,
+            "Points": 4
+        },
+        {
+            "Pos": 5,
+            "Team": "SenegalSENGroup I",
+            "Code": "",
+            "Played": 3,
+            "Won": 1,
+            "Drawn": 0,
+            "Lost": 2,
+            "GF": 8,
+            "GA": 6,
+            "GD": 2,
+            "Points": 3
+        },
+        {
+            "Pos": 6,
+            "Team": "IR IranIRNGroup G",
+            "Code": "",
+            "Played": 3,
+            "Won": 0,
+            "Drawn": 3,
+            "Lost": 0,
+            "GF": 3,
+            "GA": 3,
+            "GD": 0,
+            "Points": 3
+        },
+        {
+            "Pos": 7,
+            "Team": "CroatiaCROGroup L",
+            "Code": "",
             "Played": 2,
             "Won": 1,
             "Drawn": 0,
@@ -634,17 +400,69 @@
             "Points": 3
         },
         {
-            "Pos": 4,
-            "Team": "Panama",
-            "Code": "PAN",
-            "Played": 2,
-            "Won": 0,
+            "Pos": 8,
+            "Team": "Korea RepublicKORGroup A",
+            "Code": "",
+            "Played": 3,
+            "Won": 1,
             "Drawn": 0,
             "Lost": 2,
-            "GF": 0,
-            "GA": 2,
+            "GF": 2,
+            "GA": 3,
+            "GD": -1,
+            "Points": 3
+        },
+        {
+            "Pos": 9,
+            "Team": "AlgeriaALGGroup J",
+            "Code": "",
+            "Played": 2,
+            "Won": 1,
+            "Drawn": 0,
+            "Lost": 1,
+            "GF": 2,
+            "GA": 4,
             "GD": -2,
-            "Points": 0
+            "Points": 3
+        },
+        {
+            "Pos": 10,
+            "Team": "ScotlandSCOGroup C",
+            "Code": "",
+            "Played": 3,
+            "Won": 1,
+            "Drawn": 0,
+            "Lost": 2,
+            "GF": 1,
+            "GA": 4,
+            "GD": -3,
+            "Points": 3
+        },
+        {
+            "Pos": 11,
+            "Team": "UruguayURUGroup H",
+            "Code": "",
+            "Played": 3,
+            "Won": 0,
+            "Drawn": 2,
+            "Lost": 1,
+            "GF": 3,
+            "GA": 4,
+            "GD": -1,
+            "Points": 2
+        },
+        {
+            "Pos": 12,
+            "Team": "Congo DRCODGroup K",
+            "Code": "",
+            "Played": 2,
+            "Won": 0,
+            "Drawn": 1,
+            "Lost": 1,
+            "GF": 1,
+            "GA": 2,
+            "GD": -1,
+            "Points": 1
         }
     ]
 }
