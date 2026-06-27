@@ -234,8 +234,8 @@
                 "Status": "",
                 "Team1": "GER",
                 "Team1_raw": "GER",
-                "Team2": "3ABCDF: Sweden",
-                "Team2_raw": "3ABCDF",
+                "Team2": "PAR",
+                "Team2_raw": "PAR",
                 "Time": "02:30"
             },
             {
@@ -249,8 +249,8 @@
                 "Status": "",
                 "Team1": "FRA",
                 "Team1_raw": "FRA",
-                "Team2": "3CDFGH: Paraguay",
-                "Team2_raw": "3CDFGH",
+                "Team2": "SWE",
+                "Team2_raw": "SWE",
                 "Time": "03:00"
             },
             {
@@ -307,8 +307,8 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "",
-                "Team1": "1H: Spain",
-                "Team1_raw": "1H",
+                "Team1": "ESP",
+                "Team1_raw": "ESP",
                 "Team2": "2J: Austria",
                 "Team2_raw": "2J",
                 "Time": "01:00"
@@ -416,8 +416,8 @@
                 "Status": "",
                 "Team1": "ARG",
                 "Team1_raw": "ARG",
-                "Team2": "2H: Cabo Verde",
-                "Team2_raw": "2H",
+                "Team2": "CPV",
+                "Team2_raw": "CPV",
                 "Time": "04:00"
             },
             {
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 08:12:25 AM",
+    "last_updated": "2026-06-27 08:13:54 AM",
     "matches": {
         "group_stage": [
             {
