@@ -431,8 +431,8 @@
                 "Status": "",
                 "Team1": "AUS",
                 "Team1_raw": "AUS",
-                "Team2": "2G: Egypt",
-                "Team2_raw": "2G",
+                "Team2": "EGY",
+                "Team2_raw": "EGY",
                 "Time": "00:00"
             },
             {
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-27 11:17:31 AM",
+    "last_updated": "2026-06-27 11:18:01 AM",
     "matches": {
         "group_stage": [
             {
