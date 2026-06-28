@@ -2148,20 +2148,31 @@
             "Time": "3 AM BST",
             "Team1": "Panama",
             "Code1": "PAN",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "2",
             "Team2": "England",
             "Code2": "ENG",
-            "Status": "3 AM BST",
+            "Status": "0FT2",
             "Stage": "First Stage",
             "Group_or_Match": "Group L",
             "Stadium": "New York/New Jersey Stadium",
             "City": "New Jersey",
             "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals2": [
+                {
+                    "Player": "Jude BELLINGHAM",
+                    "Minute": "62'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Harry KANE",
+                    "Minute": "67'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Abdulrahman AL JASSIM",
+            "Attendance": "80663",
+            "HT": "0 - 0"
         },
         {
             "Match": "M68",
@@ -2170,20 +2181,37 @@
             "Time": "3 AM BST",
             "Team1": "Croatia",
             "Code1": "CRO",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "2",
+            "Score2": "1",
             "Team2": "Ghana",
             "Code2": "GHA",
-            "Status": "3 AM BST",
+            "Status": "2FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group L",
             "Stadium": "Philadelphia Stadium",
             "City": "Philadelphia",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Petar SUCIC",
+                    "Minute": "31'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Nikola VLASIC",
+                    "Minute": "83'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Derrick LUCKASSEN",
+                    "Minute": "73'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Drew Fischer",
+            "Attendance": "68324",
+            "HT": "1 - 0"
         },
         {
             "Match": "M69",
@@ -2192,20 +2220,52 @@
             "Time": "8 AM BST",
             "Team1": "Algeria",
             "Code1": "ALG",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "3",
+            "Score2": "3",
             "Team2": "Austria",
             "Code2": "AUT",
-            "Status": "8 AM BST",
+            "Status": "3FT3",
             "Stage": "First Stage",
             "Group_or_Match": "Group J",
             "Stadium": "Kansas City Stadium",
             "City": "Kansas City",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Rafik BELGHALI",
+                    "Minute": "45'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Riyad MAHREZ",
+                    "Minute": "60'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Riyad MAHREZ",
+                    "Minute": "90'+3'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Marko ARNAUTOVIC",
+                    "Minute": "28'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Marcel SABITZER",
+                    "Minute": "55'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Sasa KALAJDZIC",
+                    "Minute": "90'+6'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Ilgiz Tantashev",
+            "Attendance": "69045",
+            "HT": "1 - 1"
         },
         {
             "Match": "M70",
@@ -2214,20 +2274,42 @@
             "Time": "8 AM BST",
             "Team1": "Jordan",
             "Code1": "JOR",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "1",
+            "Score2": "3",
             "Team2": "Argentina",
             "Code2": "ARG",
-            "Status": "8 AM BST",
+            "Status": "1FT3",
             "Stage": "First Stage",
             "Group_or_Match": "Group J",
             "Stadium": "Dallas Stadium",
             "City": "Dallas",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "MOUSA ALTAMARI",
+                    "Minute": "55'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Giovani LO CELSO",
+                    "Minute": "19'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Lautaro MARTINEZ",
+                    "Minute": "31'",
+                    "Type": 1
+                },
+                {
+                    "Player": "Lionel MESSI",
+                    "Minute": "80'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Istvan Kovacs",
+            "Attendance": "70649",
+            "HT": "0 - 2"
         },
         {
             "Match": "M71",
@@ -2236,20 +2318,20 @@
             "Time": "5:30 AM BST",
             "Team1": "Colombia",
             "Code1": "COL",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "0",
+            "Score2": "0",
             "Team2": "Portugal",
             "Code2": "POR",
-            "Status": "5:30 AM BST",
+            "Status": "0FT0",
             "Stage": "First Stage",
             "Group_or_Match": "Group K",
             "Stadium": "Miami Stadium",
             "City": "Miami",
             "Goals1": [],
             "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Referee": "Alireza FAGHANI",
+            "Attendance": "64478",
+            "HT": "0 - 0"
         },
         {
             "Match": "M72",
@@ -2258,20 +2340,42 @@
             "Time": "5:30 AM BST",
             "Team1": "Congo DR",
             "Code1": "COD",
-            "Score1": "",
-            "Score2": "",
+            "Score1": "3",
+            "Score2": "1",
             "Team2": "Uzbekistan",
             "Code2": "UZB",
-            "Status": "5:30 AM BST",
+            "Status": "3FT1",
             "Stage": "First Stage",
             "Group_or_Match": "Group K",
             "Stadium": "Atlanta Stadium",
             "City": "Atlanta",
-            "Goals1": [],
-            "Goals2": [],
-            "Referee": "",
-            "Attendance": 0,
-            "HT": ""
+            "Goals1": [
+                {
+                    "Player": "Yoane WISSA",
+                    "Minute": "68'",
+                    "Type": 1
+                },
+                {
+                    "Player": "Fiston MAYELE",
+                    "Minute": "78'",
+                    "Type": 2
+                },
+                {
+                    "Player": "Yoane WISSA",
+                    "Minute": "90'+1'",
+                    "Type": 2
+                }
+            ],
+            "Goals2": [
+                {
+                    "Player": "Eldor SHOMURODOV",
+                    "Minute": "10'",
+                    "Type": 2
+                }
+            ],
+            "Referee": "Felix Zwayer",
+            "Attendance": "68239",
+            "HT": "0 - 1"
         }
     ],
     "knockout_stage": {
@@ -2417,8 +2521,8 @@
                 "Code1": "MEX",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "3CEFHI",
-                "Code2": "3CEFHI",
+                "Team2": "Ecuador",
+                "Code2": "ECU",
                 "Status": "7 AM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 79",
@@ -2435,12 +2539,12 @@
                 "MatchDay": null,
                 "Date": "Wednesday 01 July 2026",
                 "Time": "10 PM BST",
-                "Team1": "1L",
-                "Code1": "1L",
+                "Team1": "England",
+                "Code1": "ENG",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "3EHIJK",
-                "Code2": "3EHIJK",
+                "Team2": "Congo DR",
+                "Code2": "COD",
                 "Status": "10 PM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 80",
@@ -2483,8 +2587,8 @@
                 "Code1": "BEL",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "3AEHIJ",
-                "Code2": "3AEHIJ",
+                "Team2": "Senegal",
+                "Code2": "SEN",
                 "Status": "2 AM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 82",
@@ -2501,12 +2605,12 @@
                 "MatchDay": null,
                 "Date": "Friday 03 July 2026",
                 "Time": "5 AM BST",
-                "Team1": "2K",
-                "Code1": "2K",
+                "Team1": "Portugal",
+                "Code1": "POR",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "2L",
-                "Code2": "2L",
+                "Team2": "Croatia",
+                "Code2": "CRO",
                 "Status": "5 AM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 83",
@@ -2527,8 +2631,8 @@
                 "Code1": "ESP",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "2J",
-                "Code2": "2J",
+                "Team2": "Austria",
+                "Code2": "AUT",
                 "Status": "1 AM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 84",
@@ -2549,8 +2653,8 @@
                 "Code1": "SUI",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "3EFGIJ",
-                "Code2": "3EFGIJ",
+                "Team2": "Algeria",
+                "Code2": "ALG",
                 "Status": "9 AM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 85",
@@ -2589,12 +2693,12 @@
                 "MatchDay": null,
                 "Date": "Saturday 04 July 2026",
                 "Time": "7:30 AM BST",
-                "Team1": "1K",
-                "Code1": "1K",
+                "Team1": "Colombia",
+                "Code1": "COL",
                 "Score1": "",
                 "Score2": "",
-                "Team2": "3DEIJL",
-                "Code2": "3DEIJL",
+                "Team2": "Ghana",
+                "Code2": "GHA",
                 "Status": "7:30 AM BST",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 87",

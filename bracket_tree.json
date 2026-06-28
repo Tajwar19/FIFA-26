@@ -46,8 +46,8 @@
             "Side": "LEFT",
             "Date": "07/03/202605:00",
             "Time": "05:00",
-            "Team1": "2K",
-            "Team2": "2L",
+            "Team1": "POR",
+            "Team2": "CRO",
             "NextMatch": "M93"
         },
         {
@@ -57,7 +57,7 @@
             "Date": "07/03/202601:00",
             "Time": "01:00",
             "Team1": "ESP",
-            "Team2": "2J",
+            "Team2": "AUT",
             "NextMatch": "M93"
         },
         {
@@ -77,7 +77,7 @@
             "Date": "07/02/202602:00",
             "Time": "02:00",
             "Team1": "BEL",
-            "Team2": "3AEHIJ",
+            "Team2": "SEN",
             "NextMatch": "M94"
         }
     ],
@@ -285,7 +285,7 @@
             "Date": "07/01/202607:00",
             "Time": "07:00",
             "Team1": "MEX",
-            "Team2": "3CEFHI",
+            "Team2": "ECU",
             "NextMatch": "M92"
         },
         {
@@ -294,8 +294,8 @@
             "Side": "RIGHT",
             "Date": "07/01/202622:00",
             "Time": "22:00",
-            "Team1": "1L",
-            "Team2": "3EHIJK",
+            "Team1": "ENG",
+            "Team2": "COD",
             "NextMatch": "M92"
         },
         {
@@ -325,7 +325,7 @@
             "Date": "07/03/202609:00",
             "Time": "09:00",
             "Team1": "SUI",
-            "Team2": "3EFGIJ",
+            "Team2": "ALG",
             "NextMatch": "M96"
         },
         {
@@ -334,8 +334,8 @@
             "Side": "RIGHT",
             "Date": "07/04/202607:30",
             "Time": "07:30",
-            "Team1": "1K",
-            "Team2": "3DEIJL",
+            "Team1": "COL",
+            "Team2": "GHA",
             "NextMatch": "M96"
         }
     ]
