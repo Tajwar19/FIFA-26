@@ -1,1 +1,342 @@
-{}
+{
+    "Round of 32 (Left)": [
+        {
+            "Match": "M74",
+            "Round": "Round of 32 (Left)",
+            "Side": "LEFT",
+            "Date": "Tuesday 30 June 2026",
+            "Time": "2:30 AM BST",
+            "Team1": "Germany",
+            "Team2": "Paraguay",
+            "NextMatch": "M89"
+        },
+        {
+            "Match": "M77",
+            "Round": "Round of 32 (Left)",
+            "Side": "LEFT",
+            "Date": "Wednesday 01 July 2026",
+            "Time": "3 AM BST",
+            "Team1": "France",
+            "Team2": "Sweden",
+            "NextMatch": "M89"
+        },
+        {
+            "Match": "M73",
+            "Round": "Round of 32 (Left)",
+            "Side": "LEFT",
+            "Date": "Monday 29 June 2026",
+            "Time": "1 AM BST",
+            "Team1": "South Africa",
+            "Team2": "Canada",
+            "NextMatch": "M90"
+        },
+        {
+            "Match": "M75",
+            "Round": "Round of 32 (Left)",
+            "Side": "LEFT",
+            "Date": "Tuesday 30 June 2026",
+            "Time": "7 AM BST",
+            "Team1": "Netherlands",
+            "Team2": "Morocco",
+            "NextMatch": "M90"
+        },
+        {
+            "Match": "M83",
+            "Round": "Round of 32 (Left)",
+            "Side": "LEFT",
+            "Date": "Friday 03 July 2026",
+            "Time": "5 AM BST",
+            "Team1": "Portugal",
+            "Team2": "Croatia",
+            "NextMatch": "M93"
+        },
+        {
+            "Match": "M84",
+            "Round": "Round of 32 (Left)",
+            "Side": "LEFT",
+            "Date": "Friday 03 July 2026",
+            "Time": "1 AM BST",
+            "Team1": "Spain",
+            "Team2": "Austria",
+            "NextMatch": "M93"
+        },
+        {
+            "Match": "M81",
+            "Round": "Round of 32 (Left)",
+            "Side": "LEFT",
+            "Date": "Thursday 02 July 2026",
+            "Time": "6 AM BST",
+            "Team1": "USA",
+            "Team2": "Bosnia and Herzegovina",
+            "NextMatch": "M94"
+        },
+        {
+            "Match": "M82",
+            "Round": "Round of 32 (Left)",
+            "Side": "LEFT",
+            "Date": "Thursday 02 July 2026",
+            "Time": "2 AM BST",
+            "Team1": "Belgium",
+            "Team2": "Senegal",
+            "NextMatch": "M94"
+        }
+    ],
+    "Round of 16 (Left)": [
+        {
+            "Match": "M89",
+            "Round": "Round of 16 (Left)",
+            "Side": "LEFT",
+            "Date": "Sunday 05 July 2026",
+            "Time": "3 AM BST",
+            "Team1": "W74",
+            "Team2": "W77",
+            "NextMatch": "M97"
+        },
+        {
+            "Match": "M90",
+            "Round": "Round of 16 (Left)",
+            "Side": "LEFT",
+            "Date": "Saturday 04 July 2026",
+            "Time": "11 PM BST",
+            "Team1": "Canada",
+            "Team2": "W75",
+            "NextMatch": "M97"
+        },
+        {
+            "Match": "M93",
+            "Round": "Round of 16 (Left)",
+            "Side": "LEFT",
+            "Date": "Tuesday 07 July 2026",
+            "Time": "1 AM BST",
+            "Team1": "W83",
+            "Team2": "W84",
+            "NextMatch": "M98"
+        },
+        {
+            "Match": "M94",
+            "Round": "Round of 16 (Left)",
+            "Side": "LEFT",
+            "Date": "Tuesday 07 July 2026",
+            "Time": "6 AM BST",
+            "Team1": "W81",
+            "Team2": "W82",
+            "NextMatch": "M98"
+        }
+    ],
+    "Quarter-final (Left)": [
+        {
+            "Match": "M97",
+            "Round": "Quarter-final (Left)",
+            "Side": "LEFT",
+            "Date": "Friday 10 July 2026",
+            "Time": "2 AM BST",
+            "Team1": "W89",
+            "Team2": "W90",
+            "NextMatch": "M101"
+        },
+        {
+            "Match": "M98",
+            "Round": "Quarter-final (Left)",
+            "Side": "LEFT",
+            "Date": "Saturday 11 July 2026",
+            "Time": "1 AM BST",
+            "Team1": "W93",
+            "Team2": "W94",
+            "NextMatch": "M101"
+        }
+    ],
+    "Semi-final (Left)": [
+        {
+            "Match": "M101",
+            "Round": "Semi-final (Left)",
+            "Side": "LEFT",
+            "Date": "Wednesday 15 July 2026",
+            "Time": "1 AM BST",
+            "Team1": "W97",
+            "Team2": "W98",
+            "NextMatch": "M104 (winner) / M103 (loser)"
+        }
+    ],
+    "Play-off for third place": [
+        {
+            "Match": "M103",
+            "Round": "Play-off for third place",
+            "Side": "CENTER",
+            "Date": "Sunday 19 July 2026",
+            "Time": "3 AM BST",
+            "Team1": "RU101",
+            "Team2": "RU102",
+            "NextMatch": ""
+        }
+    ],
+    "Final": [
+        {
+            "Match": "M104",
+            "Round": "Final",
+            "Side": "CENTER",
+            "Date": "Monday 20 July 2026",
+            "Time": "1 AM BST",
+            "Team1": "W101",
+            "Team2": "W102",
+            "NextMatch": ""
+        }
+    ],
+    "Semi-final (Right)": [
+        {
+            "Match": "M102",
+            "Round": "Semi-final (Right)",
+            "Side": "RIGHT",
+            "Date": "Thursday 16 July 2026",
+            "Time": "1 AM BST",
+            "Team1": "W99",
+            "Team2": "W100",
+            "NextMatch": "M104 (winner) / M103 (loser)"
+        }
+    ],
+    "Quarter-final (Right)": [
+        {
+            "Match": "M99",
+            "Round": "Quarter-final (Right)",
+            "Side": "RIGHT",
+            "Date": "Sunday 12 July 2026",
+            "Time": "3 AM BST",
+            "Team1": "W91",
+            "Team2": "W92",
+            "NextMatch": "M102"
+        },
+        {
+            "Match": "M100",
+            "Round": "Quarter-final (Right)",
+            "Side": "RIGHT",
+            "Date": "Sunday 12 July 2026",
+            "Time": "7 AM BST",
+            "Team1": "W95",
+            "Team2": "W96",
+            "NextMatch": "M102"
+        }
+    ],
+    "Round of 16 (Right)": [
+        {
+            "Match": "M91",
+            "Round": "Round of 16 (Right)",
+            "Side": "RIGHT",
+            "Date": "Monday 06 July 2026",
+            "Time": "2 AM BST",
+            "Team1": "W76",
+            "Team2": "W78",
+            "NextMatch": "M99"
+        },
+        {
+            "Match": "M92",
+            "Round": "Round of 16 (Right)",
+            "Side": "RIGHT",
+            "Date": "Monday 06 July 2026",
+            "Time": "6 AM BST",
+            "Team1": "W79",
+            "Team2": "W80",
+            "NextMatch": "M99"
+        },
+        {
+            "Match": "M95",
+            "Round": "Round of 16 (Right)",
+            "Side": "RIGHT",
+            "Date": "Tuesday 07 July 2026",
+            "Time": "10 PM BST",
+            "Team1": "W86",
+            "Team2": "W88",
+            "NextMatch": "M100"
+        },
+        {
+            "Match": "M96",
+            "Round": "Round of 16 (Right)",
+            "Side": "RIGHT",
+            "Date": "Wednesday 08 July 2026",
+            "Time": "2 AM BST",
+            "Team1": "W85",
+            "Team2": "W87",
+            "NextMatch": "M100"
+        }
+    ],
+    "Round of 32 (Right)": [
+        {
+            "Match": "M76",
+            "Round": "Round of 32 (Right)",
+            "Side": "RIGHT",
+            "Date": "Monday 29 June 2026",
+            "Time": "11 PM BST",
+            "Team1": "Brazil",
+            "Team2": "Japan",
+            "NextMatch": "M91"
+        },
+        {
+            "Match": "M78",
+            "Round": "Round of 32 (Right)",
+            "Side": "RIGHT",
+            "Date": "Tuesday 30 June 2026",
+            "Time": "11 PM BST",
+            "Team1": "Côte d'Ivoire",
+            "Team2": "Norway",
+            "NextMatch": "M91"
+        },
+        {
+            "Match": "M79",
+            "Round": "Round of 32 (Right)",
+            "Side": "RIGHT",
+            "Date": "Wednesday 01 July 2026",
+            "Time": "7 AM BST",
+            "Team1": "Mexico",
+            "Team2": "Ecuador",
+            "NextMatch": "M92"
+        },
+        {
+            "Match": "M80",
+            "Round": "Round of 32 (Right)",
+            "Side": "RIGHT",
+            "Date": "Wednesday 01 July 2026",
+            "Time": "10 PM BST",
+            "Team1": "England",
+            "Team2": "Congo DR",
+            "NextMatch": "M92"
+        },
+        {
+            "Match": "M86",
+            "Round": "Round of 32 (Right)",
+            "Side": "RIGHT",
+            "Date": "Saturday 04 July 2026",
+            "Time": "4 AM BST",
+            "Team1": "Argentina",
+            "Team2": "Cabo Verde",
+            "NextMatch": "M95"
+        },
+        {
+            "Match": "M88",
+            "Round": "Round of 32 (Right)",
+            "Side": "RIGHT",
+            "Date": "Saturday 04 July 2026",
+            "Time": "12 AM BST",
+            "Team1": "Australia",
+            "Team2": "Egypt",
+            "NextMatch": "M95"
+        },
+        {
+            "Match": "M85",
+            "Round": "Round of 32 (Right)",
+            "Side": "RIGHT",
+            "Date": "Friday 03 July 2026",
+            "Time": "9 AM BST",
+            "Team1": "Switzerland",
+            "Team2": "Algeria",
+            "NextMatch": "M96"
+        },
+        {
+            "Match": "M87",
+            "Round": "Round of 32 (Right)",
+            "Side": "RIGHT",
+            "Date": "Saturday 04 July 2026",
+            "Time": "7:30 AM BST",
+            "Team1": "Colombia",
+            "Team2": "Ghana",
+            "NextMatch": "M96"
+        }
+    ]
+}
