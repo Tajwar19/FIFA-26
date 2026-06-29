@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-29 11:28:53 AM",
+    "last_updated": "2026-06-29 11:39:52 AM",
     "matches": {
         "group_stage": [
             {
@@ -512,13 +512,15 @@
                 "Date": "Friday 12 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "9'",
                         "Player": "Julian QUINONES",
                         "Type": 2
                     },
                     {
+                        "Assist": "Roberto ALVARADO",
                         "Minute": "67'",
-                        "Player": "RAÚL",
+                        "Player": "Raul JIMENEZ",
                         "Type": 2
                     }
                 ],
@@ -545,18 +547,21 @@
                 "Date": "Friday 12 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "KIM Seunggyu",
                         "Minute": "67'",
                         "Player": "HWANG Inbeom",
                         "Type": 2
                     },
                     {
+                        "Assist": "KIM Jingyu",
                         "Minute": "80'",
-                        "Player": "H G OH",
+                        "Player": "OH Hyeongyu",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "59'",
                         "Player": "Ladislav KREJCI",
                         "Type": 2
@@ -584,6 +589,7 @@
                 "Date": "Saturday 13 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Alistair JOHNSTON",
                         "Minute": "78'",
                         "Player": "Cyle LARIN",
                         "Type": 2
@@ -591,6 +597,7 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Samed BAZDAR",
                         "Minute": "21'",
                         "Player": "Jovo LUKIC",
                         "Type": 2
@@ -618,28 +625,33 @@
                 "Date": "Saturday 13 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "7'",
                         "Player": "Damian BOBADILLA",
                         "Type": 3
                     },
                     {
+                        "Assist": "Chris RICHARDS",
                         "Minute": "31'",
                         "Player": "Folarin BALOGUN",
                         "Type": 2
                     },
                     {
+                        "Assist": "Miles ROBINSON",
                         "Minute": "45'+5'",
                         "Player": "Folarin BALOGUN",
                         "Type": 2
                     },
                     {
+                        "Assist": "Brenden AARONSON",
                         "Minute": "90'+8'",
-                        "Player": "REYNA",
+                        "Player": "Giovanni REYNA",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Alejandro ROMERO GAMARRA",
                         "Minute": "73'",
                         "Player": "MAURICIO",
                         "Type": 2
@@ -668,6 +680,7 @@
                 "Goals1": [],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "28'",
                         "Player": "John McGINN",
                         "Type": 2
@@ -695,11 +708,13 @@
                 "Date": "Sunday 14 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Connor METCALFE",
                         "Minute": "27'",
                         "Player": "Nestory IRANKUNDA",
                         "Type": 2
                     },
                     {
+                        "Assist": "Jackson IRVINE",
                         "Minute": "75'",
                         "Player": "Connor METCALFE",
                         "Type": 2
@@ -728,15 +743,17 @@
                 "Date": "Sunday 14 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "32'",
-                        "Player": "VINI JR.",
+                        "Player": "VINICIUS JUNIOR",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Anass SALAH EDDINE",
                         "Minute": "21'",
-                        "Player": "SAIBARI",
+                        "Player": "Ismael SAIBARI",
                         "Type": 2
                     }
                 ],
@@ -762,6 +779,7 @@
                 "Date": "Sunday 14 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "90'+4'",
                         "Player": "Miro MUHEIM",
                         "Type": 3
@@ -769,8 +787,9 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "17'",
-                        "Player": "EMBOLO",
+                        "Player": "Breel EMBOLO",
                         "Type": 1
                     }
                 ],
@@ -796,6 +815,7 @@
                 "Date": "Monday 15 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Emmanuel AGBADOU",
                         "Minute": "90'",
                         "Player": "Amad DIALLO",
                         "Type": 2
@@ -824,43 +844,51 @@
                 "Date": "Sunday 14 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Jonathan TAH",
                         "Minute": "6'",
-                        "Player": "NMECHA",
+                        "Player": "Felix NMECHA",
                         "Type": 2
                     },
                     {
+                        "Assist": "Florian WIRTZ",
                         "Minute": "38'",
-                        "Player": "SCHLOTTERBECK",
+                        "Player": "Nico SCHLOTTERBECK",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "45'+5'",
-                        "Player": "HAVERTZ",
+                        "Player": "Kai HAVERTZ",
                         "Type": 1
                     },
                     {
+                        "Assist": "Florian WIRTZ",
                         "Minute": "47'",
-                        "Player": "MUSIALA",
+                        "Player": "Jamal MUSIALA",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "68'",
                         "Player": "Nathaniel BROWN",
                         "Type": 2
                     },
                     {
+                        "Assist": "Kai HAVERTZ",
                         "Minute": "78'",
                         "Player": "Deniz UNDAV",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "88'",
-                        "Player": "HAVERTZ",
+                        "Player": "Kai HAVERTZ",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Deveron FONVILLE",
                         "Minute": "21'",
                         "Player": "Livano COMENENCIA",
                         "Type": 2
@@ -888,11 +916,13 @@
                 "Date": "Monday 15 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Donyell MALEN",
                         "Minute": "50'",
                         "Player": "Virgil VAN DIJK",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "64'",
                         "Player": "Crysencio SUMMERVILLE",
                         "Type": 2
@@ -900,13 +930,15 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Takehiro TOMIYASU",
                         "Minute": "57'",
-                        "Player": "NAKAMURA",
+                        "Player": "Keito NAKAMURA",
                         "Type": 2
                     },
                     {
+                        "Assist": "Ayase UEDA",
                         "Minute": "88'",
-                        "Player": "KAMADA",
+                        "Player": "Daichi KAMADA",
                         "Type": 2
                     }
                 ],
@@ -932,26 +964,31 @@
                 "Date": "Monday 15 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Hjalmar EKDAL",
                         "Minute": "7'",
                         "Player": "Yasin AYARI",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "30'",
                         "Player": "Alexander ISAK",
                         "Type": 2
                     },
                     {
+                        "Assist": "Victor LINDELOF",
                         "Minute": "59'",
                         "Player": "Viktor GYOKERES",
                         "Type": 2
                     },
                     {
+                        "Assist": "Kristoffer NORDFELDT",
                         "Minute": "84'",
                         "Player": "Mattias SVANBERG",
                         "Type": 2
                     },
                     {
+                        "Assist": "Isak HIEN",
                         "Minute": "90'+6'",
                         "Player": "Yasin AYARI",
                         "Type": 2
@@ -959,6 +996,7 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Adam AROUS",
                         "Minute": "43'",
                         "Player": "Omar REKIK",
                         "Type": 2
@@ -986,13 +1024,15 @@
                 "Date": "Tuesday 16 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "MUSAB ALJUWAYR",
                         "Minute": "41'",
-                        "Player": "ALAMRI",
+                        "Player": "ABDULELAH ALAMRI",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Manuel UGARTE",
                         "Minute": "80'",
                         "Player": "Maxi ARAUJO",
                         "Type": 2
@@ -1042,25 +1082,29 @@
                 "Date": "Tuesday 16 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Saeid EZATOLAHI",
                         "Minute": "32'",
-                        "Player": "RAMIN",
+                        "Player": "Ramin REZAEIAN",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "64'",
-                        "Player": "M.MOHEBBI",
+                        "Player": "Mohammad MOHEBBI",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Finn SURMAN",
                         "Minute": "7'",
-                        "Player": "JUST",
+                        "Player": "Elijah JUST",
                         "Type": 2
                     },
                     {
+                        "Assist": "Michael BOXALL",
                         "Minute": "54'",
-                        "Player": "JUST",
+                        "Player": "Elijah JUST",
                         "Type": 2
                     }
                 ],
@@ -1086,15 +1130,17 @@
                 "Date": "Tuesday 16 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "66'",
-                        "Player": "M.HANY",
+                        "Player": "MOHAMED HANY",
                         "Type": 3
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "19'",
-                        "Player": "E.ASHOUR",
+                        "Player": "EMAM ASHOUR",
                         "Type": 2
                     }
                 ],
@@ -1120,25 +1166,29 @@
                 "Date": "Wednesday 17 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "66'",
-                        "Player": "MBAPPÉ",
+                        "Player": "Kylian MBAPPE",
                         "Type": 2
                     },
                     {
+                        "Assist": "Ngolo KANTE",
                         "Minute": "82'",
-                        "Player": "BARCOLA",
+                        "Player": "Bradley BARCOLA",
                         "Type": 2
                     },
                     {
+                        "Assist": "Mike MAIGNAN",
                         "Minute": "90'+6'",
-                        "Player": "MBAPPÉ",
+                        "Player": "Kylian MBAPPE",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Bara Sapoko NDIAYE",
                         "Minute": "90'+5'",
-                        "Player": "MBAYE",
+                        "Player": "Ibrahim MBAYE",
                         "Type": 2
                     }
                 ],
@@ -1164,30 +1214,35 @@
                 "Date": "Wednesday 17 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "39'",
-                        "Player": "HUSSEIN",
+                        "Player": "AYMEN HUSSEIN",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Sondre LANGAS",
                         "Minute": "29'",
-                        "Player": "HAALAND",
+                        "Player": "Erling HAALAND",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "43'",
-                        "Player": "HAALAND",
+                        "Player": "Erling HAALAND",
                         "Type": 2
                     },
                     {
+                        "Assist": "Kristoffer AJER",
                         "Minute": "76'",
                         "Player": "Leo OSTIGARD",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "90'+6'",
-                        "Player": "HUSSEIN",
+                        "Player": "AYMEN HUSSEIN",
                         "Type": 3
                     }
                 ],
@@ -1213,18 +1268,21 @@
                 "Date": "Wednesday 17 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Jose Manuel LOPEZ",
                         "Minute": "17'",
-                        "Player": "MESSI",
+                        "Player": "Lionel MESSI",
                         "Type": 2
                     },
                     {
+                        "Assist": "Giovani LO CELSO",
                         "Minute": "60'",
-                        "Player": "MESSI",
+                        "Player": "Lionel MESSI",
                         "Type": 2
                     },
                     {
+                        "Assist": "Nicolas TAGLIAFICO",
                         "Minute": "76'",
-                        "Player": "MESSI",
+                        "Player": "Lionel MESSI",
                         "Type": 2
                     }
                 ],
@@ -1251,23 +1309,27 @@
                 "Date": "Wednesday 17 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "20'",
                         "Player": "Romano SCHMID",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "76'",
                         "Player": "YAZAN ALARAB",
                         "Type": 3
                     },
                     {
+                        "Assist": "",
                         "Minute": "90'+12'",
-                        "Player": "ARNAUTOVIC",
+                        "Player": "Marko ARNAUTOVIC",
                         "Type": 1
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "NOOR ALRAWABDEH",
                         "Minute": "50'",
                         "Player": "ALI OLWAN",
                         "Type": 2
@@ -1295,6 +1357,7 @@
                 "Date": "Thursday 18 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Joseph ANANG",
                         "Minute": "90'+5'",
                         "Player": "Caleb YIRENKYI",
                         "Type": 2
@@ -1323,33 +1386,39 @@
                 "Date": "Thursday 18 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "12'",
-                        "Player": "KANE",
+                        "Player": "Harry KANE",
                         "Type": 1
                     },
                     {
+                        "Assist": "",
                         "Minute": "42'",
-                        "Player": "KANE",
+                        "Player": "Harry KANE",
                         "Type": 2
                     },
                     {
+                        "Assist": "Dean HENDERSON",
                         "Minute": "47'",
-                        "Player": "BELLINGHAM",
+                        "Player": "Jude BELLINGHAM",
                         "Type": 2
                     },
                     {
+                        "Assist": "Jordan HENDERSON",
                         "Minute": "85'",
-                        "Player": "RASHFORD",
+                        "Player": "Marcus RASHFORD",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Nikola VLASIC",
                         "Minute": "36'",
                         "Player": "Martin BATURINA",
                         "Type": 2
                     },
                     {
+                        "Assist": "Duje CALETA-CAR",
                         "Minute": "45'+5'",
                         "Player": "Petar MUSA",
                         "Type": 2
@@ -1377,13 +1446,15 @@
                 "Date": "Wednesday 17 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "RENATO VEIGA",
                         "Minute": "6'",
-                        "Player": "JOÃO NEVES",
+                        "Player": "JOAO NEVES",
                         "Type": 2
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Nathanael MBUKU",
                         "Minute": "45'+5'",
                         "Player": "Yoane WISSA",
                         "Type": 2
@@ -1411,6 +1482,7 @@
                 "Date": "Thursday 18 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Botirali ERGASHEV",
                         "Minute": "60'",
                         "Player": "Abbosbek FAYZULLAEV",
                         "Type": 2
@@ -1418,16 +1490,19 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "40'",
                         "Player": "Daniel MUNOZ",
                         "Type": 2
                     },
                     {
+                        "Assist": "James RODRIGUEZ",
                         "Minute": "65'",
                         "Player": "Luis DIAZ",
                         "Type": 2
                     },
                     {
+                        "Assist": "Juan PORTILLA",
                         "Minute": "90'+9'",
                         "Player": "Jaminton CAMPAZ",
                         "Type": 2
@@ -1455,6 +1530,7 @@
                 "Date": "Thursday 18 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Jan KUCHTA",
                         "Minute": "6'",
                         "Player": "Michal SADILEK",
                         "Type": 2
@@ -1462,8 +1538,9 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "83'",
-                        "Player": "MOKOENA",
+                        "Player": "Teboho MOKOENA",
                         "Type": 1
                     }
                 ],
@@ -1489,28 +1566,33 @@
                 "Date": "Friday 19 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "74'",
                         "Player": "Johan MANZAMBI",
                         "Type": 2
                     },
                     {
+                        "Assist": "Gregor KOBEL",
                         "Minute": "84'",
-                        "Player": "VARGAS",
+                        "Player": "Ruben VARGAS",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "90'",
                         "Player": "Johan MANZAMBI",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "90'+7'",
-                        "Player": "XHAKA",
+                        "Player": "Granit XHAKA",
                         "Type": 1
                     }
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Nikola KATIC",
                         "Minute": "90'+3'",
                         "Player": "Ermin MAHMIC",
                         "Type": 2
@@ -1538,31 +1620,37 @@
                 "Date": "Friday 19 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Moise BOMBITO",
                         "Minute": "16'",
                         "Player": "Cyle LARIN",
                         "Type": 2
                     },
                     {
+                        "Assist": "Tajon BUCHANAN",
                         "Minute": "29'",
                         "Player": "Jonathan DAVID",
                         "Type": 2
                     },
                     {
+                        "Assist": "Jacob SHAFFELBURG",
                         "Minute": "45'+3'",
                         "Player": "Jonathan DAVID",
                         "Type": 2
                     },
                     {
+                        "Assist": "Tani OLUWASEYI",
                         "Minute": "64'",
                         "Player": "Nathan SALIBA",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "75'",
                         "Player": "MOHAMED MANAI",
                         "Type": 3
                     },
                     {
+                        "Assist": "Joel WATERMAN",
                         "Minute": "90'+2'",
                         "Player": "Jonathan DAVID",
                         "Type": 2
@@ -1591,6 +1679,7 @@
                 "Date": "Friday 19 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "50'",
                         "Player": "Luis ROMO",
                         "Type": 2
@@ -1619,16 +1708,19 @@
                 "Date": "Saturday 20 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "23'",
                         "Player": "MATHEUS CUNHA",
                         "Type": 2
                     },
                     {
+                        "Assist": "FABINHO",
                         "Minute": "36'",
                         "Player": "MATHEUS CUNHA",
                         "Type": 2
                     },
                     {
+                        "Assist": "EDERSON",
                         "Minute": "45'+3'",
                         "Player": "VINICIUS JUNIOR",
                         "Type": 2
@@ -1658,6 +1750,7 @@
                 "Goals1": [],
                 "Goals2": [
                     {
+                        "Assist": "Ayyoub BOUADDI",
                         "Minute": "2'",
                         "Player": "Ismael SAIBARI",
                         "Type": 2
@@ -1686,6 +1779,7 @@
                 "Goals1": [],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "2'",
                         "Player": "Matias GALARZA",
                         "Type": 2
@@ -1713,11 +1807,13 @@
                 "Date": "Saturday 20 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "11'",
                         "Player": "Cameron BURGESS",
                         "Type": 3
                     },
                     {
+                        "Assist": "Sebastian BERHALTER",
                         "Minute": "43'",
                         "Player": "Alex FREEMAN",
                         "Type": 2
@@ -1739,15 +1835,35 @@
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "43036",
                 "City": "Toronto",
                 "Code1": "GER",
                 "Code2": "CIV",
                 "Date": "Sunday 21 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "Jonathan TAH",
+                        "Minute": "68'",
+                        "Player": "Deniz UNDAV",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "90'+4'",
+                        "Player": "Deniz UNDAV",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "30'",
+                        "Player": "Franck KESSIE",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group E",
-                "HT": "0 - 0",
+                "HT": "0 - 1",
                 "Match": "M33",
                 "MatchDay": null,
                 "Referee": "Juan Gabriel Benítez",
@@ -1755,13 +1871,13 @@
                 "Score2": "1",
                 "Stadium": "Toronto Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "2FT1",
                 "Team1": "Germany",
                 "Team2": "Côte d'Ivoire",
                 "Time": "2 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68598",
                 "City": "Kansas City",
                 "Code1": "ECU",
                 "Code2": "CUW",
@@ -1783,15 +1899,53 @@
                 "Time": "6 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68777",
                 "City": "Houston",
                 "Code1": "NED",
                 "Code2": "SWE",
                 "Date": "Saturday 20 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "Lutsharel GEERTRUIDA",
+                        "Minute": "5'",
+                        "Player": "Brian BROBBEY",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Wout WEGHORST",
+                        "Minute": "17'",
+                        "Player": "Brian BROBBEY",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Mark FLEKKEN",
+                        "Minute": "47'",
+                        "Player": "Cody GAKPO",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Ryan GRAVENBERCH",
+                        "Minute": "54'",
+                        "Player": "Cody GAKPO",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "89'",
+                        "Player": "Crysencio SUMMERVILLE",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "Yasin AYARI",
+                        "Minute": "59'",
+                        "Player": "Anthony ELANGA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group F",
-                "HT": "0 - 0",
+                "HT": "2 - 0",
                 "Match": "M35",
                 "MatchDay": null,
                 "Referee": "Michael Oliver",
@@ -1799,21 +1953,46 @@
                 "Score2": "1",
                 "Stadium": "Houston Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "5FT1",
                 "Team1": "Netherlands",
                 "Team2": "Sweden",
                 "Time": "11 PM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "51243",
                 "City": "Monterrey",
                 "Code1": "TUN",
                 "Code2": "JPN",
                 "Date": "Sunday 21 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Assist": "Keisuke GOTO",
+                        "Minute": "4'",
+                        "Player": "Daichi KAMADA",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "31'",
+                        "Player": "Ayase UEDA",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "69'",
+                        "Player": "Junya ITO",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "83'",
+                        "Player": "Ayase UEDA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group F",
-                "HT": "0 - 0",
+                "HT": "0 - 2",
                 "Match": "M36",
                 "MatchDay": null,
                 "Referee": "Istvan Kovacs",
@@ -1821,21 +2000,47 @@
                 "Score2": "4",
                 "Stadium": "Monterrey Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "0FT4",
                 "Team1": "Tunisia",
                 "Team2": "Japan",
                 "Time": "10 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "64003",
                 "City": "Miami",
                 "Code1": "URU",
                 "Code2": "CPV",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "Jose Maria GIMENEZ",
+                        "Minute": "44'",
+                        "Player": "Maxi ARAUJO",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Joaquin PIQUEREZ",
+                        "Minute": "45'+6'",
+                        "Player": "Agustin CANOBBIO",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "21'",
+                        "Player": "KEVIN PINA",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "61'",
+                        "Player": "HELIO VARELA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group H",
-                "HT": "0 - 0",
+                "HT": "2 - 1",
                 "Match": "M37",
                 "MatchDay": null,
                 "Referee": "Espen Eskås",
@@ -1843,21 +2048,46 @@
                 "Score2": "2",
                 "Stadium": "Miami Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "2FT2",
                 "Team1": "Uruguay",
                 "Team2": "Cabo Verde",
                 "Time": "4 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68239",
                 "City": "Atlanta",
                 "Code1": "ESP",
                 "Code2": "KSA",
                 "Date": "Sunday 21 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Assist": "Marcos LLORENTE",
+                        "Minute": "10'",
+                        "Player": "Lamine YAMAL",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Mikel MERINO",
+                        "Minute": "21'",
+                        "Player": "Mikel OYARZABAL",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Eric GARCIA",
+                        "Minute": "24'",
+                        "Player": "Mikel OYARZABAL",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "49'",
+                        "Player": "HASSAN ALTAMBAKTI",
+                        "Type": 3
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group H",
-                "HT": "0 - 0",
+                "HT": "3 - 0",
                 "Match": "M38",
                 "MatchDay": null,
                 "Referee": "Raphael Claus",
@@ -1865,13 +2095,13 @@
                 "Score2": "0",
                 "Stadium": "Atlanta Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "4FT0",
                 "Team1": "Spain",
                 "Team2": "Saudi Arabia",
                 "Time": "10 PM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "70317",
                 "City": "Los Angeles",
                 "Code1": "BEL",
                 "Code2": "IRN",
@@ -1893,15 +2123,41 @@
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "52497",
                 "City": "Vancouver",
                 "Code1": "NZL",
                 "Code2": "EGY",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "Alex PAULSEN",
+                        "Minute": "15'",
+                        "Player": "Finn SURMAN",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "58'",
+                        "Player": "MOSTAFA ZICO",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "67'",
+                        "Player": "MOHAMED SALAH",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "NABIL DONGA",
+                        "Minute": "82'",
+                        "Player": "TREZEGUET",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group G",
-                "HT": "0 - 0",
+                "HT": "1 - 0",
                 "Match": "M40",
                 "MatchDay": null,
                 "Referee": "Omar Mohamed Al Ali",
@@ -1909,21 +2165,53 @@
                 "Score2": "3",
                 "Stadium": "BC Place Vancouver",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "1FT3",
                 "Team1": "New Zealand",
                 "Team2": "Egypt",
                 "Time": "7 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "80663",
                 "City": "New Jersey",
                 "Code1": "NOR",
                 "Code2": "SEN",
                 "Date": "Tuesday 23 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "Fredrik AURSNES",
+                        "Minute": "43'",
+                        "Player": "Marcus HOLMGREN PEDERSEN",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Patrick BERG",
+                        "Minute": "48'",
+                        "Player": "Erling HAALAND",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "58'",
+                        "Player": "Erling HAALAND",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "Nicolas JACKSON",
+                        "Minute": "53'",
+                        "Player": "Ismaila SARR",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Pape Matar SARR",
+                        "Minute": "90'+3'",
+                        "Player": "Ismaila SARR",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group I",
-                "HT": "0 - 0",
+                "HT": "1 - 0",
                 "Match": "M41",
                 "MatchDay": null,
                 "Referee": "Wilton SAMPAIO",
@@ -1931,21 +2219,40 @@
                 "Score2": "2",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "3FT2",
                 "Team1": "Norway",
                 "Team2": "Senegal",
                 "Time": "6 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68324",
                 "City": "Philadelphia",
                 "Code1": "FRA",
                 "Code2": "IRQ",
                 "Date": "Tuesday 23 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Assist": "",
+                        "Minute": "14'",
+                        "Player": "Kylian MBAPPE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Bradley BARCOLA",
+                        "Minute": "54'",
+                        "Player": "Kylian MBAPPE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "66'",
+                        "Player": "Ousmane DEMBELE",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group I",
-                "HT": "0 - 0",
+                "HT": "1 - 0",
                 "Match": "M42",
                 "MatchDay": null,
                 "Referee": "Drew Fischer",
@@ -1953,21 +2260,34 @@
                 "Score2": "0",
                 "Stadium": "Philadelphia Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "3FT0",
                 "Team1": "France",
                 "Team2": "Iraq",
                 "Time": "3 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "70649",
                 "City": "Dallas",
                 "Code1": "ARG",
                 "Code2": "AUT",
                 "Date": "Monday 22 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Assist": "Rodrigo DE PAUL",
+                        "Minute": "38'",
+                        "Player": "Lionel MESSI",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Juan MUSSO",
+                        "Minute": "90'+5'",
+                        "Player": "Lionel MESSI",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group J",
-                "HT": "0 - 0",
+                "HT": "1 - 0",
                 "Match": "M43",
                 "MatchDay": null,
                 "Referee": "Amin Mohamed Omar",
@@ -1975,7 +2295,7 @@
                 "Score2": "0",
                 "Stadium": "Dallas Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "2FT0",
                 "Team1": "Argentina",
                 "Team2": "Austria",
                 "Time": "11 PM BST"
@@ -1988,6 +2308,7 @@
                 "Date": "Tuesday 23 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "36'",
                         "Player": "NIZAR ALRASHDAN",
                         "Type": 2
@@ -1995,11 +2316,13 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Rafik BELGHALI",
                         "Minute": "69'",
                         "Player": "Nadhir BENBOUALI",
                         "Type": 2
                     },
                     {
+                        "Assist": "Ramy BENSEBAINI",
                         "Minute": "82'",
                         "Player": "Amine GOUIRI",
                         "Type": 2
@@ -2050,6 +2373,7 @@
                 "Goals1": [],
                 "Goals2": [
                     {
+                        "Assist": "Igor MATANOVIC",
                         "Minute": "54'",
                         "Player": "Ante BUDIMIR",
                         "Type": 2
@@ -2077,26 +2401,31 @@
                 "Date": "Tuesday 23 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "RUBEN DIAS",
                         "Minute": "6'",
                         "Player": "CRISTIANO RONALDO",
                         "Type": 2
                     },
                     {
+                        "Assist": "PEDRO NETO",
                         "Minute": "17'",
                         "Player": "NUNO MENDES",
                         "Type": 2
                     },
                     {
+                        "Assist": "BRUNO FERNANDES",
                         "Minute": "39'",
                         "Player": "CRISTIANO RONALDO",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "60'",
                         "Player": "Abduvohid NEMATOV",
                         "Type": 3
                     },
                     {
+                        "Assist": "GONCALO RAMOS",
                         "Minute": "87'",
                         "Player": "RAFAEL LEAO",
                         "Type": 2
@@ -2125,6 +2454,7 @@
                 "Date": "Wednesday 24 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Davinson SANCHEZ",
                         "Minute": "76'",
                         "Player": "Daniel MUNOZ",
                         "Type": 2
@@ -2154,16 +2484,19 @@
                 "Goals1": [],
                 "Goals2": [
                     {
+                        "Assist": "ALEX SANDRO",
                         "Minute": "7'",
                         "Player": "VINICIUS JUNIOR",
                         "Type": 2
                     },
                     {
+                        "Assist": "LEO PEREIRA",
                         "Minute": "45'+3'",
                         "Player": "VINICIUS JUNIOR",
                         "Type": 2
                     },
                     {
+                        "Assist": "EDERSON SILVA",
                         "Minute": "60'",
                         "Player": "MATHEUS CUNHA",
                         "Type": 2
@@ -2191,21 +2524,25 @@
                 "Date": "Thursday 25 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Yassine BOUNOU",
                         "Minute": "39'",
                         "Player": "Achraf HAKIMI",
                         "Type": 2
                     },
                     {
+                        "Assist": "Achraf HAKIMI",
                         "Minute": "45'+1'",
                         "Player": "Ismael SAIBARI",
                         "Type": 2
                     },
                     {
+                        "Assist": "Noussair MAZRAOUI",
                         "Minute": "78'",
                         "Player": "Soufiane RAHIMI",
                         "Type": 2
                     },
                     {
+                        "Assist": "Chemsdine TALBI",
                         "Minute": "89'",
                         "Player": "Gessime YASSINE",
                         "Type": 2
@@ -2213,11 +2550,13 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "10'",
                         "Player": "Yassine BOUNOU",
                         "Type": 3
                     },
                     {
+                        "Assist": "Josue DUVERGER",
                         "Minute": "43'",
                         "Player": "Wilson ISIDOR",
                         "Type": 2
@@ -2245,11 +2584,13 @@
                 "Date": "Thursday 25 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Johan MANZAMBI",
                         "Minute": "46'",
                         "Player": "Ruben VARGAS",
                         "Type": 2
                     },
                     {
+                        "Assist": "Silvan WIDMER",
                         "Minute": "57'",
                         "Player": "Johan MANZAMBI",
                         "Type": 2
@@ -2257,6 +2598,7 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Joel WATERMAN",
                         "Minute": "76'",
                         "Player": "Promise DAVID",
                         "Type": 2
@@ -2284,16 +2626,19 @@
                 "Date": "Thursday 25 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "29'",
                         "Player": "Kerim ALAJBEGOVIC",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "34'",
                         "Player": "MAHMOUD ABUNADA",
                         "Type": 3
                     },
                     {
+                        "Assist": "",
                         "Minute": "80'",
                         "Player": "Ermin MAHMIC",
                         "Type": 2
@@ -2301,6 +2646,7 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "AHMED ALAAELDIN",
                         "Minute": "42'",
                         "Player": "HASSAN ALHAYDOS",
                         "Type": 2
@@ -2329,13 +2675,21 @@
                 "Goals1": [],
                 "Goals2": [
                     {
+                        "Assist": "Alvaro FIDALGO",
                         "Minute": "55'",
                         "Player": "Mateo CHAVEZ",
                         "Type": 2
                     },
                     {
+                        "Assist": "Alvaro FIDALGO",
                         "Minute": "61'",
                         "Player": "Julian QUINONES",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Luis ROMO",
+                        "Minute": "90'+4'",
+                        "Player": "Alvaro FIDALGO",
                         "Type": 2
                     }
                 ],
@@ -2348,7 +2702,7 @@
                 "Score2": "3",
                 "Stadium": "Mexico City Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT2",
+                "Status": "0FT3",
                 "Team1": "Czechia",
                 "Team2": "Mexico",
                 "Time": "7 AM BST"
@@ -2361,6 +2715,7 @@
                 "Date": "Thursday 25 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Kamogelo SEBELEBELE",
                         "Minute": "63'",
                         "Player": "Thapelo MASEKO",
                         "Type": 2
@@ -2382,15 +2737,28 @@
                 "Time": "7 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68324",
                 "City": "Philadelphia",
                 "Code1": "CUW",
                 "Code2": "CIV",
                 "Date": "Friday 26 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "7'",
+                        "Player": "Nicolas PEPE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Christopher OPERI",
+                        "Minute": "64'",
+                        "Player": "Nicolas PEPE",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group E",
-                "HT": "0 - 0",
+                "HT": "0 - 1",
                 "Match": "M55",
                 "MatchDay": null,
                 "Referee": "Glenn Nyberg",
@@ -2398,21 +2766,41 @@
                 "Score2": "2",
                 "Stadium": "Philadelphia Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "0FT2",
                 "Team1": "Curaçao",
                 "Team2": "Côte d'Ivoire",
                 "Time": "2 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "80663",
                 "City": "New Jersey",
                 "Code1": "ECU",
                 "Code2": "GER",
                 "Date": "Friday 26 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "Alan FRANCO",
+                        "Minute": "9'",
+                        "Player": "Nilson ANGULO",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Yaimar MEDINA",
+                        "Minute": "77'",
+                        "Player": "Gonzalo PLATA",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "Antonio RUEDIGER",
+                        "Minute": "2'",
+                        "Player": "Leroy SANE",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group E",
-                "HT": "0 - 0",
+                "HT": "1 - 1",
                 "Match": "M56",
                 "MatchDay": null,
                 "Referee": "Tori Penso",
@@ -2420,19 +2808,33 @@
                 "Score2": "1",
                 "Stadium": "New York/New Jersey Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "2FT1",
                 "Team1": "Ecuador",
                 "Team2": "Germany",
                 "Time": "2 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "70137",
                 "City": "Dallas",
                 "Code1": "JPN",
                 "Code2": "SWE",
                 "Date": "Friday 26 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "",
+                        "Minute": "56'",
+                        "Player": "Daizen MAEDA",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "Daniel SVENSSON",
+                        "Minute": "62'",
+                        "Player": "Anthony ELANGA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group F",
                 "HT": "0 - 0",
                 "Match": "M57",
@@ -2442,21 +2844,47 @@
                 "Score2": "1",
                 "Stadium": "Dallas Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "1FT1",
                 "Team1": "Japan",
                 "Team2": "Sweden",
                 "Time": "5 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68391",
                 "City": "Kansas City",
                 "Code1": "TUN",
                 "Code2": "NED",
                 "Date": "Friday 26 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "Sebastian TOUNEKTI",
+                        "Minute": "54'",
+                        "Player": "Hazem MASTOURI",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "3'",
+                        "Player": "Ellyes SKHIRI",
+                        "Type": 3
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "7'",
+                        "Player": "Brian BROBBEY",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Mark FLEKKEN",
+                        "Minute": "62'",
+                        "Player": "Jan Paul VAN HECKE",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group F",
-                "HT": "0 - 0",
+                "HT": "0 - 2",
                 "Match": "M58",
                 "MatchDay": null,
                 "Referee": "Katia Itzel García",
@@ -2464,21 +2892,53 @@
                 "Score2": "3",
                 "Stadium": "Kansas City Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "1FT3",
                 "Team1": "Tunisia",
                 "Team2": "Netherlands",
                 "Time": "5 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "70492",
                 "City": "Los Angeles",
                 "Code1": "TUR",
                 "Code2": "USA",
                 "Date": "Friday 26 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "Yunus AKGUN",
+                        "Minute": "10'",
+                        "Player": "Arda GULER",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "31'",
+                        "Player": "Baris Alper YILMAZ",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Orkun KOKCU",
+                        "Minute": "90'+8'",
+                        "Player": "Kaan AYHAN",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "3'",
+                        "Player": "Auston TRUSTY",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Haji WRIGHT",
+                        "Minute": "49'",
+                        "Player": "Sebastian BERHALTER",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group D",
-                "HT": "0 - 0",
+                "HT": "2 - 1",
                 "Match": "M59",
                 "MatchDay": null,
                 "Referee": "Mustapha Ghorbal",
@@ -2486,13 +2946,13 @@
                 "Score2": "2",
                 "Stadium": "Los Angeles Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "3FT2",
                 "Team1": "Türkiye",
                 "Team2": "USA",
                 "Time": "8 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68827",
                 "City": "San Francisco Bay Area",
                 "Code1": "PAR",
                 "Code2": "AUS",
@@ -2514,15 +2974,47 @@
                 "Time": "8 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "64146",
                 "City": "Boston",
                 "Code1": "NOR",
                 "Code2": "FRA",
                 "Date": "Saturday 27 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "",
+                        "Minute": "21'",
+                        "Player": "Thelo AASGAARD",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "Aurelien TCHOUAMENI",
+                        "Minute": "7'",
+                        "Player": "Ousmane DEMBELE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Adrien RABIOT",
+                        "Minute": "20'",
+                        "Player": "Ousmane DEMBELE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Warren ZAIRE-EMERY",
+                        "Minute": "32'",
+                        "Player": "Ousmane DEMBELE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Rayan CHERKI",
+                        "Minute": "90'+4'",
+                        "Player": "Desire DOUE",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group I",
-                "HT": "0 - 0",
+                "HT": "1 - 3",
                 "Match": "M61",
                 "MatchDay": null,
                 "Referee": "Michael Oliver",
@@ -2530,21 +3022,52 @@
                 "Score2": "4",
                 "Stadium": "Boston Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "1FT4",
                 "Team1": "Norway",
                 "Team2": "France",
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "43036",
                 "City": "Toronto",
                 "Code1": "SEN",
                 "Code2": "IRQ",
                 "Date": "Saturday 27 June 2026",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Assist": "Cherif NDIAYE",
+                        "Minute": "4'",
+                        "Player": "Habib DIARRA",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Mamadou SARR",
+                        "Minute": "56'",
+                        "Player": "Ismaila SARR",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Cherif NDIAYE",
+                        "Minute": "59'",
+                        "Player": "Pape GUEYE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Moussa NIAKHATE",
+                        "Minute": "71'",
+                        "Player": "Pape GUEYE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Pathe CISS",
+                        "Minute": "82'",
+                        "Player": "Iliman NDIAYE",
+                        "Type": 2
+                    }
+                ],
                 "Goals2": [],
                 "Group_or_Match": "Group I",
-                "HT": "0 - 0",
+                "HT": "1 - 0",
                 "Match": "M62",
                 "MatchDay": null,
                 "Referee": "Anthony Taylor",
@@ -2552,21 +3075,35 @@
                 "Score2": "0",
                 "Stadium": "Toronto Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "5FT0",
                 "Team1": "Senegal",
                 "Team2": "Iraq",
                 "Time": "1 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "66925",
                 "City": "Seattle",
                 "Code1": "EGY",
                 "Code2": "IRN",
                 "Date": "Saturday 27 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "MARAWAN ATTIA",
+                        "Minute": "5'",
+                        "Player": "MAHMOUD SABER",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "14'",
+                        "Player": "Ramin REZAEIAN",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group G",
-                "HT": "0 - 0",
+                "HT": "1 - 1",
                 "Match": "M63",
                 "MatchDay": null,
                 "Referee": "Szymon MARCINIAK",
@@ -2574,21 +3111,59 @@
                 "Score2": "1",
                 "Stadium": "Seattle Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "1FT1",
                 "Team1": "Egypt",
                 "Team2": "IR Iran",
                 "Time": "9 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "52497",
                 "City": "Vancouver",
                 "Code1": "NZL",
                 "Code2": "BEL",
                 "Date": "Saturday 27 June 2026",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Assist": "",
+                        "Minute": "84'",
+                        "Player": "Elijah JUST",
+                        "Type": 2
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "28'",
+                        "Player": "Leandro TROSSARD",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "",
+                        "Minute": "50'",
+                        "Player": "Leandro TROSSARD",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Brandon MECHELE",
+                        "Minute": "66'",
+                        "Player": "Kevin DE BRUYNE",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Charles DE KETELAERE",
+                        "Minute": "86'",
+                        "Player": "Romelu LUKAKU",
+                        "Type": 2
+                    },
+                    {
+                        "Assist": "Youri TIELEMANS",
+                        "Minute": "90'+4'",
+                        "Player": "Alexis SAELEMAEKERS",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group G",
-                "HT": "0 - 0",
+                "HT": "0 - 1",
                 "Match": "M64",
                 "MatchDay": null,
                 "Referee": "Adham Mohammad Tumah Makhadmeh",
@@ -2596,13 +3171,13 @@
                 "Score2": "5",
                 "Stadium": "BC Place Vancouver",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "1FT5",
                 "Team1": "New Zealand",
                 "Team2": "Belgium",
                 "Time": "9 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "68278",
                 "City": "Houston",
                 "Code1": "CPV",
                 "Code2": "KSA",
@@ -2624,15 +3199,22 @@
                 "Time": "6 AM BST"
             },
             {
-                "Attendance": 0,
+                "Attendance": "45065",
                 "City": "Guadalajara",
                 "Code1": "URU",
                 "Code2": "ESP",
                 "Date": "Saturday 27 June 2026",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Assist": "",
+                        "Minute": "42'",
+                        "Player": "Alex BAENA",
+                        "Type": 2
+                    }
+                ],
                 "Group_or_Match": "Group H",
-                "HT": "0 - 0",
+                "HT": "0 - 1",
                 "Match": "M66",
                 "MatchDay": null,
                 "Referee": "Ismail Elfath",
@@ -2640,7 +3222,7 @@
                 "Score2": "1",
                 "Stadium": "Guadalajara Stadium",
                 "Stage": "First Stage",
-                "Status": "0FT0",
+                "Status": "0FT1",
                 "Team1": "Uruguay",
                 "Team2": "Spain",
                 "Time": "6 AM BST"
@@ -2654,11 +3236,13 @@
                 "Goals1": [],
                 "Goals2": [
                     {
+                        "Assist": "Ezri KONSA",
                         "Minute": "62'",
                         "Player": "Jude BELLINGHAM",
                         "Type": 2
                     },
                     {
+                        "Assist": "Anthony GORDON",
                         "Minute": "67'",
                         "Player": "Harry KANE",
                         "Type": 2
@@ -2686,11 +3270,13 @@
                 "Date": "Sunday 28 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "31'",
                         "Player": "Petar SUCIC",
                         "Type": 2
                     },
                     {
+                        "Assist": "Mateo KOVACIC",
                         "Minute": "83'",
                         "Player": "Nikola VLASIC",
                         "Type": 2
@@ -2698,6 +3284,7 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Joseph ANANG",
                         "Minute": "73'",
                         "Player": "Derrick LUCKASSEN",
                         "Type": 2
@@ -2725,16 +3312,19 @@
                 "Date": "Sunday 28 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "Fares CHAIBI",
                         "Minute": "45'",
                         "Player": "Rafik BELGHALI",
                         "Type": 2
                     },
                     {
+                        "Assist": "Achref ABADA",
                         "Minute": "60'",
                         "Player": "Riyad MAHREZ",
                         "Type": 2
                     },
                     {
+                        "Assist": "Anis HADJ MOUSSA",
                         "Minute": "90'+3'",
                         "Player": "Riyad MAHREZ",
                         "Type": 2
@@ -2742,16 +3332,19 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "28'",
                         "Player": "Marko ARNAUTOVIC",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "55'",
                         "Player": "Marcel SABITZER",
                         "Type": 2
                     },
                     {
+                        "Assist": "Marcel SABITZER",
                         "Minute": "90'+6'",
                         "Player": "Sasa KALAJDZIC",
                         "Type": 2
@@ -2779,6 +3372,7 @@
                 "Date": "Sunday 28 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "YAZEED ABULAILA",
                         "Minute": "55'",
                         "Player": "MOUSA ALTAMARI",
                         "Type": 2
@@ -2786,16 +3380,19 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "",
                         "Minute": "19'",
                         "Player": "Giovani LO CELSO",
                         "Type": 2
                     },
                     {
+                        "Assist": "",
                         "Minute": "31'",
                         "Player": "Lautaro MARTINEZ",
                         "Type": 1
                     },
                     {
+                        "Assist": "",
                         "Minute": "80'",
                         "Player": "Lionel MESSI",
                         "Type": 2
@@ -2845,16 +3442,19 @@
                 "Date": "Sunday 28 June 2026",
                 "Goals1": [
                     {
+                        "Assist": "",
                         "Minute": "68'",
                         "Player": "Yoane WISSA",
                         "Type": 1
                     },
                     {
+                        "Assist": "Dylan BATUBINSIKA",
                         "Minute": "78'",
                         "Player": "Fiston MAYELE",
                         "Type": 2
                     },
                     {
+                        "Assist": "Steve KAPUADI",
                         "Minute": "90'+1'",
                         "Player": "Yoane WISSA",
                         "Type": 2
@@ -2862,6 +3462,7 @@
                 ],
                 "Goals2": [
                     {
+                        "Assist": "Abbosbek FAYZULLAEV",
                         "Minute": "10'",
                         "Player": "Eldor SHOMURODOV",
                         "Type": 2
@@ -3237,6 +3838,7 @@
                     "Goals1": [],
                     "Goals2": [
                         {
+                            "Assist": "Alphonso DAVIES",
                             "Minute": "90'+2'",
                             "Player": "Stephen EUSTAQUIO",
                             "Type": 2

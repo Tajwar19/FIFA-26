@@ -2087,6 +2087,29 @@
                         </div>
                     </div>
 
+                    <!-- Top Assists Card -->
+                    <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
+                        <div class="group-header">
+                            👟 Top Assists
+                            <span style="color: var(--accent-cyan);">Playmakers Race</span>
+                        </div>
+                        <div style="overflow-x: auto;">
+                            <table class="standings-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50px; text-align: center;">Rank</th>
+                                        <th>Player</th>
+                                        <th>Team</th>
+                                        <th style="width: 70px; text-align: center;">Assists</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="stats-assists-root">
+                                    <!-- Dynamic assists rendering -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                     <!-- Team Records / Goals Card -->
                     <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
                         <div class="group-header">
@@ -2506,12 +2529,14 @@
         // Render Statistics Tab
         function renderStatsTab(matchesList, standingsData) {
             const scorersRoot = document.getElementById('stats-scorers-root');
+            const assistsRoot = document.getElementById('stats-assists-root');
             const attackingRoot = document.getElementById('stats-teams-attacking-root');
             const defensiveRoot = document.getElementById('stats-teams-defensive-root');
             const recordsRoot = document.getElementById('stats-records-root');
 
             if (!matchesList || matchesList.length === 0 || !standingsData || Object.keys(standingsData).length === 0) {
                 if (scorersRoot) scorersRoot.innerHTML = '<tr><td colspan="4" class="empty-state">No stats data available.</td></tr>';
+                if (assistsRoot) assistsRoot.innerHTML = '<tr><td colspan="4" class="empty-state">No stats data available.</td></tr>';
                 return;
             }
 
@@ -2522,6 +2547,7 @@
             let playedMatchesWithAtt = 0;
 
             const playerGoals = {};
+            const playerAssists = {};
             const playerTeams = {};
 
             let highestScoringMatch = null;
@@ -2551,7 +2577,7 @@
                         }
                     }
 
-                    // Process Scorers
+                    // Process Scorers and Assists
                     const processGoals = (goalsList, teamName, teamCode) => {
                         if (!goalsList) return;
                         goalsList.forEach(g => {
@@ -2559,6 +2585,11 @@
                                 const pName = g.Player.trim();
                                 playerGoals[pName] = (playerGoals[pName] || 0) + 1;
                                 playerTeams[pName] = teamCode || cleanTeamName(teamName);
+                            }
+                            if (g.Assist) {
+                                const aName = g.Assist.trim();
+                                playerAssists[aName] = (playerAssists[aName] || 0) + 1;
+                                playerTeams[aName] = teamCode || cleanTeamName(teamName);
                             }
                         });
                     };
@@ -2613,7 +2644,7 @@
                                 <td style="font-weight:600;">${player}</td>
                                 <td>
                                     <div class="team-name-cell" style="font-size:0.8rem;">
-                                        ${getTeamFlagHtml(null, teamCode, 'bracket')}
+                                         ${getTeamFlagHtml(null, teamCode, 'bracket')}
                                         <span>${teamCode}</span>
                                     </div>
                                 </td>
@@ -2622,6 +2653,45 @@
                         `;
                     });
                 }
+            }
+
+            // 2.2. Render Top Assists Table
+            const sortedAssists = Object.entries(playerAssists).sort((a, b) => b[1] - a[1]);
+            if (assistsRoot) {
+                assistsRoot.innerHTML = '';
+                if (sortedAssists.length === 0) {
+                    assistsRoot.innerHTML = '<tr><td colspan="4" class="empty-state" style="border:none; text-align:center;">No assists recorded yet.</td></tr>';
+                } else {
+                    let lastAssists = -1;
+                    let currentRank = 0;
+                    sortedAssists.slice(0, 10).forEach(([player, assists], idx) => {
+                        if (assists !== lastAssists) {
+                            currentRank = idx + 1;
+                            lastAssists = assists;
+                        }
+                        
+                        let rankText = currentRank;
+                        if (currentRank === 1) rankText = '🥇';
+                        else if (currentRank === 2) rankText = '🥈';
+                        else if (currentRank === 3) rankText = '🥉';
+
+                        const teamCode = playerTeams[player] || '';
+                        assistsRoot.innerHTML += `
+                            <tr>
+                                <td class="num-bold" style="text-align: center;">${rankText}</td>
+                                <td style="font-weight:600;">${player}</td>
+                                <td>
+                                    <div class="team-name-cell" style="font-size:0.8rem;">
+                                         ${getTeamFlagHtml(null, teamCode, 'bracket')}
+                                        <span>${teamCode}</span>
+                                    </div>
+                                </td>
+                                <td class="points-highlight" style="text-align: center; font-size:1rem;">${assists}</td>
+                            </tr>
+                        `;
+                    });
+                }
+            }        }
             }
 
             // 3. Team Statistics: Attacking & Defending
