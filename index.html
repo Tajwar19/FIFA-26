@@ -2404,40 +2404,57 @@
 
         <!-- Tab 1: Knockout Bracket -->
         <div class="tab-panel" id="panel-bracket">
-            <!-- Bracket zoom/focus controls -->
-            <div class="bracket-controls">
-                <div class="zoom-controls">
-                    <button class="control-btn" onclick="adjustZoom(0.1)" title="Zoom In">
-                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                        </svg>
-                    </button>
-                    <button class="control-btn" onclick="adjustZoom(-0.1)" title="Zoom Out">
-                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
-                        </svg>
-                    </button>
-                    <button class="control-btn" onclick="resetZoom()" title="Reset Zoom">100%</button>
-                    <button class="control-btn" onclick="zoomToFit()" title="Fit Screen">Fit Screen</button>
-                </div>
-                <div class="round-focus-controls">
-                    <span class="focus-label">Zoom to Round:</span>
-                    <button class="focus-btn" onclick="zoomToFitColumns(0, 8)" id="btn-focus-r32">Round of 32</button>
-                    <button class="focus-btn" onclick="zoomToFitColumns(1, 7)" id="btn-focus-r16">Round of 16</button>
-                    <button class="focus-btn" onclick="zoomToFitColumns(2, 6)" id="btn-focus-r8">Round of 8</button>
-                    <button class="focus-btn" onclick="zoomToFitColumns(3, 5)" id="btn-focus-r4">Semi-finals</button>
-                    <button class="focus-btn" onclick="zoomToFitColumns(4, 4)" id="btn-focus-finals">Finals</button>
+            <div style="text-align: center; margin-bottom: 0.75rem;">
+                <div class="toggle-btn-group">
+                    <button class="toggle-btn active" id="btn-ko-bracket" onclick="switchKnockoutView('bracket')">Symmetric Bracket</button>
+                    <button class="toggle-btn" id="btn-ko-fixtures" onclick="switchKnockoutView('fixtures')">Knockout Fixtures</button>
                 </div>
             </div>
 
-            <div class="bracket-scroll-wrapper">
-                <div class="bracket-container" id="bracket-root" style="position: relative;">
-                    <!-- SVG overlay for connector lines -->
-                    <svg id="bracket-connectors"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"></svg>
-                    <!-- Dynamic rendering in JS -->
+            <!-- Bracket View Container -->
+            <div id="ko-view-bracket">
+                <!-- Bracket zoom/focus controls -->
+                <div class="bracket-controls">
+                    <div class="zoom-controls">
+                        <button class="control-btn" onclick="adjustZoom(0.1)" title="Zoom In">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </button>
+                        <button class="control-btn" onclick="adjustZoom(-0.1)" title="Zoom Out">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                            </svg>
+                        </button>
+                        <button class="control-btn" onclick="resetZoom()" title="Reset Zoom">100%</button>
+                        <button class="control-btn" onclick="zoomToFit()" title="Fit Screen">Fit Screen</button>
+                    </div>
+                    <div class="round-focus-controls">
+                        <span class="focus-label">Zoom to Round:</span>
+                        <button class="focus-btn" onclick="zoomToFitColumns(0, 8)" id="btn-focus-r32">Round of 32</button>
+                        <button class="focus-btn" onclick="zoomToFitColumns(1, 7)" id="btn-focus-r16">Round of 16</button>
+                        <button class="focus-btn" onclick="zoomToFitColumns(2, 6)" id="btn-focus-r8">Round of 8</button>
+                        <button class="focus-btn" onclick="zoomToFitColumns(3, 5)" id="btn-focus-r4">Semi-finals</button>
+                        <button class="focus-btn" onclick="zoomToFitColumns(4, 4)" id="btn-focus-finals">Finals</button>
+                    </div>
+                </div>
+
+                <div class="bracket-scroll-wrapper">
+                    <div class="bracket-container" id="bracket-root" style="position: relative;">
+                        <!-- SVG overlay for connector lines -->
+                        <svg id="bracket-connectors"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"></svg>
+                        <!-- Dynamic rendering in JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fixtures View Container -->
+            <div id="ko-view-fixtures" style="display: none;">
+                <div class="matches-list" id="ko-fixtures-root">
+                    <!-- Dynamic fixtures rendering -->
                 </div>
             </div>
         </div>
