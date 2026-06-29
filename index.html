@@ -4694,6 +4694,626 @@
             fetchDashboardData();
             updateNavHeight();
         });
+
+        // --- Premium Stats & Knockout Sub-navigation Logic ---
+
+        function switchStatsSubTab(subTabId) {
+            const subPanels = ['overview', 'scorers', 'teams', 'players'];
+            subPanels.forEach(p => {
+                const btn = document.getElementById('btn-stats-' + p);
+                const panel = document.getElementById('sub-panel-' + p);
+                if (btn) {
+                    if (p === subTabId) btn.classList.add('active');
+                    else btn.classList.remove('active');
+                }
+                if (panel) {
+                    if (p === subTabId) panel.classList.add('active');
+                    else panel.classList.remove('active');
+                }
+            });
+            if (subTabId === 'players') {
+                handleProfilePlayerChange();
+            }
+        }
+
+        function switchKnockoutView(viewId) {
+            const btnBracket = document.getElementById('btn-ko-bracket');
+            const btnFixtures = document.getElementById('btn-ko-fixtures');
+            const viewBracket = document.getElementById('ko-view-bracket');
+            const viewFixtures = document.getElementById('ko-view-fixtures');
+
+            if (viewId === 'bracket') {
+                btnBracket.classList.add('active');
+                btnFixtures.classList.remove('active');
+                viewBracket.style.display = 'block';
+                viewFixtures.style.display = 'none';
+                setTimeout(() => {
+                    initBracketPanZoom();
+                    zoomToFit();
+                }, 50);
+            } else {
+                btnBracket.classList.remove('active');
+                btnFixtures.classList.add('active');
+                viewBracket.style.display = 'none';
+                viewFixtures.style.display = 'block';
+            }
+        }
+
+        function createMatchCard(m) {
+            const card = document.createElement('div');
+            
+            // Determine card border color class based on Group/Stage
+            let groupBorderClass = 'border-grey';
+            if (m.Stage.toLowerCase().includes('first stage')) {
+                const grp = m.Group_or_Match || '';
+                if (grp.includes('Group A') || grp.includes('Group B') || grp.includes('Group C')) {
+                    groupBorderClass = 'border-grey';
+                } else if (grp.includes('Group d') || grp.includes('Group D') || grp.includes('Group E') || grp.includes('Group F')) {
+                    groupBorderClass = 'border-gold';
+                } else if (grp.includes('Group G') || grp.includes('Group H') || grp.includes('Group I')) {
+                    groupBorderClass = 'border-green';
+                } else if (grp.includes('Group J') || grp.includes('Group K') || grp.includes('Group L')) {
+                    groupBorderClass = 'border-cyan';
+                }
+            } else {
+                groupBorderClass = 'border-knockout';
+            }
+
+            card.className = `match-card ${groupBorderClass}`;
+            card.style.cursor = 'pointer';
+            card.onclick = () => openMatchCenter(m.Match);
+            card.setAttribute('data-team1', m.Team1.toLowerCase());
+            card.setAttribute('data-team2', m.Team2.toLowerCase());
+            card.setAttribute('data-stage', m.Stage);
+            card.setAttribute('data-date', m.Date);
+            card.setAttribute('data-group', m.Group_or_Match || '');
+
+            const score1 = m.Score1 !== null && m.Score1 !== undefined ? m.Score1 : '';
+            const score2 = m.Score2 !== null && m.Score2 !== undefined ? m.Score2 : '';
+
+            const isPlayed = score1 !== '' && score2 !== '';
+            const scoreText = isPlayed ? `${score1} - ${score2}` : 'vs';
+            const scoreClass = isPlayed ? '' : 'vs';
+
+            // Format Stage Label to e.g. Grp L · MD1
+            let stageLabel = m.Stage;
+            if (m.Stage.toLowerCase().includes('first stage')) {
+                const grpLetter = m.Group_or_Match ? m.Group_or_Match.replace('Group ', '') : '';
+                stageLabel = `Grp ${grpLetter} · MD${m.MatchDay || 1}`;
+            }
+
+            // Time display
+            const timeDisplay = m.Time || 'TBD';
+
+            // Highlight winning team name
+            let t1WinnerClass = '';
+            let t2WinnerClass = '';
+            if (isPlayed) {
+                const s1 = parseInt(score1) || 0;
+                const s2 = parseInt(score2) || 0;
+                if (s1 > s2) {
+                    t1WinnerClass = 'winner';
+                } else if (s2 > s1) {
+                    t2WinnerClass = 'winner';
+                }
+            }
+
+            // Symmetrical Goal Scorers
+            let scorersHtml1 = '';
+            let scorersHtml2 = '';
+            
+            if (m.Goals1 && m.Goals1.length > 0) {
+                scorersHtml1 = m.Goals1.map(g => {
+                    let suffix = '';
+                    if (g.Type === 1) suffix = ' (P)';
+                    else if (g.Type === 3) suffix = ' (OG)';
+                    return `<div class="scorer-item">
+                        <span class="scorer-icon">⚽</span>
+                        <span>${g.Player} ${g.Minute}${suffix}</span>
+                    </div>`;
+                }).join('');
+            }
+            if (m.Goals2 && m.Goals2.length > 0) {
+                scorersHtml2 = m.Goals2.map(g => {
+                    let suffix = '';
+                    if (g.Type === 1) suffix = ' (P)';
+                    else if (g.Type === 3) suffix = ' (OG)';
+                    return `<div class="scorer-item">
+                        <span>${g.Player} ${g.Minute}${suffix}</span>
+                        <span class="scorer-icon">⚽</span>
+                    </div>`;
+                }).join('');
+            }
+
+            // Bottom info stats row
+            let bottomHtml = '';
+            if (isPlayed) {
+                const htText = m.HT ? `HT ${m.HT}` : 'HT N/A';
+                const refText = m.Referee ? m.Referee : 'Unknown Referee';
+                const attText = m.Attendance ? `${parseInt(m.Attendance).toLocaleString()}` : 'N/A';
+                bottomHtml = `
+                    <div class="match-card-bottom-row">
+                        <div class="bottom-item">
+                            <svg class="info-icon icon-ht" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>${htText}</span>
+                        </div>
+                        <span class="separator">·</span>
+                        <div class="bottom-item">
+                            <svg class="info-icon icon-ref" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <span>${refText}</span>
+                        </div>
+                        <span class="separator">·</span>
+                        <div class="bottom-item">
+                            <svg class="info-icon icon-att" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>${attText}</span>
+                        </div>
+                    </div>
+                `;
+            }
+
+            card.innerHTML = `
+                <div class="match-card-header">
+                    <span class="match-card-stage">${stageLabel}</span>
+                    <span class="match-card-time">${timeDisplay}</span>
+                </div>
+                
+                <div class="match-card-teams-area">
+                    <div class="match-card-team-info home">
+                        ${getTeamFlagHtml(m.Team1, m.Code1, 'match')}
+                        <span class="${t1WinnerClass}">${m.Team1}</span>
+                    </div>
+                    <span class="match-card-score-nums ${scoreClass}">${scoreText}</span>
+                    <div class="match-card-team-info away">
+                        <span class="${t2WinnerClass}">${m.Team2}</span>
+                        ${getTeamFlagHtml(m.Team2, m.Code2, 'match')}
+                    </div>
+                </div>
+
+                <div class="match-card-scorers-container">
+                    <div class="match-card-scorers home">
+                        ${scorersHtml1}
+                    </div>
+                    <div class="match-card-scorers away">
+                        ${scorersHtml2}
+                    </div>
+                </div>
+                
+                <div class="match-card-venue">
+                    <span>📍 ${m.Stadium} · ${m.City}</span>
+                </div>
+                
+                ${bottomHtml}
+            `;
+            return card;
+        }
+
+        function renderKnockoutFixtures(bracketObj) {
+            const container = document.getElementById('ko-fixtures-root');
+            if (!container) return;
+            container.innerHTML = '';
+
+            if (!bracketObj) {
+                container.innerHTML = '<div class="empty-state">No knockout fixtures scheduled yet.</div>';
+                return;
+            }
+
+            const rounds = [
+                { key: 'round_32', label: 'Round of 32' },
+                { key: 'round_16', label: 'Round of 16' },
+                { key: 'quarter_finals', label: 'Quarter-finals' },
+                { key: 'semi_finals', label: 'Semi-finals' },
+                { key: 'third_place', label: 'Third Place Play-off' },
+                { key: 'final', label: 'Final' }
+            ];
+
+            let hasAnyMatches = false;
+
+            rounds.forEach(r => {
+                const matches = bracketObj[r.key] || [];
+                if (matches.length === 0) return;
+                hasAnyMatches = true;
+
+                // Stage Header
+                const stageHeader = document.createElement('div');
+                stageHeader.className = 'group-header';
+                stageHeader.style.marginTop = '1.5rem';
+                stageHeader.style.marginBottom = '0.75rem';
+                stageHeader.innerHTML = `${r.label} <span style="color: var(--accent-cyan); font-size: 0.8rem;">Knockout Stage</span>`;
+                container.appendChild(stageHeader);
+
+                // Grid Container
+                const dayGrid = document.createElement('div');
+                dayGrid.className = 'matches-day-grid';
+
+                matches.forEach(m => {
+                    const card = createMatchCard(m);
+                    dayGrid.appendChild(card);
+                });
+
+                container.appendChild(dayGrid);
+            });
+
+            if (!hasAnyMatches) {
+                container.innerHTML = '<div class="empty-state">No knockout fixtures scheduled yet.</div>';
+            }
+        }
+
+        function renderOverviewCharts(matchesList) {
+            const outcomesRoot = document.getElementById('stats-outcomes-root');
+            const intervalsRoot = document.getElementById('stats-intervals-root');
+            if (!outcomesRoot || !intervalsRoot) return;
+
+            let homeWins = 0;
+            let awayWins = 0;
+            let draws = 0;
+            let playedCount = 0;
+
+            const intervalBins = {
+                '1-15\'': 0,
+                '16-30\'': 0,
+                '31-45\'': 0,
+                '46-60\'': 0,
+                '61-75\'': 0,
+                '76-90\'': 0,
+                'ET': 0
+            };
+
+            matchesList.forEach(m => {
+                const s1 = m.Score1 !== null && m.Score1 !== undefined ? parseInt(m.Score1) : null;
+                const s2 = m.Score2 !== null && m.Score2 !== undefined ? parseInt(m.Score2) : null;
+                if (s1 !== null && s2 !== null && !isNaN(s1) && !isNaN(s2)) {
+                    playedCount++;
+                    if (s1 > s2) homeWins++;
+                    else if (s2 > s1) awayWins++;
+                    else draws++;
+                }
+
+                const goals = (m.Goals1 || []).concat(m.Goals2 || []);
+                goals.forEach(g => {
+                    const minStr = (g.Minute || '').toString().replace('\'', '');
+                    const minParts = minStr.split('+');
+                    const mainMin = parseInt(minParts[0]) || 0;
+                    
+                    if (mainMin > 90) {
+                        intervalBins['ET']++;
+                    } else if (mainMin <= 15) {
+                        intervalBins['1-15\'']++;
+                    } else if (mainMin <= 30) {
+                        intervalBins['16-30\'']++;
+                    } else if (mainMin <= 45) {
+                        intervalBins['31-45\'']++;
+                    } else if (mainMin <= 60) {
+                        intervalBins['46-60\'']++;
+                    } else if (mainMin <= 75) {
+                        intervalBins['61-75\'']++;
+                    } else {
+                        intervalBins['76-90\'']++;
+                    }
+                });
+            });
+
+            const pHome = playedCount > 0 ? ((homeWins / playedCount) * 100).toFixed(0) : 0;
+            const pAway = playedCount > 0 ? ((awayWins / playedCount) * 100).toFixed(0) : 0;
+            const pDraw = playedCount > 0 ? ((draws / playedCount) * 100).toFixed(0) : 0;
+
+            outcomesRoot.innerHTML = `
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.8rem; font-weight:700; margin-bottom:0.3rem;">
+                        <span>🏠 Home Team Wins</span>
+                        <span style="color: var(--accent-gold);">${homeWins} (${pHome}%)</span>
+                    </div>
+                    <div style="height:8px; background:rgba(255,255,255,0.06); border-radius:4px; overflow:hidden;">
+                        <div style="height:100%; width:${pHome}%; background:linear-gradient(to right, #fbbf24, #f59e0b); border-radius:4px;"></div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.8rem; font-weight:700; margin-bottom:0.3rem;">
+                        <span>✈️ Away Team Wins</span>
+                        <span style="color: var(--accent-cyan);">${awayWins} (${pAway}%)</span>
+                    </div>
+                    <div style="height:8px; background:rgba(255,255,255,0.06); border-radius:4px; overflow:hidden;">
+                        <div style="height:100%; width:${pAway}%; background:linear-gradient(to right, #06b6d4, #0891b2); border-radius:4px;"></div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.8rem; font-weight:700; margin-bottom:0.3rem;">
+                        <span>🤝 Draws</span>
+                        <span style="color: var(--text-muted);">${draws} (${pDraw}%)</span>
+                    </div>
+                    <div style="height:8px; background:rgba(255,255,255,0.06); border-radius:4px; overflow:hidden;">
+                        <div style="height:100%; width:${pDraw}%; background:linear-gradient(to right, #9ca3af, #6b7280); border-radius:4px;"></div>
+                    </div>
+                </div>
+            `;
+
+            const maxVal = Math.max(...Object.values(intervalBins), 1);
+            intervalsRoot.innerHTML = '';
+            Object.entries(intervalBins).forEach(([bin, count]) => {
+                const percentage = ((count / maxVal) * 100).toFixed(0);
+                intervalsRoot.innerHTML += `
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <span style="width: 50px; font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-align: right;">${bin}</span>
+                        <div style="flex: 1; height: 12px; background: rgba(255,255,255,0.04); border-radius: 4px; overflow: hidden;">
+                            <div style="height: 100%; width: ${percentage}%; background: linear-gradient(90deg, rgba(6,182,212,0.15), rgba(6,182,212,0.7)); border-radius: 4px;"></div>
+                        </div>
+                        <span style="width: 25px; font-size: 0.8rem; font-weight: 800; color: #fff; text-align: left;">${count}</span>
+                    </div>
+                `;
+            });
+        }
+
+        function renderPodium(sortedList, podiumRootId, type) {
+            const root = document.getElementById(podiumRootId);
+            if (!root) return;
+            root.innerHTML = '';
+
+            const title = type === 'goals' ? '🏆 Golden Boot Podium' : '👟 Playmaker Podium';
+            const unit = type === 'goals' ? 'Goals' : 'Assists';
+
+            const p1 = sortedList[0] || [null, 0];
+            const p2 = sortedList[1] || [null, 0];
+            const p3 = sortedList[2] || [null, 0];
+
+            const getPlayerBlock = (playerData, rankClass, rankNumber) => {
+                const name = playerData[0];
+                const value = playerData[1];
+                if (!name) {
+                    return `
+                        <div class="podium-column">
+                            <div class="podium-block ${rankClass}">
+                                <span class="podium-number">${rankNumber}</span>
+                            </div>
+                        </div>
+                    `;
+                }
+                const teamCode = (window.playerTeams && window.playerTeams[name]) || '';
+                return `
+                    <div class="podium-column">
+                        <div class="podium-player-flag" style="margin-bottom:0.4rem;">${getTeamFlagHtml(null, teamCode, 'bracket')}</div>
+                        <div class="podium-player-name" title="${name}">${name}</div>
+                        <div class="podium-player-value">${value} ${unit}</div>
+                        <div class="podium-block ${rankClass}">
+                            <span class="podium-number">${rankNumber}</span>
+                        </div>
+                    </div>
+                `;
+            };
+
+            root.innerHTML = `
+                <div class="podium-title">
+                    <span>${title}</span>
+                </div>
+                <div class="podium-wrapper">
+                    ${getPlayerBlock(p2, 'rank-2', '2')}
+                    ${getPlayerBlock(p1, 'rank-1', '1')}
+                    ${getPlayerBlock(p3, 'rank-3', '3')}
+                </div>
+            `;
+        }
+
+        let allLineupPlayers = [];
+
+        function populateProfilePlayers(matchesList) {
+            const select = document.getElementById('stats-profile-player-select');
+            if (!select) return;
+
+            const playerMap = {};
+            matchesList.forEach(m => {
+                const lineups = (m.Lineup1 || []).concat(m.Lineup2 || []);
+                const isHome = (pName) => (m.Lineup1 || []).some(x => x.Name === pName);
+                lineups.forEach(p => {
+                    if (!playerMap[p.Name]) {
+                        playerMap[p.Name] = {
+                            Name: p.Name,
+                            Number: p.Number,
+                            Position: p.Position, // 0=GK, 1=DF, 2=MF, 3=FW
+                            Team: isHome(p.Name) ? m.Team1 : m.Team2,
+                            Code: isHome(p.Name) ? m.Code1 : m.Code2,
+                            Matches: 0
+                        };
+                    }
+                    playerMap[p.Name].Matches++;
+                });
+            });
+
+            allLineupPlayers = Object.values(playerMap).sort((a, b) => a.Name.localeCompare(b.Name));
+
+            select.innerHTML = '';
+            allLineupPlayers.forEach(p => {
+                const opt = document.createElement('option');
+                opt.value = p.Name;
+                opt.textContent = `${p.Name} (${p.Code})`;
+                select.appendChild(opt);
+            });
+
+            if (allLineupPlayers.length > 0) {
+                select.value = allLineupPlayers[0].Name;
+            }
+        }
+
+        function handleProfilePlayerChange() {
+            const select = document.getElementById('stats-profile-player-select');
+            if (!select || !select.value) return;
+
+            const name = select.value;
+            const player = allLineupPlayers.find(p => p.Name === name);
+            if (!player) return;
+
+            const goals = (window.playerGoals && window.playerGoals[name]) || 0;
+            const assists = (window.playerAssists && window.playerAssists[name]) || 0;
+
+            document.getElementById('profile-card-name').textContent = player.Name;
+            
+            const posLabels = { 0: 'Goalkeeper (GK)', 1: 'Defender (DF)', 2: 'Midfielder (MF)', 3: 'Forward (FW)' };
+            const posCodes = { 0: 'GK', 1: 'DF', 2: 'MF', 3: 'FW' };
+            
+            document.getElementById('profile-card-pos').textContent = posLabels[player.Position] || 'Player';
+            document.getElementById('profile-card-role').textContent = posCodes[player.Position] || 'N/A';
+            document.getElementById('profile-card-goals').textContent = goals;
+            document.getElementById('profile-card-assists').textContent = assists;
+            document.getElementById('profile-card-matches').textContent = player.Matches;
+
+            const flagRoot = document.getElementById('profile-card-team-flag');
+            if (flagRoot) {
+                flagRoot.innerHTML = `${getTeamFlagHtml(player.Team, player.Code, 'bracket')} <span style="color:#ffffff;">${player.Team}</span>`;
+            }
+
+            drawRadarChart(player.Name, player.Position, goals, assists, player.Matches);
+        }
+
+        function getDeterministicRating(seed, baseMin, baseMax) {
+            let hash = 0;
+            for (let i = 0; i < seed.length; i++) {
+                hash = seed.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            const norm = Math.abs(hash % 100) / 100.0;
+            return Math.round(baseMin + norm * (baseMax - baseMin));
+        }
+
+        function drawRadarChart(playerName, position, goals, assists, matchesCount) {
+            const container = document.getElementById('radar-chart-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            let axes = [];
+            let ratings = {};
+
+            const isGK = position === 0;
+
+            if (isGK) {
+                axes = ['DIV (Diving)', 'HAN (Handling)', 'REF (Reflexes)', 'SPD (Speed)', 'POS (Positioning)', 'PHY (Physical)'];
+                ratings = {
+                    'DIV (Diving)': getDeterministicRating(playerName + 'div', 75, 96),
+                    'HAN (Handling)': getDeterministicRating(playerName + 'han', 70, 93),
+                    'REF (Reflexes)': getDeterministicRating(playerName + 'ref', 78, 98),
+                    'SPD (Speed)': getDeterministicRating(playerName + 'spd', 45, 75),
+                    'POS (Positioning)': getDeterministicRating(playerName + 'pos', 72, 95),
+                    'PHY (Physical)': getDeterministicRating(playerName + 'phy', 60, 85)
+                };
+            } else {
+                axes = ['PAC (Pace)', 'SHO (Shooting)', 'PAS (Passing)', 'DRI (Dribbling)', 'DEF (Defending)', 'PHY (Physical)'];
+                let pacMin = 60, pacMax = 88;
+                let shoMin = 40, shoMax = 82;
+                let pasMin = 55, pasMax = 86;
+                let driMin = 58, driMax = 88;
+                let defMin = 30, defMax = 75;
+                let phyMin = 55, phyMax = 85;
+
+                if (position === 1) {
+                    defMin = 75; defMax = 95;
+                    phyMin = 75; phyMax = 94;
+                    shoMin = 30; shoMax = 65;
+                } else if (position === 2) {
+                    pasMin = 75; pasMax = 96;
+                    driMin = 72; driMax = 92;
+                    defMin = 50; defMax = 80;
+                } else if (position === 3) {
+                    pacMin = 78; pacMax = 97;
+                    shoMin = 75; shoMax = 97;
+                    driMin = 75; driMax = 95;
+                    defMin = 20; defMax = 50;
+                }
+
+                const goalsBonus = Math.min(goals * 3, 10);
+                const assistsBonus = Math.min(assists * 2, 8);
+
+                ratings = {
+                    'PAC (Pace)': getDeterministicRating(playerName + 'pac', pacMin, pacMax),
+                    'SHO (Shooting)': Math.min(getDeterministicRating(playerName + 'sho', shoMin, shoMax) + goalsBonus, 99),
+                    'PAS (Passing)': Math.min(getDeterministicRating(playerName + 'pas', pasMin, pasMax) + assistsBonus, 99),
+                    'DRI (Dribbling)': getDeterministicRating(playerName + 'dri', driMin, driMax),
+                    'DEF (Defending)': getDeterministicRating(playerName + 'def', defMin, defMax),
+                    'PHY (Physical)': getDeterministicRating(playerName + 'phy', phyMin, phyMax)
+                };
+            }
+
+            const size = 320;
+            const center = size / 2;
+            const radius = 100;
+            const numAxes = axes.length;
+
+            let svgContent = `<svg width="100%" height="100%" viewBox="0 0 ${size} ${size}">`;
+
+            svgContent += `
+                <defs>
+                    <radialGradient id="radar-glow" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="rgba(6, 182, 212, 0.4)" />
+                        <stop offset="100%" stop-color="rgba(6, 182, 212, 0.0)" />
+                    </radialGradient>
+                </defs>
+            `;
+
+            const gridLevels = [25, 50, 75, 100];
+            gridLevels.forEach(level => {
+                let pts = [];
+                for (let i = 0; i < numAxes; i++) {
+                    const angle = (i * 2 * Math.PI) / numAxes - Math.PI / 2;
+                    const r = (level / 100) * radius;
+                    const x = center + r * Math.cos(angle);
+                    const y = center + r * Math.sin(angle);
+                    pts.push(`${x},${y}`);
+                }
+                const isOuter = level === 100;
+                svgContent += `<polygon points="${pts.join(' ')}" fill="none" stroke="${isOuter ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.06)'}" stroke-width="1.2" />`;
+            });
+
+            for (let i = 0; i < numAxes; i++) {
+                const angle = (i * 2 * Math.PI) / numAxes - Math.PI / 2;
+                const xEnd = center + radius * Math.cos(angle);
+                const yEnd = center + radius * Math.sin(angle);
+                
+                svgContent += `<line x1="${center}" y1="${center}" x2="${xEnd}" y2="${yEnd}" stroke="rgba(255,255,255,0.06)" stroke-width="1" />`;
+
+                const labelDist = radius + 22;
+                const xl = center + labelDist * Math.cos(angle);
+                const yl = center + labelDist * Math.sin(angle) + 4;
+                
+                const val = ratings[axes[i]];
+                const labelText = axes[i].split(' ')[0];
+                
+                let textAnchor = 'middle';
+                if (Math.cos(angle) > 0.1) textAnchor = 'start';
+                else if (Math.cos(angle) < -0.1) textAnchor = 'end';
+
+                svgContent += `
+                    <text x="${xl}" y="${yl - 4}" fill="var(--text-muted)" font-size="9" font-weight="700" text-anchor="${textAnchor}">${labelText}</text>
+                    <text x="${xl}" y="${yl + 7}" fill="#ffffff" font-size="11" font-weight="800" font-family="'Space Grotesk', sans-serif" text-anchor="${textAnchor}">${val}</text>
+                `;
+            }
+
+            let dataPoints = [];
+            for (let i = 0; i < numAxes; i++) {
+                const angle = (i * 2 * Math.PI) / numAxes - Math.PI / 2;
+                const rating = ratings[axes[i]];
+                const r = (rating / 100) * radius;
+                const x = center + r * Math.cos(angle);
+                const y = center + r * Math.sin(angle);
+                dataPoints.push(`${x},${y}`);
+            }
+
+            svgContent += `
+                <polygon points="${dataPoints.join(' ')}" fill="url(#radar-glow)" stroke="var(--accent-cyan)" stroke-width="2" />
+            `;
+
+            for (let i = 0; i < numAxes; i++) {
+                const angle = (i * 2 * Math.PI) / numAxes - Math.PI / 2;
+                const rating = ratings[axes[i]];
+                const r = (rating / 100) * radius;
+                const x = center + r * Math.cos(angle);
+                const y = center + r * Math.sin(angle);
+                svgContent += `<circle cx="${x}" cy="${y}" r="3.5" fill="var(--accent-cyan)" stroke="#ffffff" stroke-width="1" />`;
+            }
+
+            svgContent += '</svg>';
+            container.innerHTML = svgContent;
+        }
+
         // --- Match Center and Pitch Heatmap Logic ---
         let currentModalMatch = null;
 
