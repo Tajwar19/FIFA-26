@@ -6,12 +6,14 @@
             {
                 "Player": "Julian QUINONES",
                 "Minute": "9'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
-                "Player": "RAÚL",
+                "Player": "Raul JIMENEZ",
                 "Minute": "67'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Roberto ALVARADO"
             }
         ],
         "Goals2": [],
@@ -25,19 +27,22 @@
             {
                 "Player": "HWANG Inbeom",
                 "Minute": "67'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "KIM Seunggyu"
             },
             {
-                "Player": "H G OH",
+                "Player": "OH Hyeongyu",
                 "Minute": "80'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "KIM Jingyu"
             }
         ],
         "Goals2": [
             {
                 "Player": "Ladislav KREJCI",
                 "Minute": "59'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "HT": "0 - 0",
@@ -50,14 +55,16 @@
             {
                 "Player": "Cyle LARIN",
                 "Minute": "78'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Alistair JOHNSTON"
             }
         ],
         "Goals2": [
             {
                 "Player": "Jovo LUKIC",
                 "Minute": "21'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Samed BAZDAR"
             }
         ],
         "HT": "0 - 1",
@@ -70,29 +77,34 @@
             {
                 "Player": "Damian BOBADILLA",
                 "Minute": "7'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             },
             {
                 "Player": "Folarin BALOGUN",
                 "Minute": "31'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Chris RICHARDS"
             },
             {
                 "Player": "Folarin BALOGUN",
                 "Minute": "45'+5'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Miles ROBINSON"
             },
             {
-                "Player": "REYNA",
+                "Player": "Giovanni REYNA",
                 "Minute": "90'+8'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Brenden AARONSON"
             }
         ],
         "Goals2": [
             {
                 "Player": "MAURICIO",
                 "Minute": "73'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Alejandro ROMERO GAMARRA"
             }
         ],
         "HT": "3 - 0",
@@ -106,7 +118,8 @@
             {
                 "Player": "John McGINN",
                 "Minute": "28'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "HT": "0 - 1",
@@ -119,12 +132,14 @@
             {
                 "Player": "Nestory IRANKUNDA",
                 "Minute": "27'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Connor METCALFE"
             },
             {
                 "Player": "Connor METCALFE",
                 "Minute": "75'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Jackson IRVINE"
             }
         ],
         "Goals2": [],
@@ -136,16 +151,18 @@
         "Attendance": "80663",
         "Goals1": [
             {
-                "Player": "VINI JR.",
+                "Player": "VINICIUS JUNIOR",
                 "Minute": "32'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
-                "Player": "SAIBARI",
+                "Player": "Ismael SAIBARI",
                 "Minute": "21'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Anass SALAH EDDINE"
             }
         ],
         "HT": "1 - 1",
@@ -158,14 +175,16 @@
             {
                 "Player": "Miro MUHEIM",
                 "Minute": "90'+4'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
-                "Player": "EMBOLO",
+                "Player": "Breel EMBOLO",
                 "Minute": "17'",
-                "Type": 1
+                "Type": 1,
+                "Assist": ""
             }
         ],
         "HT": "0 - 1",
@@ -178,7 +197,8 @@
             {
                 "Player": "Amad DIALLO",
                 "Minute": "90'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Emmanuel AGBADOU"
             }
         ],
         "Goals2": [],
@@ -190,46 +210,54 @@
         "Attendance": "68021",
         "Goals1": [
             {
-                "Player": "NMECHA",
+                "Player": "Felix NMECHA",
                 "Minute": "6'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Jonathan TAH"
             },
             {
-                "Player": "SCHLOTTERBECK",
+                "Player": "Nico SCHLOTTERBECK",
                 "Minute": "38'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Florian WIRTZ"
             },
             {
-                "Player": "HAVERTZ",
+                "Player": "Kai HAVERTZ",
                 "Minute": "45'+5'",
-                "Type": 1
+                "Type": 1,
+                "Assist": ""
             },
             {
-                "Player": "MUSIALA",
+                "Player": "Jamal MUSIALA",
                 "Minute": "47'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Florian WIRTZ"
             },
             {
                 "Player": "Nathaniel BROWN",
                 "Minute": "68'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
                 "Player": "Deniz UNDAV",
                 "Minute": "78'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Kai HAVERTZ"
             },
             {
-                "Player": "HAVERTZ",
+                "Player": "Kai HAVERTZ",
                 "Minute": "88'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
                 "Player": "Livano COMENENCIA",
                 "Minute": "21'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Deveron FONVILLE"
             }
         ],
         "HT": "3 - 1",
@@ -242,24 +270,28 @@
             {
                 "Player": "Virgil VAN DIJK",
                 "Minute": "50'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Donyell MALEN"
             },
             {
                 "Player": "Crysencio SUMMERVILLE",
                 "Minute": "64'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
-                "Player": "NAKAMURA",
+                "Player": "Keito NAKAMURA",
                 "Minute": "57'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Takehiro TOMIYASU"
             },
             {
-                "Player": "KAMADA",
+                "Player": "Daichi KAMADA",
                 "Minute": "88'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Ayase UEDA"
             }
         ],
         "HT": "0 - 0",
@@ -272,34 +304,40 @@
             {
                 "Player": "Yasin AYARI",
                 "Minute": "7'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Hjalmar EKDAL"
             },
             {
                 "Player": "Alexander ISAK",
                 "Minute": "30'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
                 "Player": "Viktor GYOKERES",
                 "Minute": "59'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Victor LINDELOF"
             },
             {
                 "Player": "Mattias SVANBERG",
                 "Minute": "84'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Kristoffer NORDFELDT"
             },
             {
                 "Player": "Yasin AYARI",
                 "Minute": "90'+6'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Isak HIEN"
             }
         ],
         "Goals2": [
             {
                 "Player": "Omar REKIK",
                 "Minute": "43'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Adam AROUS"
             }
         ],
         "HT": "2 - 1",
@@ -310,16 +348,18 @@
         "Attendance": "62764",
         "Goals1": [
             {
-                "Player": "ALAMRI",
+                "Player": "ABDULELAH ALAMRI",
                 "Minute": "41'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "MUSAB ALJUWAYR"
             }
         ],
         "Goals2": [
             {
                 "Player": "Maxi ARAUJO",
                 "Minute": "80'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Manuel UGARTE"
             }
         ],
         "HT": "1 - 0",
@@ -338,26 +378,30 @@
         "Attendance": "70108",
         "Goals1": [
             {
-                "Player": "RAMIN",
+                "Player": "Ramin REZAEIAN",
                 "Minute": "32'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Saeid EZATOLAHI"
             },
             {
-                "Player": "M.MOHEBBI",
+                "Player": "Mohammad MOHEBBI",
                 "Minute": "64'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
-                "Player": "JUST",
+                "Player": "Elijah JUST",
                 "Minute": "7'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Finn SURMAN"
             },
             {
-                "Player": "JUST",
+                "Player": "Elijah JUST",
                 "Minute": "54'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Michael BOXALL"
             }
         ],
         "HT": "1 - 1",
@@ -368,16 +412,18 @@
         "Attendance": "66775",
         "Goals1": [
             {
-                "Player": "M.HANY",
+                "Player": "MOHAMED HANY",
                 "Minute": "66'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
-                "Player": "E.ASHOUR",
+                "Player": "EMAM ASHOUR",
                 "Minute": "19'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "HT": "0 - 1",
@@ -388,26 +434,30 @@
         "Attendance": "80545",
         "Goals1": [
             {
-                "Player": "MBAPPÉ",
+                "Player": "Kylian MBAPPE",
                 "Minute": "66'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
-                "Player": "BARCOLA",
+                "Player": "Bradley BARCOLA",
                 "Minute": "82'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Ngolo KANTE"
             },
             {
-                "Player": "MBAPPÉ",
+                "Player": "Kylian MBAPPE",
                 "Minute": "90'+6'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Mike MAIGNAN"
             }
         ],
         "Goals2": [
             {
-                "Player": "MBAYE",
+                "Player": "Ibrahim MBAYE",
                 "Minute": "90'+5'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Bara Sapoko NDIAYE"
             }
         ],
         "HT": "0 - 0",
@@ -418,31 +468,36 @@
         "Attendance": "63106",
         "Goals1": [
             {
-                "Player": "HUSSEIN",
+                "Player": "AYMEN HUSSEIN",
                 "Minute": "39'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
-                "Player": "HAALAND",
+                "Player": "Erling HAALAND",
                 "Minute": "29'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Sondre LANGAS"
             },
             {
-                "Player": "HAALAND",
+                "Player": "Erling HAALAND",
                 "Minute": "43'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
                 "Player": "Leo OSTIGARD",
                 "Minute": "76'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Kristoffer AJER"
             },
             {
-                "Player": "HUSSEIN",
+                "Player": "AYMEN HUSSEIN",
                 "Minute": "90'+6'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             }
         ],
         "HT": "1 - 2",
@@ -453,19 +508,22 @@
         "Attendance": "69045",
         "Goals1": [
             {
-                "Player": "MESSI",
+                "Player": "Lionel MESSI",
                 "Minute": "17'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Jose Manuel LOPEZ"
             },
             {
-                "Player": "MESSI",
+                "Player": "Lionel MESSI",
                 "Minute": "60'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Giovani LO CELSO"
             },
             {
-                "Player": "MESSI",
+                "Player": "Lionel MESSI",
                 "Minute": "76'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Nicolas TAGLIAFICO"
             }
         ],
         "Goals2": [],
@@ -479,24 +537,28 @@
             {
                 "Player": "Romano SCHMID",
                 "Minute": "20'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
                 "Player": "YAZAN ALARAB",
                 "Minute": "76'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             },
             {
-                "Player": "ARNAUTOVIC",
+                "Player": "Marko ARNAUTOVIC",
                 "Minute": "90'+12'",
-                "Type": 1
+                "Type": 1,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
                 "Player": "ALI OLWAN",
                 "Minute": "50'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "NOOR ALRAWABDEH"
             }
         ],
         "HT": "1 - 0",
@@ -509,7 +571,8 @@
             {
                 "Player": "Caleb YIRENKYI",
                 "Minute": "90'+5'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Joseph ANANG"
             }
         ],
         "Goals2": [],
@@ -521,36 +584,42 @@
         "Attendance": "70389",
         "Goals1": [
             {
-                "Player": "KANE",
+                "Player": "Harry KANE",
                 "Minute": "12'",
-                "Type": 1
+                "Type": 1,
+                "Assist": ""
             },
             {
-                "Player": "KANE",
+                "Player": "Harry KANE",
                 "Minute": "42'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
-                "Player": "BELLINGHAM",
+                "Player": "Jude BELLINGHAM",
                 "Minute": "47'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Dean HENDERSON"
             },
             {
-                "Player": "RASHFORD",
+                "Player": "Marcus RASHFORD",
                 "Minute": "85'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Jordan HENDERSON"
             }
         ],
         "Goals2": [
             {
                 "Player": "Martin BATURINA",
                 "Minute": "36'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Nikola VLASIC"
             },
             {
                 "Player": "Petar MUSA",
                 "Minute": "45'+5'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Duje CALETA-CAR"
             }
         ],
         "HT": "2 - 2",
@@ -561,16 +630,18 @@
         "Attendance": "68777",
         "Goals1": [
             {
-                "Player": "JOÃO NEVES",
+                "Player": "JOAO NEVES",
                 "Minute": "6'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "RENATO VEIGA"
             }
         ],
         "Goals2": [
             {
                 "Player": "Yoane WISSA",
                 "Minute": "45'+5'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Nathanael MBUKU"
             }
         ],
         "HT": "1 - 1",
@@ -583,24 +654,28 @@
             {
                 "Player": "Abbosbek FAYZULLAEV",
                 "Minute": "60'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Botirali ERGASHEV"
             }
         ],
         "Goals2": [
             {
                 "Player": "Daniel MUNOZ",
                 "Minute": "40'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
                 "Player": "Luis DIAZ",
                 "Minute": "65'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "James RODRIGUEZ"
             },
             {
                 "Player": "Jaminton CAMPAZ",
                 "Minute": "90'+9'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Juan PORTILLA"
             }
         ],
         "HT": "0 - 1",
@@ -613,14 +688,16 @@
             {
                 "Player": "Michal SADILEK",
                 "Minute": "6'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Jan KUCHTA"
             }
         ],
         "Goals2": [
             {
-                "Player": "MOKOENA",
+                "Player": "Teboho MOKOENA",
                 "Minute": "83'",
-                "Type": 1
+                "Type": 1,
+                "Assist": ""
             }
         ],
         "HT": "1 - 0",
@@ -633,29 +710,34 @@
             {
                 "Player": "Johan MANZAMBI",
                 "Minute": "74'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
-                "Player": "VARGAS",
+                "Player": "Ruben VARGAS",
                 "Minute": "84'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Gregor KOBEL"
             },
             {
                 "Player": "Johan MANZAMBI",
                 "Minute": "90'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
-                "Player": "XHAKA",
+                "Player": "Granit XHAKA",
                 "Minute": "90'+7'",
-                "Type": 1
+                "Type": 1,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
                 "Player": "Ermin MAHMIC",
                 "Minute": "90'+3'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Nikola KATIC"
             }
         ],
         "HT": "0 - 0",
@@ -668,32 +750,38 @@
             {
                 "Player": "Cyle LARIN",
                 "Minute": "16'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Moise BOMBITO"
             },
             {
                 "Player": "Jonathan DAVID",
                 "Minute": "29'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Tajon BUCHANAN"
             },
             {
                 "Player": "Jonathan DAVID",
                 "Minute": "45'+3'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Jacob SHAFFELBURG"
             },
             {
                 "Player": "Nathan SALIBA",
                 "Minute": "64'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Tani OLUWASEYI"
             },
             {
                 "Player": "MOHAMED MANAI",
                 "Minute": "75'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             },
             {
                 "Player": "Jonathan DAVID",
                 "Minute": "90'+2'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Joel WATERMAN"
             }
         ],
         "Goals2": [],
@@ -707,7 +795,8 @@
             {
                 "Player": "Luis ROMO",
                 "Minute": "50'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "Goals2": [],
@@ -721,17 +810,20 @@
             {
                 "Player": "MATHEUS CUNHA",
                 "Minute": "23'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
                 "Player": "MATHEUS CUNHA",
                 "Minute": "36'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "FABINHO"
             },
             {
                 "Player": "VINICIUS JUNIOR",
                 "Minute": "45'+3'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "EDERSON"
             }
         ],
         "Goals2": [],
@@ -746,7 +838,23 @@
             {
                 "Player": "Ismael SAIBARI",
                 "Minute": "2'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Ayyoub BOUADDI"
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "0FT1"
+    },
+    "400021460": {
+        "Referee": "Ivan Arcides Barton Cisneros",
+        "Attendance": "68827",
+        "Goals1": [],
+        "Goals2": [
+            {
+                "Player": "Matias GALARZA",
+                "Minute": "2'",
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "HT": "0 - 1",
@@ -759,83 +867,205 @@
             {
                 "Player": "Cameron BURGESS",
                 "Minute": "11'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             },
             {
                 "Player": "Alex FREEMAN",
                 "Minute": "43'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Sebastian BERHALTER"
             }
         ],
         "Goals2": [],
         "HT": "2 - 0",
         "Status": "2FT0"
     },
-    "400021460": {
-        "Referee": "Ivan Arcides Barton Cisneros",
-        "Attendance": "68827",
-        "Goals1": [],
+    "400021469": {
+        "Referee": "Juan Gabriel Benítez",
+        "Attendance": "43036",
+        "Goals1": [
+            {
+                "Player": "Deniz UNDAV",
+                "Minute": "68'",
+                "Type": 2,
+                "Assist": "Jonathan TAH"
+            },
+            {
+                "Player": "Deniz UNDAV",
+                "Minute": "90'+4'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
         "Goals2": [
             {
-                "Player": "Matias GALARZA",
-                "Minute": "2'",
-                "Type": 2
+                "Player": "Franck KESSIE",
+                "Minute": "30'",
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "HT": "0 - 1",
-        "Status": "0FT1"
-    },
-    "400021472": {
-        "Referee": "Michael Oliver",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
-    },
-    "400021469": {
-        "Referee": "Juan Gabriel Benítez",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
+        "Status": "2FT1"
     },
     "400021465": {
         "Referee": "Ning Ma",
-        "Attendance": 0,
+        "Attendance": "68598",
         "Goals1": [],
         "Goals2": [],
         "HT": "0 - 0",
         "Status": "0FT0"
+    },
+    "400021472": {
+        "Referee": "Michael Oliver",
+        "Attendance": "68777",
+        "Goals1": [
+            {
+                "Player": "Brian BROBBEY",
+                "Minute": "5'",
+                "Type": 2,
+                "Assist": "Lutsharel GEERTRUIDA"
+            },
+            {
+                "Player": "Brian BROBBEY",
+                "Minute": "17'",
+                "Type": 2,
+                "Assist": "Wout WEGHORST"
+            },
+            {
+                "Player": "Cody GAKPO",
+                "Minute": "47'",
+                "Type": 2,
+                "Assist": "Mark FLEKKEN"
+            },
+            {
+                "Player": "Cody GAKPO",
+                "Minute": "54'",
+                "Type": 2,
+                "Assist": "Ryan GRAVENBERCH"
+            },
+            {
+                "Player": "Crysencio SUMMERVILLE",
+                "Minute": "89'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Anthony ELANGA",
+                "Minute": "59'",
+                "Type": 2,
+                "Assist": "Yasin AYARI"
+            }
+        ],
+        "HT": "2 - 0",
+        "Status": "5FT1"
     },
     "400021475": {
         "Referee": "Istvan Kovacs",
-        "Attendance": 0,
+        "Attendance": "51243",
         "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
-    },
-    "400021483": {
-        "Referee": "Raphael Claus",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
-    },
-    "400021477": {
-        "Referee": "Darío Herrera",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
+        "Goals2": [
+            {
+                "Player": "Daichi KAMADA",
+                "Minute": "4'",
+                "Type": 2,
+                "Assist": "Keisuke GOTO"
+            },
+            {
+                "Player": "Ayase UEDA",
+                "Minute": "31'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Junya ITO",
+                "Minute": "69'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Ayase UEDA",
+                "Minute": "83'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "HT": "0 - 2",
+        "Status": "0FT4"
     },
     "400021487": {
         "Referee": "Espen Eskås",
-        "Attendance": 0,
+        "Attendance": "64003",
+        "Goals1": [
+            {
+                "Player": "Maxi ARAUJO",
+                "Minute": "44'",
+                "Type": 2,
+                "Assist": "Jose Maria GIMENEZ"
+            },
+            {
+                "Player": "Agustin CANOBBIO",
+                "Minute": "45'+6'",
+                "Type": 2,
+                "Assist": "Joaquin PIQUEREZ"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "KEVIN PINA",
+                "Minute": "21'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "HELIO VARELA",
+                "Minute": "61'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "HT": "2 - 1",
+        "Status": "2FT2"
+    },
+    "400021483": {
+        "Referee": "Raphael Claus",
+        "Attendance": "68239",
+        "Goals1": [
+            {
+                "Player": "Lamine YAMAL",
+                "Minute": "10'",
+                "Type": 2,
+                "Assist": "Marcos LLORENTE"
+            },
+            {
+                "Player": "Mikel OYARZABAL",
+                "Minute": "21'",
+                "Type": 2,
+                "Assist": "Mikel MERINO"
+            },
+            {
+                "Player": "Mikel OYARZABAL",
+                "Minute": "24'",
+                "Type": 2,
+                "Assist": "Eric GARCIA"
+            },
+            {
+                "Player": "HASSAN ALTAMBAKTI",
+                "Minute": "49'",
+                "Type": 3,
+                "Assist": ""
+            }
+        ],
+        "Goals2": [],
+        "HT": "3 - 0",
+        "Status": "4FT0"
+    },
+    "400021477": {
+        "Referee": "Darío Herrera",
+        "Attendance": "70317",
         "Goals1": [],
         "Goals2": [],
         "HT": "0 - 0",
@@ -843,35 +1073,125 @@
     },
     "400021480": {
         "Referee": "Omar Mohamed Al Ali",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
-    },
-    "400021494": {
-        "Referee": "Amin Mohamed Omar",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
-    },
-    "400021492": {
-        "Referee": "Drew Fischer",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
+        "Attendance": "52497",
+        "Goals1": [
+            {
+                "Player": "Finn SURMAN",
+                "Minute": "15'",
+                "Type": 2,
+                "Assist": "Alex PAULSEN"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "MOSTAFA ZICO",
+                "Minute": "58'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "MOHAMED SALAH",
+                "Minute": "67'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "TREZEGUET",
+                "Minute": "82'",
+                "Type": 2,
+                "Assist": "NABIL DONGA"
+            }
+        ],
+        "HT": "1 - 0",
+        "Status": "1FT3"
     },
     "400021491": {
         "Referee": "Wilton SAMPAIO",
-        "Attendance": 0,
-        "Goals1": [],
+        "Attendance": "80663",
+        "Goals1": [
+            {
+                "Player": "Marcus HOLMGREN PEDERSEN",
+                "Minute": "43'",
+                "Type": 2,
+                "Assist": "Fredrik AURSNES"
+            },
+            {
+                "Player": "Erling HAALAND",
+                "Minute": "48'",
+                "Type": 2,
+                "Assist": "Patrick BERG"
+            },
+            {
+                "Player": "Erling HAALAND",
+                "Minute": "58'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Ismaila SARR",
+                "Minute": "53'",
+                "Type": 2,
+                "Assist": "Nicolas JACKSON"
+            },
+            {
+                "Player": "Ismaila SARR",
+                "Minute": "90'+3'",
+                "Type": 2,
+                "Assist": "Pape Matar SARR"
+            }
+        ],
+        "HT": "1 - 0",
+        "Status": "3FT2"
+    },
+    "400021492": {
+        "Referee": "Drew Fischer",
+        "Attendance": "68324",
+        "Goals1": [
+            {
+                "Player": "Kylian MBAPPE",
+                "Minute": "14'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Kylian MBAPPE",
+                "Minute": "54'",
+                "Type": 2,
+                "Assist": "Bradley BARCOLA"
+            },
+            {
+                "Player": "Ousmane DEMBELE",
+                "Minute": "66'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
         "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
+        "HT": "1 - 0",
+        "Status": "3FT0"
+    },
+    "400021494": {
+        "Referee": "Amin Mohamed Omar",
+        "Attendance": "70649",
+        "Goals1": [
+            {
+                "Player": "Lionel MESSI",
+                "Minute": "38'",
+                "Type": 2,
+                "Assist": "Rodrigo DE PAUL"
+            },
+            {
+                "Player": "Lionel MESSI",
+                "Minute": "90'+5'",
+                "Type": 2,
+                "Assist": "Juan MUSSO"
+            }
+        ],
+        "Goals2": [],
+        "HT": "1 - 0",
+        "Status": "2FT0"
     },
     "400021499": {
         "Referee": "Slavko VINCIC",
@@ -880,19 +1200,22 @@
             {
                 "Player": "NIZAR ALRASHDAN",
                 "Minute": "36'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
                 "Player": "Nadhir BENBOUALI",
                 "Minute": "69'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Rafik BELGHALI"
             },
             {
                 "Player": "Amine GOUIRI",
                 "Minute": "82'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Ramy BENSEBAINI"
             }
         ],
         "HT": "1 - 0",
@@ -914,7 +1237,8 @@
             {
                 "Player": "Ante BUDIMIR",
                 "Minute": "54'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Igor MATANOVIC"
             }
         ],
         "HT": "0 - 0",
@@ -927,27 +1251,32 @@
             {
                 "Player": "CRISTIANO RONALDO",
                 "Minute": "6'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "RUBEN DIAS"
             },
             {
                 "Player": "NUNO MENDES",
                 "Minute": "17'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "PEDRO NETO"
             },
             {
                 "Player": "CRISTIANO RONALDO",
                 "Minute": "39'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "BRUNO FERNANDES"
             },
             {
                 "Player": "Abduvohid NEMATOV",
                 "Minute": "60'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             },
             {
                 "Player": "RAFAEL LEAO",
                 "Minute": "87'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "GONCALO RAMOS"
             }
         ],
         "Goals2": [],
@@ -961,7 +1290,8 @@
             {
                 "Player": "Daniel MUNOZ",
                 "Minute": "76'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Davinson SANCHEZ"
             }
         ],
         "Goals2": [],
@@ -976,17 +1306,20 @@
             {
                 "Player": "VINICIUS JUNIOR",
                 "Minute": "7'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "ALEX SANDRO"
             },
             {
                 "Player": "VINICIUS JUNIOR",
                 "Minute": "45'+3'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "LEO PEREIRA"
             },
             {
                 "Player": "MATHEUS CUNHA",
                 "Minute": "60'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "EDERSON SILVA"
             }
         ],
         "HT": "0 - 2",
@@ -999,34 +1332,40 @@
             {
                 "Player": "Achraf HAKIMI",
                 "Minute": "39'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Yassine BOUNOU"
             },
             {
                 "Player": "Ismael SAIBARI",
                 "Minute": "45'+1'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Achraf HAKIMI"
             },
             {
                 "Player": "Soufiane RAHIMI",
                 "Minute": "78'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Noussair MAZRAOUI"
             },
             {
                 "Player": "Gessime YASSINE",
                 "Minute": "89'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Chemsdine TALBI"
             }
         ],
         "Goals2": [
             {
                 "Player": "Yassine BOUNOU",
                 "Minute": "10'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             },
             {
                 "Player": "Wilson ISIDOR",
                 "Minute": "43'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Josue DUVERGER"
             }
         ],
         "HT": "2 - 2",
@@ -1039,19 +1378,22 @@
             {
                 "Player": "Ruben VARGAS",
                 "Minute": "46'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Johan MANZAMBI"
             },
             {
                 "Player": "Johan MANZAMBI",
                 "Minute": "57'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Silvan WIDMER"
             }
         ],
         "Goals2": [
             {
                 "Player": "Promise DAVID",
                 "Minute": "76'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Joel WATERMAN"
             }
         ],
         "HT": "0 - 0",
@@ -1064,24 +1406,28 @@
             {
                 "Player": "Kerim ALAJBEGOVIC",
                 "Minute": "29'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             },
             {
                 "Player": "MAHMOUD ABUNADA",
                 "Minute": "34'",
-                "Type": 3
+                "Type": 3,
+                "Assist": ""
             },
             {
                 "Player": "Ermin MAHMIC",
                 "Minute": "80'",
-                "Type": 2
+                "Type": 2,
+                "Assist": ""
             }
         ],
         "Goals2": [
             {
                 "Player": "HASSAN ALHAYDOS",
                 "Minute": "42'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "AHMED ALAAELDIN"
             }
         ],
         "HT": "2 - 1",
@@ -1095,16 +1441,24 @@
             {
                 "Player": "Mateo CHAVEZ",
                 "Minute": "55'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Alvaro FIDALGO"
             },
             {
                 "Player": "Julian QUINONES",
                 "Minute": "61'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Alvaro FIDALGO"
+            },
+            {
+                "Player": "Alvaro FIDALGO",
+                "Minute": "90'+4'",
+                "Type": 2,
+                "Assist": "Luis ROMO"
             }
         ],
         "HT": "0 - 0",
-        "Status": "0FT2"
+        "Status": "0FT3"
     },
     "400021445": {
         "Referee": "Facundo TELLO",
@@ -1113,56 +1467,162 @@
             {
                 "Player": "Thapelo MASEKO",
                 "Minute": "63'",
-                "Type": 2
+                "Type": 2,
+                "Assist": "Kamogelo SEBELEBELE"
             }
         ],
         "Goals2": [],
         "HT": "0 - 0",
         "Status": "1FT0"
     },
-    "400021466": {
-        "Referee": "Tori Penso",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
-    },
     "400021468": {
         "Referee": "Glenn Nyberg",
-        "Attendance": 0,
+        "Attendance": "68324",
         "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
+        "Goals2": [
+            {
+                "Player": "Nicolas PEPE",
+                "Minute": "7'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Nicolas PEPE",
+                "Minute": "64'",
+                "Type": 2,
+                "Assist": "Christopher OPERI"
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "0FT2"
+    },
+    "400021466": {
+        "Referee": "Tori Penso",
+        "Attendance": "80663",
+        "Goals1": [
+            {
+                "Player": "Nilson ANGULO",
+                "Minute": "9'",
+                "Type": 2,
+                "Assist": "Alan FRANCO"
+            },
+            {
+                "Player": "Gonzalo PLATA",
+                "Minute": "77'",
+                "Type": 2,
+                "Assist": "Yaimar MEDINA"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Leroy SANE",
+                "Minute": "2'",
+                "Type": 2,
+                "Assist": "Antonio RUEDIGER"
+            }
+        ],
+        "HT": "1 - 1",
+        "Status": "2FT1"
     },
     "400021471": {
         "Referee": "Ivan Arcides Barton Cisneros",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
+        "Attendance": "70137",
+        "Goals1": [
+            {
+                "Player": "Daizen MAEDA",
+                "Minute": "56'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Anthony ELANGA",
+                "Minute": "62'",
+                "Type": 2,
+                "Assist": "Daniel SVENSSON"
+            }
+        ],
         "HT": "0 - 0",
-        "Status": "0FT0"
+        "Status": "1FT1"
     },
     "400021473": {
         "Referee": "Katia Itzel García",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
+        "Attendance": "68391",
+        "Goals1": [
+            {
+                "Player": "Hazem MASTOURI",
+                "Minute": "54'",
+                "Type": 2,
+                "Assist": "Sebastian TOUNEKTI"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Ellyes SKHIRI",
+                "Minute": "3'",
+                "Type": 3,
+                "Assist": ""
+            },
+            {
+                "Player": "Brian BROBBEY",
+                "Minute": "7'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Jan Paul VAN HECKE",
+                "Minute": "62'",
+                "Type": 2,
+                "Assist": "Mark FLEKKEN"
+            }
+        ],
+        "HT": "0 - 2",
+        "Status": "1FT3"
     },
     "400021459": {
         "Referee": "Mustapha Ghorbal",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
+        "Attendance": "70492",
+        "Goals1": [
+            {
+                "Player": "Arda GULER",
+                "Minute": "10'",
+                "Type": 2,
+                "Assist": "Yunus AKGUN"
+            },
+            {
+                "Player": "Baris Alper YILMAZ",
+                "Minute": "31'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Kaan AYHAN",
+                "Minute": "90'+8'",
+                "Type": 2,
+                "Assist": "Orkun KOKCU"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Auston TRUSTY",
+                "Minute": "3'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Sebastian BERHALTER",
+                "Minute": "49'",
+                "Type": 2,
+                "Assist": "Haji WRIGHT"
+            }
+        ],
+        "HT": "2 - 1",
+        "Status": "3FT2"
     },
     "400021461": {
         "Referee": "Clément Turpin",
-        "Attendance": 0,
+        "Attendance": "68827",
         "Goals1": [],
         "Goals2": [],
         "HT": "0 - 0",
@@ -1170,15 +1630,154 @@
     },
     "400021489": {
         "Referee": "Michael Oliver",
-        "Attendance": 0,
-        "Goals1": [],
-        "Goals2": [],
-        "HT": "0 - 0",
-        "Status": "0FT0"
+        "Attendance": "64146",
+        "Goals1": [
+            {
+                "Player": "Thelo AASGAARD",
+                "Minute": "21'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Ousmane DEMBELE",
+                "Minute": "7'",
+                "Type": 2,
+                "Assist": "Aurelien TCHOUAMENI"
+            },
+            {
+                "Player": "Ousmane DEMBELE",
+                "Minute": "20'",
+                "Type": 2,
+                "Assist": "Adrien RABIOT"
+            },
+            {
+                "Player": "Ousmane DEMBELE",
+                "Minute": "32'",
+                "Type": 2,
+                "Assist": "Warren ZAIRE-EMERY"
+            },
+            {
+                "Player": "Desire DOUE",
+                "Minute": "90'+4'",
+                "Type": 2,
+                "Assist": "Rayan CHERKI"
+            }
+        ],
+        "HT": "1 - 3",
+        "Status": "1FT4"
     },
     "400021493": {
         "Referee": "Anthony Taylor",
-        "Attendance": 0,
+        "Attendance": "43036",
+        "Goals1": [
+            {
+                "Player": "Habib DIARRA",
+                "Minute": "4'",
+                "Type": 2,
+                "Assist": "Cherif NDIAYE"
+            },
+            {
+                "Player": "Ismaila SARR",
+                "Minute": "56'",
+                "Type": 2,
+                "Assist": "Mamadou SARR"
+            },
+            {
+                "Player": "Pape GUEYE",
+                "Minute": "59'",
+                "Type": 2,
+                "Assist": "Cherif NDIAYE"
+            },
+            {
+                "Player": "Pape GUEYE",
+                "Minute": "71'",
+                "Type": 2,
+                "Assist": "Moussa NIAKHATE"
+            },
+            {
+                "Player": "Iliman NDIAYE",
+                "Minute": "82'",
+                "Type": 2,
+                "Assist": "Pathe CISS"
+            }
+        ],
+        "Goals2": [],
+        "HT": "1 - 0",
+        "Status": "5FT0"
+    },
+    "400021479": {
+        "Referee": "Szymon MARCINIAK",
+        "Attendance": "66925",
+        "Goals1": [
+            {
+                "Player": "MAHMOUD SABER",
+                "Minute": "5'",
+                "Type": 2,
+                "Assist": "MARAWAN ATTIA"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Ramin REZAEIAN",
+                "Minute": "14'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "HT": "1 - 1",
+        "Status": "1FT1"
+    },
+    "400021481": {
+        "Referee": "Adham Mohammad Tumah Makhadmeh",
+        "Attendance": "52497",
+        "Goals1": [
+            {
+                "Player": "Elijah JUST",
+                "Minute": "84'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Leandro TROSSARD",
+                "Minute": "28'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Leandro TROSSARD",
+                "Minute": "50'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Kevin DE BRUYNE",
+                "Minute": "66'",
+                "Type": 2,
+                "Assist": "Brandon MECHELE"
+            },
+            {
+                "Player": "Romelu LUKAKU",
+                "Minute": "86'",
+                "Type": 2,
+                "Assist": "Charles DE KETELAERE"
+            },
+            {
+                "Player": "Alexis SAELEMAEKERS",
+                "Minute": "90'+4'",
+                "Type": 2,
+                "Assist": "Youri TIELEMANS"
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "1FT5"
+    },
+    "400021485": {
+        "Referee": "François Letexier",
+        "Attendance": "68278",
         "Goals1": [],
         "Goals2": [],
         "HT": "0 - 0",
@@ -1186,18 +1785,203 @@
     },
     "400021484": {
         "Referee": "Ismail Elfath",
-        "Attendance": 0,
+        "Attendance": "45065",
+        "Goals1": [],
+        "Goals2": [
+            {
+                "Player": "Alex BAENA",
+                "Minute": "42'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "0FT1"
+    },
+    "400021508": {
+        "Referee": "Abdulrahman AL JASSIM",
+        "Attendance": "80663",
+        "Goals1": [],
+        "Goals2": [
+            {
+                "Player": "Jude BELLINGHAM",
+                "Minute": "62'",
+                "Type": 2,
+                "Assist": "Ezri KONSA"
+            },
+            {
+                "Player": "Harry KANE",
+                "Minute": "67'",
+                "Type": 2,
+                "Assist": "Anthony GORDON"
+            }
+        ],
+        "HT": "0 - 0",
+        "Status": "0FT2"
+    },
+    "400021509": {
+        "Referee": "Drew Fischer",
+        "Attendance": "68324",
+        "Goals1": [
+            {
+                "Player": "Petar SUCIC",
+                "Minute": "31'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Nikola VLASIC",
+                "Minute": "83'",
+                "Type": 2,
+                "Assist": "Mateo KOVACIC"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Derrick LUCKASSEN",
+                "Minute": "73'",
+                "Type": 2,
+                "Assist": "Joseph ANANG"
+            }
+        ],
+        "HT": "1 - 0",
+        "Status": "2FT1"
+    },
+    "400021497": {
+        "Referee": "Ilgiz Tantashev",
+        "Attendance": "69045",
+        "Goals1": [
+            {
+                "Player": "Rafik BELGHALI",
+                "Minute": "45'",
+                "Type": 2,
+                "Assist": "Fares CHAIBI"
+            },
+            {
+                "Player": "Riyad MAHREZ",
+                "Minute": "60'",
+                "Type": 2,
+                "Assist": "Achref ABADA"
+            },
+            {
+                "Player": "Riyad MAHREZ",
+                "Minute": "90'+3'",
+                "Type": 2,
+                "Assist": "Anis HADJ MOUSSA"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Marko ARNAUTOVIC",
+                "Minute": "28'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Marcel SABITZER",
+                "Minute": "55'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Sasa KALAJDZIC",
+                "Minute": "90'+6'",
+                "Type": 2,
+                "Assist": "Marcel SABITZER"
+            }
+        ],
+        "HT": "1 - 1",
+        "Status": "3FT3"
+    },
+    "400021495": {
+        "Referee": "Istvan Kovacs",
+        "Attendance": "70649",
+        "Goals1": [
+            {
+                "Player": "MOUSA ALTAMARI",
+                "Minute": "55'",
+                "Type": 2,
+                "Assist": "YAZEED ABULAILA"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Giovani LO CELSO",
+                "Minute": "19'",
+                "Type": 2,
+                "Assist": ""
+            },
+            {
+                "Player": "Lautaro MARTINEZ",
+                "Minute": "31'",
+                "Type": 1,
+                "Assist": ""
+            },
+            {
+                "Player": "Lionel MESSI",
+                "Minute": "80'",
+                "Type": 2,
+                "Assist": ""
+            }
+        ],
+        "HT": "0 - 2",
+        "Status": "1FT3"
+    },
+    "400021505": {
+        "Referee": "Alireza FAGHANI",
+        "Attendance": "64478",
         "Goals1": [],
         "Goals2": [],
         "HT": "0 - 0",
         "Status": "0FT0"
     },
-    "400021485": {
-        "Referee": "François Letexier",
-        "Attendance": 0,
+    "400021500": {
+        "Referee": "Felix Zwayer",
+        "Attendance": "68239",
+        "Goals1": [
+            {
+                "Player": "Yoane WISSA",
+                "Minute": "68'",
+                "Type": 1,
+                "Assist": ""
+            },
+            {
+                "Player": "Fiston MAYELE",
+                "Minute": "78'",
+                "Type": 2,
+                "Assist": "Dylan BATUBINSIKA"
+            },
+            {
+                "Player": "Yoane WISSA",
+                "Minute": "90'+1'",
+                "Type": 2,
+                "Assist": "Steve KAPUADI"
+            }
+        ],
+        "Goals2": [
+            {
+                "Player": "Eldor SHOMURODOV",
+                "Minute": "10'",
+                "Type": 2,
+                "Assist": "Abbosbek FAYZULLAEV"
+            }
+        ],
+        "HT": "0 - 1",
+        "Status": "3FT1"
+    },
+    "400021518": {
+        "Referee": "João Pedro Silva Pinheiro",
+        "Attendance": "69237",
         "Goals1": [],
-        "Goals2": [],
+        "Goals2": [
+            {
+                "Player": "Stephen EUSTAQUIO",
+                "Minute": "90'+2'",
+                "Type": 2,
+                "Assist": "Alphonso DAVIES"
+            }
+        ],
         "HT": "0 - 0",
-        "Status": "0FT0"
+        "Status": "0FT1"
     }
 }

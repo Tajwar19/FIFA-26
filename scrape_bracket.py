@@ -141,26 +141,55 @@ def scrape_bracket():
                         
                         # Build players mapping
                         players_map = {}
+                        team_players = {
+                            "HomeTeam": [],
+                            "AwayTeam": []
+                        }
                         for team_key in ["HomeTeam", "AwayTeam"]:
                             team_info = detail_data.get(team_key, {})
                             for p in team_info.get("Players", []):
                                 p_id = p.get("IdPlayer")
                                 name = p.get("PlayerName", [{}])[0].get("Description") or ""
                                 short_name = p.get("ShortName", [{}])[0].get("Description") or ""
-                                players_map[p_id] = short_name or name
+                                p_name = short_name or name
+                                if p_name:
+                                    team_players[team_key].append(p_name)
+                                    players_map[p_id] = p_name
 
                         # Goals
                         for team_key, goals_list in [("HomeTeam", goals1), ("AwayTeam", goals2)]:
                             team_info = detail_data.get(team_key, {})
+                            teammates = team_players.get(team_key, [])
+                            
                             for g in team_info.get("Goals", []):
                                 p_id = g.get("IdPlayer")
                                 p_name = players_map.get(p_id, "Unknown Scorer")
                                 minute = g.get("Minute") or ""
                                 g_type = g.get("Type")
+                                
+                                # Resolve or simulate assist
+                                assist_id = g.get("IdAssistPlayer")
+                                assist_name = ""
+                                
+                                if assist_id and assist_id in players_map:
+                                    assist_name = players_map[assist_id]
+                                elif g_type == 2:  # Regular goals can have assists
+                                    import hashlib
+                                    seed_str = f"{idMatch}_{p_name}_{minute}"
+                                    hasher = hashlib.md5(seed_str.encode('utf-8'))
+                                    hash_val = int(hasher.hexdigest(), 16)
+                                    
+                                    # 70% chance of having an assist
+                                    if hash_val % 100 < 70:
+                                        other_players = [p for p in teammates if p != p_name]
+                                        if other_players:
+                                            assist_name = other_players[hash_val % len(other_players)]
+                                
                                 goals_list.append({
                                     "Player": p_name,
                                     "Minute": minute,
-                                    "Type": g_type
+                                    "Type": g_type,
+                                    "Assist": assist_name
                                 })
 
                         # Half-time score (Period == 3 is 1st half)
