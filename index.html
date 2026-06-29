@@ -3403,6 +3403,16 @@
                     recordsRoot.innerHTML = '<div class="empty-state" style="border:none;">No tournament records yet.</div>';
                 }
             }
+
+            // 5. Render Overview Sub-tab Charts
+            renderOverviewCharts(matchesList);
+
+            // 6. Render Podium for Scorers & Assists
+            renderPodium(sortedScorers, 'scorers-podium-root', 'goals');
+            renderPodium(sortedAssists, 'assists-podium-root', 'assists');
+
+            // 7. Populate Player Profiles Dropdown
+            populateProfilePlayers(matchesList);
         }
 
         function refreshViews() {
