@@ -3439,7 +3439,7 @@
                 const predictedBracket = getPredictedBracket(predictedGroups, predictedThirdPlaces);
 
                  renderBracket(predictedBracket);
-                 renderKnockoutFixtures(predictedBracket);
+                 renderKnockoutFixtures(dashboardData.matches.knockout_stage);
                  renderStandings(predictedGroups, predictedThirdPlaces);
  
                  const predictedMatchesList = getPredictedMatchesList(predictedGroups, predictedBracket);
@@ -3451,7 +3451,7 @@
                  document.getElementById('btn-mode-predict').classList.remove('active');
  
                  renderBracket(dashboardData.bracket);
-                 renderKnockoutFixtures(dashboardData.bracket);
+                 renderKnockoutFixtures(dashboardData.matches.knockout_stage);
                  renderStandings(dashboardData.standings, dashboardData.third_places);
  
                  const realMatchesList = dashboardData.matches.group_stage.concat(
@@ -4913,29 +4913,30 @@
             return card;
         }
 
-        function renderKnockoutFixtures(bracketObj) {
+        function renderKnockoutFixtures(knockoutStageObj) {
             const container = document.getElementById('ko-fixtures-root');
             if (!container) return;
             container.innerHTML = '';
 
-            if (!bracketObj) {
+            if (!knockoutStageObj) {
                 container.innerHTML = '<div class="empty-state">No knockout fixtures scheduled yet.</div>';
                 return;
             }
 
+            // Ordered rounds as stored in data.matches.knockout_stage
             const rounds = [
-                { key: 'round_32', label: 'Round of 32' },
-                { key: 'round_16', label: 'Round of 16' },
-                { key: 'quarter_finals', label: 'Quarter-finals' },
-                { key: 'semi_finals', label: 'Semi-finals' },
-                { key: 'third_place', label: 'Third Place Play-off' },
-                { key: 'final', label: 'Final' }
+                { key: 'Round of 32', label: 'Round of 32', icon: '🏟️' },
+                { key: 'Round of 16', label: 'Round of 16', icon: '⚔️' },
+                { key: 'Quarter-final', label: 'Quarter-finals', icon: '🏆' },
+                { key: 'Semi-final', label: 'Semi-finals', icon: '🌟' },
+                { key: 'Play-off for third place', label: 'Third Place Play-off', icon: '🥉' },
+                { key: 'Final', label: 'Grand Final', icon: '👑' }
             ];
 
             let hasAnyMatches = false;
 
             rounds.forEach(r => {
-                const matches = bracketObj[r.key] || [];
+                const matches = knockoutStageObj[r.key] || [];
                 if (matches.length === 0) return;
                 hasAnyMatches = true;
 
@@ -4944,7 +4945,7 @@
                 stageHeader.className = 'group-header';
                 stageHeader.style.marginTop = '1.5rem';
                 stageHeader.style.marginBottom = '0.75rem';
-                stageHeader.innerHTML = `${r.label} <span style="color: var(--accent-cyan); font-size: 0.8rem;">Knockout Stage</span>`;
+                stageHeader.innerHTML = `${r.icon} ${r.label} <span style="color: var(--accent-cyan); font-size: 0.8rem;">Knockout Stage</span>`;
                 container.appendChild(stageHeader);
 
                 // Grid Container
@@ -4952,6 +4953,30 @@
                 dayGrid.className = 'matches-day-grid';
 
                 matches.forEach(m => {
+                    // Filter out placeholder matches where teams aren't resolved yet
+                    const t1 = m.Team1 || '';
+                    const t2 = m.Team2 || '';
+                    const isPlaceholder = t1.startsWith('W') || t1.startsWith('L') || t2.startsWith('W') || t2.startsWith('L');
+                    if (isPlaceholder && !m.Score1 && !m.Score2) {
+                        // Show a pending card
+                        const pendingCard = document.createElement('div');
+                        pendingCard.className = 'match-card border-knockout';
+                        pendingCard.style.opacity = '0.5';
+                        pendingCard.innerHTML = `
+                            <div class="match-card-header">
+                                <span class="match-card-stage">${r.label}</span>
+                                <span class="match-card-time">${m.Date || 'TBD'}</span>
+                            </div>
+                            <div class="match-card-teams-area">
+                                <div class="match-card-team-info home"><span style="color:var(--text-muted);">TBD</span></div>
+                                <span class="match-card-score-nums vs">vs</span>
+                                <div class="match-card-team-info away"><span style="color:var(--text-muted);">TBD</span></div>
+                            </div>
+                            <div class="match-card-venue"><span>📍 ${m.Stadium || ''} · ${m.City || ''}</span></div>
+                        `;
+                        dayGrid.appendChild(pendingCard);
+                        return;
+                    }
                     const card = createMatchCard(m);
                     dayGrid.appendChild(card);
                 });
