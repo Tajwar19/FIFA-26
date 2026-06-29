@@ -108,6 +108,8 @@ def scrape_bracket():
         goals1 = []
         goals2 = []
         ht_score = ""
+        lineup1 = []
+        lineup2 = []
 
         is_completed = score1 is not None and score2 is not None
 
@@ -121,6 +123,8 @@ def scrape_bracket():
                 goals2 = cached_data.get("Goals2", [])
                 ht_score = cached_data.get("HT", "")
                 status_str = cached_data.get("Status", f"{score1}FT{score2}")
+                lineup1 = cached_data.get("Lineup1", [])
+                lineup2 = cached_data.get("Lineup2", [])
             else:
                 # Fetch details from Live API
                 detail_url = f"https://api.fifa.com/api/v3/live/football/{idCompetition}/{idSeason}/{idStage}/{idMatch}?language=en"
@@ -139,13 +143,15 @@ def scrape_bracket():
                         # Attendance
                         attendance = detail_data.get("Attendance") or 0
                         
-                        # Build players mapping
+                        # Build players mapping and lineups
                         players_map = {}
                         team_players = {
                             "HomeTeam": [],
                             "AwayTeam": []
                         }
-                        for team_key in ["HomeTeam", "AwayTeam"]:
+                        lineup1 = []
+                        lineup2 = []
+                        for team_key, lineup_list in [("HomeTeam", lineup1), ("AwayTeam", lineup2)]:
                             team_info = detail_data.get(team_key, {})
                             for p in team_info.get("Players", []):
                                 p_id = p.get("IdPlayer")
@@ -155,6 +161,18 @@ def scrape_bracket():
                                 if p_name:
                                     team_players[team_key].append(p_name)
                                     players_map[p_id] = p_name
+                                    
+                                pos = p.get("Position") or 1  # 0=GK, 1=DF, 2=MF, 3=FW
+                                starter = p.get("FieldStatus") == 0
+                                captain = p.get("Captain") or False
+                                number = p.get("ShirtNumber") or 0
+                                lineup_list.append({
+                                    "Name": p_name,
+                                    "Number": number,
+                                    "Position": pos,
+                                    "Starter": starter,
+                                    "Captain": captain
+                                })
 
                         # Goals
                         for team_key, goals_list in [("HomeTeam", goals1), ("AwayTeam", goals2)]:
@@ -216,7 +234,9 @@ def scrape_bracket():
                             "Goals1": goals1,
                             "Goals2": goals2,
                             "HT": ht_score,
-                            "Status": status_str
+                            "Status": status_str,
+                            "Lineup1": lineup1,
+                            "Lineup2": lineup2
                         }
                         updated_cache = True
                 except Exception as ex:
@@ -244,7 +264,9 @@ def scrape_bracket():
             "Goals2": goals2,
             "Referee": referee,
             "Attendance": attendance,
-            "HT": ht_score
+            "HT": ht_score,
+            "Lineup1": lineup1,
+            "Lineup2": lineup2
         }
         all_matches.append(match_data)
 
