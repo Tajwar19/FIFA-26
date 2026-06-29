@@ -4759,10 +4759,11 @@
             }
         }
 
-        function createMatchCard(m) {
+        function createMatchListCard(m) {
             const card = document.createElement('div');
             
             // Determine card border color class based on Group/Stage
+
             let groupBorderClass = 'border-grey';
             if (m.Stage.toLowerCase().includes('first stage')) {
                 const grp = m.Group_or_Match || '';
@@ -4977,7 +4978,7 @@
                         dayGrid.appendChild(pendingCard);
                         return;
                     }
-                    const card = createMatchCard(m);
+                    const card = createMatchListCard(m);
                     dayGrid.appendChild(card);
                 });
 
