@@ -3434,26 +3434,28 @@
                 const predictedThirdPlaces = getThirdPlacedStandings(predictedGroups);
                 const predictedBracket = getPredictedBracket(predictedGroups, predictedThirdPlaces);
 
-                renderBracket(predictedBracket);
-                renderStandings(predictedGroups, predictedThirdPlaces);
-
-                const predictedMatchesList = getPredictedMatchesList(predictedGroups, predictedBracket);
-                renderMatches(predictedMatchesList);
-                renderStatsTab(predictedMatchesList, predictedGroups);
-            } else {
-                document.body.classList.remove('predict-mode-active');
-                document.getElementById('btn-mode-real').classList.add('active');
-                document.getElementById('btn-mode-predict').classList.remove('active');
-
-                renderBracket(dashboardData.bracket);
-                renderStandings(dashboardData.standings, dashboardData.third_places);
-
-                const realMatchesList = dashboardData.matches.group_stage.concat(
-                    Object.values(dashboardData.matches.knockout_stage).flat()
-                );
-                renderMatches(realMatchesList);
-                renderStatsTab(realMatchesList, dashboardData.standings);
-            }
+                 renderBracket(predictedBracket);
+                 renderKnockoutFixtures(predictedBracket);
+                 renderStandings(predictedGroups, predictedThirdPlaces);
+ 
+                 const predictedMatchesList = getPredictedMatchesList(predictedGroups, predictedBracket);
+                 renderMatches(predictedMatchesList);
+                 renderStatsTab(predictedMatchesList, predictedGroups);
+             } else {
+                 document.body.classList.remove('predict-mode-active');
+                 document.getElementById('btn-mode-real').classList.add('active');
+                 document.getElementById('btn-mode-predict').classList.remove('active');
+ 
+                 renderBracket(dashboardData.bracket);
+                 renderKnockoutFixtures(dashboardData.bracket);
+                 renderStandings(dashboardData.standings, dashboardData.third_places);
+ 
+                 const realMatchesList = dashboardData.matches.group_stage.concat(
+                     Object.values(dashboardData.matches.knockout_stage).flat()
+                 );
+                 renderMatches(realMatchesList);
+                 renderStatsTab(realMatchesList, dashboardData.standings);
+             }
 
             // Auto-focus zoom to correct stage if bracket panel is currently visible
             const isBracketActive = document.getElementById('panel-bracket')?.classList.contains('active');
