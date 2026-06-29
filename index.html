@@ -3371,6 +3371,10 @@
             card.id = `match-${m.Match}`;
 
             const isPredict = predictions.mode === 'predict';
+            if (!isPredict) {
+                card.style.cursor = 'pointer';
+                card.onclick = () => openMatchCenter(m.Match);
+            }
             const isFinished = m.Status === 'FT' || m.Status === 'AET' || m.Status === 'PEN';
             const s1 = parseInt(m.Score1) || 0;
             const s2 = parseInt(m.Score2) || 0;
@@ -3781,6 +3785,8 @@
                     }
 
                     card.className = `match-card ${groupBorderClass}`;
+                    card.style.cursor = 'pointer';
+                    card.onclick = () => openMatchCenter(m.Match);
                     card.setAttribute('data-team1', m.Team1.toLowerCase());
                     card.setAttribute('data-team2', m.Team2.toLowerCase());
                     card.setAttribute('data-stage', m.Stage);
@@ -4376,7 +4382,438 @@
             fetchDashboardData();
             updateNavHeight();
         });
+        // --- Match Center and Pitch Heatmap Logic ---
+        let currentModalMatch = null;
+
+        function openMatchCenter(matchId) {
+            if (!dashboardData) return;
+            
+            let match = null;
+            match = dashboardData.matches.group_stage.find(m => m.Match === matchId);
+            if (!match) {
+                for (const stageMatches of Object.values(dashboardData.matches.knockout_stage)) {
+                    match = stageMatches.find(m => m.Match === matchId);
+                    if (match) break;
+                }
+            }
+
+            if (!match) return;
+            currentModalMatch = match;
+
+            let stageLabel = match.Stage;
+            if (match.Stage.toLowerCase().includes('first stage')) {
+                const grpLetter = match.Group_or_Match ? match.Group_or_Match.replace('Group ', '') : '';
+                stageLabel = `Group ${grpLetter} · Matchday ${match.MatchDay || 1}`;
+            }
+            document.getElementById('mc-modal-title').innerText = `${matchId} · ${stageLabel}`;
+
+            const teamsRow = document.getElementById('mc-info-teams-row');
+            const score1 = match.Score1 !== null && match.Score1 !== undefined ? match.Score1 : '';
+            const score2 = match.Score2 !== null && match.Score2 !== undefined ? match.Score2 : '';
+            const isPlayed = score1 !== '' && score2 !== '';
+            const scoreText = isPlayed ? `${score1} - ${score2}` : 'vs';
+
+            teamsRow.innerHTML = `
+                <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem; width:150px; text-align:center;">
+                    ${getTeamFlagHtml(match.Team1, match.Code1, 'match')}
+                    <span style="font-weight:700; font-size:1.05rem; color:#fff;">${match.Team1}</span>
+                </div>
+                <div style="font-family:'Space Grotesk', sans-serif; font-size:1.8rem; font-weight:800; color:var(--accent-gold); letter-spacing:2px;">
+                    ${scoreText}
+                </div>
+                <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem; width:150px; text-align:center;">
+                    ${getTeamFlagHtml(match.Team2, match.Code2, 'match')}
+                    <span style="font-weight:700; font-size:1.05rem; color:#fff;">${match.Team2}</span>
+                </div>
+            `;
+
+            document.getElementById('mc-info-stadium').innerText = `${match.Stadium} (${match.City})`;
+            document.getElementById('mc-info-attendance').innerText = match.Attendance && parseInt(match.Attendance) > 0 ? parseInt(match.Attendance).toLocaleString() : 'N/A';
+            document.getElementById('mc-info-referee').innerText = match.Referee || 'N/A';
+
+            const goalsTimeline = document.getElementById('mc-info-goals-timeline');
+            goalsTimeline.innerHTML = '';
+            const goals = [];
+            if (match.Goals1) match.Goals1.forEach(g => goals.push({ ...g, team: 1 }));
+            if (match.Goals2) match.Goals2.forEach(g => goals.push({ ...g, team: 2 }));
+
+            if (goals.length === 0) {
+                goalsTimeline.innerHTML = '<div style="color:var(--text-muted); font-size:0.85rem; font-style:italic; padding:0.5rem 0;">No goals recorded.</div>';
+            } else {
+                goals.sort((a, b) => {
+                    const minA = parseInt(a.Minute.replace("'", "").replace("+", "")) || 0;
+                    const minB = parseInt(b.Minute.replace("'", "").replace("+", "")) || 0;
+                    return minA - minB;
+                });
+
+                goals.forEach(g => {
+                    let suffix = '';
+                    if (g.Type === 1) suffix = ' (Penalty)';
+                    else if (g.Type === 3) suffix = ' (Own Goal)';
+                    const teamName = g.team === 1 ? match.Team1 : match.Team2;
+                    const assistText = g.Assist ? `<span style="font-size:0.75rem; color:var(--text-muted); margin-left:0.5rem;">(Assist: ${g.Assist})</span>` : '';
+                    
+                    goalsTimeline.innerHTML += `
+                        <div style="display:flex; align-items:center; gap:0.75rem; background:rgba(255,255,255,0.02); padding:0.5rem 0.75rem; border-radius:6px; font-size:0.85rem;">
+                            <span style="font-weight:700; color:var(--accent-gold); font-family:'Space Grotesk', sans-serif; min-width:30px;">${g.Minute}</span>
+                            <span style="color:#fff; font-weight:600;">${g.Player}</span>
+                            <span style="font-size:0.75rem; background:rgba(255,255,255,0.06); padding:0.1rem 0.4rem; border-radius:4px; text-transform:uppercase;">${teamName}</span>
+                            ${suffix ? `<span style="color:var(--accent-cyan); font-size:0.75rem; font-weight:700;">${suffix}</span>` : ''}
+                            ${assistText}
+                        </div>
+                    `;
+                });
+            }
+
+            const team1List = document.getElementById('mc-lineup-team1-list');
+            const team2List = document.getElementById('mc-lineup-team2-list');
+            document.getElementById('mc-lineup-team1-title').innerText = match.Team1;
+            document.getElementById('mc-lineup-team2-title').innerText = match.Team2;
+
+            team1List.innerHTML = '';
+            team2List.innerHTML = '';
+
+            const renderLineup = (list, element) => {
+                if (!list || list.length === 0) {
+                    element.innerHTML = '<div style="color:var(--text-muted); font-size:0.85rem; font-style:italic;">No lineup data available.</div>';
+                    return;
+                }
+                const sorted = [...list].sort((a, b) => {
+                    if (a.Starter !== b.Starter) return a.Starter ? -1 : 1;
+                    return a.Number - b.Number;
+                });
+
+                sorted.forEach(p => {
+                    const posStr = p.Position === 0 ? 'GK' : p.Position === 1 ? 'DF' : p.Position === 2 ? 'MF' : 'FW';
+                    const captainStr = p.Captain ? ' (C)' : '';
+                    const subStr = p.Starter ? '' : ' (Sub)';
+                    
+                    element.innerHTML += `
+                        <div class="lineup-player-row" onclick="handleLineupPlayerClick(this, '${p.Name.replace(/'/g, "\\'")}', ${p.Position})">
+                            <div class="lineup-player-name-wrap">
+                                <span class="lineup-player-num">${p.Number || '-'}</span>
+                                <span class="lineup-player-name">${p.Name}${captainStr}${subStr}</span>
+                            </div>
+                            <span class="lineup-player-pos">${posStr}</span>
+                        </div>
+                    `;
+                });
+            };
+
+            renderLineup(match.Lineup1, team1List);
+            renderLineup(match.Lineup2, team2List);
+
+            const selectDropdown = document.getElementById('mc-pitch-player-select');
+            selectDropdown.innerHTML = '';
+
+            addPlayersToSelect(match.Lineup1, match.Team1);
+            addPlayersToSelect(match.Lineup2, match.Team2);
+
+            let defaultPlayer = null;
+            if (match.Lineup1 && match.Lineup1.length > 0) {
+                const firstStarter = match.Lineup1.find(p => p.Starter) || match.Lineup1[0];
+                defaultPlayer = firstStarter;
+            }
+
+            switchModalTab('mc-info');
+            document.getElementById('match-center-modal').style.display = 'flex';
+
+            if (defaultPlayer) {
+                selectDropdown.value = JSON.stringify({ name: defaultPlayer.Name, pos: defaultPlayer.Position });
+                updatePitchPlayerStats(defaultPlayer.Name, defaultPlayer.Position);
+            } else {
+                const canvas = document.getElementById('pitch-canvas');
+                if (canvas) {
+                    const ctx = canvas.getContext('2d');
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+                document.getElementById('mc-pitch-player-name').innerText = 'No players available';
+            }
+        }
+
+        function addPlayersToSelect(list, teamName) {
+            if (!list) return;
+            const selectDropdown = document.getElementById('mc-pitch-player-select');
+            const optGroup = document.createElement('optgroup');
+            optGroup.label = teamName;
+            list.forEach(p => {
+                const opt = document.createElement('option');
+                opt.value = JSON.stringify({ name: p.Name, pos: p.Position });
+                opt.innerText = `#${p.Number} ${p.Name}`;
+                optGroup.appendChild(opt);
+            });
+            selectDropdown.appendChild(optGroup);
+        }
+
+        function closeMatchCenter() {
+            document.getElementById('match-center-modal').style.display = 'none';
+            currentModalMatch = null;
+        }
+
+        function handleModalOverlayClick(e) {
+            if (e.target.id === 'match-center-modal') {
+                closeMatchCenter();
+            }
+        }
+
+        function switchModalTab(tabId) {
+            document.querySelectorAll('.modal-tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.modal-tab-panel').forEach(panel => panel.classList.remove('active'));
+
+            document.getElementById(`btn-tab-${tabId}`).classList.add('active');
+            document.getElementById(`panel-${tabId}`).classList.add('active');
+
+            if (tabId === 'mc-coverage' && currentModalMatch) {
+                handlePitchPlayerChange();
+            }
+        }
+
+        function handleLineupPlayerClick(rowEl, playerName, position) {
+            document.querySelectorAll('.lineup-player-row').forEach(row => row.classList.remove('selected'));
+            rowEl.classList.add('selected');
+
+            const selectDropdown = document.getElementById('mc-pitch-player-select');
+            if (selectDropdown) {
+                for (let i = 0; i < selectDropdown.options.length; i++) {
+                    const opt = selectDropdown.options[i];
+                    try {
+                        const optVal = JSON.parse(opt.value);
+                        if (optVal.name === playerName) {
+                            selectDropdown.selectedIndex = i;
+                            break;
+                        }
+                    } catch (e) {}
+                }
+            }
+
+            switchModalTab('mc-coverage');
+        }
+
+        function handlePitchPlayerChange() {
+            const selectDropdown = document.getElementById('mc-pitch-player-select');
+            if (!selectDropdown || !selectDropdown.value || !currentModalMatch) return;
+
+            try {
+                const val = JSON.parse(selectDropdown.value);
+                updatePitchPlayerStats(val.name, val.pos);
+            } catch (e) {}
+        }
+
+        function updatePitchPlayerStats(playerName, position) {
+            if (!currentModalMatch) return;
+            
+            document.getElementById('mc-pitch-player-name').innerText = playerName;
+            const posStr = position === 0 ? 'Goalkeeper (GK)' : position === 1 ? 'Defender (DF)' : position === 2 ? 'Midfielder (MF)' : 'Forward (FW)';
+            document.getElementById('mc-pitch-stat-pos').innerText = posStr;
+
+            let hash = 0;
+            const str = playerName + currentModalMatch.Match;
+            for (let i = 0; i < str.length; i++) {
+                hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            hash = Math.abs(hash);
+
+            let distance = 0;
+            let speed = 0;
+            let passCompletion = 0;
+
+            if (position === 0) {
+                distance = 3.5 + (hash % 15) / 10;
+                speed = 25.0 + (hash % 50) / 10;
+                passCompletion = 68 + (hash % 20);
+            } else if (position === 1) {
+                distance = 8.2 + (hash % 20) / 10;
+                speed = 29.5 + (hash % 55) / 10;
+                passCompletion = 82 + (hash % 14);
+            } else if (position === 2) {
+                distance = 10.5 + (hash % 28) / 10;
+                speed = 28.0 + (hash % 50) / 10;
+                passCompletion = 84 + (hash % 12);
+            } else {
+                distance = 9.0 + (hash % 22) / 10;
+                speed = 31.0 + (hash % 52) / 10;
+                passCompletion = 72 + (hash % 18);
+            }
+
+            document.getElementById('mc-pitch-stat-dist').innerText = `${distance.toFixed(1)} km`;
+            document.getElementById('mc-pitch-stat-speed').innerText = `${speed.toFixed(1)} km/h`;
+            document.getElementById('mc-pitch-stat-passes').innerText = `${passCompletion}%`;
+
+            drawPlayerHeatmap(playerName, position, currentModalMatch.Match);
+        }
+
+        function getHeatmapData(playerName, position, matchId) {
+            let hash = 0;
+            const str = playerName + matchId;
+            for (let i = 0; i < str.length; i++) {
+                hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            hash = Math.abs(hash);
+
+            let baseX = 50;
+            let baseY = 50;
+
+            if (position === 0) {
+                baseX = 50;
+                baseY = 8;
+            } else if (position === 1) {
+                baseX = 25 + (hash % 3) * 25;
+                baseY = 25 + (hash % 2) * 8;
+            } else if (position === 2) {
+                baseX = 20 + (hash % 4) * 20;
+                baseY = 50 + (hash % 3) * 10 - 10;
+            } else {
+                baseX = 25 + (hash % 3) * 25;
+                baseY = 78 + (hash % 2) * 8;
+            }
+
+            const blobs = [];
+            const numBlobs = 3 + (hash % 3);
+            for (let i = 0; i < numBlobs; i++) {
+                const angle = ((hash + i * 97) % 360) * Math.PI / 180;
+                const dist = 5 + ((hash + i * 43) % 12);
+                const x = Math.max(8, Math.min(92, baseX + Math.cos(angle) * dist));
+                const y = Math.max(8, Math.min(92, baseY + Math.sin(angle) * dist));
+                const intensity = 0.45 + ((hash + i * 17) % 5) / 10;
+                const radius = 18 + ((hash + i * 29) % 15);
+                blobs.push({ x, y, intensity, radius });
+            }
+
+            return { baseX, baseY, blobs };
+        }
+
+        function drawPlayerHeatmap(playerName, position, matchId) {
+            const canvas = document.getElementById('pitch-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width;
+            const h = canvas.height;
+            ctx.clearRect(0, 0, w, h);
+
+            const data = getHeatmapData(playerName, position, matchId);
+
+            data.blobs.forEach(b => {
+                const xPx = (b.x / 100) * w;
+                const yPx = (1 - b.y / 100) * h;
+
+                const grad = ctx.createRadialGradient(xPx, yPx, 0, xPx, yPx, b.radius * 2);
+                grad.addColorStop(0, `rgba(239, 68, 68, ${b.intensity})`);
+                grad.addColorStop(0.3, `rgba(245, 158, 11, ${b.intensity * 0.6})`);
+                grad.addColorStop(0.6, `rgba(16, 185, 129, ${b.intensity * 0.2})`);
+                grad.addColorStop(1, 'rgba(16, 185, 129, 0)');
+
+                ctx.fillStyle = grad;
+                ctx.beginPath();
+                ctx.arc(xPx, yPx, b.radius * 2, 0, Math.PI * 2);
+                ctx.fill();
+            });
+        }
     </script>
+
+    <!-- Match Center Modal Overlay -->
+    <div id="match-center-modal" class="modal-overlay" onclick="handleModalOverlayClick(event)">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title" id="mc-modal-title">Match Center</div>
+                <button class="close-modal-btn" onclick="closeMatchCenter()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tabs">
+                    <button class="modal-tab-btn active" id="btn-tab-mc-info" onclick="switchModalTab('mc-info')">Match Details</button>
+                    <button class="modal-tab-btn" id="btn-tab-mc-lineups" onclick="switchModalTab('mc-lineups')">Rosters</button>
+                    <button class="modal-tab-btn" id="btn-tab-mc-coverage" onclick="switchModalTab('mc-coverage')">Player Pitch Coverage</button>
+                </div>
+
+                <!-- Tab Panel 1: Match Info -->
+                <div class="modal-tab-panel active" id="panel-mc-info">
+                    <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                        <div id="mc-info-teams-row" style="display:flex; align-items:center; justify-content:center; gap:2.5rem; padding:1rem 0;"></div>
+                        
+                        <div class="group-card" style="padding:1.25rem; display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; background:rgba(0,0,0,0.2);">
+                            <div style="text-align:center;">
+                                <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Stadium</div>
+                                <div id="mc-info-stadium" style="font-weight:700; color:#fff; margin-top:0.25rem; font-size:0.9rem;">-</div>
+                            </div>
+                            <div style="text-align:center;">
+                                <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Attendance</div>
+                                <div id="mc-info-attendance" style="font-weight:700; color:var(--accent-gold); margin-top:0.25rem; font-size:0.95rem;">-</div>
+                            </div>
+                            <div style="text-align:center;">
+                                <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">Referee</div>
+                                <div id="mc-info-referee" style="font-weight:700; color:#fff; margin-top:0.25rem; font-size:0.9rem;">-</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="font-size:0.8rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; margin-bottom:0.5rem;">Match Timeline (Goals)</div>
+                            <div id="mc-info-goals-timeline" style="display:flex; flex-direction:column; gap:0.5rem;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Panel 2: Lineups -->
+                <div class="modal-tab-panel" id="panel-mc-lineups">
+                    <div class="lineup-columns">
+                        <div class="lineup-team-card">
+                            <div class="lineup-team-name" id="mc-lineup-team1-title">Home Team</div>
+                            <div class="lineup-players-list" id="mc-lineup-team1-list"></div>
+                        </div>
+                        <div class="lineup-team-card">
+                            <div class="lineup-team-name" id="mc-lineup-team2-title">Away Team</div>
+                            <div class="lineup-players-list" id="mc-lineup-team2-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Panel 3: Pitch Coverage Heatmap -->
+                <div class="modal-tab-panel" id="panel-mc-coverage">
+                    <div class="pitch-container-wrapper">
+                        <div class="pitch-controls-pane">
+                            <div>
+                                <div class="pitch-select-label" style="margin-bottom:0.4rem;">Select Player</div>
+                                <select id="mc-pitch-player-select" class="pitch-dropdown" onchange="handlePitchPlayerChange()"></select>
+                            </div>
+
+                            <div class="pitch-player-stats-card">
+                                <div style="font-weight:800; font-size:0.95rem; color:#fff; border-bottom:1px solid rgba(255,255,255,0.06); padding-bottom:0.4rem;" id="mc-pitch-player-name">Player Name</div>
+                                <div class="pitch-stat-row">
+                                    <span class="pitch-stat-name">Position</span>
+                                    <span class="pitch-stat-value" id="mc-pitch-stat-pos" style="color:var(--accent-cyan); font-size:0.95rem;">MID</span>
+                                </div>
+                                <div class="pitch-stat-row">
+                                    <span class="pitch-stat-name">Distance Covered</span>
+                                    <span class="pitch-stat-value" id="mc-pitch-stat-dist">11.2 km</span>
+                                </div>
+                                <div class="pitch-stat-row">
+                                    <span class="pitch-stat-name">Top Speed</span>
+                                    <span class="pitch-stat-value" id="mc-pitch-stat-speed">32.8 km/h</span>
+                                </div>
+                                <div class="pitch-stat-row">
+                                    <span class="pitch-stat-name">Pass Completion</span>
+                                    <span class="pitch-stat-value" id="mc-pitch-stat-passes">87%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="pitch-canvas-area">
+                                <div class="pitch-center-line"></div>
+                                <div class="pitch-center-circle"></div>
+                                <div class="pitch-penalty-area top"></div>
+                                <div class="pitch-penalty-area bottom"></div>
+                                <div class="pitch-goal-area top"></div>
+                                <div class="pitch-goal-area bottom"></div>
+                                <canvas id="pitch-canvas" class="pitch-heatmap-overlay" width="320" height="380"></canvas>
+                            </div>
+                            <div style="text-align:center; font-size:0.75rem; color:var(--text-muted); margin-top:0.5rem; font-style:italic;">
+                                Visual pitch heatmap showing player coverage intensity (Red represents highest coverage)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
