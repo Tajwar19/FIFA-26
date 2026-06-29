@@ -3164,9 +3164,13 @@
             let totalAttendance = 0;
             let playedMatchesWithAtt = 0;
 
-            const playerGoals = {};
-            const playerAssists = {};
-            const playerTeams = {};
+            // Expose globally so Player Profile tab can access goals/assists
+            window.playerGoals = {};
+            window.playerAssists = {};
+            window.playerTeams = {};
+            const playerGoals = window.playerGoals;
+            const playerAssists = window.playerAssists;
+            const playerTeams = window.playerTeams;
 
             let highestScoringMatch = null;
             let highestGoalsInMatch = 0;
