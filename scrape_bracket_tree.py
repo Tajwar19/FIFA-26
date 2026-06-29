@@ -49,86 +49,109 @@ STAGE_NAMES_BY_INDEX = {
 }
 
 def scrape_bracket_tree():
-    print(f"Navigating to {URL}...")
-    with sync_playwright() as p:
-        # Launch browser with a large viewport to guarantee d-lg-block elements (the visual bracket) render
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            viewport={"width": 1920, "height": 1080},
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
-        page.goto(URL, wait_until="domcontentloaded", timeout=60000)
-        page.wait_for_timeout(5000)
-        
-        # Dismiss cookie banner
-        page.evaluate('() => document.getElementById("onetrust-accept-btn-handler")?.click()')
-        page.wait_for_timeout(2000)
-        
-        # Click 'View brackets' to ensure it's active (though it is always in the DOM for desktop sizes)
-        view_bracket_btn = page.locator("text=/View brackets/i").first
-        if view_bracket_btn.count() > 0:
-            print("Clicking 'View brackets' toggle...")
-            view_bracket_btn.click(force=True)
-            page.wait_for_timeout(3000)
+    print("Programmatically constructing bracket tree from all_matches.json...")
+    
+    # 1. Load matches from all_matches.json
+    all_matches_list = []
+    if os.path.exists("all_matches.json"):
+        try:
+            with open("all_matches.json", "r", encoding="utf-8") as f:
+                data = json.load(f)
+                all_matches_list.extend(data.get("group_stage", []))
+                for stage_matches in data.get("knockout_stage", {}).values():
+                    all_matches_list.extend(stage_matches)
+        except Exception as e:
+            print(f"Error reading all_matches.json: {e}")
+            return
             
-        print("Locating bracket stage columns...")
-        stages = page.query_selector_all("div[data-testid='bracket-stage']")
-        print(f"Found {len(stages)} stage columns in the bracket.")
+    # Create lookup map for fast retrieval
+    match_lookup = {m.get("Match"): m for m in all_matches_list if m.get("Match")}
+    
+    # Mappings for side and round name of each match in the visual bracket layout
+    MATCH_CONFIG = {
+        # LEFT Side
+        "M73": {"Round": "Round of 32 (Left)", "Side": "LEFT"},
+        "M74": {"Round": "Round of 32 (Left)", "Side": "LEFT"},
+        "M75": {"Round": "Round of 32 (Left)", "Side": "LEFT"},
+        "M77": {"Round": "Round of 32 (Left)", "Side": "LEFT"},
+        "M81": {"Round": "Round of 32 (Left)", "Side": "LEFT"},
+        "M82": {"Round": "Round of 32 (Left)", "Side": "LEFT"},
+        "M83": {"Round": "Round of 32 (Left)", "Side": "LEFT"},
+        "M84": {"Round": "Round of 32 (Left)", "Side": "LEFT"},
         
-        bracket_tree = {}
-        flat_records = []
+        "M89": {"Round": "Round of 16 (Left)", "Side": "LEFT"},
+        "M90": {"Round": "Round of 16 (Left)", "Side": "LEFT"},
+        "M93": {"Round": "Round of 16 (Left)", "Side": "LEFT"},
+        "M94": {"Round": "Round of 16 (Left)", "Side": "LEFT"},
         
-        for idx, stage in enumerate(stages):
-            stage_id = stage.get_attribute("data-stage-id") or "N/A"
-            position = stage.get_attribute("data-stage-position") or "N/A"
-            round_name = STAGE_NAMES_BY_INDEX.get(idx, f"Stage_{idx}")
-            
-            # Query match nodes in this column
-            match_nodes = stage.query_selector_all("[class*='bracketMainWrapper']")
-            if len(match_nodes) == 0:
+        "M97": {"Round": "Quarter-final (Left)", "Side": "LEFT"},
+        "M98": {"Round": "Quarter-final (Left)", "Side": "LEFT"},
+        
+        "M101": {"Round": "Semi-final (Left)", "Side": "LEFT"},
+        
+        # CENTER
+        "M103": {"Round": "Play-off for third place", "Side": "CENTER"},
+        "M104": {"Round": "Final", "Side": "CENTER"},
+        
+        # RIGHT Side
+        "M76": {"Round": "Round of 32 (Right)", "Side": "RIGHT"},
+        "M78": {"Round": "Round of 32 (Right)", "Side": "RIGHT"},
+        "M79": {"Round": "Round of 32 (Right)", "Side": "RIGHT"},
+        "M80": {"Round": "Round of 32 (Right)", "Side": "RIGHT"},
+        "M85": {"Round": "Round of 32 (Right)", "Side": "RIGHT"},
+        "M86": {"Round": "Round of 32 (Right)", "Side": "RIGHT"},
+        "M87": {"Round": "Round of 32 (Right)", "Side": "RIGHT"},
+        "M88": {"Round": "Round of 32 (Right)", "Side": "RIGHT"},
+        
+        "M91": {"Round": "Round of 16 (Right)", "Side": "RIGHT"},
+        "M92": {"Round": "Round of 16 (Right)", "Side": "RIGHT"},
+        "M95": {"Round": "Round of 16 (Right)", "Side": "RIGHT"},
+        "M96": {"Round": "Round of 16 (Right)", "Side": "RIGHT"},
+        
+        "M99": {"Round": "Quarter-final (Right)", "Side": "RIGHT"},
+        "M100": {"Round": "Quarter-final (Right)", "Side": "RIGHT"},
+        
+        "M102": {"Round": "Semi-final (Right)", "Side": "RIGHT"}
+    }
+    
+    # Required match ordering for columns to align correctly without cross-overs
+    COLUMN_MATCH_ORDER = {
+        "Round of 32 (Left)": ["M74", "M77", "M73", "M75", "M83", "M84", "M81", "M82"],
+        "Round of 16 (Left)": ["M89", "M90", "M93", "M94"],
+        "Quarter-final (Left)": ["M97", "M98"],
+        "Semi-final (Left)": ["M101"],
+        "Play-off for third place": ["M103"],
+        "Final": ["M104"],
+        "Semi-final (Right)": ["M102"],
+        "Quarter-final (Right)": ["M99", "M100"],
+        "Round of 16 (Right)": ["M91", "M92", "M95", "M96"],
+        "Round of 32 (Right)": ["M76", "M78", "M79", "M80", "M86", "M88", "M85", "M87"]
+    }
+    
+    bracket_tree = {}
+    
+    for round_name, match_ids in COLUMN_MATCH_ORDER.items():
+        bracket_tree[round_name] = []
+        for m_id in match_ids:
+            m = match_lookup.get(m_id)
+            if not m:
+                print(f"Warning: Match {m_id} not found in all_matches.json!")
                 continue
                 
-            bracket_tree[round_name] = []
+            config = MATCH_CONFIG.get(m_id, {})
             
-            for m_idx, node in enumerate(match_nodes):
-                try:
-                    # Match ID
-                    label_el = node.query_selector("[class*='matchLabel']")
-                    label = label_el.text_content().strip() if label_el else "N/A"
-                    
-                    # Date & Time
-                    date_el = node.query_selector("[class*='date']")
-                    date = date_el.text_content().strip() if date_el else "N/A"
-                    time_el = node.query_selector("[class*='time']")
-                    time = time_el.text_content().strip() if time_el else "N/A"
-                    
-                    # Teams (T1 and T2 name or placeholders)
-                    teams = node.query_selector_all("[class*='teamName']")
-                    team1 = teams[0].text_content().strip() if len(teams) > 0 else "N/A"
-                    team2 = teams[1].text_content().strip() if len(teams) > 1 else "N/A"
-                    
-                    # Next Match ID in bracket progression
-                    next_match = NEXT_MATCH_MAP.get(label, "")
-                    
-                    match_record = {
-                        "Match": label,
-                        "Round": round_name,
-                        "Side": position,
-                        "Date": date,
-                        "Time": time,
-                        "Team1": team1,
-                        "Team2": team2,
-                        "NextMatch": next_match
-                    }
-                    
-                    bracket_tree[round_name].append(match_record)
-                    flat_records.append(match_record)
-                except Exception as e:
-                    print(f"Error parsing bracket match node: {e}")
-                    
-        browser.close()
-        
+            match_record = {
+                "Match": m_id,
+                "Round": round_name,
+                "Side": config.get("Side", "N/A"),
+                "Date": m.get("Date", "N/A"),
+                "Time": m.get("Time", "N/A"),
+                "Team1": m.get("Team1", "TBD"),
+                "Team2": m.get("Team2", "TBD"),
+                "NextMatch": NEXT_MATCH_MAP.get(m_id, "")
+            }
+            bracket_tree[round_name].append(match_record)
+            
     print("\n========================================================")
     print("           FIFA WORLD CUP 2026 VISUAL BRACKET TREE      ")
     print("========================================================")
