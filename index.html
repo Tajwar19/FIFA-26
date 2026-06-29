@@ -2138,13 +2138,192 @@
             bottom: -2px;
             border-bottom: none;
         }
-        .pitch-heatmap-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
+        }
+
+        /* Stats Sidebar Layout Styles */
+        .stats-sidebar-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            align-items: start;
+        }
+        @media (max-width: 768px) {
+            .stats-sidebar-layout {
+                grid-template-columns: 1fr;
+            }
+            .stats-sidebar-menu {
+                flex-direction: row !important;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            }
+            .stats-menu-btn {
+                text-align: center !important;
+            }
+        }
+        .stats-sidebar-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            background: rgba(10, 22, 44, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 0.75rem;
+        }
+        .stats-menu-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 0.75rem 1rem;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            border: 1px solid transparent;
+        }
+        .stats-menu-btn:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .stats-menu-btn.active {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        .stats-content-area {
+            flex: 1;
+        }
+        .stats-sub-panel {
+            display: none;
+        }
+        .stats-sub-panel.active {
+            display: block;
+        }
+
+        /* Podium Styles */
+        .podium-card {
+            background: rgba(10, 22, 44, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1.25rem;
+        }
+        .podium-title {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .podium-wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 190px;
+            gap: 0.75rem;
+            padding-top: 1rem;
+        }
+        .podium-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90px;
+            transition: transform 0.3s;
+        }
+        .podium-column:hover {
+            transform: translateY(-5px);
+        }
+        .podium-block {
             width: 100%;
-            height: 100%;
-            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px 6px 0 0;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        .podium-block.rank-1 {
+            height: 100px;
+            background: linear-gradient(to top, rgba(251, 191, 36, 0.6), rgba(251, 191, 36, 0.2));
+            border: 1px solid rgba(251, 191, 36, 0.4);
+            border-bottom: none;
+        }
+        .podium-block.rank-2 {
+            height: 75px;
+            background: linear-gradient(to top, rgba(156, 163, 175, 0.5), rgba(156, 163, 175, 0.15));
+            border: 1px solid rgba(156, 163, 175, 0.35);
+            border-bottom: none;
+        }
+        .podium-block.rank-3 {
+            height: 55px;
+            background: linear-gradient(to top, rgba(180, 83, 9, 0.5), rgba(180, 83, 9, 0.15));
+            border: 1px solid rgba(180, 83, 9, 0.35);
+            border-bottom: none;
+        }
+        .podium-number {
+            font-size: 1.8rem;
+        }
+        .podium-player-name {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 0.35rem;
+        }
+        .podium-player-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            font-size: 0.95rem;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+        .podium-player-flag {
+            margin-bottom: 0.4rem;
+        }
+
+        /* Toggle Styles for Knockout Panel */
+        .toggle-btn-group {
+            display: inline-flex;
+            background: rgba(10, 22, 44, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 0.25rem;
+            margin-bottom: 1rem;
+        }
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 0.5rem 1.25rem;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        .toggle-btn:hover {
+            color: #fff;
+        }
+        .toggle-btn.active {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--accent-cyan);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
     </style>
 
