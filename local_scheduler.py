@@ -84,13 +84,18 @@ def main():
     print(f"Interval: Every {INTERVAL_SECONDS} seconds during active window")
     print("==========================================================\n")
     
+    startup_run = True
+    
     while True:
         try:
             bdt_now = get_bdt_time()
             bdt_str = bdt_now.strftime('%Y-%m-%d %I:%M:%S %p')
             
-            if is_in_active_window(bdt_now):
-                print(f"\n--- Cycle Start: {bdt_str} (BDT) [ACTIVE WINDOW] ---")
+            if startup_run or is_in_active_window(bdt_now):
+                if startup_run:
+                    print(f"\n--- Initial Startup Cycle: {bdt_str} (BDT) ---")
+                else:
+                    print(f"\n--- Cycle Start: {bdt_str} (BDT) [ACTIVE WINDOW] ---")
                 start_time = time.time()
                 
                 # Execute the scraper/builder steps
@@ -104,6 +109,10 @@ def main():
                     check_and_push_git()
                 else:
                     print("Skipping git push check due to step execution errors.")
+                
+                if startup_run:
+                    startup_run = False
+                    print("Initial startup cycle finished.")
                 
                 # Compute elapsed time and sleep for remaining interval
                 elapsed = time.time() - start_time
