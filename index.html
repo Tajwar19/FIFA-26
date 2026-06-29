@@ -150,29 +150,71 @@
         .action-area {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
-        .timestamp {
-            font-size: 0.85rem;
+        .timestamp-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
             color: var(--text-muted);
             background: rgba(255, 255, 255, 0.03);
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.85rem;
             border-radius: 20px;
             border: 1px solid var(--card-border);
+            white-space: nowrap;
+        }
+        
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            animation: pulse-green 2s infinite;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+        @keyframes pulse-green {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+            }
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        .controls-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .action-buttons-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .btn-update {
             background: linear-gradient(135deg, var(--primary), var(--accent-cyan));
             color: #ffffff;
             border: none;
-            padding: 0.65rem 1.4rem;
+            padding: 0.55rem 1.15rem;
             font-family: 'Outfit', sans-serif;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             border-radius: 8px;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
             transition: var(--transition);
             display: flex;
             align-items: center;
@@ -181,7 +223,7 @@
 
         .btn-update:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+            box-shadow: 0 6px 16px rgba(59, 130, 246, 0.35);
         }
 
         .btn-update:active {
@@ -192,24 +234,24 @@
             background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(239, 68, 68, 0.15));
             color: #ef4444;
             border: 1px solid rgba(239, 68, 68, 0.2);
-            padding: 0.65rem 1.4rem;
+            padding: 0.55rem 1.15rem;
             font-family: 'Outfit', sans-serif;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             border-radius: 8px;
             cursor: pointer;
             transition: var(--transition);
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.1);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.08);
         }
 
         .btn-reset-predictions:hover {
             transform: translateY(-2px);
             background: rgba(239, 68, 68, 0.18);
             border-color: rgba(239, 68, 68, 0.45);
-            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.25);
+            box-shadow: 0 6px 16px rgba(239, 68, 68, 0.25);
         }
 
         .btn-reset-predictions:active {
@@ -1085,170 +1127,6 @@
             vertical-align: middle;
         }
 
-        /* ==================== RESPONSIVE DESIGN (MEDIA QUERIES) ==================== */
-        @media (max-width: 900px) {
-            .match-row {
-                flex-direction: column;
-                gap: 1rem;
-                padding: 1.25rem;
-                align-items: stretch;
-                text-align: center;
-            }
-
-            .match-meta {
-                flex-basis: auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 0.5rem;
-            }
-
-            .match-group-label {
-                margin-top: 0;
-            }
-
-            .match-teams-area {
-                gap: 1rem;
-                margin: 0.5rem 0;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 100%;
-            }
-
-            .match-team {
-                flex-basis: 35%;
-            }
-
-            .match-team.team-home {
-                justify-content: flex-end;
-            }
-
-            .match-team.team-away {
-                justify-content: flex-start;
-            }
-
-            .match-venue {
-                flex-basis: auto;
-                text-align: center;
-                border-top: 1px solid rgba(255, 255, 255, 0.05);
-                padding-top: 0.5rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 1.5rem;
-                text-align: center;
-            }
-
-            .action-area {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 1rem;
-            }
-
-            .timestamp {
-                text-align: center;
-            }
-
-            .mode-toggle-container {
-                justify-content: center;
-            }
-
-            .btn-update {
-                justify-content: center;
-            }
-
-            .filter-bar {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 1rem;
-            }
-
-            .filter-group {
-                width: 100%;
-            }
-
-            .search-input,
-            .select-filter {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .tabs-menu {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                text-align: center;
-                gap: 0.25rem;
-            }
-
-            .tab-btn {
-                padding: 0.6rem 0.25rem;
-                font-size: 0.85rem;
-                text-align: center;
-            }
-
-            .match-teams-area {
-                flex-direction: column;
-                gap: 0.6rem;
-                width: 100%;
-            }
-
-            .match-team {
-                flex-basis: auto;
-                width: 100%;
-                justify-content: center !important;
-                font-size: 1rem;
-            }
-
-            .match-team.team-home {
-                flex-direction: row-reverse;
-                /* Put flag on the left, text on the right */
-            }
-
-            .match-score-center {
-                margin: 0.2rem 0;
-            }
-
-            .match-score-nums {
-                font-size: 1.4rem;
-                padding: 0.2rem 0.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0.75rem;
-            }
-
-            .group-card {
-                padding: 1rem 0.75rem;
-            }
-
-            .standings-table th,
-            .standings-table td {
-                padding: 0.5rem 0.15rem;
-                font-size: 0.8rem;
-            }
-
-            .match-teams-area {
-                gap: 0.5rem;
-            }
-
-            .match-team {
-                gap: 0.4rem;
-            }
-
-            .match-flag {
-                width: 22px;
-                height: 14px;
-            }
-        }
         /* Overhauled Matches Tab Layout & Styling */
         .matches-grouped-container {
             display: flex;
@@ -1690,6 +1568,266 @@
         .matches-day-section.today-highlight {
             animation: todayGlow 2s ease-in-out;
         }
+
+        /* ==================== RESPONSIVE DESIGN (MEDIA QUERIES) ==================== */
+        @media (max-width: 900px) {
+            .match-row {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1.25rem;
+                align-items: stretch;
+                text-align: center;
+            }
+
+            .match-meta {
+                flex-basis: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .match-group-label {
+                margin-top: 0;
+            }
+
+            .match-teams-area {
+                gap: 1rem;
+                margin: 0.5rem 0;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .match-team {
+                flex-basis: 35%;
+            }
+
+            .match-team.team-home {
+                justify-content: flex-end;
+            }
+
+            .match-team.team-away {
+                justify-content: flex-start;
+            }
+
+            .match-venue {
+                flex-basis: auto;
+                text-align: center;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                padding-top: 0.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+                text-align: center;
+                padding-bottom: 0.75rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .brand {
+                flex-direction: row;
+                gap: 8px;
+            }
+            
+            .brand-ball {
+                font-size: 28px;
+            }
+
+            .brand-text h1 {
+                font-size: 20px;
+            }
+
+            .brand-text p {
+                display: none; /* Hide subtitle on mobile to save space */
+            }
+
+            .action-area {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .timestamp-row {
+                justify-content: center;
+                width: fit-content;
+            }
+
+            .controls-row {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .mode-toggle-container {
+                flex-shrink: 0;
+            }
+
+            .action-buttons-group {
+                display: flex;
+                flex-grow: 1;
+                justify-content: flex-end;
+                gap: 0.5rem;
+            }
+
+            .btn-update,
+            .btn-reset-predictions {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.85rem;
+                justify-content: center;
+            }
+
+            .filter-bar {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+            }
+
+            .filter-group {
+                width: 100%;
+            }
+
+            .search-input,
+            .select-filter {
+                width: 100%;
+            }
+
+            /* Overhaul matches-filter-row on mobile */
+            .matches-filter-row {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.6rem 1rem;
+            }
+
+            .search-wrapper {
+                order: 1;
+                flex-grow: 1;
+                flex-shrink: 1;
+                width: calc(100% - 60px) !important; /* give space for calendar button */
+            }
+
+            .calendar-wrapper {
+                order: 2;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+
+            .pills-scroll-wrapper {
+                order: 3;
+                width: 100%; /* forces it to take up the full width, wrapping to the next line */
+                margin-top: 0.25rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .tabs-menu {
+                width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                scrollbar-width: none; /* Hide scrollbar on Firefox */
+                -ms-overflow-style: none;  /* Hide scrollbar on IE/Edge */
+                gap: 0.35rem;
+                padding: 0.35rem;
+                border-radius: 12px;
+            }
+            
+            .tabs-menu::-webkit-scrollbar {
+                display: none; /* Hide scrollbar on Chrome, Safari, Opera */
+            }
+
+            .tab-btn {
+                flex: 1 0 auto; /* Ensure buttons don't shrink and stay on one line */
+                padding: 0.55rem 1rem;
+                font-size: 0.85rem;
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            .match-teams-area {
+                flex-direction: column;
+                gap: 0.6rem;
+                width: 100%;
+            }
+
+            .match-team {
+                flex-basis: auto;
+                width: 100%;
+                justify-content: center !important;
+                font-size: 1rem;
+            }
+
+            .match-team.team-home {
+                flex-direction: row-reverse;
+                /* Put flag on the left, text on the right */
+            }
+
+            .match-score-center {
+                margin: 0.2rem 0;
+            }
+
+            .match-score-nums {
+                font-size: 1.4rem;
+                padding: 0.2rem 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn-update,
+            .btn-reset-predictions {
+                padding: 0 !important;
+                width: 38px;
+                height: 38px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                gap: 0;
+            }
+            
+            .btn-update .btn-text,
+            .btn-reset-predictions .btn-text {
+                display: none !important;
+            }
+
+            .container {
+                padding: 0.75rem;
+            }
+
+            .group-card {
+                padding: 1rem 0.75rem;
+            }
+
+            .standings-table th,
+            .standings-table td {
+                padding: 0.5rem 0.15rem;
+                font-size: 0.8rem;
+            }
+
+            .match-teams-area {
+                gap: 0.5rem;
+            }
+
+            .match-team {
+                gap: 0.4rem;
+            }
+
+            .match-flag {
+                width: 22px;
+                height: 14px;
+            }
+        }
     </style>
 
 </head>
@@ -1710,36 +1848,41 @@
                 </div>
 
                 <div class="action-area">
-                    <div class="timestamp">
-                        Last Updated: <span id="update-time">Loading...</span>
+                    <div class="timestamp-row">
+                        <span class="pulse-dot"></span>
+                        <span>Last Updated: <span id="update-time">Loading...</span></span>
                     </div>
 
-                    <!-- Mode Toggle -->
-                    <div class="mode-toggle-container">
-                        <div class="mode-toggle-bg" id="toggle-bg"></div>
-                        <button class="mode-toggle-btn active" id="btn-mode-real"
-                            onclick="setDashboardMode('real')">Real</button>
-                        <button class="mode-toggle-btn" id="btn-mode-predict"
-                            onclick="setDashboardMode('predict')">Predict</button>
+                    <div class="controls-row">
+                        <!-- Mode Toggle -->
+                        <div class="mode-toggle-container">
+                            <div class="mode-toggle-bg" id="toggle-bg"></div>
+                            <button class="mode-toggle-btn active" id="btn-mode-real"
+                                onclick="setDashboardMode('real')">Real</button>
+                            <button class="mode-toggle-btn" id="btn-mode-predict"
+                                onclick="setDashboardMode('predict')">Predict</button>
+                        </div>
+
+                        <div class="action-buttons-group">
+                            <!-- Reset Predictions button (Only visible in predict mode) -->
+                            <button class="btn-reset-predictions" id="btn-reset-pred" onclick="resetPredictions()" style="display: none;">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                                <span class="btn-text">Reset Picks</span>
+                            </button>
+
+                            <button class="btn-update" id="scrape-btn" onclick="triggerScrape()">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99">
+                                    </path>
+                                </svg>
+                                <span class="btn-text">Data Snapshot (Local Only)</span>
+                            </button>
+                        </div>
                     </div>
-
-                    <!-- Reset Predictions button (Only visible in predict mode) -->
-                    <button class="btn-reset-predictions" id="btn-reset-pred" onclick="resetPredictions()" style="display: none;">
-                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                        </svg>
-                        Reset Picks
-                    </button>
-
-                    <button class="btn-update" id="scrape-btn" onclick="triggerScrape()">
-                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99">
-                            </path>
-                        </svg>
-                        Data Snapshot (Local Only)
-                    </button>
                 </div>
             </header>
 

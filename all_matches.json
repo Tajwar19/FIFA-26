@@ -2387,20 +2387,26 @@
                 "Time": "1 AM BST",
                 "Team1": "South Africa",
                 "Code1": "RSA",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "1",
                 "Team2": "Canada",
                 "Code2": "CAN",
-                "Status": "1 AM BST",
+                "Status": "0FT1",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 73",
                 "Stadium": "Los Angeles Stadium",
                 "City": "Los Angeles",
                 "Goals1": [],
-                "Goals2": [],
-                "Referee": "",
-                "Attendance": 0,
-                "HT": ""
+                "Goals2": [
+                    {
+                        "Player": "Stephen EUSTAQUIO",
+                        "Minute": "90'+2'",
+                        "Type": 2
+                    }
+                ],
+                "Referee": "João Pedro Silva Pinheiro",
+                "Attendance": "69237",
+                "HT": "0 - 0"
             },
             {
                 "Match": "M74",
@@ -2761,8 +2767,8 @@
                 "MatchDay": null,
                 "Date": "Saturday 04 July 2026",
                 "Time": "11 PM BST",
-                "Team1": "W73",
-                "Code1": "W73",
+                "Team1": "Canada",
+                "Code1": "CAN",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "W75",
