@@ -2546,6 +2546,7 @@
             </div>
 
             <!-- Match list rows -->
+                        <!-- Match list rows -->
             <div class="matches-list" id="matches-root">
                 <!-- Dynamic rendering in JS -->
             </div>
@@ -2553,116 +2554,219 @@
 
         <!-- Tab 4: Statistics -->
         <div class="tab-panel" id="panel-stats">
-            <div class="stats-dashboard-container" style="display: flex; flex-direction: column; gap: 2rem; margin-top: 1rem; margin-bottom: 2rem;">
-                
-                <!-- KPI Section -->
-                <div class="stats-kpi-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
-                    <div class="group-card" style="text-align: center; padding: 1.5rem;">
-                        <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-cyan);" id="stat-kpi-matches">0</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Matches Played</div>
-                    </div>
-                    <div class="group-card" style="text-align: center; padding: 1.5rem;">
-                        <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-gold);" id="stat-kpi-goals">0</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Goals Scored</div>
-                    </div>
-                    <div class="group-card" style="text-align: center; padding: 1.5rem;">
-                        <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-green);" id="stat-kpi-average">0.00</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Goals / Match</div>
-                    </div>
-                    <div class="group-card" style="text-align: center; padding: 1.5rem;">
-                        <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: #a855f7;" id="stat-kpi-attendance">0</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Total Attendance</div>
-                    </div>
+            <div class="stats-sidebar-layout">
+                <!-- Left Sidebar Menu -->
+                <div class="stats-sidebar-menu">
+                    <button class="stats-menu-btn active" id="btn-stats-overview" onclick="switchStatsSubTab('overview')">
+                        📊 Overview
+                    </button>
+                    <button class="stats-menu-btn" id="btn-stats-scorers" onclick="switchStatsSubTab('scorers')">
+                        ⚽ Scorers & Assists
+                    </button>
+                    <button class="stats-menu-btn" id="btn-stats-teams" onclick="switchStatsSubTab('teams')">
+                        🛡️ Team Stats
+                    </button>
+                    <button class="stats-menu-btn" id="btn-stats-players" onclick="switchStatsSubTab('players')">
+                        🏃 Player Profiles
+                    </button>
                 </div>
 
-                <!-- Main Stats Section: Top Scorers & Team Records -->
-                <div class="stats-main-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-                    
-                    <!-- Top Scorers Card -->
-                    <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
-                        <div class="group-header">
-                            ⚽ Top Scorers
-                            <span style="color: var(--accent-gold);">Golden Boot Race</span>
+                <!-- Content Area -->
+                <div class="stats-content-area">
+                    <!-- Sub-panel 1: Overview -->
+                    <div class="stats-sub-panel active" id="sub-panel-overview">
+                        <!-- KPI Section -->
+                        <div class="stats-kpi-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                            <div class="group-card" style="text-align: center; padding: 1.5rem;">
+                                <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-cyan);" id="stat-kpi-matches">0</div>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Matches Played</div>
+                            </div>
+                            <div class="group-card" style="text-align: center; padding: 1.5rem;">
+                                <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-gold);" id="stat-kpi-goals">0</div>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Goals Scored</div>
+                            </div>
+                            <div class="group-card" style="text-align: center; padding: 1.5rem;">
+                                <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--accent-green);" id="stat-kpi-average">0.00</div>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Goals / Match</div>
+                            </div>
+                            <div class="group-card" style="text-align: center; padding: 1.5rem;">
+                                <div style="font-size: 2.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: #a855f7;" id="stat-kpi-attendance">0</div>
+                                <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-top: 0.25rem;">Total Attendance</div>
+                            </div>
                         </div>
-                        <div style="overflow-x: auto;">
-                            <table class="standings-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 50px; text-align: center;">Rank</th>
-                                        <th>Player</th>
-                                        <th>Team</th>
-                                        <th style="width: 70px; text-align: center;">Goals</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="stats-scorers-root">
-                                    <!-- Dynamic scorers rendering -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- Top Assists Card -->
-                    <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
-                        <div class="group-header">
-                            👟 Top Assists
-                            <span style="color: var(--accent-cyan);">Playmakers Race</span>
-                        </div>
-                        <div style="overflow-x: auto;">
-                            <table class="standings-table">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 50px; text-align: center;">Rank</th>
-                                        <th>Player</th>
-                                        <th>Team</th>
-                                        <th style="width: 70px; text-align: center;">Assists</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="stats-assists-root">
-                                    <!-- Dynamic assists rendering -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- Team Records / Goals Card -->
-                    <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
-                        <div class="group-header">
-                            📊 Team Stats
-                            <span style="color: var(--accent-cyan);">Attack & Defense</span>
-                        </div>
-                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                            <!-- Top Attacking -->
-                            <div>
-                                <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Top Scoring Teams</div>
-                                <div style="display: flex; flex-direction: column; gap: 0.4rem;" id="stats-teams-attacking-root">
-                                    <!-- Dynamic attacking teams -->
+                        
+                        <!-- Overview Charts Grid -->
+                        <div class="stats-overview-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <!-- Win Splits (Home/Draw/Away) -->
+                            <div class="group-card" style="padding: 1.5rem;">
+                                <div class="group-header" style="margin-bottom: 1rem;">
+                                    🏆 Match Outcome Splits
+                                    <span style="color: var(--accent-gold);">Result Share</span>
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 1.2rem;" id="stats-outcomes-root">
+                                    <!-- Dynamic outcomes rendering -->
                                 </div>
                             </div>
-                            <!-- Best Defending -->
-                            <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 1rem;">
-                                <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Best Defending Teams</div>
-                                <div style="display: flex; flex-direction: column; gap: 0.4rem;" id="stats-teams-defensive-root">
-                                    <!-- Dynamic defensive teams -->
+                            
+                            <!-- Goal Intervals Histogram -->
+                            <div class="group-card" style="padding: 1.5rem;">
+                                <div class="group-header" style="margin-bottom: 1rem;">
+                                    ⏰ Goal Time Distribution
+                                    <span style="color: var(--accent-cyan);">15-Min Intervals</span>
                                 </div>
+                                <div class="goal-intervals-container" style="display: flex; flex-direction: column; gap: 0.8rem;" id="stats-intervals-root">
+                                    <!-- Dynamic intervals rendering -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Match Records Card -->
+                        <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08); padding: 1.5rem;">
+                            <div class="group-header" style="margin-bottom: 1rem;">
+                                🏆 Match Records
+                                <span style="color: #a855f7;">Milestones</span>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 1rem;" id="stats-records-root">
+                                <!-- Dynamic match records -->
                             </div>
                         </div>
                     </div>
 
-                    <!-- Match Records Card -->
-                    <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
-                        <div class="group-header">
-                            🏆 Match Records
-                            <span style="color: #a855f7;">Milestones</span>
+                    <!-- Sub-panel 2: Scorers & Assists -->
+                    <div class="stats-sub-panel" id="sub-panel-scorers">
+                        <!-- Podium Rows -->
+                        <div class="podiums-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                            <!-- Scorers Podium -->
+                            <div class="podium-card" id="scorers-podium-root">
+                                <!-- Dynamic Podium -->
+                            </div>
+                            <!-- Assists Podium -->
+                            <div class="podium-card" id="assists-podium-root">
+                                <!-- Dynamic Podium -->
+                            </div>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 1rem;" id="stats-records-root">
-                            <!-- Dynamic match records -->
+                        
+                        <!-- Main Stats Tables -->
+                        <div class="stats-main-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                            <!-- Top Scorers Card -->
+                            <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
+                                <div class="group-header">
+                                    ⚽ Top Scorers
+                                    <span style="color: var(--accent-gold);">Golden Boot Race</span>
+                                </div>
+                                <div style="overflow-x: auto;">
+                                    <table class="standings-table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 50px; text-align: center;">Rank</th>
+                                                <th>Player</th>
+                                                <th>Team</th>
+                                                <th style="width: 70px; text-align: center;">Goals</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="stats-scorers-root">
+                                            <!-- Dynamic scorers rendering -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Top Assists Card -->
+                            <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08);">
+                                <div class="group-header">
+                                    👟 Top Assists
+                                    <span style="color: var(--accent-cyan);">Playmakers Race</span>
+                                </div>
+                                <div style="overflow-x: auto;">
+                                    <table class="standings-table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 50px; text-align: center;">Rank</th>
+                                                <th>Player</th>
+                                                <th>Team</th>
+                                                <th style="width: 70px; text-align: center;">Assists</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="stats-assists-root">
+                                            <!-- Dynamic assists rendering -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Sub-panel 3: Team Stats -->
+                    <div class="stats-sub-panel" id="sub-panel-teams">
+                        <!-- Team Records / Goals Card -->
+                        <div class="group-card" style="background: rgba(10, 22, 44, 0.55); border-color: rgba(255, 255, 255, 0.08); max-width: 800px; margin: 0 auto;">
+                            <div class="group-header" style="margin-bottom: 1.5rem;">
+                                📊 Team Performance Comparisons
+                                <span style="color: var(--accent-cyan);">Attack & Defense</span>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                                <!-- Top Attacking -->
+                                <div>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 0.75rem; letter-spacing: 0.05em;">Top Scoring Teams</div>
+                                    <div style="display: flex; flex-direction: column; gap: 0.6rem;" id="stats-teams-attacking-root">
+                                        <!-- Dynamic attacking teams -->
+                                    </div>
+                                </div>
+                                <!-- Best Defending -->
+                                <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 1.5rem;">
+                                    <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 0.75rem; letter-spacing: 0.05em;">Best Defending Teams</div>
+                                    <div style="display: flex; flex-direction: column; gap: 0.6rem;" id="stats-teams-defensive-root">
+                                        <!-- Dynamic defensive teams -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-panel 4: Player Profiles -->
+                    <div class="stats-sub-panel" id="sub-panel-players">
+                        <div class="player-profile-layout" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 1.5rem; align-items: start;">
+                            <!-- Left: Player Select & Profile Card -->
+                            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                                <div class="pitch-controls-pane">
+                                    <div class="pitch-select-label">Select Player for Profile</div>
+                                    <select id="stats-profile-player-select" class="pitch-dropdown" onchange="handleProfilePlayerChange()">
+                                        <!-- Populated dynamically -->
+                                    </select>
+                                </div>
+                                
+                                <div class="group-card" style="padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; align-items: center; text-align: center; background: linear-gradient(135deg, rgba(10,22,44,0.7), rgba(6,14,34,0.7)); border-color: rgba(251,191,36,0.15);">
+                                    <div style="font-size: 3rem; margin-bottom: 0.25rem;">🏃</div>
+                                    <div style="font-size: 1.3rem; font-weight: 800; color: #fff; font-family: 'Space Grotesk', sans-serif;" id="profile-card-name">Player Name</div>
+                                    <div style="font-size: 0.85rem; color: var(--accent-gold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;" id="profile-card-pos">MID</div>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 0.9rem;" id="profile-card-team-flag">
+                                        <!-- Flag & team -->
+                                    </div>
+                                    
+                                    <div style="width: 100%; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; text-align: left; font-size: 0.85rem; color: var(--text-muted);">
+                                        <div>⚽ Goals: <span style="font-weight: 800; color: var(--accent-gold); font-size: 0.95rem;" id="profile-card-goals">0</span></div>
+                                        <div>👟 Assists: <span style="font-weight: 800; color: var(--accent-cyan); font-size: 0.95rem;" id="profile-card-assists">0</span></div>
+                                        <div>⏱️ Matches: <span style="font-weight: 800; color: #fff; font-size: 0.95rem;" id="profile-card-matches">0</span></div>
+                                        <div>📍 Position: <span style="font-weight: 800; color: var(--accent-green); font-size: 0.95rem;" id="profile-card-role">MF</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right: Radar Chart Visualizer -->
+                            <div class="group-card" style="padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(10,22,44,0.4);">
+                                <div class="group-header" style="width: 100%; margin-bottom: 1.25rem;">
+                                    🕸️ Role Profile Chart
+                                    <span style="color: var(--accent-cyan);">Ratings Radar</span>
+                                </div>
+                                <div id="radar-chart-container" style="width: 100%; max-width: 320px; height: 320px; display: flex; align-items: center; justify-content: center;">
+                                    <!-- Dynamic Radar SVG -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- JavaScript logic -->
     <script>
