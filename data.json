@@ -172,8 +172,8 @@
                 "Status": "2 AM BST",
                 "Team1": "Brazil",
                 "Team1_raw": "Brazil",
-                "Team2": "W78: Norway",
-                "Team2_raw": "W78",
+                "Team2": "Norway",
+                "Team2_raw": "Norway",
                 "Time": "2 AM BST"
             },
             {
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-01 12:45:58 AM",
+    "last_updated": "2026-07-01 01:15:08 AM",
     "matches": {
         "group_stage": [
             {
@@ -29842,7 +29842,7 @@
                     "Attendance": 0,
                     "City": "New Jersey",
                     "Code1": "BRA",
-                    "Code2": "W78",
+                    "Code2": "NOR",
                     "Date": "Monday 06 July 2026",
                     "Goals1": [],
                     "Goals2": [],
@@ -29860,8 +29860,8 @@
                     "Status": "2 AM BST",
                     "Team1": "Brazil",
                     "Team1_raw": "Brazil",
-                    "Team2": "W78: Norway",
-                    "Team2_raw": "W78",
+                    "Team2": "Norway",
+                    "Team2_raw": "Norway",
                     "Time": "2 AM BST"
                 },
                 {
