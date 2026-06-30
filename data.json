@@ -110,8 +110,8 @@
                 "Status": "3 AM BST",
                 "Team1": "Paraguay",
                 "Team1_raw": "Paraguay",
-                "Team2": "W77: France",
-                "Team2_raw": "W77",
+                "Team2": "France",
+                "Team2_raw": "France",
                 "Time": "3 AM BST"
             },
             {
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-01 04:33:22 AM",
+    "last_updated": "2026-07-01 04:55:18 AM",
     "matches": {
         "group_stage": [
             {
@@ -29790,7 +29790,7 @@
                     "Attendance": 0,
                     "City": "Philadelphia",
                     "Code1": "PAR",
-                    "Code2": "W77",
+                    "Code2": "FRA",
                     "Date": "Sunday 05 July 2026",
                     "Goals1": [],
                     "Goals2": [],
@@ -29808,8 +29808,8 @@
                     "Status": "3 AM BST",
                     "Team1": "Paraguay",
                     "Team1_raw": "Paraguay",
-                    "Team2": "W77: France",
-                    "Team2_raw": "W77",
+                    "Team2": "France",
+                    "Team2_raw": "France",
                     "Time": "3 AM BST"
                 },
                 {
