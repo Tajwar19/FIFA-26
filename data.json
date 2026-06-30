@@ -273,7 +273,7 @@
                 "Match": "M75",
                 "NextMatch": "M90",
                 "Round": "Round of 32 (Left)",
-                "Score1": "0",
+                "Score1": "1",
                 "Score2": "0",
                 "Side": "LEFT",
                 "Status": "0FT0",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-30 08:22:25 AM",
+    "last_updated": "2026-06-30 08:34:20 AM",
     "matches": {
         "group_stage": [
             {
@@ -31196,7 +31196,7 @@
                     "Match": "M75",
                     "MatchDay": null,
                     "Referee": "Wilton SAMPAIO",
-                    "Score1": "0",
+                    "Score1": "1",
                     "Score2": "0",
                     "Stadium": "Monterrey Stadium",
                     "Stage": "Round of 32",
