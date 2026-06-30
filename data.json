@@ -125,8 +125,8 @@
                 "Status": "11 PM BST",
                 "Team1": "Canada",
                 "Team1_raw": "Canada",
-                "Team2": "W75: Netherlands",
-                "Team2_raw": "W75",
+                "Team2": "Morocco",
+                "Team2_raw": "Morocco",
                 "Time": "11 PM BST"
             },
             {
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-30 08:53:16 AM",
+    "last_updated": "2026-06-30 06:22:29 PM",
     "matches": {
         "group_stage": [
             {
@@ -29816,7 +29816,7 @@
                     "Attendance": 0,
                     "City": "Houston",
                     "Code1": "CAN",
-                    "Code2": "W75",
+                    "Code2": "MAR",
                     "Date": "Saturday 04 July 2026",
                     "Goals1": [],
                     "Goals2": [],
@@ -29834,8 +29834,8 @@
                     "Status": "11 PM BST",
                     "Team1": "Canada",
                     "Team1_raw": "Canada",
-                    "Team2": "W75: Netherlands",
-                    "Team2_raw": "W75",
+                    "Team2": "Morocco",
+                    "Team2_raw": "Morocco",
                     "Time": "11 PM BST"
                 },
                 {
