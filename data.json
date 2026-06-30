@@ -243,7 +243,7 @@
                 "Match": "M77",
                 "NextMatch": "M89",
                 "Round": "Round of 32 (Left)",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "0",
                 "Side": "LEFT",
                 "Status": "0FT0",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-01 03:45:51 AM",
+    "last_updated": "2026-07-01 04:12:20 AM",
     "matches": {
         "group_stage": [
             {
@@ -31986,7 +31986,7 @@
                     "Match": "M77",
                     "MatchDay": null,
                     "Referee": "Danny Desmond Makkelie",
-                    "Score1": "1",
+                    "Score1": "2",
                     "Score2": "0",
                     "Stadium": "New York/New Jersey Stadium",
                     "Stage": "Round of 32",
