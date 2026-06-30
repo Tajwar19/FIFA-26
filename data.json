@@ -274,7 +274,7 @@
                 "NextMatch": "M90",
                 "Round": "Round of 32 (Left)",
                 "Score1": "1",
-                "Score2": "0",
+                "Score2": "1",
                 "Side": "LEFT",
                 "Status": "0FT0",
                 "Team1": "Netherlands",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-30 08:34:20 AM",
+    "last_updated": "2026-06-30 08:53:16 AM",
     "matches": {
         "group_stage": [
             {
@@ -31197,7 +31197,7 @@
                     "MatchDay": null,
                     "Referee": "Wilton SAMPAIO",
                     "Score1": "1",
-                    "Score2": "0",
+                    "Score2": "1",
                     "Stadium": "Monterrey Stadium",
                     "Stage": "Round of 32",
                     "Status": "0FT0",
