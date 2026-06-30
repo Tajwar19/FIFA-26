@@ -172,7 +172,7 @@
                 "Status": "2 AM BST",
                 "Team1": "Brazil",
                 "Team1_raw": "Brazil",
-                "Team2": "W78: Norway",
+                "Team2": "W78: Côte d'Ivoire",
                 "Team2_raw": "W78",
                 "Time": "2 AM BST"
             },
@@ -365,7 +365,7 @@
                 "Match": "M78",
                 "NextMatch": "M91",
                 "Round": "Round of 32 (Right)",
-                "Score1": "0",
+                "Score1": "1",
                 "Score2": "1",
                 "Side": "RIGHT",
                 "Status": "0FT0",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-06-30 11:40:01 PM",
+    "last_updated": "2026-07-01 12:34:48 AM",
     "matches": {
         "group_stage": [
             {
@@ -29860,7 +29860,7 @@
                     "Status": "2 AM BST",
                     "Team1": "Brazil",
                     "Team1_raw": "Brazil",
-                    "Team2": "W78: Norway",
+                    "Team2": "W78: Côte d'Ivoire",
                     "Team2_raw": "W78",
                     "Time": "2 AM BST"
                 },
@@ -32019,7 +32019,7 @@
                     "Match": "M78",
                     "MatchDay": null,
                     "Referee": "Jesús Valenzuela Sáez",
-                    "Score1": "0",
+                    "Score1": "1",
                     "Score2": "1",
                     "Stadium": "Dallas Stadium",
                     "Stage": "Round of 32",
