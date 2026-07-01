@@ -185,7 +185,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "6 AM BST",
-                "Team1": "W79",
+                "Team1": "W79: Mexico",
                 "Team1_raw": "W79",
                 "Team2": "W80",
                 "Team2_raw": "W80",
@@ -380,10 +380,10 @@
                 "Match": "M79",
                 "NextMatch": "M92",
                 "Round": "Round of 32 (Right)",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "0",
                 "Side": "RIGHT",
-                "Status": "8 AM BST",
+                "Status": "0FT0",
                 "Team1": "Mexico",
                 "Team1_raw": "Mexico",
                 "Team2": "Ecuador",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-01 07:04:34 AM",
+    "last_updated": "2026-07-01 08:01:42 AM",
     "matches": {
         "group_stage": [
             {
@@ -29884,7 +29884,7 @@
                     "Stadium": "Mexico City Stadium",
                     "Stage": "Round of 16",
                     "Status": "6 AM BST",
-                    "Team1": "W79",
+                    "Team1": "W79: Mexico",
                     "Team1_raw": "W79",
                     "Team2": "W80",
                     "Team2_raw": "W80",
@@ -32398,17 +32398,383 @@
                     "Goals1": [],
                     "Goals2": [],
                     "Group_or_Match": "Match 79",
-                    "HT": "",
-                    "Lineup1": [],
-                    "Lineup2": [],
+                    "HT": "0 - 0",
+                    "Lineup1": [
+                        {
+                            "Captain": false,
+                            "Name": "Raul RANGEL",
+                            "Number": 1,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jorge SANCHEZ",
+                            "Number": 2,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": true,
+                            "Name": "Cesar MONTES",
+                            "Number": 3,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Johan VASQUEZ",
+                            "Number": 5,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jesus GALLARDO",
+                            "Number": 23,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Erik LIRA",
+                            "Number": 6,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Luis ROMO",
+                            "Number": 7,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Gilberto MORA",
+                            "Number": 19,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Raul JIMENEZ",
+                            "Number": 9,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Julian QUINONES",
+                            "Number": 16,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Roberto ALVARADO",
+                            "Number": 25,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Carlos ACEVEDO",
+                            "Number": 12,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Guillermo OCHOA",
+                            "Number": 13,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Edson ALVAREZ",
+                            "Number": 4,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Israel REYES",
+                            "Number": 15,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Mateo CHAVEZ",
+                            "Number": 20,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Alvaro FIDALGO",
+                            "Number": 8,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Orbelin PINEDA",
+                            "Number": 17,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Obed VARGAS",
+                            "Number": 18,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Luis CHAVEZ",
+                            "Number": 24,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Brian GUTIERREZ",
+                            "Number": 26,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Alexis VEGA",
+                            "Number": 10,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Santiago GIMENEZ",
+                            "Number": 11,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Armando GONZALEZ",
+                            "Number": 14,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Cesar HUERTA",
+                            "Number": 21,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Guillermo MARTINEZ",
+                            "Number": 22,
+                            "Position": 3,
+                            "Starter": true
+                        }
+                    ],
+                    "Lineup2": [
+                        {
+                            "Captain": false,
+                            "Name": "Hernan GALINDEZ",
+                            "Number": 1,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Piero HINCAPIE",
+                            "Number": 3,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Joel ORDONEZ",
+                            "Number": 4,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Willian PACHO",
+                            "Number": 6,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Pedro VITE",
+                            "Number": 15,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Alan FRANCO",
+                            "Number": 21,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": true,
+                            "Name": "Moises CAICEDO",
+                            "Number": 23,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "John YEBOAH",
+                            "Number": 9,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Enner VALENCIA",
+                            "Number": 13,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Gonzalo PLATA",
+                            "Number": 19,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Nilson ANGULO",
+                            "Number": 20,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Moises RAMIREZ",
+                            "Number": 12,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Gonzalo VALLE",
+                            "Number": 22,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Felix TORRES",
+                            "Number": 2,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Pervis ESTUPINAN",
+                            "Number": 7,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Angelo PRECIADO",
+                            "Number": 17,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jackson POROZO",
+                            "Number": 25,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Yaimar MEDINA",
+                            "Number": 26,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jordy ALCIVAR",
+                            "Number": 5,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Anthony VALENCIA",
+                            "Number": 8,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Kendry PAEZ",
+                            "Number": 10,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Alan MINDA",
+                            "Number": 14,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Denil CASTILLO",
+                            "Number": 18,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Kevin RODRIGUEZ",
+                            "Number": 11,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jordy CAICEDO",
+                            "Number": 16,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jeremy AREVALO",
+                            "Number": 24,
+                            "Position": 3,
+                            "Starter": true
+                        }
+                    ],
                     "Match": "M79",
                     "MatchDay": null,
-                    "Referee": "",
-                    "Score1": "",
-                    "Score2": "",
+                    "Referee": "Slavko VINCIC",
+                    "Score1": "0",
+                    "Score2": "0",
                     "Stadium": "Mexico City Stadium",
                     "Stage": "Round of 32",
-                    "Status": "8 AM BST",
+                    "Status": "0FT0",
                     "Team1": "Mexico",
                     "Team1_raw": "Mexico",
                     "Team2": "Ecuador",
