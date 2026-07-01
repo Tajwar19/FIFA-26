@@ -383,12 +383,12 @@
                 "Score1": "",
                 "Score2": "",
                 "Side": "RIGHT",
-                "Status": "7 AM BST",
+                "Status": "8 AM BST",
                 "Team1": "Mexico",
                 "Team1_raw": "Mexico",
                 "Team2": "Ecuador",
                 "Team2_raw": "Ecuador",
-                "Time": "7 AM BST"
+                "Time": "8 AM BST"
             },
             {
                 "Date": "Wednesday 01 July 2026",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-01 06:34:21 AM",
+    "last_updated": "2026-07-01 07:04:34 AM",
     "matches": {
         "group_stage": [
             {
@@ -32408,12 +32408,12 @@
                     "Score2": "",
                     "Stadium": "Mexico City Stadium",
                     "Stage": "Round of 32",
-                    "Status": "7 AM BST",
+                    "Status": "8 AM BST",
                     "Team1": "Mexico",
                     "Team1_raw": "Mexico",
                     "Team2": "Ecuador",
                     "Team2_raw": "Ecuador",
-                    "Time": "7 AM BST"
+                    "Time": "8 AM BST"
                 },
                 {
                     "Attendance": 0,
