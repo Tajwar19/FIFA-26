@@ -118,8 +118,8 @@
             "Side": "LEFT",
             "Date": "Tuesday 07 July 2026",
             "Time": "6 AM BST",
-            "Team1": "W81",
-            "Team2": "W82",
+            "Team1": "USA",
+            "Team2": "Belgium",
             "NextMatch": "M98"
         }
     ],
@@ -233,7 +233,7 @@
             "Date": "Monday 06 July 2026",
             "Time": "6 AM BST",
             "Team1": "Mexico",
-            "Team2": "W80",
+            "Team2": "England",
             "NextMatch": "M99"
         },
         {
