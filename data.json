@@ -120,7 +120,7 @@
                 "NextMatch": "M97",
                 "Round": "Round of 16 (Left)",
                 "Score1": "0",
-                "Score2": "1",
+                "Score2": "2",
                 "Side": "LEFT",
                 "Status": "0FT0",
                 "Team1": "Canada",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-05 12:14:22 AM",
+    "last_updated": "2026-07-05 12:46:22 AM",
     "matches": {
         "group_stage": [
             {
@@ -30187,7 +30187,7 @@
                     "MatchDay": null,
                     "Referee": "Michael Oliver",
                     "Score1": "0",
-                    "Score2": "1",
+                    "Score2": "2",
                     "Stadium": "Houston Stadium",
                     "Stage": "Round of 16",
                     "Status": "0FT0",
