@@ -46,8 +46,8 @@
                 "Status": "2 AM BST",
                 "Team1": "W89",
                 "Team1_raw": "W89",
-                "Team2": "W90: Morocco",
-                "Team2_raw": "W90",
+                "Team2": "Morocco",
+                "Team2_raw": "Morocco",
                 "Time": "2 AM BST"
             },
             {
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-05 01:02:22 AM",
+    "last_updated": "2026-07-05 01:09:22 AM",
     "matches": {
         "group_stage": [
             {
@@ -29684,7 +29684,7 @@
                     "Attendance": 0,
                     "City": "Boston",
                     "Code1": "W89",
-                    "Code2": "W90",
+                    "Code2": "MAR",
                     "Date": "Friday 10 July 2026",
                     "Goals1": [],
                     "Goals2": [],
@@ -29702,8 +29702,8 @@
                     "Status": "2 AM BST",
                     "Team1": "W89",
                     "Team1_raw": "W89",
-                    "Team2": "W90: Morocco",
-                    "Team2_raw": "W90",
+                    "Team2": "Morocco",
+                    "Team2_raw": "Morocco",
                     "Time": "2 AM BST"
                 },
                 {
