@@ -46,7 +46,7 @@
                 "Status": "2 AM BST",
                 "Team1": "W89",
                 "Team1_raw": "W89",
-                "Team2": "W90: Canada",
+                "Team2": "W90: Morocco",
                 "Team2_raw": "W90",
                 "Time": "2 AM BST"
             },
@@ -120,7 +120,7 @@
                 "NextMatch": "M97",
                 "Round": "Round of 16 (Left)",
                 "Score1": "0",
-                "Score2": "0",
+                "Score2": "1",
                 "Side": "LEFT",
                 "Status": "0FT0",
                 "Team1": "Canada",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-04 11:01:22 PM",
+    "last_updated": "2026-07-05 12:14:22 AM",
     "matches": {
         "group_stage": [
             {
@@ -29702,7 +29702,7 @@
                     "Status": "2 AM BST",
                     "Team1": "W89",
                     "Team1_raw": "W89",
-                    "Team2": "W90: Canada",
+                    "Team2": "W90: Morocco",
                     "Team2_raw": "W90",
                     "Time": "2 AM BST"
                 },
@@ -30187,7 +30187,7 @@
                     "MatchDay": null,
                     "Referee": "Michael Oliver",
                     "Score1": "0",
-                    "Score2": "0",
+                    "Score2": "1",
                     "Stadium": "Houston Stadium",
                     "Stage": "Round of 16",
                     "Status": "0FT0",
