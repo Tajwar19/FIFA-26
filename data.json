@@ -455,7 +455,7 @@
                 "Match": "M87",
                 "NextMatch": "M96",
                 "Round": "Round of 32 (Right)",
-                "Score1": "2",
+                "Score1": "1",
                 "Score2": "0",
                 "Side": "RIGHT",
                 "Status": "1FT0",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-04 08:50:21 AM",
+    "last_updated": "2026-07-04 08:51:20 AM",
     "matches": {
         "group_stage": [
             {
@@ -36013,7 +36013,7 @@
                     "Match": "M87",
                     "MatchDay": null,
                     "Referee": "Clément Turpin",
-                    "Score1": "2",
+                    "Score1": "1",
                     "Score2": "0",
                     "Stadium": "Kansas City Stadium",
                     "Stage": "Round of 32",
