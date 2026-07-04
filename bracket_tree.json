@@ -108,8 +108,8 @@
             "Side": "LEFT",
             "Date": "Tuesday 07 July 2026",
             "Time": "1 AM BST",
-            "Team1": "W83",
-            "Team2": "W84",
+            "Team1": "Portugal",
+            "Team2": "Spain",
             "NextMatch": "M98"
         },
         {
@@ -242,8 +242,8 @@
             "Side": "RIGHT",
             "Date": "Tuesday 07 July 2026",
             "Time": "10 PM BST",
-            "Team1": "W86",
-            "Team2": "W88",
+            "Team1": "Argentina",
+            "Team2": "Egypt",
             "NextMatch": "M100"
         },
         {
@@ -252,7 +252,7 @@
             "Side": "RIGHT",
             "Date": "Wednesday 08 July 2026",
             "Time": "2 AM BST",
-            "Team1": "W85",
+            "Team1": "Switzerland",
             "Team2": "W87",
             "NextMatch": "M100"
         }
