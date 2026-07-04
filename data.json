@@ -44,7 +44,7 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "2 AM BST",
-                "Team1": "W89: Paraguay",
+                "Team1": "W89: France",
                 "Team1_raw": "W89",
                 "Team2": "Morocco",
                 "Team2_raw": "Morocco",
@@ -105,7 +105,7 @@
                 "NextMatch": "M97",
                 "Round": "Round of 16 (Left)",
                 "Score1": "0",
-                "Score2": "0",
+                "Score2": "1",
                 "Side": "LEFT",
                 "Status": "0FT0",
                 "Team1": "Paraguay",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-05 03:04:22 AM",
+    "last_updated": "2026-07-05 04:33:53 AM",
     "matches": {
         "group_stage": [
             {
@@ -29700,7 +29700,7 @@
                     "Stadium": "Boston Stadium",
                     "Stage": "Quarter-final",
                     "Status": "2 AM BST",
-                    "Team1": "W89: Paraguay",
+                    "Team1": "W89: France",
                     "Team1_raw": "W89",
                     "Team2": "Morocco",
                     "Team2_raw": "Morocco",
@@ -30168,7 +30168,7 @@
                     "MatchDay": null,
                     "Referee": "Ilgiz Tantashev",
                     "Score1": "0",
-                    "Score2": "0",
+                    "Score2": "1",
                     "Stadium": "Philadelphia Stadium",
                     "Stage": "Round of 16",
                     "Status": "0FT0",
