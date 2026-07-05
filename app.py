@@ -273,9 +273,18 @@ def resolve_bracket_placeholders(standings, third_places_ranking, all_matches_li
                         winner = res_t2
                         runner_up = res_t1
                     else:
-                        # Tie: default to team 1, can be overridden by penalties info if needed
-                        winner = res_t1
-                        runner_up = res_t2
+                        # Tie: resolve by penalty goals count (Type == 1)
+                        p1 = sum(1 for g in m.get("Goals1", []) if g.get("Type") == 1)
+                        p2 = sum(1 for g in m.get("Goals2", []) if g.get("Type") == 1)
+                        if p1 > p2:
+                            winner = res_t1
+                            runner_up = res_t2
+                        elif p2 > p1:
+                            winner = res_t2
+                            runner_up = res_t1
+                        else:
+                            winner = res_t1
+                            runner_up = res_t2
                         
                     match_num = match_id[1:] # e.g. "74"
                     if winner:

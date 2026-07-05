@@ -3,6 +3,7 @@ import json
 import datetime
 import urllib.request
 import time
+import re
 
 def scrape_bracket():
     print("Fetching matches from FIFA API...")
@@ -112,10 +113,32 @@ def scrape_bracket():
         lineup2 = []
 
         is_completed = score1 is not None and score2 is not None
+        cache_valid = False
 
         if is_completed:
             match_id_str = str(idMatch)
             if match_id_str in cache:
+                cached_data = cache[match_id_str]
+                cached_status = cached_data.get("Status", "")
+                
+                # Check if the cached status scores match the calendar scores
+                match = re.match(r"^(\d+)(?:FT|AET|PEN)(\d+)$", cached_status)
+                if match:
+                    cached_s1 = int(match.group(1))
+                    cached_s2 = int(match.group(2))
+                    if cached_s1 == score1 and cached_s2 == score2:
+                        # Verify metadata completeness
+                        has_referee = bool(cached_data.get("Referee"))
+                        has_attendance = int(cached_data.get("Attendance") or 0) > 0
+                        has_lineups = bool(cached_data.get("Lineup1")) and bool(cached_data.get("Lineup2"))
+                        
+                        goals1_ok = (score1 == 0) or (len(cached_data.get("Goals1", [])) > 0)
+                        goals2_ok = (score2 == 0) or (len(cached_data.get("Goals2", [])) > 0)
+                        
+                        if has_referee and has_attendance and has_lineups and goals1_ok and goals2_ok:
+                            cache_valid = True
+
+            if cache_valid:
                 cached_data = cache[match_id_str]
                 referee = cached_data.get("Referee", "")
                 attendance = cached_data.get("Attendance", 0)

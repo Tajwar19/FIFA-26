@@ -3311,8 +3311,19 @@
                                 winner = resT2;
                                 runnerUp = resT1;
                             } else {
-                                winner = resT1;
-                                runnerUp = resT2;
+                                // Tie: resolve by penalty goals count (Type === 1)
+                                const p1 = (m.Goals1 || []).filter(g => g.Type === 1).length;
+                                const p2 = (m.Goals2 || []).filter(g => g.Type === 1).length;
+                                if (p1 > p2) {
+                                    winner = resT1;
+                                    runnerUp = resT2;
+                                } else if (p2 > p1) {
+                                    winner = resT2;
+                                    runnerUp = resT1;
+                                } else {
+                                    winner = resT1;
+                                    runnerUp = resT2;
+                                }
                             }
                         }
                     }
@@ -3636,20 +3647,96 @@
             }
 
             // 3. Team Statistics: Attacking & Defending
-            const teamStatsList = [];
+            const teamStatsMap = {};
             Object.values(standingsData).flat().forEach(t => {
-                teamStatsList.push({
+                teamStatsMap[t.Team] = {
                     Team: t.Team,
                     Code: t.Code,
-                    GF: parseInt(t.GF) || 0,
-                    GA: parseInt(t.GA) || 0,
-                    Played: parseInt(t.Played) || 0,
-                    W: parseInt(t.Won) || 0,
-                    D: parseInt(t.Drawn) || 0,
-                    L: parseInt(t.Lost) || 0,
-                    GD: parseInt(t.GD) || 0,
-                    Pts: parseInt(t.Points) || 0
-                });
+                    GF: 0,
+                    GA: 0,
+                    Played: 0,
+                    W: 0,
+                    D: 0,
+                    L: 0,
+                    GD: 0,
+                    Pts: 0
+                };
+            });
+
+            matchesList.forEach(m => {
+                const s1 = m.Score1 !== null && m.Score1 !== '' ? parseInt(m.Score1) : null;
+                const s2 = m.Score2 !== null && m.Score2 !== '' ? parseInt(m.Score2) : null;
+                const isPlayed = s1 !== null && s2 !== null && !isNaN(s1) && !isNaN(s2);
+
+                if (isPlayed) {
+                    const t1 = cleanTeamName(m.Team1);
+                    const t2 = cleanTeamName(m.Team2);
+
+                    if (t1 && !teamStatsMap[t1]) {
+                        teamStatsMap[t1] = { Team: t1, Code: m.Code1 || '', GF: 0, GA: 0, Played: 0, W: 0, D: 0, L: 0, GD: 0, Pts: 0 };
+                    }
+                    if (t2 && !teamStatsMap[t2]) {
+                        teamStatsMap[t2] = { Team: t2, Code: m.Code2 || '', GF: 0, GA: 0, Played: 0, W: 0, D: 0, L: 0, GD: 0, Pts: 0 };
+                    }
+
+                    const isGroupStage = !m.Stage || m.Stage.toLowerCase().includes("first stage") || m.Stage.toLowerCase().includes("group");
+
+                    if (t1) {
+                        teamStatsMap[t1].Played += 1;
+                        teamStatsMap[t1].GF += s1;
+                        teamStatsMap[t1].GA += s2;
+                    }
+                    if (t2) {
+                        teamStatsMap[t2].Played += 1;
+                        teamStatsMap[t2].GF += s2;
+                        teamStatsMap[t2].GA += s1;
+                    }
+
+                    if (s1 > s2) {
+                        if (t1) {
+                            teamStatsMap[t1].W += 1;
+                            if (isGroupStage) teamStatsMap[t1].Pts += 3;
+                        }
+                        if (t2) teamStatsMap[t2].L += 1;
+                    } else if (s2 > s1) {
+                         if (t2) {
+                             teamStatsMap[t2].W += 1;
+                             if (isGroupStage) teamStatsMap[t2].Pts += 3;
+                         }
+                         if (t1) teamStatsMap[t1].L += 1;
+                    } else {
+                        // Tie
+                        if (isGroupStage) {
+                            if (t1) {
+                                teamStatsMap[t1].D += 1;
+                                teamStatsMap[t1].Pts += 1;
+                            }
+                            if (t2) {
+                                teamStatsMap[t2].D += 1;
+                                teamStatsMap[t2].Pts += 1;
+                            }
+                        } else {
+                            // Knockout stage tie - check penalties
+                            const p1 = (m.Goals1 || []).filter(g => g.Type === 1).length;
+                            const p2 = (m.Goals2 || []).filter(g => g.Type === 1).length;
+                            if (p1 > p2) {
+                                if (t1) teamStatsMap[t1].W += 1;
+                                if (t2) teamStatsMap[t2].L += 1;
+                            } else if (p2 > p1) {
+                                if (t2) teamStatsMap[t2].W += 1;
+                                if (t1) teamStatsMap[t1].L += 1;
+                            } else {
+                                if (t1) teamStatsMap[t1].W += 1;
+                                if (t2) teamStatsMap[t2].L += 1;
+                            }
+                        }
+                    }
+                }
+            });
+
+            const teamStatsList = Object.values(teamStatsMap);
+            teamStatsList.forEach(t => {
+                t.GD = t.GF - t.GA;
             });
 
             // Save for sort functionality
@@ -5062,6 +5149,8 @@
         window.addEventListener('DOMContentLoaded', () => {
             fetchDashboardData();
             updateNavHeight();
+            // Automatically update dashboard data every 30 seconds
+            setInterval(fetchDashboardData, 30000);
         });
 
         // --- Premium Stats & Knockout Sub-navigation Logic ---
