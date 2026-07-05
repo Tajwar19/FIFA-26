@@ -29946,15 +29946,59 @@
                 "Score2": "1",
                 "Team2": "Morocco",
                 "Code2": "MAR",
-                "Status": "0FT0",
+                "Status": "1PEN1",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 75",
                 "Stadium": "Monterrey Stadium",
                 "City": "Monterrey",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Player": "Cody GAKPO",
+                        "Minute": "72'",
+                        "Type": 2,
+                        "Assist": ""
+                    },
+                    {
+                        "Player": "Teun KOOPMEINERS",
+                        "Minute": "",
+                        "Type": 1,
+                        "Assist": ""
+                    },
+                    {
+                        "Player": "Wout WEGHORST",
+                        "Minute": "",
+                        "Type": 1,
+                        "Assist": ""
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Player": "Issa DIOP",
+                        "Minute": "90'+1'",
+                        "Type": 2,
+                        "Assist": "Munir EL KAJOUI"
+                    },
+                    {
+                        "Player": "Soufiane RAHIMI",
+                        "Minute": "",
+                        "Type": 1,
+                        "Assist": ""
+                    },
+                    {
+                        "Player": "Chemsdine TALBI",
+                        "Minute": "",
+                        "Type": 1,
+                        "Assist": ""
+                    },
+                    {
+                        "Player": "Ismael SAIBARI",
+                        "Minute": "",
+                        "Type": 1,
+                        "Assist": ""
+                    }
+                ],
                 "Referee": "Wilton SAMPAIO",
-                "Attendance": 0,
+                "Attendance": "51243",
                 "HT": "0 - 0",
                 "Lineup1": [
                     {
@@ -30739,16 +30783,35 @@
                 "Score2": "0",
                 "Team2": "Sweden",
                 "Code2": "SWE",
-                "Status": "0FT0",
+                "Status": "3FT0",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 77",
                 "Stadium": "New York/New Jersey Stadium",
                 "City": "New Jersey",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Player": "Kylian MBAPPE",
+                        "Minute": "45'",
+                        "Type": 2,
+                        "Assist": "Lucas DIGNE"
+                    },
+                    {
+                        "Player": "Bradley BARCOLA",
+                        "Minute": "53'",
+                        "Type": 2,
+                        "Assist": "Warren ZAIRE-EMERY"
+                    },
+                    {
+                        "Player": "Kylian MBAPPE",
+                        "Minute": "74'",
+                        "Type": 2,
+                        "Assist": ""
+                    }
+                ],
                 "Goals2": [],
                 "Referee": "Danny Desmond Makkelie",
-                "Attendance": 0,
-                "HT": "0 - 0",
+                "Attendance": "80663",
+                "HT": "1 - 0",
                 "Lineup1": [
                     {
                         "Name": "Mike MAIGNAN",
@@ -31122,16 +31185,36 @@
                 "Score2": "2",
                 "Team2": "Norway",
                 "Code2": "NOR",
-                "Status": "0FT0",
+                "Status": "1FT2",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 78",
                 "Stadium": "Dallas Stadium",
                 "City": "Dallas",
-                "Goals1": [],
-                "Goals2": [],
+                "Goals1": [
+                    {
+                        "Player": "Amad DIALLO",
+                        "Minute": "74'",
+                        "Type": 2,
+                        "Assist": "Bazoumana TOURE"
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Player": "Antonio NUSA",
+                        "Minute": "39'",
+                        "Type": 2,
+                        "Assist": "Erling HAALAND"
+                    },
+                    {
+                        "Player": "Erling HAALAND",
+                        "Minute": "86'",
+                        "Type": 2,
+                        "Assist": "Antonio NUSA"
+                    }
+                ],
                 "Referee": "Jesús Valenzuela Sáez",
-                "Attendance": 0,
-                "HT": "0 - 0",
+                "Attendance": "69665",
+                "HT": "0 - 1",
                 "Lineup1": [
                     {
                         "Name": "Yahia FOFANA",
@@ -31512,16 +31595,29 @@
                 "Score2": "0",
                 "Team2": "Ecuador",
                 "Code2": "ECU",
-                "Status": "0FT0",
+                "Status": "2FT0",
                 "Stage": "Round of 32",
                 "Group_or_Match": "Match 79",
                 "Stadium": "Mexico City Stadium",
                 "City": "Mexico City",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Player": "Julian QUINONES",
+                        "Minute": "22'",
+                        "Type": 2,
+                        "Assist": "Mateo CHAVEZ"
+                    },
+                    {
+                        "Player": "Raul JIMENEZ",
+                        "Minute": "31'",
+                        "Type": 2,
+                        "Assist": "Guillermo OCHOA"
+                    }
+                ],
                 "Goals2": [],
                 "Referee": "Slavko VINCIC",
-                "Attendance": 0,
-                "HT": "0 - 0",
+                "Attendance": "80824",
+                "HT": "2 - 0",
                 "Lineup1": [
                     {
                         "Name": "Raul RANGEL",
@@ -34747,7 +34843,7 @@
                 ],
                 "Goals2": [],
                 "Referee": "Clément Turpin",
-                "Attendance": 0,
+                "Attendance": "69045",
                 "HT": "1 - 0",
                 "Lineup1": [
                     {
@@ -35536,15 +35632,22 @@
                 "Score2": "1",
                 "Team2": "France",
                 "Code2": "FRA",
-                "Status": "0FT0",
+                "Status": "0FT1",
                 "Stage": "Round of 16",
                 "Group_or_Match": "Match 89",
                 "Stadium": "Philadelphia Stadium",
                 "City": "Philadelphia",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Player": "Kylian MBAPPE",
+                        "Minute": "70'",
+                        "Type": 1,
+                        "Assist": ""
+                    }
+                ],
                 "Referee": "Ilgiz Tantashev",
-                "Attendance": 0,
+                "Attendance": "68324",
                 "HT": "0 - 0",
                 "Lineup1": [
                     {
@@ -35926,15 +36029,34 @@
                 "Score2": "3",
                 "Team2": "Morocco",
                 "Code2": "MAR",
-                "Status": "0FT0",
+                "Status": "0FT3",
                 "Stage": "Round of 16",
                 "Group_or_Match": "Match 90",
                 "Stadium": "Houston Stadium",
                 "City": "Houston",
                 "Goals1": [],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Player": "Azzedine OUNAHI",
+                        "Minute": "50'",
+                        "Type": 2,
+                        "Assist": "Munir EL KAJOUI"
+                    },
+                    {
+                        "Player": "Azzedine OUNAHI",
+                        "Minute": "82'",
+                        "Type": 2,
+                        "Assist": "Ismael SAIBARI"
+                    },
+                    {
+                        "Player": "Soufiane RAHIMI",
+                        "Minute": "90'+8'",
+                        "Type": 2,
+                        "Assist": "Yassine BOUNOU"
+                    }
+                ],
                 "Referee": "Michael Oliver",
-                "Attendance": 0,
+                "Attendance": "68777",
                 "HT": "0 - 0",
                 "Lineup1": [
                     {

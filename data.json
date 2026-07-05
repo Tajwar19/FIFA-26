@@ -107,7 +107,7 @@
                 "Score1": "0",
                 "Score2": "1",
                 "Side": "LEFT",
-                "Status": "0FT0",
+                "Status": "0FT1",
                 "Team1": "Paraguay",
                 "Team1_raw": "Paraguay",
                 "Team2": "France",
@@ -122,7 +122,7 @@
                 "Score1": "0",
                 "Score2": "3",
                 "Side": "LEFT",
-                "Status": "0FT0",
+                "Status": "0FT3",
                 "Team1": "Canada",
                 "Team1_raw": "Canada",
                 "Team2": "Morocco",
@@ -246,7 +246,7 @@
                 "Score1": "3",
                 "Score2": "0",
                 "Side": "LEFT",
-                "Status": "0FT0",
+                "Status": "3FT0",
                 "Team1": "France",
                 "Team1_raw": "France",
                 "Team2": "Sweden",
@@ -276,7 +276,7 @@
                 "Score1": "1",
                 "Score2": "1",
                 "Side": "LEFT",
-                "Status": "0FT0",
+                "Status": "1PEN1",
                 "Team1": "Netherlands",
                 "Team1_raw": "Netherlands",
                 "Team2": "Morocco",
@@ -368,7 +368,7 @@
                 "Score1": "1",
                 "Score2": "2",
                 "Side": "RIGHT",
-                "Status": "0FT0",
+                "Status": "1FT2",
                 "Team1": "Côte d'Ivoire",
                 "Team1_raw": "Côte d'Ivoire",
                 "Team2": "Norway",
@@ -383,7 +383,7 @@
                 "Score1": "2",
                 "Score2": "0",
                 "Side": "RIGHT",
-                "Status": "0FT0",
+                "Status": "2FT0",
                 "Team1": "Mexico",
                 "Team1_raw": "Mexico",
                 "Team2": "Ecuador",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-05 05:12:53 AM",
+    "last_updated": "2026-07-05 08:35:10 AM",
     "matches": {
         "group_stage": [
             {
@@ -29787,13 +29787,20 @@
             ],
             "Round of 16": [
                 {
-                    "Attendance": 0,
+                    "Attendance": "68324",
                     "City": "Philadelphia",
                     "Code1": "PAR",
                     "Code2": "FRA",
                     "Date": "Sunday 05 July 2026",
                     "Goals1": [],
-                    "Goals2": [],
+                    "Goals2": [
+                        {
+                            "Assist": "",
+                            "Minute": "70'",
+                            "Player": "Kylian MBAPPE",
+                            "Type": 1
+                        }
+                    ],
                     "Group_or_Match": "Match 89",
                     "HT": "0 - 0",
                     "Lineup1": [
@@ -30171,7 +30178,7 @@
                     "Score2": "1",
                     "Stadium": "Philadelphia Stadium",
                     "Stage": "Round of 16",
-                    "Status": "0FT0",
+                    "Status": "0FT1",
                     "Team1": "Paraguay",
                     "Team1_raw": "Paraguay",
                     "Team2": "France",
@@ -30179,13 +30186,32 @@
                     "Time": "3 AM BST"
                 },
                 {
-                    "Attendance": 0,
+                    "Attendance": "68777",
                     "City": "Houston",
                     "Code1": "CAN",
                     "Code2": "MAR",
                     "Date": "Saturday 04 July 2026",
                     "Goals1": [],
-                    "Goals2": [],
+                    "Goals2": [
+                        {
+                            "Assist": "Munir EL KAJOUI",
+                            "Minute": "50'",
+                            "Player": "Azzedine OUNAHI",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "Ismael SAIBARI",
+                            "Minute": "82'",
+                            "Player": "Azzedine OUNAHI",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "Yassine BOUNOU",
+                            "Minute": "90'+8'",
+                            "Player": "Soufiane RAHIMI",
+                            "Type": 2
+                        }
+                    ],
                     "Group_or_Match": "Match 90",
                     "HT": "0 - 0",
                     "Lineup1": [
@@ -30556,7 +30582,7 @@
                     "Score2": "3",
                     "Stadium": "Houston Stadium",
                     "Stage": "Round of 16",
-                    "Status": "0FT0",
+                    "Status": "0FT3",
                     "Team1": "Canada",
                     "Team1_raw": "Canada",
                     "Team2": "Morocco",
@@ -31541,13 +31567,57 @@
                     "Time": "2:30 AM BST"
                 },
                 {
-                    "Attendance": 0,
+                    "Attendance": "51243",
                     "City": "Monterrey",
                     "Code1": "NED",
                     "Code2": "MAR",
                     "Date": "Tuesday 30 June 2026",
-                    "Goals1": [],
-                    "Goals2": [],
+                    "Goals1": [
+                        {
+                            "Assist": "",
+                            "Minute": "72'",
+                            "Player": "Cody GAKPO",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "",
+                            "Minute": "",
+                            "Player": "Teun KOOPMEINERS",
+                            "Type": 1
+                        },
+                        {
+                            "Assist": "",
+                            "Minute": "",
+                            "Player": "Wout WEGHORST",
+                            "Type": 1
+                        }
+                    ],
+                    "Goals2": [
+                        {
+                            "Assist": "Munir EL KAJOUI",
+                            "Minute": "90'+1'",
+                            "Player": "Issa DIOP",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "",
+                            "Minute": "",
+                            "Player": "Soufiane RAHIMI",
+                            "Type": 1
+                        },
+                        {
+                            "Assist": "",
+                            "Minute": "",
+                            "Player": "Chemsdine TALBI",
+                            "Type": 1
+                        },
+                        {
+                            "Assist": "",
+                            "Minute": "",
+                            "Player": "Ismael SAIBARI",
+                            "Type": 1
+                        }
+                    ],
                     "Group_or_Match": "Match 75",
                     "HT": "0 - 0",
                     "Lineup1": [
@@ -31925,7 +31995,7 @@
                     "Score2": "1",
                     "Stadium": "Monterrey Stadium",
                     "Stage": "Round of 32",
-                    "Status": "0FT0",
+                    "Status": "1PEN1",
                     "Team1": "Netherlands",
                     "Team1_raw": "Netherlands",
                     "Team2": "Morocco",
@@ -32338,15 +32408,34 @@
                     "Time": "11 PM BST"
                 },
                 {
-                    "Attendance": 0,
+                    "Attendance": "80663",
                     "City": "New Jersey",
                     "Code1": "FRA",
                     "Code2": "SWE",
                     "Date": "Wednesday 01 July 2026",
-                    "Goals1": [],
+                    "Goals1": [
+                        {
+                            "Assist": "Lucas DIGNE",
+                            "Minute": "45'",
+                            "Player": "Kylian MBAPPE",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "Warren ZAIRE-EMERY",
+                            "Minute": "53'",
+                            "Player": "Bradley BARCOLA",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "",
+                            "Minute": "74'",
+                            "Player": "Kylian MBAPPE",
+                            "Type": 2
+                        }
+                    ],
                     "Goals2": [],
                     "Group_or_Match": "Match 77",
-                    "HT": "0 - 0",
+                    "HT": "1 - 0",
                     "Lineup1": [
                         {
                             "Captain": false,
@@ -32715,7 +32804,7 @@
                     "Score2": "0",
                     "Stadium": "New York/New Jersey Stadium",
                     "Stage": "Round of 32",
-                    "Status": "0FT0",
+                    "Status": "3FT0",
                     "Team1": "France",
                     "Team1_raw": "France",
                     "Team2": "Sweden",
@@ -32723,15 +32812,35 @@
                     "Time": "3 AM BST"
                 },
                 {
-                    "Attendance": 0,
+                    "Attendance": "69665",
                     "City": "Dallas",
                     "Code1": "CIV",
                     "Code2": "NOR",
                     "Date": "Tuesday 30 June 2026",
-                    "Goals1": [],
-                    "Goals2": [],
+                    "Goals1": [
+                        {
+                            "Assist": "Bazoumana TOURE",
+                            "Minute": "74'",
+                            "Player": "Amad DIALLO",
+                            "Type": 2
+                        }
+                    ],
+                    "Goals2": [
+                        {
+                            "Assist": "Erling HAALAND",
+                            "Minute": "39'",
+                            "Player": "Antonio NUSA",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "Antonio NUSA",
+                            "Minute": "86'",
+                            "Player": "Erling HAALAND",
+                            "Type": 2
+                        }
+                    ],
                     "Group_or_Match": "Match 78",
-                    "HT": "0 - 0",
+                    "HT": "0 - 1",
                     "Lineup1": [
                         {
                             "Captain": false,
@@ -33107,7 +33216,7 @@
                     "Score2": "2",
                     "Stadium": "Dallas Stadium",
                     "Stage": "Round of 32",
-                    "Status": "0FT0",
+                    "Status": "1FT2",
                     "Team1": "Côte d'Ivoire",
                     "Team1_raw": "Côte d'Ivoire",
                     "Team2": "Norway",
@@ -33115,15 +33224,28 @@
                     "Time": "11 PM BST"
                 },
                 {
-                    "Attendance": 0,
+                    "Attendance": "80824",
                     "City": "Mexico City",
                     "Code1": "MEX",
                     "Code2": "ECU",
                     "Date": "Wednesday 01 July 2026",
-                    "Goals1": [],
+                    "Goals1": [
+                        {
+                            "Assist": "Mateo CHAVEZ",
+                            "Minute": "22'",
+                            "Player": "Julian QUINONES",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "Guillermo OCHOA",
+                            "Minute": "31'",
+                            "Player": "Raul JIMENEZ",
+                            "Type": 2
+                        }
+                    ],
                     "Goals2": [],
                     "Group_or_Match": "Match 79",
-                    "HT": "0 - 0",
+                    "HT": "2 - 0",
                     "Lineup1": [
                         {
                             "Captain": false,
@@ -33499,7 +33621,7 @@
                     "Score2": "0",
                     "Stadium": "Mexico City Stadium",
                     "Stage": "Round of 32",
-                    "Status": "0FT0",
+                    "Status": "2FT0",
                     "Team1": "Mexico",
                     "Team1_raw": "Mexico",
                     "Team2": "Ecuador",
@@ -36351,7 +36473,7 @@
                     "Time": "4 AM BST"
                 },
                 {
-                    "Attendance": 0,
+                    "Attendance": "69045",
                     "City": "Kansas City",
                     "Code1": "COL",
                     "Code2": "GHA",
