@@ -140,8 +140,8 @@
             "Side": "LEFT",
             "Date": "Saturday 11 July 2026",
             "Time": "1 AM BST",
-            "Team1": "W93",
-            "Team2": "W94",
+            "Team1": "Spain",
+            "Team2": "Belgium",
             "NextMatch": "M101"
         }
     ],
@@ -200,8 +200,8 @@
             "Side": "RIGHT",
             "Date": "Sunday 12 July 2026",
             "Time": "3 AM BST",
-            "Team1": "W91",
-            "Team2": "W92",
+            "Team1": "Norway",
+            "Team2": "England",
             "NextMatch": "M102"
         },
         {
@@ -231,7 +231,7 @@
             "Round": "Round of 16 (Right)",
             "Side": "RIGHT",
             "Date": "Monday 06 July 2026",
-            "Time": "6 AM BST",
+            "Time": "7 AM BST",
             "Team1": "Mexico",
             "Team2": "England",
             "NextMatch": "M99"
