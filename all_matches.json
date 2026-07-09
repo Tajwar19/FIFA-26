@@ -38880,11 +38880,11 @@
                 "Time": "2 AM BST",
                 "Team1": "France",
                 "Code1": "FRA",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "0",
                 "Team2": "Morocco",
                 "Code2": "MAR",
-                "Status": "1FT0",
+                "Status": "2FT0",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 97",
                 "Stadium": "Boston Stadium",
@@ -38894,7 +38894,13 @@
                         "Player": "Kylian MBAPPE",
                         "Minute": "60'",
                         "Type": 2,
-                        "Assist": "Warren ZAIRE-EMERY"
+                        "Assist": "Desire DOUE"
+                    },
+                    {
+                        "Player": "Ousmane DEMBELE",
+                        "Minute": "66'",
+                        "Type": 2,
+                        "Assist": "Desire DOUE"
                     }
                 ],
                 "Goals2": [],

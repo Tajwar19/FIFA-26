@@ -40,10 +40,10 @@
                 "Match": "M97",
                 "NextMatch": "M101",
                 "Round": "Quarter-final (Left)",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "0",
                 "Side": "LEFT",
-                "Status": "1FT0",
+                "Status": "2FT0",
                 "Team1": "France",
                 "Team1_raw": "France",
                 "Team2": "Morocco",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-10 03:24:42 AM",
+    "last_updated": "2026-07-10 03:30:12 AM",
     "matches": {
         "group_stage": [
             {
@@ -29688,9 +29688,15 @@
                     "Date": "Friday 10 July 2026",
                     "Goals1": [
                         {
-                            "Assist": "Warren ZAIRE-EMERY",
+                            "Assist": "Desire DOUE",
                             "Minute": "60'",
                             "Player": "Kylian MBAPPE",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "Desire DOUE",
+                            "Minute": "66'",
+                            "Player": "Ousmane DEMBELE",
                             "Type": 2
                         }
                     ],
@@ -30068,11 +30074,11 @@
                     "Match": "M97",
                     "MatchDay": null,
                     "Referee": "Facundo TELLO",
-                    "Score1": "1",
+                    "Score1": "2",
                     "Score2": "0",
                     "Stadium": "Boston Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "1FT0",
+                    "Status": "2FT0",
                     "Team1": "France",
                     "Team1_raw": "France",
                     "Team2": "Morocco",
