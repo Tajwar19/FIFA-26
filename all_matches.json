@@ -38880,22 +38880,388 @@
                 "Time": "2 AM BST",
                 "Team1": "France",
                 "Code1": "FRA",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "0",
                 "Team2": "Morocco",
                 "Code2": "MAR",
-                "Status": "2 AM BST",
+                "Status": "0FT0",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 97",
                 "Stadium": "Boston Stadium",
                 "City": "Boston",
                 "Goals1": [],
                 "Goals2": [],
-                "Referee": "",
+                "Referee": "Facundo TELLO",
                 "Attendance": 0,
-                "HT": "",
-                "Lineup1": [],
-                "Lineup2": []
+                "HT": "0 - 0",
+                "Lineup1": [
+                    {
+                        "Name": "Mike MAIGNAN",
+                        "Number": 16,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Lucas DIGNE",
+                        "Number": 3,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Dayot UPAMECANO",
+                        "Number": 4,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Jules KOUNDE",
+                        "Number": 5,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "William SALIBA",
+                        "Number": 17,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Manu KONE",
+                        "Number": 6,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Adrien RABIOT",
+                        "Number": 14,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ousmane DEMBELE",
+                        "Number": 7,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Kylian MBAPPE",
+                        "Number": 10,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": true
+                    },
+                    {
+                        "Name": "Michael OLISE",
+                        "Number": 11,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Desire DOUE",
+                        "Number": 20,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Brice SAMBA",
+                        "Number": 1,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Robin RISSER",
+                        "Number": 23,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Malo GUSTO",
+                        "Number": 2,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ibrahima KONATE",
+                        "Number": 15,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Theo HERNANDEZ",
+                        "Number": 19,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Lucas HERNANDEZ",
+                        "Number": 21,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Maxence LACROIX",
+                        "Number": 26,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Aurelien TCHOUAMENI",
+                        "Number": 8,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ngolo KANTE",
+                        "Number": 13,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Warren ZAIRE-EMERY",
+                        "Number": 18,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Rayan CHERKI",
+                        "Number": 24,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Maghnes AKLIOUCHE",
+                        "Number": 25,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Marcus THURAM",
+                        "Number": 9,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Bradley BARCOLA",
+                        "Number": 12,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Jean-Philippe MATETA",
+                        "Number": 22,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    }
+                ],
+                "Lineup2": [
+                    {
+                        "Name": "Yassine BOUNOU",
+                        "Number": 1,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Achraf HAKIMI",
+                        "Number": 2,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": true
+                    },
+                    {
+                        "Name": "Noussair MAZRAOUI",
+                        "Number": 3,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Issa DIOP",
+                        "Number": 14,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Anass SALAH EDDINE",
+                        "Number": 26,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ayyoub BOUADDI",
+                        "Number": 6,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Chemsdine TALBI",
+                        "Number": 7,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Azzedine OUNAHI",
+                        "Number": 8,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Bilal EL KHANNOUSS",
+                        "Number": 23,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Neil EL AYNAOUI",
+                        "Number": 24,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Brahim DIAZ",
+                        "Number": 10,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Munir EL KAJOUI",
+                        "Number": 12,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ahmed Reda TAGNAOUTI",
+                        "Number": 22,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Marwane SAADANE",
+                        "Number": 5,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Zakaria EL OUAHDI",
+                        "Number": 13,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Chadi RIAD",
+                        "Number": 18,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Youssef BELAMMARI",
+                        "Number": 19,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Redouane HALHAL",
+                        "Number": 25,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Sofyan AMRABAT",
+                        "Number": 4,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ismael SAIBARI",
+                        "Number": 11,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Samir EL MOURABET",
+                        "Number": 15,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Gessime YASSINE",
+                        "Number": 16,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Soufiane RAHIMI",
+                        "Number": 9,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Amine SBAI",
+                        "Number": 17,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ayoub EL KAABI",
+                        "Number": 20,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ayoube AMAIMOUNI",
+                        "Number": 21,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    }
+                ]
             },
             {
                 "Match": "M98",
