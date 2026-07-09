@@ -38889,7 +38889,14 @@
                 "Group_or_Match": "Match 97",
                 "Stadium": "Boston Stadium",
                 "City": "Boston",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Player": "Kylian MBAPPE",
+                        "Minute": "60'",
+                        "Type": 2,
+                        "Assist": "Warren ZAIRE-EMERY"
+                    }
+                ],
                 "Goals2": [],
                 "Referee": "Facundo TELLO",
                 "Attendance": 0,
