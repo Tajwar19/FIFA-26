@@ -40,10 +40,10 @@
                 "Match": "M97",
                 "NextMatch": "M101",
                 "Round": "Quarter-final (Left)",
-                "Score1": "0",
+                "Score1": "1",
                 "Score2": "0",
                 "Side": "LEFT",
-                "Status": "0FT0",
+                "Status": "1FT0",
                 "Team1": "France",
                 "Team1_raw": "France",
                 "Team2": "Morocco",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-10 03:24:12 AM",
+    "last_updated": "2026-07-10 03:24:42 AM",
     "matches": {
         "group_stage": [
             {
@@ -30068,11 +30068,11 @@
                     "Match": "M97",
                     "MatchDay": null,
                     "Referee": "Facundo TELLO",
-                    "Score1": "0",
+                    "Score1": "1",
                     "Score2": "0",
                     "Stadium": "Boston Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "0FT0",
+                    "Status": "1FT0",
                     "Team1": "France",
                     "Team1_raw": "France",
                     "Team2": "Morocco",
