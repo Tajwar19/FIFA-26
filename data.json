@@ -476,8 +476,8 @@
                 "Score2": "",
                 "Side": "LEFT",
                 "Status": "1 AM BST",
-                "Team1": "W97: France",
-                "Team1_raw": "W97",
+                "Team1": "France",
+                "Team1_raw": "France",
                 "Team2": "W98",
                 "Team2_raw": "W98",
                 "Time": "1 AM BST"
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-10 03:30:42 AM",
+    "last_updated": "2026-07-10 04:02:42 AM",
     "matches": {
         "group_stage": [
             {
@@ -39969,7 +39969,7 @@
                 {
                     "Attendance": 0,
                     "City": "Dallas",
-                    "Code1": "W97",
+                    "Code1": "FRA",
                     "Code2": "W98",
                     "Date": "Wednesday 15 July 2026",
                     "Goals1": [],
@@ -39986,8 +39986,8 @@
                     "Stadium": "Dallas Stadium",
                     "Stage": "Semi-final",
                     "Status": "1 AM BST",
-                    "Team1": "W97: France",
-                    "Team1_raw": "W97",
+                    "Team1": "France",
+                    "Team1_raw": "France",
                     "Team2": "W98",
                     "Team2_raw": "W98",
                     "Time": "1 AM BST"
