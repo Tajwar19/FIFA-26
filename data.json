@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-10 03:30:12 AM",
+    "last_updated": "2026-07-10 03:30:42 AM",
     "matches": {
         "group_stage": [
             {
@@ -29681,14 +29681,14 @@
             ],
             "Quarter-final": [
                 {
-                    "Attendance": 0,
+                    "Attendance": "63811",
                     "City": "Boston",
                     "Code1": "FRA",
                     "Code2": "MAR",
                     "Date": "Friday 10 July 2026",
                     "Goals1": [
                         {
-                            "Assist": "Desire DOUE",
+                            "Assist": "Warren ZAIRE-EMERY",
                             "Minute": "60'",
                             "Player": "Kylian MBAPPE",
                             "Type": 2
