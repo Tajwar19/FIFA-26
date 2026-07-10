@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-11 01:41:45 AM",
+    "last_updated": "2026-07-11 02:32:15 AM",
     "matches": {
         "group_stage": [
             {
@@ -30086,7 +30086,7 @@
                     "Time": "2 AM BST"
                 },
                 {
-                    "Attendance": 0,
+                    "Attendance": "70492",
                     "City": "Los Angeles",
                     "Code1": "ESP",
                     "Code2": "BEL",
