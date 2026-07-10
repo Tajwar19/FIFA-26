@@ -478,8 +478,8 @@
                 "Status": "1 AM BST",
                 "Team1": "France",
                 "Team1_raw": "France",
-                "Team2": "W98: Spain",
-                "Team2_raw": "W98",
+                "Team2": "Spain",
+                "Team2_raw": "Spain",
                 "Time": "1 AM BST"
             }
         ],
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-11 02:50:15 AM",
+    "last_updated": "2026-07-11 03:01:45 AM",
     "matches": {
         "group_stage": [
             {
@@ -40335,7 +40335,7 @@
                     "Attendance": 0,
                     "City": "Dallas",
                     "Code1": "FRA",
-                    "Code2": "W98",
+                    "Code2": "ESP",
                     "Date": "Wednesday 15 July 2026",
                     "Goals1": [],
                     "Goals2": [],
@@ -40353,8 +40353,8 @@
                     "Status": "1 AM BST",
                     "Team1": "France",
                     "Team1_raw": "France",
-                    "Team2": "W98: Spain",
-                    "Team2_raw": "W98",
+                    "Team2": "Spain",
+                    "Team2_raw": "Spain",
                     "Time": "1 AM BST"
                 },
                 {
