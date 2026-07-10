@@ -39292,11 +39292,18 @@
                 "Group_or_Match": "Match 98",
                 "Stadium": "Los Angeles Stadium",
                 "City": "Los Angeles",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Player": "Fabian RUIZ",
+                        "Minute": "30'",
+                        "Type": 2,
+                        "Assist": ""
+                    }
+                ],
                 "Goals2": [],
                 "Referee": "Michael Oliver",
                 "Attendance": 0,
-                "HT": "0 - 0",
+                "HT": "1 - 0",
                 "Lineup1": [
                     {
                         "Name": "Unai SIMON",
