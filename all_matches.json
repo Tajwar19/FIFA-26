@@ -39283,11 +39283,11 @@
                 "Time": "1 AM BST",
                 "Team1": "Spain",
                 "Code1": "ESP",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "1",
                 "Team2": "Belgium",
                 "Code2": "BEL",
-                "Status": "1FT1",
+                "Status": "2FT1",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 98",
                 "Stadium": "Los Angeles Stadium",
@@ -39296,6 +39296,12 @@
                     {
                         "Player": "Fabian RUIZ",
                         "Minute": "30'",
+                        "Type": 2,
+                        "Assist": ""
+                    },
+                    {
+                        "Player": "Mikel MERINO",
+                        "Minute": "88'",
                         "Type": 2,
                         "Assist": ""
                     }

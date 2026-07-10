@@ -55,10 +55,10 @@
                 "Match": "M98",
                 "NextMatch": "M101",
                 "Round": "Quarter-final (Left)",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "1",
                 "Side": "LEFT",
-                "Status": "1FT1",
+                "Status": "2FT1",
                 "Team1": "Spain",
                 "Team1_raw": "Spain",
                 "Team2": "Belgium",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-11 02:32:15 AM",
+    "last_updated": "2026-07-11 02:50:15 AM",
     "matches": {
         "group_stage": [
             {
@@ -30097,6 +30097,12 @@
                             "Minute": "30'",
                             "Player": "Fabian RUIZ",
                             "Type": 2
+                        },
+                        {
+                            "Assist": "",
+                            "Minute": "88'",
+                            "Player": "Mikel MERINO",
+                            "Type": 2
                         }
                     ],
                     "Goals2": [
@@ -30459,11 +30465,11 @@
                     "Match": "M98",
                     "MatchDay": null,
                     "Referee": "Michael Oliver",
-                    "Score1": "1",
+                    "Score1": "2",
                     "Score2": "1",
                     "Stadium": "Los Angeles Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "1FT1",
+                    "Status": "2FT1",
                     "Team1": "Spain",
                     "Team1_raw": "Spain",
                     "Team2": "Belgium",
