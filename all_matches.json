@@ -39284,10 +39284,10 @@
                 "Team1": "Spain",
                 "Code1": "ESP",
                 "Score1": "1",
-                "Score2": "0",
+                "Score2": "1",
                 "Team2": "Belgium",
                 "Code2": "BEL",
-                "Status": "1FT0",
+                "Status": "1FT1",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 98",
                 "Stadium": "Los Angeles Stadium",
@@ -39300,10 +39300,17 @@
                         "Assist": ""
                     }
                 ],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Player": "Charles DE KETELAERE",
+                        "Minute": "41'",
+                        "Type": 2,
+                        "Assist": "Koni DE WINTER"
+                    }
+                ],
                 "Referee": "Michael Oliver",
                 "Attendance": 0,
-                "HT": "1 - 0",
+                "HT": "1 - 1",
                 "Lineup1": [
                     {
                         "Name": "Unai SIMON",

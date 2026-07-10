@@ -56,9 +56,9 @@
                 "NextMatch": "M101",
                 "Round": "Quarter-final (Left)",
                 "Score1": "1",
-                "Score2": "0",
+                "Score2": "1",
                 "Side": "LEFT",
-                "Status": "1FT0",
+                "Status": "1FT1",
                 "Team1": "Spain",
                 "Team1_raw": "Spain",
                 "Team2": "Belgium",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-11 01:30:45 AM",
+    "last_updated": "2026-07-11 01:41:45 AM",
     "matches": {
         "group_stage": [
             {
@@ -30099,9 +30099,16 @@
                             "Type": 2
                         }
                     ],
-                    "Goals2": [],
+                    "Goals2": [
+                        {
+                            "Assist": "Koni DE WINTER",
+                            "Minute": "41'",
+                            "Player": "Charles DE KETELAERE",
+                            "Type": 2
+                        }
+                    ],
                     "Group_or_Match": "Match 98",
-                    "HT": "1 - 0",
+                    "HT": "1 - 1",
                     "Lineup1": [
                         {
                             "Captain": false,
@@ -30453,10 +30460,10 @@
                     "MatchDay": null,
                     "Referee": "Michael Oliver",
                     "Score1": "1",
-                    "Score2": "0",
+                    "Score2": "1",
                     "Stadium": "Los Angeles Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "1FT0",
+                    "Status": "1FT1",
                     "Team1": "Spain",
                     "Team1_raw": "Spain",
                     "Team2": "Belgium",
