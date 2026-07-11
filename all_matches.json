@@ -39672,11 +39672,11 @@
                 "Time": "3 AM BST",
                 "Team1": "Norway",
                 "Code1": "NOR",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "1",
                 "Team2": "England",
                 "Code2": "ENG",
-                "Status": "1FT1",
+                "Status": "2FT1",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 99",
                 "Stadium": "Miami Stadium",
@@ -39687,6 +39687,12 @@
                         "Minute": "36'",
                         "Type": 2,
                         "Assist": "Alexander SORLOTH"
+                    },
+                    {
+                        "Player": "Torbjorn HEGGEM",
+                        "Minute": "55'",
+                        "Type": 2,
+                        "Assist": ""
                     }
                 ],
                 "Goals2": [

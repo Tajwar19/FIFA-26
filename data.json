@@ -72,10 +72,10 @@
                 "Match": "M99",
                 "NextMatch": "M102",
                 "Round": "Quarter-final (Right)",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "1",
                 "Side": "RIGHT",
-                "Status": "1FT1",
+                "Status": "2FT1",
                 "Team1": "Norway",
                 "Team1_raw": "Norway",
                 "Team2": "England",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 03:48:29 AM",
+    "last_updated": "2026-07-12 04:17:29 AM",
     "matches": {
         "group_stage": [
             {
@@ -30488,6 +30488,12 @@
                             "Minute": "36'",
                             "Player": "Andreas SCHJELDERUP",
                             "Type": 2
+                        },
+                        {
+                            "Assist": "",
+                            "Minute": "55'",
+                            "Player": "Torbjorn HEGGEM",
+                            "Type": 2
                         }
                     ],
                     "Goals2": [
@@ -30864,11 +30870,11 @@
                     "Match": "M99",
                     "MatchDay": null,
                     "Referee": "Clément Turpin",
-                    "Score1": "1",
+                    "Score1": "2",
                     "Score2": "1",
                     "Stadium": "Miami Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "1FT1",
+                    "Status": "2FT1",
                     "Team1": "Norway",
                     "Team1_raw": "Norway",
                     "Team2": "England",
