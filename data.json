@@ -73,9 +73,9 @@
                 "NextMatch": "M102",
                 "Round": "Quarter-final (Right)",
                 "Score1": "1",
-                "Score2": "1",
+                "Score2": "2",
                 "Side": "RIGHT",
-                "Status": "1FT1",
+                "Status": "1FT2",
                 "Team1": "Norway",
                 "Team1_raw": "Norway",
                 "Team2": "England",
@@ -493,7 +493,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "1 AM BST",
-                "Team1": "W99: Norway",
+                "Team1": "W99: England",
                 "Team1_raw": "W99",
                 "Team2": "W100",
                 "Team2_raw": "W100",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 04:32:59 AM",
+    "last_updated": "2026-07-12 05:10:30 AM",
     "matches": {
         "group_stage": [
             {
@@ -30865,10 +30865,10 @@
                     "MatchDay": null,
                     "Referee": "Clément Turpin",
                     "Score1": "1",
-                    "Score2": "1",
+                    "Score2": "2",
                     "Stadium": "Miami Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "1FT1",
+                    "Status": "1FT2",
                     "Team1": "Norway",
                     "Team1_raw": "Norway",
                     "Team2": "England",
@@ -40750,7 +40750,7 @@
                     "Stadium": "Atlanta Stadium",
                     "Stage": "Semi-final",
                     "Status": "1 AM BST",
-                    "Team1": "W99: Norway",
+                    "Team1": "W99: England",
                     "Team1_raw": "W99",
                     "Team2": "W100",
                     "Team2_raw": "W100",
