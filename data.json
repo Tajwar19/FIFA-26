@@ -493,15 +493,15 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "1 AM BST",
-                "Team1": "W99: England",
-                "Team1_raw": "W99",
+                "Team1": "England",
+                "Team1_raw": "England",
                 "Team2": "W100",
                 "Team2_raw": "W100",
                 "Time": "1 AM BST"
             }
         ]
     },
-    "last_updated": "2026-07-12 05:10:30 AM",
+    "last_updated": "2026-07-12 05:49:29 AM",
     "matches": {
         "group_stage": [
             {
@@ -40733,7 +40733,7 @@
                 {
                     "Attendance": 0,
                     "City": "Atlanta",
-                    "Code1": "W99",
+                    "Code1": "ENG",
                     "Code2": "W100",
                     "Date": "Thursday 16 July 2026",
                     "Goals1": [],
@@ -40750,8 +40750,8 @@
                     "Stadium": "Atlanta Stadium",
                     "Stage": "Semi-final",
                     "Status": "1 AM BST",
-                    "Team1": "W99: England",
-                    "Team1_raw": "W99",
+                    "Team1": "England",
+                    "Team1_raw": "England",
                     "Team2": "W100",
                     "Team2_raw": "W100",
                     "Time": "1 AM BST"
