@@ -73,9 +73,9 @@
                 "NextMatch": "M102",
                 "Round": "Quarter-final (Right)",
                 "Score1": "1",
-                "Score2": "0",
+                "Score2": "1",
                 "Side": "RIGHT",
-                "Status": "1FT0",
+                "Status": "1FT1",
                 "Team1": "Norway",
                 "Team1_raw": "Norway",
                 "Team2": "England",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 03:36:59 AM",
+    "last_updated": "2026-07-12 03:47:59 AM",
     "matches": {
         "group_stage": [
             {
@@ -30484,15 +30484,22 @@
                     "Date": "Sunday 12 July 2026",
                     "Goals1": [
                         {
-                            "Assist": "Alexander SORLOTH",
+                            "Assist": "Martin ODEGAARD",
                             "Minute": "36'",
                             "Player": "Andreas SCHJELDERUP",
                             "Type": 2
                         }
                     ],
-                    "Goals2": [],
+                    "Goals2": [
+                        {
+                            "Assist": "",
+                            "Minute": "45'+2'",
+                            "Player": "Jude BELLINGHAM",
+                            "Type": 2
+                        }
+                    ],
                     "Group_or_Match": "Match 99",
-                    "HT": "1 - 0",
+                    "HT": "1 - 1",
                     "Lineup1": [
                         {
                             "Captain": false,
@@ -30858,10 +30865,10 @@
                     "MatchDay": null,
                     "Referee": "Clément Turpin",
                     "Score1": "1",
-                    "Score2": "0",
+                    "Score2": "1",
                     "Stadium": "Miami Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "1FT0",
+                    "Status": "1FT1",
                     "Team1": "Norway",
                     "Team1_raw": "Norway",
                     "Team2": "England",

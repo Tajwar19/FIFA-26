@@ -39673,10 +39673,10 @@
                 "Team1": "Norway",
                 "Code1": "NOR",
                 "Score1": "1",
-                "Score2": "0",
+                "Score2": "1",
                 "Team2": "England",
                 "Code2": "ENG",
-                "Status": "1FT0",
+                "Status": "1FT1",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 99",
                 "Stadium": "Miami Stadium",
@@ -39686,13 +39686,20 @@
                         "Player": "Andreas SCHJELDERUP",
                         "Minute": "36'",
                         "Type": 2,
-                        "Assist": "Alexander SORLOTH"
+                        "Assist": "Martin ODEGAARD"
                     }
                 ],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Player": "Jude BELLINGHAM",
+                        "Minute": "45'+2'",
+                        "Type": 2,
+                        "Assist": ""
+                    }
+                ],
                 "Referee": "Clément Turpin",
                 "Attendance": 0,
-                "HT": "1 - 0",
+                "HT": "1 - 1",
                 "Lineup1": [
                     {
                         "Name": "Orjan NYLAND",
