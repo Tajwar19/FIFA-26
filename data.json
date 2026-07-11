@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 04:17:29 AM",
+    "last_updated": "2026-07-12 04:19:59 AM",
     "matches": {
         "group_stage": [
             {
@@ -30487,12 +30487,6 @@
                             "Assist": "Alexander SORLOTH",
                             "Minute": "36'",
                             "Player": "Andreas SCHJELDERUP",
-                            "Type": 2
-                        },
-                        {
-                            "Assist": "",
-                            "Minute": "55'",
-                            "Player": "Torbjorn HEGGEM",
                             "Type": 2
                         }
                     ],
