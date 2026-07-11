@@ -72,10 +72,10 @@
                 "Match": "M99",
                 "NextMatch": "M102",
                 "Round": "Quarter-final (Right)",
-                "Score1": "0",
+                "Score1": "1",
                 "Score2": "0",
                 "Side": "RIGHT",
-                "Status": "0FT0",
+                "Status": "1FT0",
                 "Team1": "Norway",
                 "Team1_raw": "Norway",
                 "Team2": "England",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 03:01:59 AM",
+    "last_updated": "2026-07-12 03:36:59 AM",
     "matches": {
         "group_stage": [
             {
@@ -30482,10 +30482,17 @@
                     "Code1": "NOR",
                     "Code2": "ENG",
                     "Date": "Sunday 12 July 2026",
-                    "Goals1": [],
+                    "Goals1": [
+                        {
+                            "Assist": "Alexander SORLOTH",
+                            "Minute": "36'",
+                            "Player": "Andreas SCHJELDERUP",
+                            "Type": 2
+                        }
+                    ],
                     "Goals2": [],
                     "Group_or_Match": "Match 99",
-                    "HT": "0 - 0",
+                    "HT": "1 - 0",
                     "Lineup1": [
                         {
                             "Captain": false,
@@ -30850,11 +30857,11 @@
                     "Match": "M99",
                     "MatchDay": null,
                     "Referee": "Clément Turpin",
-                    "Score1": "0",
+                    "Score1": "1",
                     "Score2": "0",
                     "Stadium": "Miami Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "0FT0",
+                    "Status": "1FT0",
                     "Team1": "Norway",
                     "Team1_raw": "Norway",
                     "Team2": "England",

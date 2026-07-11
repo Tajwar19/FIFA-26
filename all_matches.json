@@ -39672,20 +39672,27 @@
                 "Time": "3 AM BST",
                 "Team1": "Norway",
                 "Code1": "NOR",
-                "Score1": "0",
+                "Score1": "1",
                 "Score2": "0",
                 "Team2": "England",
                 "Code2": "ENG",
-                "Status": "0FT0",
+                "Status": "1FT0",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 99",
                 "Stadium": "Miami Stadium",
                 "City": "Miami",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Player": "Andreas SCHJELDERUP",
+                        "Minute": "36'",
+                        "Type": 2,
+                        "Assist": "Alexander SORLOTH"
+                    }
+                ],
                 "Goals2": [],
                 "Referee": "Clément Turpin",
                 "Attendance": 0,
-                "HT": "0 - 0",
+                "HT": "1 - 0",
                 "Lineup1": [
                     {
                         "Name": "Orjan NYLAND",
