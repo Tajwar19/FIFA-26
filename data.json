@@ -72,10 +72,10 @@
                 "Match": "M99",
                 "NextMatch": "M102",
                 "Round": "Quarter-final (Right)",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "0",
                 "Side": "RIGHT",
-                "Status": "3 AM BST",
+                "Status": "0FT0",
                 "Team1": "Norway",
                 "Team1_raw": "Norway",
                 "Team2": "England",
@@ -493,7 +493,7 @@
                 "Score2": "",
                 "Side": "RIGHT",
                 "Status": "1 AM BST",
-                "Team1": "W99",
+                "Team1": "W99: Norway",
                 "Team1_raw": "W99",
                 "Team2": "W100",
                 "Team2_raw": "W100",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-11 03:01:45 AM",
+    "last_updated": "2026-07-12 03:01:59 AM",
     "matches": {
         "group_stage": [
             {
@@ -30485,17 +30485,376 @@
                     "Goals1": [],
                     "Goals2": [],
                     "Group_or_Match": "Match 99",
-                    "HT": "",
-                    "Lineup1": [],
-                    "Lineup2": [],
+                    "HT": "0 - 0",
+                    "Lineup1": [
+                        {
+                            "Captain": false,
+                            "Name": "Orjan NYLAND",
+                            "Number": 1,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Kristoffer AJER",
+                            "Number": 3,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "David MOLLER WOLFE",
+                            "Number": 5,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Torbjorn HEGGEM",
+                            "Number": 17,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Patrick BERG",
+                            "Number": 6,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Sander BERGE",
+                            "Number": 8,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": true,
+                            "Name": "Martin ODEGAARD",
+                            "Number": 10,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Andreas SCHJELDERUP",
+                            "Number": 21,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Alexander SORLOTH",
+                            "Number": 7,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Erling HAALAND",
+                            "Number": 9,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Julian RYERSON",
+                            "Number": 26,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Sander TANGVIK",
+                            "Number": 12,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Egil SELVIK",
+                            "Number": 13,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Leo OSTIGARD",
+                            "Number": 4,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Fredrik Andre BJORKAN",
+                            "Number": 15,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Marcus HOLMGREN PEDERSEN",
+                            "Number": 16,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Sondre LANGAS",
+                            "Number": 24,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Henrik FALCHENER",
+                            "Number": 25,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Morten THORSBY",
+                            "Number": 2,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Fredrik AURSNES",
+                            "Number": 14,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Kristian THORSTVEDT",
+                            "Number": 18,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Thelo AASGAARD",
+                            "Number": 19,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Oscar BOBB",
+                            "Number": 22,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jens Petter HAUGE",
+                            "Number": 23,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jorgen STRAND LARSEN",
+                            "Number": 11,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Antonio NUSA",
+                            "Number": 20,
+                            "Position": 3,
+                            "Starter": true
+                        }
+                    ],
+                    "Lineup2": [
+                        {
+                            "Captain": false,
+                            "Name": "Jordan PICKFORD",
+                            "Number": 1,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Ezri KONSA",
+                            "Number": 2,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Nico OREILLY",
+                            "Number": 3,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "John STONES",
+                            "Number": 5,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Marc GUEHI",
+                            "Number": 6,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Declan RICE",
+                            "Number": 4,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Elliot ANDERSON",
+                            "Number": 8,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jude BELLINGHAM",
+                            "Number": 10,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": true,
+                            "Name": "Harry KANE",
+                            "Number": 9,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Anthony GORDON",
+                            "Number": 18,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Noni MADUEKE",
+                            "Number": 20,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Dean HENDERSON",
+                            "Number": 13,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "James TRAFFORD",
+                            "Number": 23,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Trevoh CHALOBAH",
+                            "Number": 12,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Dan BURN",
+                            "Number": 15,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Reece JAMES",
+                            "Number": 24,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Djed SPENCE",
+                            "Number": 25,
+                            "Position": 1,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Jordan HENDERSON",
+                            "Number": 14,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Kobbie MAINOO",
+                            "Number": 16,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Morgan ROGERS",
+                            "Number": 17,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Eberechi EZE",
+                            "Number": 21,
+                            "Position": 2,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Bukayo SAKA",
+                            "Number": 7,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Marcus RASHFORD",
+                            "Number": 11,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Ollie WATKINS",
+                            "Number": 19,
+                            "Position": 3,
+                            "Starter": true
+                        },
+                        {
+                            "Captain": false,
+                            "Name": "Ivan TONEY",
+                            "Number": 22,
+                            "Position": 3,
+                            "Starter": true
+                        }
+                    ],
                     "Match": "M99",
                     "MatchDay": null,
-                    "Referee": "",
-                    "Score1": "",
-                    "Score2": "",
+                    "Referee": "Clément Turpin",
+                    "Score1": "0",
+                    "Score2": "0",
                     "Stadium": "Miami Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "3 AM BST",
+                    "Status": "0FT0",
                     "Team1": "Norway",
                     "Team1_raw": "Norway",
                     "Team2": "England",
@@ -40377,7 +40736,7 @@
                     "Stadium": "Atlanta Stadium",
                     "Stage": "Semi-final",
                     "Status": "1 AM BST",
-                    "Team1": "W99",
+                    "Team1": "W99: Norway",
                     "Team1_raw": "W99",
                     "Team2": "W100",
                     "Team2_raw": "W100",
