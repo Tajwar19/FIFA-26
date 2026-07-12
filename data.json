@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 09:33:00 AM",
+    "last_updated": "2026-07-12 09:33:30 AM",
     "matches": {
         "group_stage": [
             {
@@ -30886,6 +30886,12 @@
                             "Assist": "",
                             "Minute": "10'",
                             "Player": "Alexis MAC ALLISTER",
+                            "Type": 2
+                        },
+                        {
+                            "Assist": "Lisandro MARTINEZ",
+                            "Minute": "112'",
+                            "Player": "Julian ALVAREZ",
                             "Type": 2
                         }
                     ],
