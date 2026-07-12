@@ -87,10 +87,10 @@
                 "Match": "M100",
                 "NextMatch": "M102",
                 "Round": "Quarter-final (Right)",
-                "Score1": "1",
+                "Score1": "2",
                 "Score2": "1",
                 "Side": "RIGHT",
-                "Status": "1FT1",
+                "Status": "2FT1",
                 "Team1": "Argentina",
                 "Team1_raw": "Argentina",
                 "Team2": "Switzerland",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 08:29:30 AM",
+    "last_updated": "2026-07-12 09:33:00 AM",
     "matches": {
         "group_stage": [
             {
@@ -31263,11 +31263,11 @@
                     "Match": "M100",
                     "MatchDay": null,
                     "Referee": "João Pedro Silva Pinheiro",
-                    "Score1": "1",
+                    "Score1": "2",
                     "Score2": "1",
                     "Stadium": "Kansas City Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "1FT1",
+                    "Status": "2FT1",
                     "Team1": "Argentina",
                     "Team1_raw": "Argentina",
                     "Team2": "Switzerland",
