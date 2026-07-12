@@ -40083,10 +40083,17 @@
                         "Player": "Alexis MAC ALLISTER",
                         "Minute": "10'",
                         "Type": 2,
+                        "Assist": "Lionel MESSI"
+                    }
+                ],
+                "Goals2": [
+                    {
+                        "Player": "Unknown Scorer",
+                        "Minute": "67'",
+                        "Type": 2,
                         "Assist": ""
                     }
                 ],
-                "Goals2": [],
                 "Referee": "João Pedro Silva Pinheiro",
                 "Attendance": 0,
                 "HT": "1 - 0",
