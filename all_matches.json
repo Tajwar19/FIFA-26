@@ -40069,20 +40069,27 @@
                 "Time": "7 AM BST",
                 "Team1": "Argentina",
                 "Code1": "ARG",
-                "Score1": "0",
+                "Score1": "1",
                 "Score2": "0",
                 "Team2": "Switzerland",
                 "Code2": "SUI",
-                "Status": "0FT0",
+                "Status": "1FT0",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 100",
                 "Stadium": "Kansas City Stadium",
                 "City": "Kansas City",
-                "Goals1": [],
+                "Goals1": [
+                    {
+                        "Player": "Alexis MAC ALLISTER",
+                        "Minute": "10'",
+                        "Type": 2,
+                        "Assist": ""
+                    }
+                ],
                 "Goals2": [],
                 "Referee": "João Pedro Silva Pinheiro",
                 "Attendance": 0,
-                "HT": "0 - 0",
+                "HT": "1 - 0",
                 "Lineup1": [
                     {
                         "Name": "Emiliano MARTINEZ",

@@ -87,10 +87,10 @@
                 "Match": "M100",
                 "NextMatch": "M102",
                 "Round": "Quarter-final (Right)",
-                "Score1": "0",
+                "Score1": "1",
                 "Score2": "0",
                 "Side": "RIGHT",
-                "Status": "0FT0",
+                "Status": "1FT0",
                 "Team1": "Argentina",
                 "Team1_raw": "Argentina",
                 "Team2": "Switzerland",
@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 07:01:30 AM",
+    "last_updated": "2026-07-12 07:10:59 AM",
     "matches": {
         "group_stage": [
             {
@@ -30881,10 +30881,17 @@
                     "Code1": "ARG",
                     "Code2": "SUI",
                     "Date": "Sunday 12 July 2026",
-                    "Goals1": [],
+                    "Goals1": [
+                        {
+                            "Assist": "",
+                            "Minute": "10'",
+                            "Player": "Alexis MAC ALLISTER",
+                            "Type": 2
+                        }
+                    ],
                     "Goals2": [],
                     "Group_or_Match": "Match 100",
-                    "HT": "0 - 0",
+                    "HT": "1 - 0",
                     "Lineup1": [
                         {
                             "Captain": false,
@@ -31249,11 +31256,11 @@
                     "Match": "M100",
                     "MatchDay": null,
                     "Referee": "João Pedro Silva Pinheiro",
-                    "Score1": "0",
+                    "Score1": "1",
                     "Score2": "0",
                     "Stadium": "Kansas City Stadium",
                     "Stage": "Quarter-final",
-                    "Status": "0FT0",
+                    "Status": "1FT0",
                     "Team1": "Argentina",
                     "Team1_raw": "Argentina",
                     "Team2": "Switzerland",
