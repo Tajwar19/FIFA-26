@@ -40070,10 +40070,10 @@
                 "Team1": "Argentina",
                 "Code1": "ARG",
                 "Score1": "1",
-                "Score2": "0",
+                "Score2": "1",
                 "Team2": "Switzerland",
                 "Code2": "SUI",
-                "Status": "1FT0",
+                "Status": "1FT1",
                 "Stage": "Quarter-final",
                 "Group_or_Match": "Match 100",
                 "Stadium": "Kansas City Stadium",
@@ -40083,17 +40083,10 @@
                         "Player": "Alexis MAC ALLISTER",
                         "Minute": "10'",
                         "Type": 2,
-                        "Assist": "Lionel MESSI"
-                    }
-                ],
-                "Goals2": [
-                    {
-                        "Player": "Unknown Scorer",
-                        "Minute": "67'",
-                        "Type": 2,
                         "Assist": ""
                     }
                 ],
+                "Goals2": [],
                 "Referee": "João Pedro Silva Pinheiro",
                 "Attendance": 0,
                 "HT": "1 - 0",
