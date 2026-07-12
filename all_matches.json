@@ -40086,7 +40086,14 @@
                         "Assist": ""
                     }
                 ],
-                "Goals2": [],
+                "Goals2": [
+                    {
+                        "Player": "Dan NDOYE",
+                        "Minute": "67'",
+                        "Type": 2,
+                        "Assist": "Remo FREULER"
+                    }
+                ],
                 "Referee": "João Pedro Silva Pinheiro",
                 "Attendance": 0,
                 "HT": "1 - 0",

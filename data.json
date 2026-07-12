@@ -501,7 +501,7 @@
             }
         ]
     },
-    "last_updated": "2026-07-12 08:29:00 AM",
+    "last_updated": "2026-07-12 08:29:30 AM",
     "matches": {
         "group_stage": [
             {
@@ -30889,7 +30889,14 @@
                             "Type": 2
                         }
                     ],
-                    "Goals2": [],
+                    "Goals2": [
+                        {
+                            "Assist": "Remo FREULER",
+                            "Minute": "67'",
+                            "Player": "Dan NDOYE",
+                            "Type": 2
+                        }
+                    ],
                     "Group_or_Match": "Match 100",
                     "HT": "1 - 0",
                     "Lineup1": [
