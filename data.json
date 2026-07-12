@@ -495,13 +495,13 @@
                 "Status": "1 AM BST",
                 "Team1": "England",
                 "Team1_raw": "England",
-                "Team2": "W100: Argentina",
-                "Team2_raw": "W100",
+                "Team2": "Argentina",
+                "Team2_raw": "Argentina",
                 "Time": "1 AM BST"
             }
         ]
     },
-    "last_updated": "2026-07-12 09:41:30 AM",
+    "last_updated": "2026-07-12 09:47:30 AM",
     "matches": {
         "group_stage": [
             {
@@ -41113,7 +41113,7 @@
                     "Attendance": 0,
                     "City": "Atlanta",
                     "Code1": "ENG",
-                    "Code2": "W100",
+                    "Code2": "ARG",
                     "Date": "Thursday 16 July 2026",
                     "Goals1": [],
                     "Goals2": [],
@@ -41131,8 +41131,8 @@
                     "Status": "1 AM BST",
                     "Team1": "England",
                     "Team1_raw": "England",
-                    "Team2": "W100: Argentina",
-                    "Team2_raw": "W100",
+                    "Team2": "Argentina",
+                    "Team2_raw": "Argentina",
                     "Time": "1 AM BST"
                 }
             ]
