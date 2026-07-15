@@ -40474,22 +40474,401 @@
                 "Time": "1 AM BST",
                 "Team1": "France",
                 "Code1": "FRA",
-                "Score1": "",
-                "Score2": "",
+                "Score1": "0",
+                "Score2": "2",
                 "Team2": "Spain",
                 "Code2": "ESP",
-                "Status": "1 AM BST",
+                "Status": "0FT2",
                 "Stage": "Semi-final",
                 "Group_or_Match": "Match 101",
                 "Stadium": "Dallas Stadium",
                 "City": "Dallas",
                 "Goals1": [],
-                "Goals2": [],
-                "Referee": "",
-                "Attendance": 0,
-                "HT": "",
-                "Lineup1": [],
-                "Lineup2": []
+                "Goals2": [
+                    {
+                        "Player": "Mikel OYARZABAL",
+                        "Minute": "22'",
+                        "Type": 1,
+                        "Assist": ""
+                    },
+                    {
+                        "Player": "Pedro PORRO",
+                        "Minute": "58'",
+                        "Type": 2,
+                        "Assist": "Mikel MERINO"
+                    }
+                ],
+                "Referee": "Ivan Arcides Barton Cisneros",
+                "Attendance": "70176",
+                "HT": "0 - 1",
+                "Lineup1": [
+                    {
+                        "Name": "Mike MAIGNAN",
+                        "Number": 16,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Lucas DIGNE",
+                        "Number": 3,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Dayot UPAMECANO",
+                        "Number": 4,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Jules KOUNDE",
+                        "Number": 5,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "William SALIBA",
+                        "Number": 17,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Aurelien TCHOUAMENI",
+                        "Number": 8,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Adrien RABIOT",
+                        "Number": 14,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ousmane DEMBELE",
+                        "Number": 7,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Kylian MBAPPE",
+                        "Number": 10,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": true
+                    },
+                    {
+                        "Name": "Michael OLISE",
+                        "Number": 11,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Bradley BARCOLA",
+                        "Number": 12,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Brice SAMBA",
+                        "Number": 1,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Robin RISSER",
+                        "Number": 23,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Malo GUSTO",
+                        "Number": 2,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ibrahima KONATE",
+                        "Number": 15,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Theo HERNANDEZ",
+                        "Number": 19,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Lucas HERNANDEZ",
+                        "Number": 21,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Maxence LACROIX",
+                        "Number": 26,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Manu KONE",
+                        "Number": 6,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ngolo KANTE",
+                        "Number": 13,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Warren ZAIRE-EMERY",
+                        "Number": 18,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Rayan CHERKI",
+                        "Number": 24,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Maghnes AKLIOUCHE",
+                        "Number": 25,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Marcus THURAM",
+                        "Number": 9,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Desire DOUE",
+                        "Number": 20,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Jean-Philippe MATETA",
+                        "Number": 22,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    }
+                ],
+                "Lineup2": [
+                    {
+                        "Name": "Unai SIMON",
+                        "Number": 23,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Pedro PORRO",
+                        "Number": 12,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Aymeric LAPORTE",
+                        "Number": 14,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Pau CUBARSI",
+                        "Number": 22,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Marc CUCURELLA",
+                        "Number": 24,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Fabian RUIZ",
+                        "Number": 8,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Alex BAENA",
+                        "Number": 15,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "RODRI",
+                        "Number": 16,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": true
+                    },
+                    {
+                        "Name": "Dani OLMO",
+                        "Number": 10,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Lamine YAMAL",
+                        "Number": 19,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Mikel OYARZABAL",
+                        "Number": 21,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "David RAYA",
+                        "Number": 1,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Joan GARCIA",
+                        "Number": 13,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Marc PUBILL",
+                        "Number": 2,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Alex GRIMALDO",
+                        "Number": 3,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Eric GARCIA",
+                        "Number": 4,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Marcos LLORENTE",
+                        "Number": 5,
+                        "Position": 1,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Mikel MERINO",
+                        "Number": 6,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "GAVI",
+                        "Number": 9,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Martin ZUBIMENDI",
+                        "Number": 18,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "PEDRI",
+                        "Number": 20,
+                        "Position": 2,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Ferran TORRES",
+                        "Number": 7,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Yeremy PINO",
+                        "Number": 11,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Nico WILLIAMS",
+                        "Number": 17,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Victor MUNOZ",
+                        "Number": 25,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    },
+                    {
+                        "Name": "Borja IGLESIAS",
+                        "Number": 26,
+                        "Position": 3,
+                        "Starter": true,
+                        "Captain": false
+                    }
+                ]
             },
             {
                 "Match": "M102",
@@ -40516,20 +40895,20 @@
                 "Lineup2": []
             }
         ],
-        "Play-off for third place": [
+        "Bronze final": [
             {
                 "Match": "M103",
                 "MatchDay": null,
                 "Date": "Sunday 19 July 2026",
                 "Time": "3 AM BST",
-                "Team1": "RU101",
-                "Code1": "RU101",
+                "Team1": "France",
+                "Code1": "FRA",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "RU102",
                 "Code2": "RU102",
                 "Status": "3 AM BST",
-                "Stage": "Play-off for third place",
+                "Stage": "Bronze final",
                 "Group_or_Match": "Match 103",
                 "Stadium": "Miami Stadium",
                 "City": "Miami",
@@ -40548,8 +40927,8 @@
                 "MatchDay": null,
                 "Date": "Monday 20 July 2026",
                 "Time": "1 AM BST",
-                "Team1": "W101",
-                "Code1": "W101",
+                "Team1": "Spain",
+                "Code1": "ESP",
                 "Score1": "",
                 "Score2": "",
                 "Team2": "W102",
